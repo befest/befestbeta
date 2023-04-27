@@ -357,9 +357,13 @@ body{
 .menu-soundbar{
     background-color: white;
     width: 100%;
+    
+
 }
 .menu-item{
     font-size: 6.5pt; 
+    
+    padding: 0;
 }
 #serviços_principais{ 
 }
@@ -506,7 +510,8 @@ body{
     width: 100%;
 }
 .menu-item{
-    font-size: 6.5pt; 
+    font-size: 6.5pt;
+    padding: 0; 
 }
 #serviços_principais{ 
 }
