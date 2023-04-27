@@ -318,7 +318,7 @@ a{
 /*FOOTER FINALIZADO*/
 
 
-@media (min-width: 0px) and (max-width: 425px){
+@media (min-width: 0px) and (max-width: 320px){
     /*BODY INICIADO*/
 body{
     /*espaçamento*/
@@ -326,19 +326,163 @@ body{
 }
 /*BODY FINALIZADO*/
 
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+    /*espaçamento*/
+    width: 100%;
+    /*estilização*/
 
+}
+.header{
+    /*espaçamento*/
+   
+}
+.header_images{
+    /*espaçamento*/
+    
+}
+.img_logo_prestador{
+    width: 40%;
+    
+}
+.description{
+    
+}
+.header_titulo{
+    font-size: 12pt;
+   
+    
+}
+.header_festarea_nicho{
+    font-size: 8pt;
+    
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+
+
+
+
+/*MENU SOUND-BAR INICIADO*/
+.menu-soundbar{
+    background-color: white;
+    width: 100%;
+    
+
+}
+.menu-item{
+    font-size: 6.5pt; 
+    
+    padding: 0;
+}
+#serviços_principais{ 
+}
+a{
+
+}
+
+#icon-soundbar{
+   
+    
+    
+
+}
+/*MENU SOUND-BAR FINALIZADO*/
+
+
+
+
+/*SERVIÇOS INICIADO */
+.serviços{
+    width: 100%;
+    
+}
+.serviços-item{
+    
+    
+    
+}
+
+.serviços-item-topico{
+    
+}
+.serviços-item-imagem{
+    width: 50%;
+    height: 15vh;
+    
+}
+.serviços-item-escritos{
+    
+    
+}
+.serviços-item-tit{
+    
+    font-size: 10pt;
+   
+}
+.serviços-item-desc{
+    font-size: 6pt;
+    display: none;
+    
+    
+
+}
+#serviços-item-festabotequim{
+   
+}
+.contratar{
+    width: 100%;
+    padding: 7.5px;
+    border-radius: 500px;
+    
+
+}
+.contratar-tit{
+    
+    font-size: 6pt;
+    
+    
+}
+.bi{
+    width: 18%;
+    
+    
+    
+}
+
+/**/
+
+/*SERVIÇOS FINALIZADO*/
+
+
+/*FOOTER INICIADO*/
+.footer{
+    
+}
+.footer-logo{
+    width: 50%;
+    
+}
+/*FOOTER FINALIZADO*/
+
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
+
+@media (min-width: 321px) and (max-width: 425px){
+    /*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    
+}
+/*BODY FINALIZADO*/
 
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
     /*espaçamento*/
     width: 100%;
-
-    
-
     /*estilização*/
-    
-    
-    
+
 }
 .header{
     /*espaçamento*/
@@ -376,7 +520,8 @@ body{
     width: 100%;
 }
 .menu-item{
-    font-size: 6.5pt; 
+    font-size: 6.5pt;
+    padding: 0; 
 }
 #serviços_principais{ 
 }
@@ -410,7 +555,8 @@ a{
     
 }
 .serviços-item-imagem{
-    
+    width: 50%;
+    height: 15vh;
     
 }
 .serviços-item-escritos{
@@ -423,6 +569,8 @@ a{
    
 }
 .serviços-item-desc{
+    width: 200%;
+    
     font-size: 6pt;
     
     
@@ -466,8 +614,6 @@ a{
     
 }
 /*FOOTER FINALIZADO*/
-    
-
 
 }
 
