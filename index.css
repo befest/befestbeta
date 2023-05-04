@@ -550,6 +550,8 @@ a{
     
 }
 .serviços-item-escritos{
+    justify-content: flex-start;
+   
     
     
 }
@@ -699,8 +701,9 @@ a{
     
 }
 .serviços-item-escritos{
-    
-    
+	
+    justify-content: flex-start;
+   
 }
 .serviços-item-tit{
     
