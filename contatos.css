@@ -403,21 +403,20 @@ a{
 .serviços-item{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-    
-    
+    align-items: center;   
 }
 
 .serviços-item-topico{
-    
-    
-    
 }
+
 .serviços-item-imagem{
     width: 50%;
     height: 15vh;
-    
+}
+.serviços-item-escritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
  
 .serviços-item-tit{
@@ -571,6 +570,9 @@ a{
     
 }
 .serviços-item-escritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     
 }
