@@ -399,6 +399,8 @@ a{
 /*SERVIÇOS INICIADO */
 .serviços{
     width: 100%;
+    justify-content: center;
+    align-items: center;
     
 }
 .serviços-item{
@@ -546,7 +548,9 @@ a{
 
 /*SERVIÇOS INICIADO */
 .serviços{
-    width: 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     
 }
 .serviços-item{
