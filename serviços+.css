@@ -503,7 +503,7 @@ body{
 /*MENU SOUND-BAR INICIADO*/
 .menu-soundbar{
     background-color: white;
-    width: 70%;
+    width: 100%;
 }
 .menu-item{
     font-size: 6.5pt; 
