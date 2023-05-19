@@ -405,6 +405,10 @@ a{
 }
 
 .serviços-item-topico{
+    /*espaçamento*/
+    display: flex;
+    align-items: center;
+
 }
 
 .serviços-item-imagem{
@@ -552,7 +556,10 @@ a{
 }
 
 .serviços-item-topico{
-    
+    /*espaçamento*/
+    display: flex;
+    align-items: center;
+
 }
 .serviços-item-imagem{
     width: 50%;
