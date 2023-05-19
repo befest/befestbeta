@@ -323,7 +323,9 @@ a{
 /*FOOTER FINALIZADO*/
 
 
-@media (min-width: 0px) and (max-width: 425px){
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
+
+@media (min-width: 321px) and (max-width: 425px){
     /*BODY INICIADO*/
 body{
     /*espaçamento*/
@@ -331,19 +333,12 @@ body{
 }
 /*BODY FINALIZADO*/
 
-
-
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
     /*espaçamento*/
     width: 100%;
-
-    
-
     /*estilização*/
-    
-    
-    
+
 }
 .header{
     /*espaçamento*/
@@ -381,7 +376,8 @@ body{
     width: 100%;
 }
 .menu-item{
-    font-size: 6.5pt; 
+    font-size: 6.5pt;
+    padding: 0; 
 }
 #serviços_principais{ 
 }
@@ -413,21 +409,23 @@ a{
 
 .serviços-item-topico{
     
+    
+    
 }
 .serviços-item-imagem{
-    
-    
-}
-.serviços-item-escritos{
-    
+    width: 50%;
+    height: 15vh;
     
 }
+ 
 .serviços-item-tit{
     
     font-size: 10pt;
    
 }
 .serviços-item-desc{
+    width: 200%;
+    
     font-size: 6pt;
     
     
@@ -471,8 +469,6 @@ a{
     
 }
 /*FOOTER FINALIZADO*/
-    
-
 
 }
 
