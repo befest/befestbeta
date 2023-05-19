@@ -401,9 +401,7 @@ a{
     width: 100%;
 }
 .serviços-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   
+     
 }
 
 .serviços-item-topico{
@@ -414,9 +412,7 @@ a{
     height: 15vh;
 }
 .serviços-item-escritos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
+    
 }
  
 .serviços-item-tit{
@@ -552,13 +548,7 @@ a{
     align-items: center;
     
 }
-.serviços-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-    
+.serviços-item{ 
 }
 
 .serviços-item-topico{
@@ -570,9 +560,6 @@ a{
     
 }
 .serviços-item-escritos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     
     
 }
