@@ -548,7 +548,7 @@ a{
 
 .serviços-item-topico{
     
-    padding-right: 8vh;
+    padding-right: 8.5vh;
     
     
     
@@ -580,17 +580,21 @@ a{
     width: 100%;
     padding: 7.5px;
     border-radius: 500px;
+    gap: 5px;
+    
     
 
 }
 .contratar-tit{
-    
     font-size: 6pt;
+    
     
     
 }
 .bi{
-    width: 18%;
+    
+    width: 30%;
+    
     
     
     
