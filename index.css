@@ -537,7 +537,7 @@ a{
         background-color: white;
         width: 100%;
         display: flex;
-        gap: 0.01;
+        gap: 0.5px;
     }
     .menu-item{
         font-size: 6.5pt;
