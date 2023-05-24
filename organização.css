@@ -338,6 +338,11 @@ a{
     /*estilização*/
     background-color: transparent;
 }
+#footer-logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer-logo{
     /*espalamento*/
     width: 15%;
