@@ -558,13 +558,13 @@ a{
 }
  
 .serviços-item-tit{
-    border: 2px solid black;
+    width: 200%;
     font-size: 12pt;
    
 }
 .serviços-item-desc{
     width: 200%;
-    border: 2px solid black;
+    
     font-size: 8pt;
     
     
