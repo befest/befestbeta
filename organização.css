@@ -365,7 +365,7 @@ body{
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
     /*espaçamento*/
-    width: 90%;
+    width: 100%;
     /*estilização*/
 
 }
@@ -403,7 +403,7 @@ body{
 /*MENU SOUND-BAR INICIADO*/
 .menu-soundbar{
     background-color: white;
-    width: 90%;
+    width: 100%;
     gap: 5px;
     
 
@@ -431,10 +431,7 @@ a{
 
 /*SERVIÇOS INICIADO */
 .serviços{
-    width: 90%;
-    
-}
-#ausencia{
+    width: 100%;
     
 }
 .serviços-item{
@@ -535,7 +532,7 @@ a{
         
     }
     .img_logo_prestador{
-        width: 40%;
+        width: 50%;
         
     }
     .description{
@@ -561,11 +558,12 @@ a{
         background-color: white;
         width: 100%;
         display: flex;
-        gap: 0;
+        gap: 10px;
     }
     .menu-item{
         font-size: 6.5pt;
-        padding: 0; 
+        
+        padding: 0;
     }
     #serviços_principais{ 
     }
@@ -659,7 +657,7 @@ a{
 
 }
 
-/*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 1024PX <<<----------------------------------------------------*/
+/*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 768PX <<<----------------------------------------------------*/
 
 @media (min-width: 426px) and (max-width: 768px){
         /*BODY INICIADO*/
@@ -672,7 +670,7 @@ a{
     /*CONTAINER-HEADER INICIADO*/
     .container-header{
         /*espaçamento*/
-        width: 70%;
+        width: 100%;
         /*estilização*/
 
     }
@@ -685,10 +683,11 @@ a{
         
     }
     .img_logo_prestador{
-        width: 50%;
+        width: 60%;
         
     }
     .description{
+        display: none;
         
     }
     .header_titulo{
@@ -709,7 +708,7 @@ a{
     /*MENU SOUND-BAR INICIADO*/
     .menu-soundbar{
         background-color: white;
-        width: 70%;
+        width: 100%;
     }
     .menu-item{
         font-size: 8pt; 
@@ -733,7 +732,7 @@ a{
 
     /*SERVIÇOS INICIADO */
     .serviços{
-        width: 70%;
+        width: 100%;
         
     }
     .serviços-item{
@@ -806,6 +805,8 @@ a{
     
 
 }
+
+/*---------------------------------------------------->>> MEDIA QUERY : 769PX <---> 1024PX <<<----------------------------------------------------*/
 
 @media (min-width: 769px) and (max-width: 1024px){
     /*BODY INICIADO*/
