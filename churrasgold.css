@@ -356,12 +356,14 @@ body{
 }
 .cardapio-descrição-tit{
     /*espaçamento*/
+	
     border: 2px solid black;
+    width: 100%;
+	
     /*identificativo*/
     font-size: 12pt;
-    
+
     /*estilização*/
-	
     
 }
 .cardapio-descrição-conteudo{
