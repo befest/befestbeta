@@ -354,6 +354,7 @@ body{
 }
 .cardapio-descrição-tit{
     /*espaçamento*/
+    width: 100%;
     
     /*identificativo*/
     font-size: 12pt;
