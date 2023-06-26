@@ -328,6 +328,11 @@ a{
     width: 15%;
     height: auto;   
 }
+#footer-logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*FOOTER FINALIZADO*/
 
 /*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
