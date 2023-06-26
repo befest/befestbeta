@@ -366,6 +366,7 @@ a{
     
 }
 .serviços-item{
+	width: 90%
     
     
     
@@ -524,11 +525,7 @@ a{
         
     }
     .serviços-item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        
+        width: 90%;
     }
 
     .serviços-item-topico{
