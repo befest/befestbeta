@@ -1,0 +1,761 @@
+/* ESTRUTURA : OBJETIVOS 
+-Body
+    - Container-Header
+        - header
+            - header_images
+                - img_logo_prestador
+            - description
+                - header_titulo
+                - header_festarea_nicho
+
+    - Menu Soundbar
+
+        - menu-item
+
+    - Serviços
+        - serviços-item
+            - serviços-item-topico
+                - serviços-item-imagem
+                - serviços-item-escritos
+                    - serviços-item-tit
+                    - serviços-item-desc
+            - contratar
+                - contratar-tit
+                - material-symbol        
+    - Footer
+        - footer-logo
+
+
+
+*/
+
+/*CONFIGURAÇÕES GERAIS INICIADAS*/
+*{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*CONFIGURAÇÕES GERAIS FINALIZADAS*/
+
+
+
+
+/*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-color: rgb(255, 212, 244); 
+}
+/*BODY FINALIZADO*/
+
+
+
+
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+
+    /*espaçamento*/
+    width: 50%;
+    height: auto;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*estilização*/
+    background-image: linear-gradient( to right, #000000, #464646 , #555555);
+    
+    
+}
+.header{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+}
+.header_images{
+    /*espaçamento*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_logo_prestador{
+    /*espaçamento*/
+    width: 25%;
+    border-radius: 100px;
+    /*estilização*/
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
+		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
+    
+}
+.description{
+    /*espaçamento*/
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+.header_titulo{
+    /*espaçamento*/
+    padding: 0.1em;
+
+    /*estilização*/
+    font-size: 24pt;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+.header_festarea_nicho{
+    /*espaçamento*/
+    
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    /*estilização*/
+    color: rgb(255, 255, 255);
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+
+
+
+
+/*MENU SOUND-BAR INICIADO*/
+.menu-soundbar{
+    /*espaçamento*/
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    padding: 0.5em;
+    gap: 5vh;
+    /*estilização*/
+    background-color: white;
+    
+    
+}
+.menu-item{
+    /*espaçamento*/
+    padding: 2.5vh;
+    font-size: 14pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    /*estilização*/
+    font-family: bahnschrift;
+    color:black;
+    
+}
+#serviços_principais{ /*Estilização para Destacar a página navegada no momento.*/
+    /*espaçamento*/
+    padding: 1vh;
+    /*estilização*/
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+a{
+    /*estilização*/
+    text-decoration: none;
+}
+
+/*MENU SOUND-BAR FINALIZADO*/
+
+
+
+
+/*SERVIÇOS INICIADO */
+.serviços{
+    /*espaçamento*/
+    width: 50%;
+    padding: 0.1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*estilização*/
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.serviços-item{
+    /*espaçamento*/
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*estilização*/
+    border: transparent;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    border-style: dotted;
+    border-radius: 10px;
+    
+}
+
+.serviços-item-topico{
+    /*espaçamento*/
+    display: flex;
+    gap: 1em;
+}
+.serviços-item-imagem{
+    /*espaçamento*/
+    width: 25%;
+    height: auto;
+    display: flex;
+    /*responsividade*/
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.serviços-item-escritos{
+    /*espaçamento*/
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+.serviços-item-tit{
+    /*identificação*/
+    font-family: bahnschrift;
+    font-weight: bold;
+    /*estilização*/
+    font-size: 12pt;
+    color: black;
+    cursor: pointer;
+}
+.serviços-item-tit:active{/*RESPONSIVIDADE : Serve para quando clicarmos no item, ele responder com o que foi estabelecido pelo código*/
+    color: rgb(125, 125, 125);
+}
+.serviços-item-desc{
+    /*identificação*/
+    font-family: bahnschrift;
+    /*estilização*/
+    color: black;
+
+}
+#serviços-item-open_bar_nao_alcoolico{
+    border: none;
+}
+.contratar{
+    /*espaçamento*/
+    width: 9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    /*estilização*/
+    border-radius: 10px;
+    background-color: green;
+    border: 3px solid #25D366;
+    /*responsividade*/
+    cursor: pointer;
+    
+}
+.contratar-tit{
+    /*espaçamento*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    /*identificativo*/
+    font-family: bahnschrift;
+    /*responsividade*/
+    color: white;
+}
+.bi{
+    color: white;
+}
+
+/*SERVIÇOS FINALIZADO*/
+
+
+
+
+/*FOOTER INICIADO*/
+.footer{
+    /*espaçamento*/
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-color: transparent;
+}
+#footer-logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    /*espalamento*/
+    width: 15%;
+    height: auto;   
+}
+/*FOOTER FINALIZADO*/
+
+
+/*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
+
+
+@media (min-width: 0px) and (max-width: 320px){
+    /*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    
+}
+/*BODY FINALIZADO*/
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+    /*espaçamento*/
+    width: 100%;
+    /*estilização*/
+
+}
+.header{
+    /*espaçamento*/
+   
+}
+.header_images{
+    /*espaçamento*/
+    
+}
+.img_logo_prestador{
+    width: 40%;
+    
+}
+.description{
+    
+}
+.header_titulo{
+    font-size: 12pt;
+   
+    
+}
+.header_festarea_nicho{
+    font-size: 8pt;
+    
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+
+
+
+
+/*MENU SOUND-BAR INICIADO*/
+.menu-soundbar{
+    background-color: white;
+    width: 100%;
+    
+
+}
+.menu-item{
+    font-size: 6.5pt; 
+    
+    padding: 0;
+}
+#serviços_principais{ 
+}
+a{
+
+}
+
+#icon-soundbar{
+   
+    
+    
+
+}
+/*MENU SOUND-BAR FINALIZADO*/
+
+
+
+
+/*SERVIÇOS INICIADO */
+.serviços{
+    width: 100%;
+    
+}
+.serviços-item{
+    
+    
+    
+}
+
+.serviços-item-topico{
+    
+}
+.serviços-item-imagem{
+    width: 50%;
+    height: 15vh;
+    
+}
+.serviços-item-escritos{
+    
+    
+}
+.serviços-item-tit{
+    
+    font-size: 10pt;
+   
+}
+.serviços-item-desc{
+    font-size: 6pt;
+    display: none;
+    
+    
+
+}
+#serviços-item-festabotequim{
+   
+}
+.contratar{
+    width: 100%;
+    padding: 7.5px;
+    border-radius: 500px;
+    
+
+}
+.contratar-tit{
+    
+    font-size: 6pt;
+    
+    
+}
+.bi{
+    width: 18%;
+    
+    
+    
+}
+
+/**/
+
+/*SERVIÇOS FINALIZADO*/
+
+
+/*FOOTER INICIADO*/
+.footer{
+    
+}
+.footer-logo{
+    width: 50%;
+    
+}
+/*FOOTER FINALIZADO*/
+
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
+
+@media (min-width: 321px) and (max-width: 425px){
+    /*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    
+}
+/*BODY FINALIZADO*/
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+    /*espaçamento*/
+    width: 100%;
+    /*estilização*/
+
+}
+.header{
+    /*espaçamento*/
+   
+}
+.header_images{
+    /*espaçamento*/
+    
+}
+.img_logo_prestador{
+    width: 40%;
+    
+}
+.description{
+    
+}
+.header_titulo{
+    font-size: 12pt;
+   
+    
+}
+.header_festarea_nicho{
+    font-size: 8pt;
+    
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+
+
+
+
+/*MENU SOUND-BAR INICIADO*/
+.menu-soundbar{
+    background-color: white;
+    width: 100%;
+}
+.menu-item{
+    font-size: 6.5pt;
+    padding: 0; 
+}
+#serviços_principais{ 
+}
+a{
+
+}
+
+#icon-soundbar{
+   
+    
+    
+
+}
+/*MENU SOUND-BAR FINALIZADO*/
+
+
+
+
+/*SERVIÇOS INICIADO */
+.serviços{
+    width: 100%;
+    
+}
+.serviços-item{
+    
+    
+    
+}
+
+.serviços-item-topico{
+    
+    padding-right: 8.5vh;
+    
+    
+    
+}
+.serviços-item-imagem{
+    width: 50%;
+    height: 15vh;
+    
+}
+ 
+.serviços-item-tit{
+    
+    font-size: 10pt;
+   
+}
+.serviços-item-desc{
+    width: 200%;
+    
+    font-size: 6pt;
+    
+    
+    
+
+}
+#serviços-item-festabotequim{
+   
+}
+.contratar{
+    width: 100%;
+    padding: 7.5px;
+    border-radius: 500px;
+    gap: 5px;
+    
+    
+
+}
+.contratar-tit{
+    font-size: 6pt;
+    
+    
+    
+}
+.bi{
+    
+    width: 30%;
+    
+    
+    
+    
+}
+
+/**/
+
+/*SERVIÇOS FINALIZADO*/
+
+
+/*FOOTER INICIADO*/
+.footer{
+    
+}
+.footer-logo{
+    width: 50%;
+    
+}
+/*FOOTER FINALIZADO*/
+
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 1024PX <<<----------------------------------------------------*/
+
+@media (min-width: 426px) and (max-width: 1024px){
+    /*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    
+}
+/*BODY FINALIZADO*/
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+    /*espaçamento*/
+    width: 100%;
+    /*estilização*/
+
+}
+.header{
+    /*espaçamento*/
+   
+}
+.header_images{
+    /*espaçamento*/
+    
+}
+.img_logo_prestador{
+    width: 20%;
+    
+}
+.description{
+    
+}
+.header_titulo{
+    font-size: 12pt;
+   
+    
+}
+.header_festarea_nicho{
+    font-size: 8pt;
+    
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+
+
+
+
+/*MENU SOUND-BAR INICIADO*/
+.menu-soundbar{
+    background-color: white;
+    width: 100%;
+}
+.menu-item{
+    font-size: 6.5pt; 
+}
+#serviços_principais{ 
+}
+a{
+
+}
+
+#icon-soundbar{
+   
+    
+    
+
+}
+/*MENU SOUND-BAR FINALIZADO*/
+
+
+
+
+/*SERVIÇOS INICIADO */
+.serviços{
+    width: 100%;
+    
+}
+.serviços-item{
+    
+    
+    
+}
+
+.serviços-item-topico{
+    
+}
+.serviços-item-imagem{
+    width: 50%;
+    height: 20vh;
+    
+}
+.serviços-item-escritos{
+    
+    
+}
+.serviços-item-tit{
+    
+    font-size: 10pt;
+   
+}
+.serviços-item-desc{
+    width: 200%;
+    
+    font-size: 6pt;
+    
+    
+    
+
+}
+#serviços-item-festabotequim{
+   
+}
+.contratar{
+    width: 100%;
+    padding: 7.5px;
+    border-radius: 500px;
+    
+
+}
+.contratar-tit{
+    
+    font-size: 6pt;
+    
+    
+}
+.bi{
+    width: 18%;
+    
+    
+    
+}
+
+/**/
+
+/*SERVIÇOS FINALIZADO*/
+
+
+/*FOOTER INICIADO*/
+.footer{
+    
+}
+.footer-logo{
+    width: 30%;
+    
+}
+/*FOOTER FINALIZADO*/
+
+}
