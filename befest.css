@@ -206,7 +206,7 @@ a{
     justify-content: left;
     align-items: left;
     width: 100%;
-    padding: 1vh;
+    padding: 2.5vh;
     padding-left: 3.5vh;
     font-size: 16pt;
     font-family: bahnschrift;
@@ -267,6 +267,12 @@ a{
 
 }
 #serviços-item-mmsopen-bar{
+    border: none;
+}
+#serviços-item-recakes{
+    border: none;
+}
+#serviços-item-barretosbuffet{
     border: none;
 }
 #click{
