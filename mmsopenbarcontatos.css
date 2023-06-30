@@ -1,5 +1,5 @@
 /* ESTRUTURA : OBJETIVOS 
--Body
+-BodY
     - Container-Header
         - header
             - header_images
@@ -70,7 +70,7 @@ body{
     align-items: center;
 
     /*estilização*/
-    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    background-image: linear-gradient( to right, #000000, #464646 , #555555);
     
     
 }
@@ -158,8 +158,8 @@ body{
     /*espaçamento*/
     padding: 1vh;
     /*estilização*/
-    color: rgb(172, 0, 0);
-    border-bottom: 3px solid rgb(172, 0, 0);
+    color: black;
+    border-bottom: 3px solid black;
 }
 a{
     /*estilização*/
@@ -168,7 +168,7 @@ a{
 
 #icon-soundbar-smartphone{
     background-color: transparent;
-    color: rgb(172,0,0);
+    color: black;
     
     
 
@@ -206,14 +206,16 @@ a{
     border-radius: 10px;
     
 }
-#serviços-item-open_bar{
-    border: none;
+#serviços-item-instagram{
+    border-bottom: none;
 }
 
 .serviços-item-topico{
     /*espaçamento*/
     display: flex;
     gap: 15px;
+    align-items: center;
+
 }
 .serviços-item-imagem{
     /*espaçamento*/
@@ -226,19 +228,27 @@ a{
 }
 .serviços-item-escritos{
     /*espaçamento*/
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
+    
+    justify-content: center;
+    
 }
 .serviços-item-tit{
     /*identificação*/
     font-family: bahnschrift;
     /*estilização*/
     font-size: 12pt;
-    color: rgb(172, 0, 0);
+    color: black;
     cursor: pointer;
+    font-weight: bold;
+    
 }
-.serviços-item-tit:active{/*RESPONSIVIDADE : Serve para quando clicarmos no item, ele responder com o que foi estabelecido pelo código*/
-    color: rgb(140, 0, 0);
+.serviços-item-tit:active{
+    color: rgb(125, 125, 125);
+    
 }
 .serviços-item-desc{
     /*identificação*/
@@ -323,9 +333,7 @@ a{
 /*FOOTER FINALIZADO*/
 
 
-/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
-
-@media (min-width: 321px) and (max-width: 425px){
+@media (min-width: 0px) and (max-width: 425px){
     /*BODY INICIADO*/
 body{
     /*espaçamento*/
@@ -333,12 +341,19 @@ body{
 }
 /*BODY FINALIZADO*/
 
+
+
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
     /*espaçamento*/
     width: 100%;
-    /*estilização*/
 
+    
+
+    /*estilização*/
+    
+    
+    
 }
 .header{
     /*espaçamento*/
@@ -349,19 +364,19 @@ body{
     
 }
 .img_logo_prestador{
-    width: 50%;
+    width: 40%;
     
 }
 .description{
     
 }
 .header_titulo{
-    font-size: 16pt;
+    font-size: 12pt;
    
     
 }
 .header_festarea_nicho{
-    font-size: 10pt;
+    font-size: 8pt;
     
 
 }
@@ -376,8 +391,7 @@ body{
     width: 100%;
 }
 .menu-item{
-    font-size: 6.5pt;
-    padding: 0; 
+    font-size: 6.5pt; 
 }
 #serviços_principais{ 
 }
@@ -399,35 +413,38 @@ a{
 /*SERVIÇOS INICIADO */
 .serviços{
     width: 100%;
+    
 }
 .serviços-item{
-     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
 }
 
 .serviços-item-topico{
-    /*espaçamento*/
-    display: flex;
-    align-items: center;
-
+    
 }
-
 .serviços-item-imagem{
-    width: 50%;
-    height: 15vh;
+    
+    
 }
 .serviços-item-escritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     
 }
- 
 .serviços-item-tit{
     
-    font-size: 12pt;
+    font-size: 10pt;
    
 }
 .serviços-item-desc{
-    width: 200%;
-    
-    font-size: 8pt;
+    font-size: 6pt;
     
     
     
@@ -450,7 +467,7 @@ a{
     
 }
 .bi{
-    width: 25%;
+    width: 18%;
     
     
     
@@ -470,6 +487,8 @@ a{
     
 }
 /*FOOTER FINALIZADO*/
+    
+
 
 }
 
@@ -499,19 +518,19 @@ body{
     
 }
 .img_logo_prestador{
-    width: 50%;
+    width: 20%;
     
 }
 .description{
     
 }
 .header_titulo{
-    font-size: 16pt;
+    font-size: 12pt;
    
     
 }
 .header_festarea_nicho{
-    font-size: 10pt;
+    font-size: 8pt;
     
 
 }
@@ -548,18 +567,19 @@ a{
 /*SERVIÇOS INICIADO */
 .serviços{
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     
 }
-.serviços-item{ 
+.serviços-item{
+    
+    
+    
 }
 
 .serviços-item-topico{
-    /*espaçamento*/
-    display: flex;
-    align-items: center;
-
+    
 }
 .serviços-item-imagem{
     width: 50%;
@@ -572,13 +592,13 @@ a{
 }
 .serviços-item-tit{
     
-    font-size: 12pt;
+    font-size: 10pt;
    
 }
 .serviços-item-desc{
     width: 200%;
     
-    font-size: 8pt;
+    font-size: 6pt;
     
     
     
@@ -601,7 +621,7 @@ a{
     
 }
 .bi{
-    width: 25%;
+    width: 18%;
     
     
     
