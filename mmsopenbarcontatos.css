@@ -70,7 +70,7 @@ body{
     align-items: center;
 
     /*estilização*/
-    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    background-image: linear-gradient( to right, #000000, #464646 , #555555);
     
     
 }
@@ -158,8 +158,9 @@ body{
     /*espaçamento*/
     padding: 1vh;
     /*estilização*/
-    color: rgb(172, 0, 0);
-    border-bottom: 3px solid rgb(172, 0, 0);
+    color: black;
+    border-bottom: 3px solid black;
+	font-weight: bold;
 }
 a{
     /*estilização*/
@@ -168,7 +169,7 @@ a{
 
 #icon-soundbar-smartphone{
     background-color: transparent;
-    color: rgb(172,0,0);
+    color: black;
     
     
 
@@ -234,8 +235,9 @@ a{
     font-family: bahnschrift;
     /*estilização*/
     font-size: 12pt;
-    color: rgb(172, 0, 0);
+    color: black;
     cursor: pointer;
+    font-weight: bold;
 }
 .serviços-item-tit:active{/*RESPONSIVIDADE : Serve para quando clicarmos no item, ele responder com o que foi estabelecido pelo código*/
     color: rgb(140, 0, 0);
