@@ -220,7 +220,7 @@ a{
     justify-content: space-between;
     align-items: center;
     /*estilização*/
-    border: transparent;
+    border: none;
     border-bottom: 2px solid rgb(211, 211, 211);
     border-style: dotted;
     border-radius: 10px;
