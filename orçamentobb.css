@@ -1,4 +1,4 @@
- /* ESTRUTURA : OBJETIVOS 
+/* ESTRUTURA : OBJETIVOS 
 -Body
     - Container-Header
         - header
@@ -95,6 +95,7 @@ body{
     -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
 		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
 		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
+    
 }
 .description{
     /*espaçamento*/
@@ -114,7 +115,6 @@ body{
     
 }
 .header_festarea_nicho{
-    /*espaçamento*/
     /*espaçamento*/
     font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
