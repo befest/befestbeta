@@ -143,15 +143,16 @@ body{
 }
 .menu-item{
     /*espaçamento*/
-    padding: 2.5vh;
+    padding: 2.25vh;
     font-size: 14pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vh;
+    gap: 0vh;
     /*estilização*/
     font-family: bahnschrift;
     color:black;
+    
 }
 #serviços_adicionais{ /*Estilização para Destacar a página navegada no momento.*/
     /*espaçamento*/
