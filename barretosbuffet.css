@@ -310,10 +310,9 @@ a{
 /*FOOTER FINALIZADO*/
 
 
-/*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
 
-
-@media (min-width: 0px) and (max-width: 320px){
+@media (min-width: 321px) and (max-width: 425px){
     /*BODY INICIADO*/
 body{
     /*espaçamento*/
@@ -362,155 +361,6 @@ body{
 .menu-soundbar{
     background-color: white;
     width: 100%;
-    
-
-}
-.menu-item{
-    font-size: 6.5pt; 
-    
-    padding: 0;
-}
-#serviços_principais{ 
-}
-a{
-
-}
-
-#icon-soundbar{
-   
-    
-    
-
-}
-/*MENU SOUND-BAR FINALIZADO*/
-
-
-
-
-/*SERVIÇOS INICIADO */
-.serviços{
-    width: 100%;
-    
-}
-.serviços-item{
-    
-    
-    
-}
-
-.serviços-item-topico{
-    
-}
-.serviços-item-imagem{
-    width: 50%;
-    height: 15vh;
-    
-}
-.serviços-item-escritos{
-    
-    
-}
-.serviços-item-tit{
-    
-    font-size: 10pt;
-   
-}
-.serviços-item-desc{
-    font-size: 6pt;
-    display: none;
-    
-    
-
-}
-#serviços-item-festabotequim{
-   
-}
-.contratar{
-    width: 100%;
-    padding: 7.5px;
-    border-radius: 500px;
-    
-
-}
-.contratar-tit{
-    
-    font-size: 6pt;
-    
-    
-}
-.bi{
-    width: 18%;
-    
-    
-    
-}
-
-/**/
-
-/*SERVIÇOS FINALIZADO*/
-
-
-/*FOOTER INICIADO*/
-.footer{
-    
-}
-.footer-logo{
-    width: 50%;
-    
-}
-/*FOOTER FINALIZADO*/
-
-}
-
-/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
-
-@media (min-width: 321px) and (max-width: 425px){
-    /*BODY INICIADO*/
-body{
-    /*espaçamento*/
-    
-}
-/*BODY FINALIZADO*/
-
-/*CONTAINER-HEADER INICIADO*/
-.container-header{
-    /*espaçamento*/
-    width: 100%;
-    /*estilização*/
-
-}
-.header{
-    /*espaçamento*/
-   
-}
-.header_images{
-    /*espaçamento*/
-    
-}
-.img_logo_prestador{
-    width: 50%;
-    
-}
-.description{
-    
-}
-.header_titulo{
-    font-size: 14pt;
-}
-.header_festarea_nicho{
-    font-size: 8pt;
-    
-
-}
-/*CONTAINER-HEADER FINALIZADO*/
-
-
-
-
-/*MENU SOUND-BAR INICIADO*/
-.menu-soundbar{
-    background-color: white;
-    width: 100%;
 }
 .menu-item{
     font-size: 6.5pt;
@@ -546,8 +396,6 @@ a{
 
 .serviços-item-topico{
     
-    padding-right: 8.5vh;
-    
     
     
 }
@@ -558,7 +406,7 @@ a{
 }
  
 .serviços-item-tit{
-    width: 200%;
+    
     font-size: 10pt;
    
 }
@@ -578,21 +426,17 @@ a{
     width: 100%;
     padding: 7.5px;
     border-radius: 500px;
-    gap: 5px;
-    
     
 
 }
 .contratar-tit{
-    font-size: 6pt;
     
+    font-size: 6pt;
     
     
 }
 .bi{
-    
-    width: 30%;
-    
+    width: 18%;
     
     
     
