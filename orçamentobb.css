@@ -116,6 +116,7 @@ body{
 }
 .header_festarea_nicho{
     /*espaçamento*/
+    
     font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
     /*estilização*/
@@ -126,30 +127,45 @@ body{
 
 
 
-
 /*MENU SOUND-BAR INICIADO*/
 .menu-soundbar{
     /*espaçamento*/
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border: 2px solid transparent;
     padding: 0.5em;
+    overflow-x: auto;
+    
     gap: 5vh;
     /*estilização*/
     background-color: white;
-    
-    
 }
+
+.menu-soundbar::-webkit-scrollbar {
+    width: 1px;/* width of the entire scrollbar */
+}
+  
+.menu-soundbar::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area*/
+}
+.menu-soundbar::-webkit-scrollbar-thumb {
+    background-color: rgb(172, 0, 0);    /* color of the scroll thumb */
+    border-radius: 8000px;       /* roundness of the scroll thumb */
+    height: 100px;
+    border: 3px solid rgb(140, 0, 0);  /* creates padding around scroll thumb */
+}
+
 .menu-item{
     /*espaçamento*/
-    padding: 2.25vh;
-    font-size: 14pt;
+    
+    padding: 2.5vh;
+    font-size: 10pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0vh;
+    gap: -1vh;
     /*estilização*/
     font-family: bahnschrift;
     color:black;
@@ -187,6 +203,7 @@ a{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .titulo_servicos{
     background-color: rgb(172, 0, 0);
     padding: 1em;
@@ -194,12 +211,14 @@ a{
     font-family: bahnschrift;
     color: white;
     border-radius: 100px;
+    text-align: center;
 }
 .dadosparaorçamento{
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 2.5vh;
+    text-align: center;
    
 }
 .dadosserviço{
@@ -209,7 +228,7 @@ a{
 .dadosconvidados{
     display: flex;
     flex-direction: column;
-    ;
+    
 }
 .tit{
     padding: 1em;
@@ -217,11 +236,25 @@ a{
     font-family: bahnschrift;
     color: rgb(172,0,0);
 }
+.label_data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.label{
+   
+    color: rgb(172, 0, 0);
+    padding: 0.75vh;
+    font-family: 'bahnschrift';
+}
 .topico{
     margin: 0.25em;
     border: 0px solid;
     padding: 0.75em;
     border-radius: 5px;
+    text-align: center;
     /*estilização*/
     -webkit-box-shadow: 9px 7px 5px rgba(214, 214, 214, 0.932);
 		-moz-box-shadow:    9px 7px 5px rgba(255, 255, 255, 0.932);
@@ -285,6 +318,158 @@ a{
 /*FOOTER FINALIZADO*/
 
 
+/*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
+
+
+@media (min-width: 0px) and (max-width: 320px){
+    /*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    
+}
+/*BODY FINALIZADO*/
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+    /*espaçamento*/
+    width: 100%;
+    /*estilização*/
+
+}
+.header{
+    /*espaçamento*/
+   
+}
+.header_images{
+    /*espaçamento*/
+    
+}
+.img_logo_prestador{
+    width: 40%;
+    
+}
+.description{
+    
+}
+.header_titulo{
+    font-size: 12pt;
+   
+    
+}
+.header_festarea_nicho{
+    font-size: 8pt;
+    
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+
+
+
+
+/*MENU SOUND-BAR INICIADO*/
+.menu-soundbar{
+    background-color: white;
+    width: 100%;
+    
+
+}
+.menu-item{
+    font-size: 6.5pt; 
+    
+    padding: 0;
+}
+#serviços_principais{ 
+}
+a{
+
+}
+
+#icon-soundbar{
+   
+    
+    
+
+}
+/*MENU SOUND-BAR FINALIZADO*/
+
+
+
+
+/*SERVIÇOS INICIADO */
+.serviços{
+    width: 100%;
+    
+}
+.serviços-item{
+    
+    
+    
+}
+
+.serviços-item-topico{
+    
+}
+.serviços-item-imagem{
+    width: 50%;
+    height: 15vh;
+    
+}
+.serviços-item-escritos{
+    
+    
+}
+.serviços-item-tit{
+    
+    font-size: 10pt;
+   
+}
+.serviços-item-desc{
+    font-size: 6pt;
+    display: none;
+    
+    
+
+}
+#serviços-item-festabotequim{
+   
+}
+.contratar{
+    width: 100%;
+    padding: 7.5px;
+    border-radius: 500px;
+    
+
+}
+.contratar-tit{
+    
+    font-size: 6pt;
+    
+    
+}
+.bi{
+    width: 18%;
+    
+    
+    
+}
+
+/**/
+
+/*SERVIÇOS FINALIZADO*/
+
+
+/*FOOTER INICIADO*/
+.footer{
+    
+}
+.footer-logo{
+    width: 50%;
+    
+}
+/*FOOTER FINALIZADO*/
+
+}
+
 /*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
 
 @media (min-width: 321px) and (max-width: 425px){
@@ -311,19 +496,19 @@ body{
     
 }
 .img_logo_prestador{
-    width: 50%;
+    width: 40%;
     
 }
 .description{
     
 }
 .header_titulo{
-    font-size: 16pt;
+    font-size: 12pt;
    
     
 }
 .header_festarea_nicho{
-    font-size: 10pt;
+    font-size: 8pt;
     
 
 }
@@ -371,6 +556,8 @@ a{
 
 .serviços-item-topico{
     
+    padding-right: 8.5vh;
+    
     
     
 }
@@ -401,17 +588,21 @@ a{
     width: 100%;
     padding: 7.5px;
     border-radius: 500px;
+    gap: 5px;
+    
     
 
 }
 .contratar-tit{
-    
     font-size: 6pt;
+    
     
     
 }
 .bi{
-    width: 18%;
+    
+    width: 30%;
+    
     
     
     
@@ -447,7 +638,7 @@ body{
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
     /*espaçamento*/
-    width: 70%;
+    width: 100%;
     /*estilização*/
 
 }
@@ -460,19 +651,19 @@ body{
     
 }
 .img_logo_prestador{
-    width: 30%;
+    width: 20%;
     
 }
 .description{
     
 }
 .header_titulo{
-    font-size: 16pt;
+    font-size: 12pt;
    
     
 }
 .header_festarea_nicho{
-    font-size: 10pt;
+    font-size: 8pt;
     
 
 }
@@ -484,7 +675,7 @@ body{
 /*MENU SOUND-BAR INICIADO*/
 .menu-soundbar{
     background-color: white;
-    width: 70%;
+    width: 100%;
 }
 .menu-item{
     font-size: 6.5pt; 
@@ -508,7 +699,7 @@ a{
 
 /*SERVIÇOS INICIADO */
 .serviços{
-    width: 70%;
+    width: 100%;
     
 }
 .serviços-item{
@@ -576,7 +767,7 @@ a{
     
 }
 .footer-logo{
-    width: 20%;
+    width: 30%;
     
 }
 /*FOOTER FINALIZADO*/
