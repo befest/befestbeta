@@ -222,15 +222,7 @@ a{
     font-family: bahnschrift;
     color: rgb(172,0,0);
 }
-.label_data{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
 .label{
-   
     color: rgb(172, 0, 0);
     padding: 0.75vh;
     font-family: 'bahnschrift';
