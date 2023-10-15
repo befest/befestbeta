@@ -1,4 +1,19 @@
 function execucao(){
+
+    //Data
+    var data = document.querySelector('input#data').value;
+    var data_nova = data.split('-').reverse().join('/')
+
+    var mes = data[5] + data[6]
+
+    if(mes == '12'){
+        var preço_mes = 10
+    }else{
+        var preço_mes = 0
+    }
+    
+    //Data Fim
+
     var mei = document.querySelector('#convmeia')
     var int = document.querySelector('#convint')
     var integrais = Number(int.value)
@@ -243,7 +258,7 @@ function execucao(){
 
         // preço por convidado
             
-    var precoporconvtotal = precoconv + precocerva + precoopenbar
+    var precoporconvtotal = precoconv + precocerva + precoopenbar + preço_mes
     var precoporconvtotal_compontos = precoporconvtotal.toFixed(2).replace('.',',')
             // preço por convidado meia
     var precoporconvidadomeia = precoporconvtotal/2
@@ -256,6 +271,8 @@ function execucao(){
 
     res.innerHTML = `ORÇAMENTO BARRETO'S BUFFET🔴⚪<br><br>
 
+    Data do Evento📆: ${data_nova}<br><br>
+    
     Cardápio Escolhido🍽️: ${cardapioescolhido}<br><br>
     Cerveja Escolhida🍺: ${cervejaescolhida}<br><br>
     Open-Bar Escolhido🍹: ${openbarescolhido}<br><br>
@@ -269,5 +286,6 @@ function execucao(){
 
     
 }
+
 
 
