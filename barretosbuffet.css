@@ -116,6 +116,7 @@ body{
 }
 .header_festarea_nicho{
     /*espaçamento*/
+    
     font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
     /*estilização*/
@@ -126,48 +127,37 @@ body{
 
 
 
-
-
 /*MENU SOUND-BAR INICIADO*/
 .menu-soundbar{
     /*espaçamento*/
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border: 2px solid transparent;
     padding: 0.5em;
+    
+    
     gap: 5vh;
     /*estilização*/
     background-color: white;
-    
-    
 }
+
+
 .menu-item{
     /*espaçamento*/
-    padding: 2.25vh;
-    font-size: 14pt;
+    
+    padding: 2.5vh;
+    font-size: 10pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0vh;
+    gap: -1vh;
     /*estilização*/
     font-family: bahnschrift;
     color:black;
     
 }
-#serviços_principais{ /*Estilização para Destacar a página navegada no momento.*/
-    /*espaçamento*/
-    padding: 1vh;
-    /*estilização*/
-    color: rgb(172, 0, 0);
-    border-bottom: 3px solid rgb(172, 0, 0);
-}
-a{
-    /*estilização*/
-    text-decoration: none;
-}
-
 #icon-soundbar-restaurant{
     background-color: transparent;
     color: rgb(172,0,0);
@@ -175,9 +165,14 @@ a{
     
 
 }
+
+a{
+    /*estilização*/
+    text-decoration: none;
+}
+
+
 /*MENU SOUND-BAR FINALIZADO*/
-
-
 
 
 /*SERVIÇOS INICIADO */
