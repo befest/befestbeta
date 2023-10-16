@@ -132,7 +132,7 @@ body{
     /*espaçamento*/
     width: 50%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     border: 2px solid transparent;
     padding: 0.5em;
