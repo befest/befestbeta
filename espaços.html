@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Imagens/BEFESTICO.png" type="image/x-icon">
+    <link rel="stylesheet" href="espaços.css">
+    <script src="espaços.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Espaços | Be fest</title>
+</head>
+<body>
+    <div class="container-header">
+
+        <div class="header">
+
+            <div class="header_images">
+
+                <img src="/Imagens/Logo Barreto's Buffet Instagram.png" alt="" class="img_logo_prestador">
+        
+            </div>
+
+            <div class="description">
+
+
+                <p class="header_titulo">Espaço</p>
+    
+                <p class="header_festarea_nicho">Espaço | Salão de Festas</p>
+        
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="serviços">
+
+        <div class="imagens">
+            <img src="/Imagens/Interface de Espaço - Imagem de perfil 2.jpg" class="imagem_rolagem" alt="">
+            <img src="/Imagens/Interface de Espaço - Imagem de perfil 2.jpg" class="imagem_rolagem" alt="">
+            <img src="/Imagens/Interface de Espaço - Imagem de perfil 2.jpg" class="imagem_rolagem" alt="">
+            <img src="/Imagens/Interface de Espaço - Imagem de perfil 2.jpg" class="imagem_rolagem" alt="">
+        </div>
+
+        <div class="orçamento_information">
+            
+            <div class="information">
+
+                <div class="tit_imagem">
+                    <p class="tit">Barreto's Buffet Space (BBS)</p>
+                    <img src="/Imagens/Logo Barreto's Buffet Instagram.png" alt="" class="logo_information">
+                </div>
+
+                <hr>
+
+                <div class="oferecimentos">
+                    <p class="tit">O que oferecemos para você</p>
+                    <div class="itens">
+
+
+                        <div class="item">
+                            <span id="icon-soundbar-piscina" class="material-symbols-outlined">pool</span>
+                            <p class="item_tit">Piscina</p>
+                        </div>
+
+                        <div class="item">
+                            <span id="icon-soundbar-campo_de_futebol" class="material-symbols-outlined">sports_soccer</span>
+                            <p class="item_tit">Campo de Futebol</p>
+                        </div>
+
+                        <div class="item">
+                            <span id="icon-soundbar-jogos" class="material-symbols-outlined">casino</span>
+                            <p class="item_tit">Salão de Jogos</p>
+                        </div>
+
+                        <div class="item">
+                            <span id="icon-soundbar-cozinha" class="material-symbols-outlined">skillet</span>
+                            <p class="item_tit">Cozinha</p>
+                        </div>
+
+                        <div class="item">
+                            <span id="icon-soundbar-churrasqueira" class="material-symbols-outlined">outdoor_grill</span>
+                            <p class="item_tit">Churrasqueira</p>
+                        </div>
+
+                        <!--<button class="mostrar_mais">Mostrar mais</button>-->
+
+                        
+
+                    </div>
+                </div>
+
+            </div>
+            
+
+
+            <div class="orçamento">                
+                <p class="descrição">Orçamento Day-Use</p>
+
+                <div class="data_bloco">
+                    
+                    <input type="date" class="input" id="data" name="data">
+                </div>
+
+
+                <div class="num_convidados">
+                    <input type="number" class="input" id="num_convidados" name="num_convidados" placeholder="Nº de Convidados">
+                </div>
+
+
+                <button class="input" id="button_orçamento" onclick="realizar_orçamento()">Realizar Orçamento</button>
+
+                <hr class="hr2">
+
+                <div class="res">
+                    <div class="resultado" id="resultado"></div>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+        <div class="map_localizacao">
+
+            <hr>
+
+            <p class="tit">Onde estamos localizados</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.329852777124!2d-43.33558929999995!3d-22.7902384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99652ec74fdae5%3A0x9147b802f38d7ca4!2sR.%20D%C3%A1lias%20-%20S%C3%A3o%20Jo%C3%A3o%20de%20Meriti%2C%20RJ%2C%2025585-440!5e0!3m2!1spt-BR!2sbr!4v1697646845296!5m2!1spt-BR!2sbr" class="map_gg"></iframe>
+
+
+            </div>
+
+            <hr>
+            
+        </div>
+
+        <div class="host">
+            <div class="imagem_host_config">
+
+                <img src="/Imagens/Logo Barreto's Buffet Instagram.png" alt="" class="imagem_host">
+                <p class="tit">Host : Matheus Barreto</p> 
+
+            </div>
+
+
+            <div class="host_desc_button">
+                <p class="desc_host">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos corporis magni voluptatum, voluptatibus rerum? Dolorem rem, saepe itaque dolorum non reprehenderit ullam ducimus, minima aut sapiente explicabo numquam incidunt?/</p>
+                <button class="button_anfitrião"><i class="fa fa-whatsapp" style="font-size:30px"></i></i>Fale com o Host - Barreto's Buffet Space</button>
+            </div>
+        </div>
+
+        
+
+        
+
+
+        
+
+    </div>
+
+    <footer class="footer">
+
+        <a  id="footer-logo-link" href="/Be fest/index.html"><img src="/Imagens/Logo Secundária - Be fest (Rosa).png" alt="footer-logo" class="footer-logo"></a>
+
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+     ESTRUTURA : OBJETIVOS 
+
+
+-Body
+
+    - Container-Header
+        - Header
+            - Header Images
+                - Image-Logo-prestador
+            - Description
+                - Header_Titulo
+                - Header_festarea_nicho
+
+        
+    - Serviços
+        - Imagens
+            - Imagem de Rolagem
+
+        - Orçamento_ Information -- (V)
+            - Information -- (V)
+                - Tit_imagem -- (V)
+                    - Tit -- (V)
+                    - logo_information -- (V)
+                - Oferecimentos -- (V)
+                    - Tit -- (V)
+                    - itens -- (V)
+                        - item -- (V)
+                            - icon-soundbar(class)
+                            -item_tit
+
+            - Orçamento
+                - Descrição 
+                - data_bloco
+                    - #data.input
+                    - 
+                - num_convidados
+                    - num_convidados
+                - button_orçamento
+
+                - res  
+                    - resultado
+
+
+        - map_localização
+            - Tit
+            - map
+                - iframe
+        - Host
+            - imagem_host_config
+                - imagem_host
+                - tit
+            - host_desc_button
+                - desc_host
+                - button_anfitrião
+                - fa-whatsapp
+             
+    - Footer
+        - footer-logo-link
+
+
+
+-->
