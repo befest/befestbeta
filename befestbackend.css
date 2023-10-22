@@ -1,0 +1,103 @@
+/*ESTRUTURA : 
+
+- body
+    - header
+        - image_header
+        - soundbar
+            - itens-soundbar
+                - pagprincipal
+                - festdados
+                - prestadores
+                - contabilidade
+    - main
+        - arvore_de_links
+            - titulo
+            - topico
+
+
+
+    - footer
+            
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'bahnschrift';
+}
+
+:root{
+    --main-pink: #ff0084;
+    --main-white: #ffffff;   
+}
+
+.header{
+    display: flex;
+    background-color: #ff0084;
+    justify-content: space-between;
+}
+.image_header{
+    width: 10%;
+}
+.soundbar{
+    display: flex;
+    column-gap: 5vh;
+    align-items: center;
+    padding: 1.5vh;
+}
+.itens-soundbar{
+    color: #ffffff;   
+}
+.itens-soundbar:hover{
+    border-bottom: 2px solid white;
+    transition: 0.5s all;
+}
+.pagprincipal{
+    border-bottom: 2px solid white;
+}
+
+
+/*MAIN INICIADO*/
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vh;
+    
+}
+.conteiner{
+    display: flex;
+    column-gap: 5vh;
+    flex-wrap: nowrap;
+
+}
+.arvore_de_links , .num_cliques , .fest_projects{
+    width: 50%;
+    border-radius: 10px;
+    padding: 5vh;
+    -webkit-box-shadow: 9px 7px 5px rgba(189, 189, 189, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
+		box-shadow:         9px 7px 5px rgba(177, 177, 177, 0.932);
+
+}
+.titulo{
+    color: #ff0084;
+    font-size: 16pt;
+
+}
+.topico{
+    padding: 1vh;
+   border: 2px solid transparent;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem_footer{
+    width: 10%;
+}
+
