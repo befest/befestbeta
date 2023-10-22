@@ -91,7 +91,7 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-image: url('/Imagens/plano_de_fundo_espaço.png');
+    background-image: url('plano_de_fundo_espaço.png');
     
     
 }
