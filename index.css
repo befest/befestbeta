@@ -101,3 +101,212 @@
     width: 10%;
 }
 
+
+/*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
+@media (min-width: 0px) and (max-width: 320px){
+    .header{
+        width: 100%;
+    }
+    .image_header{
+        width: 30%;
+    }
+    .soundbar{
+        display: none;
+    }
+    .itens-soundbar{
+          
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .pagprincipal{
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .arvore_de_links , .num_cliques , .fest_projects{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 12pt;
+    }
+    .topico{
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 30%;
+    }
+
+
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
+
+@media (min-width: 321px) and (max-width: 425px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image_header{
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+    .soundbar{
+        width: 100%;
+        padding: 2.vh;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+
+    }
+    .itens-soundbar{
+        font-size: 8pt;
+        color: #ff0084;
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .pagprincipal{
+        border-bottom: 2px solid #ff0084;
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .arvore_de_links , .num_cliques , .fest_projects{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 12pt;
+    }
+    .topico{
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 30%;
+    }
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 768PX <<<----------------------------------------------------*/
+
+@media (min-width: 426px) and (max-width: 768px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image_header{
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    .soundbar{
+        width: 100%;
+        padding: 2vh;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+
+    }
+    .itens-soundbar{
+        font-size: 10pt;
+        color: #ff0084;
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .pagprincipal{
+        border-bottom: 2px solid #ff0084;
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .arvore_de_links , .num_cliques , .fest_projects{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 14pt;
+    }
+    .topico{
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 20%;
+    }
+}
+
+
+/*---------------------------------------------------->>> MEDIA QUERY : 769PX <---> 1024PX <<<----------------------------------------------------*/
+
+@media (min-width: 769px) and (max-width: 1024px){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
