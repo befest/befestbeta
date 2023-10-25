@@ -1,0 +1,330 @@
+/*ESTRUTURA : 
+
+- body
+    - header
+        - image_header
+        - soundbar
+            - itens-soundbar
+                - pagprincipal
+                - festdados
+                - prestadores
+                - contabilidade
+    - main
+        - arvore_de_links
+            - titulo
+            - topico
+
+
+
+    - footer
+            
+*/
+/*TAGS GERAIS INICIADA*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'bahnschrift';
+}
+
+:root{
+    --main-pink: #ff0084;
+    --main-white: #ffffff;   
+}
+/*TAGS GERAIS FINALIZADA*/
+
+
+
+
+
+
+.header{
+    display: flex;
+    background-color: #ff0084;
+    justify-content: space-between;
+}
+.image_header{
+    width: 10%;
+}
+.soundbar{
+    display: flex;
+    column-gap: 5vh;
+    align-items: center;
+    padding: 1.5vh;
+    
+}
+.itens-soundbar{
+    color: #ffffff;   
+}
+.link{
+    color: white;
+}
+.itens-soundbar:hover{
+    border-bottom: 2px solid white;
+    transition: 0.5s all;
+}
+.festdados{
+    border-bottom: 2px solid white;
+}
+
+
+/*MAIN INICIADO*/
+.main{
+    display: flex;
+    justify-content: center;
+    padding: 2.5vh;
+    column-gap: 2.5vh;
+    border: 2px solid transparent;
+}
+.topico{
+    width: 50%;
+    border: 0.5px solid rgb(200, 200, 200);
+    -webkit-box-shadow: 9px 7px 5px rgba(189, 189, 189, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
+		box-shadow:         9px 7px 5px rgba(177, 177, 177, 0.932);
+}
+.titulo{
+    color: #ff0084;
+    font-size: 16pt;
+}
+.projetos{
+    padding: 2.5vh; 
+}
+.lista{
+    
+    padding: 2.5vh;
+}
+.lista_item{
+    font-size: 14pt;
+}
+.div_agenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.agenda{
+    width: 100%;
+    height: 50vh;
+}
+
+
+
+/*footer iniciado*/
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem_footer{
+    width: 10%;
+}
+/*footer finalizado*/
+
+
+
+
+/*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
+@media (min-width: 0px) and (max-width: 320px){
+    .header{
+        width: 100%;
+    }
+    .image_header{
+        width: 30%;
+    }
+    .soundbar{
+        display: none;
+    }
+    .itens-soundbar{
+          
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .pagprincipal{
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2.5vh;
+
+    }
+    .topico{
+        width: 90%;
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .titulo{
+        font-size: 12pt;
+    }
+    .lista_item{
+        font-size: 10pt;
+    }
+    /*MAIN FINALIZADO*/
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 30%;
+    }
+
+
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
+
+@media (min-width: 321px) and (max-width: 425px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image_header{
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+    .soundbar{
+        width: 100%;
+        padding: 2.vh;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+
+    }
+    .link{
+        color: #ff0084;
+    }
+    .itens-soundbar{
+        font-size: 8pt;
+        color: #ff0084;
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .festdados{
+        border-bottom: 2px solid #ff0084;
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2.5vh;
+
+    }
+    .topico{
+        width: 90%;
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .titulo{
+        font-size: 12pt;
+    }
+    .lista_item{
+        font-size: 10pt;
+    }
+    /*MAIN FINALIZADO*/
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 30%;
+    }
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 768PX <<<----------------------------------------------------*/
+
+@media (min-width: 426px) and (max-width: 768px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image_header{
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    .soundbar{
+        width: 100%;
+        padding: 2vh;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+
+    }
+    .link{
+        color: #ff0084;
+    }
+    .itens-soundbar{
+        font-size: 10pt;
+        color: #ff0084;
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .festdados{
+        border-bottom: 2px solid #ff0084;
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2.5vh;
+
+    }
+    .topico{
+        width: 90%;
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .titulo{
+        font-size: 12pt;
+    }
+    .lista_item{
+        font-size: 10pt;
+    }
+    /*MAIN FINALIZADO*/
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 20%;
+    }
+}
+
+
+/*---------------------------------------------------->>> MEDIA QUERY : 769PX <---> 1024PX <<<----------------------------------------------------*/
+
+@media (min-width: 769px) and (max-width: 1024px){}
+
+
+
