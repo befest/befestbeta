@@ -38,7 +38,7 @@
 
 
 
-
+/*HEADER INICIADO*/
 .header{
     display: flex;
     background-color: #ff0084;
@@ -67,6 +67,8 @@
 .prestadores{
     border-bottom: 2px solid white;
 }
+/*HEADER FINALIZADO*/
+
 
 
 /*MAIN INICIADO*/
