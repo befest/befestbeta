@@ -19,7 +19,7 @@
     - footer
             
 */
-
+/*TAGS GERAIS INICIADA*/
 *{
     padding: 0;
     margin: 0;
@@ -32,6 +32,12 @@
     --main-pink: #ff0084;
     --main-white: #ffffff;   
 }
+/*TAGS GERAIS FINALIZADA*/
+
+
+
+
+
 
 .header{
     display: flex;
@@ -46,9 +52,13 @@
     column-gap: 5vh;
     align-items: center;
     padding: 1.5vh;
+    
 }
 .itens-soundbar{
     color: #ffffff;   
+}
+.link{
+    color: white;
 }
 .itens-soundbar:hover{
     border-bottom: 2px solid white;
@@ -100,6 +110,8 @@
 .imagem_footer{
     width: 10%;
 }
+
+
 
 
 /*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
@@ -179,6 +191,9 @@
         background-color: white;
 
     }
+    .link{
+        color: #ff0084;
+    }
     .itens-soundbar{
         font-size: 8pt;
         color: #ff0084;
@@ -245,6 +260,9 @@
         background-color: white;
 
     }
+    .link{
+        color: #ff0084;
+    }
     .itens-soundbar{
         font-size: 10pt;
         color: #ff0084;
@@ -292,21 +310,6 @@
 /*---------------------------------------------------->>> MEDIA QUERY : 769PX <---> 1024PX <<<----------------------------------------------------*/
 
 @media (min-width: 769px) and (max-width: 1024px){}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
