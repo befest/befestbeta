@@ -1,0 +1,321 @@
+/*ESTRUTURA : 
+
+- body
+    - header
+        - image_header
+        - soundbar
+            - itens-soundbar
+                - pagprincipal
+                - festdados
+                - prestadores
+                - contabilidade
+    - main
+        - arvore_de_links
+            - titulo
+            - topico
+
+
+
+    - footer
+            
+*/
+/*TAGS GERAIS INICIADA*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'bahnschrift';
+}
+
+:root{
+    --main-pink: #ff0084;
+    --main-white: #ffffff;   
+}
+/*TAGS GERAIS FINALIZADA*/
+
+
+
+
+
+
+.header{
+    display: flex;
+    background-color: #ff0084;
+    justify-content: space-between;
+}
+.image_header{
+    width: 10%;
+}
+.soundbar{
+    display: flex;
+    column-gap: 5vh;
+    align-items: center;
+    padding: 1.5vh;
+    
+}
+.itens-soundbar{
+    color: #ffffff;   
+}
+.link{
+    color: white;
+}
+.itens-soundbar:hover{
+    border-bottom: 2px solid white;
+    transition: 0.5s all;
+}
+.prestadores{
+    border-bottom: 2px solid white;
+}
+
+
+/*MAIN INICIADO*/
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vh;
+    
+}
+.table{
+    
+}
+.titulo_table{
+    width: 100%;
+    padding: 2.5vh;
+    background-color: #ff0084;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    
+}
+.titulo{
+    background-color: #ff0084;
+    color: white;
+}
+td{
+    width: 25%;
+    text-align: center;
+    border: 1px solid #ff0084;
+    
+}
+.linha{
+    background-color: #ffffff;
+}
+a{
+    color: black;
+}
+/*MAIN FINALIZADO*/
+
+
+/*FOOTER INICIADO*/
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem_footer{
+    width: 10%;
+}
+/*FOOTER FINALIZADO*/
+
+
+
+/*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
+@media (min-width: 0px) and (max-width: 320px){
+    .header{
+        width: 100%;
+    }
+    .image_header{
+        width: 30%;
+    }
+    .soundbar{
+        display: none;
+    }
+    .itens-soundbar{
+          
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .prestadores{
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .arvore_de_links , .num_cliques , .fest_projects{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 12pt;
+    }
+    .topico{
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 30%;
+    }
+
+
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
+
+@media (min-width: 321px) and (max-width: 425px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image_header{
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+    .soundbar{
+        width: 100%;
+        padding: 2.vh;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+
+    }
+    .link{
+        color: #ff0084;
+    }
+    .itens-soundbar{
+        font-size: 8pt;
+        color: #ff0084;
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .prestadores{
+        border-bottom: 2px solid #ff0084;
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .arvore_de_links , .num_cliques , .fest_projects{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 12pt;
+    }
+    .topico{
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 30%;
+    }
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 768PX <<<----------------------------------------------------*/
+
+@media (min-width: 426px) and (max-width: 768px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image_header{
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    .soundbar{
+        width: 100%;
+        padding: 2vh;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+
+    }
+    .link{
+        color: #ff0084;
+    }
+    .itens-soundbar{
+        font-size: 10pt;
+        color: #ff0084;
+    }
+    .itens-soundbar:hover{
+        
+    }
+    .prestadores{
+        border-bottom: 2px solid #ff0084;
+        
+    }
+    /*MAIN INICIADO*/
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .arvore_de_links , .num_cliques , .fest_projects{
+        width: 100%;
+    }
+    .titulo{
+        font-size: 14pt;
+    }
+    .topico{
+        font-size: 8pt;
+        padding: 1vh;
+    
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagem_footer{
+        width: 20%;
+    }
+}
+
+
+/*---------------------------------------------------->>> MEDIA QUERY : 769PX <---> 1024PX <<<----------------------------------------------------*/
+
+@media (min-width: 769px) and (max-width: 1024px){}
+
+
