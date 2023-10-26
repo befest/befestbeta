@@ -261,11 +261,14 @@ a{
     padding: 1em;
     /*estilização*/
     border-radius: 10px;
-    background-color: green;
-    border: 3px solid #25D366;
+    background-color: rgb(201, 0, 0);
+    border: 3px solid rgb(255, 105, 105);
     /*responsividade*/
     cursor: pointer;
     
+}
+.icon{
+    color: white;
 }
 .contratar-tit{
     /*espaçamento*/
