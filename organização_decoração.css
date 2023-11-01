@@ -1,0 +1,727 @@
+/* ESTRUTURA : OBJETIVOS 
+-Body
+    - Container-Header
+        - header
+            - header_images
+                - img_logo_prestador
+            - description
+                - header_titulo
+                - header_festarea_nicho
+
+    - Menu Soundbar
+
+        - menu-item
+
+    - Serviços
+        - serviços-item
+            - serviços-item-topico
+                - serviços-item-imagem
+                - serviços-item-escritos
+                    - serviços-item-tit
+                    - serviços-item-desc
+            - contratar
+                - contratar-tit
+                - material-symbol        
+    - Footer
+        - footer-logo
+
+
+
+*/
+
+/*CONFIGURAÇÕES GERAIS INICIADAS*/
+*{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'bahnschrift';
+}
+a{
+    text-decoration: none;
+    color: transparent;
+}
+/*CONFIGURAÇÕES GERAIS FINALIZADAS*/
+
+
+
+
+/*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-color: rgb(255, 212, 244); 
+}
+/*BODY FINALIZADO*/
+
+
+
+
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+
+    /*espaçamento*/
+    width: 50%;
+    height: auto;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*estilização*/
+    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    
+    
+}
+.header{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+}
+.header_images{
+    /*espaçamento*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_logo_prestador{
+    /*espaçamento*/
+    width: 25%;
+    border-radius: 100px;
+    /*estilização*/
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
+		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
+    
+}
+.description{
+    /*espaçamento*/
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+.header_titulo{
+    /*espaçamento*/
+    padding: 0.1em;
+
+    /*estilização*/
+    font-size: 24pt;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+.header_festarea_nicho{
+    /*espaçamento*/
+    
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    /*estilização*/
+    color: rgb(255, 255, 255);
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+
+
+/*MENU SOUND-BAR INICIADO*/
+
+.menu_soundbar{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    padding: 2.5vh;
+    justify-content: center;
+    column-gap: 4vh;
+}
+.menu_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0.5vh;
+}
+.material-symbols-outlined{
+    border: 2px solid transparent;
+}
+.serviços_principais{
+    color: red;
+    border-bottom: 2px solid red;
+}
+/*MENU SOUND-BAR FINALIZADO*/
+
+
+
+/*MENU_SOUNDBAR_2 INICIADO */
+.menu_soundbar_2{
+    width: 50%;
+    background-color: white;
+    padding: 2.5vh;
+    display: flex;
+    column-gap: 3vh;
+    overflow-x: scroll;
+}
+.soundbar_item_2{
+    background-color: #ff0084;
+    color: white;
+    border-radius: 10px;
+    width: 25vh;
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 30%;
+}
+.todos{
+    opacity: 100%;
+}
+
+/*MENU_SOUNDBAR_2 FINALIZADO*/
+
+
+/*SERVIÇOS INICIADO*/
+
+.serviços{
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.5vh;
+}
+.item_serviços{
+    width: 90%;
+    border: 2px solid rgba(163, 163, 163, 0.932);
+    border-radius: 10px;
+    padding: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 9px 7px 5px rgba(163, 163, 163, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(196, 196, 196, 0.932);
+		box-shadow:         9px 7px 5px rgba(160, 160, 160, 0.932);
+}
+.left_item_serviços{
+    display: flex;
+}
+.img_item_serviços{
+    width: 20%;
+    border-radius: 10px;
+}
+.escritos_item_serviços{
+    
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tit_item_serviços{
+    color: #ff0084;
+    
+}
+.desc_item_serviços{
+   
+}
+.botao_item_serviços{
+    width: 30vh;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: #ff0084;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1vh;
+    padding: 1vh;
+    cursor: pointer;
+}
+.button_icon{
+
+}
+
+
+/*SERVIÇOS FINALIZADO*/
+
+
+
+
+
+
+
+
+
+
+/*FOOTER INICIADO*/
+.footer{
+    /*espaçamento*/
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-color: transparent;
+}
+#footer-logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    /*espalamento*/
+    width: 15%;
+    height: auto;   
+}
+/*FOOTER FINALIZADO*/
+
+
+/*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
+
+
+@media (min-width: 0px) and (max-width: 320px){
+    /*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    
+}
+/*BODY FINALIZADO*/
+
+
+
+
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+    /*espaçamento*/
+    width: 100%;
+}
+.header{
+    /*espaçamento*/
+}
+.header_images{
+    /*espaçamento*/
+    
+}
+.img_logo_prestador{
+    /*espaçamento*/
+    width: 30%;
+    
+}
+.description{
+    /*espaçamento*/
+    
+}
+.header_titulo{
+    /*espaçamento*/
+
+    
+}
+.header_festarea_nicho{
+    /*espaçamento*/
+
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+/*MENU SOUND-BAR INICIADO*/
+
+
+/*MENU SOUND-BAR FINALIZADO*/
+.menu_soundbar{
+    width: 100%;
+}
+.menu_item{
+    font-size: 8pt;
+}
+.material-symbols-outlined{
+    
+}
+.serviços_principais{
+    
+}
+
+
+
+
+/*MENU_SOUNDBAR_2 INICIADO */
+.menu_soundbar_2{
+    width: 100%;
+    
+}
+.soundbar_item_2{
+    width: 20vh;    
+    font-size: 8pt;
+}
+.todos{
+    opacity: 100%;
+}
+
+/*MENU_SOUNDBAR_2 FINALIZADO*/
+
+
+/*SERVIÇOS INICIADO*/
+
+.serviços{
+    width: 100%;
+    
+}
+.item_serviços{
+    width: 90%;
+    
+}
+.left_item_serviços{
+    display: flex;
+}
+.img_item_serviços{
+    width: 20%;
+    border-radius: 10px;
+}
+.escritos_item_serviços{
+    font-size: 8pt;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tit_item_serviços{
+    color: #ff0084;
+    
+}
+.desc_item_serviços{
+   display: none;
+}
+.botao_item_serviços{
+    width: 20vh;
+    font-size: 6pt;
+    
+}
+.button_icon{
+    display: none;
+}
+
+
+/*SERVIÇOS FINALIZADO*/
+
+
+
+
+
+
+
+
+
+
+/*FOOTER INICIADO*/
+.footer{
+    /*espaçamento*/
+    display: none;
+}
+#footer-logo-link{
+    
+}
+.footer-logo{
+     
+}
+/*FOOTER FINALIZADO*/
+  
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
+
+@media (min-width: 321px) and (max-width: 425px){
+     /*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    
+}
+/*BODY FINALIZADO*/
+
+
+
+
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+    /*espaçamento*/
+    width: 100%;
+}
+.header{
+    /*espaçamento*/
+}
+.header_images{
+    /*espaçamento*/
+    
+}
+.img_logo_prestador{
+    /*espaçamento*/
+    width: 30%;
+    
+}
+.description{
+    /*espaçamento*/
+    
+}
+.header_titulo{
+    /*espaçamento*/
+
+    
+}
+.header_festarea_nicho{
+    /*espaçamento*/
+
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+/*MENU SOUND-BAR INICIADO*/
+
+
+/*MENU SOUND-BAR FINALIZADO*/
+.menu_soundbar{
+    width: 100%;
+}
+.menu_item{
+    font-size: 8pt;
+}
+.material-symbols-outlined{
+    
+}
+.serviços_principais{
+    
+}
+
+
+
+
+/*MENU_SOUNDBAR_2 INICIADO */
+.menu_soundbar_2{
+    width: 100%;
+    
+}
+.soundbar_item_2{
+    width: 20vh;    
+    font-size: 8pt;
+}
+.todos{
+    opacity: 100%;
+}
+
+/*MENU_SOUNDBAR_2 FINALIZADO*/
+
+
+/*SERVIÇOS INICIADO*/
+
+.serviços{
+    width: 100%;
+    
+}
+.item_serviços{
+    width: 90%;
+    
+}
+.left_item_serviços{
+    display: flex;
+}
+.img_item_serviços{
+    width: 30%;
+    border-radius: 10px;
+}
+.escritos_item_serviços{
+    font-size: 8pt;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tit_item_serviços{
+    color: #ff0084;
+    
+}
+.desc_item_serviços{
+   
+}
+.botao_item_serviços{
+    width: 20vh;
+    font-size: 6pt;
+    
+}
+.button_icon{
+    display: none;
+}
+
+
+/*SERVIÇOS FINALIZADO*/
+
+
+
+
+
+
+
+
+
+
+/*FOOTER INICIADO*/
+.footer{
+    /*espaçamento*/
+    display: none;
+}
+#footer-logo-link{
+    
+}
+.footer-logo{
+     
+}
+/*FOOTER FINALIZADO*/
+
+}
+
+/*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 1024PX <<<----------------------------------------------------*/
+
+@media (min-width: 426px) and (max-width: 1024px){
+     /*BODY INICIADO*/
+body{
+    /*espaçamento*/
+    
+}
+/*BODY FINALIZADO*/
+
+
+
+
+
+/*CONTAINER-HEADER INICIADO*/
+.container-header{
+    /*espaçamento*/
+    width: 70%;
+}
+.header{
+    /*espaçamento*/
+}
+.header_images{
+    /*espaçamento*/
+    
+}
+.img_logo_prestador{
+    /*espaçamento*/
+    width: 30%;
+    
+}
+.description{
+    /*espaçamento*/
+    
+}
+.header_titulo{
+    /*espaçamento*/
+
+    
+}
+.header_festarea_nicho{
+    /*espaçamento*/
+
+
+}
+/*CONTAINER-HEADER FINALIZADO*/
+/*MENU SOUND-BAR INICIADO*/
+
+
+/*MENU SOUND-BAR FINALIZADO*/
+.menu_soundbar{
+    width: 70%;
+}
+.menu_item{
+    font-size: 8pt;
+}
+.material-symbols-outlined{
+    
+}
+.serviços_principais{
+    
+}
+
+
+
+
+/*MENU_SOUNDBAR_2 INICIADO */
+.menu_soundbar_2{
+    width: 70%;
+    
+}
+.soundbar_item_2{
+    width: 20vh;    
+    font-size: 8pt;
+}
+.todos{
+    opacity: 100%;
+}
+
+/*MENU_SOUNDBAR_2 FINALIZADO*/
+
+
+/*SERVIÇOS INICIADO*/
+
+.serviços{
+    width: 70%;
+    
+}
+.item_serviços{
+    width: 90%;
+    
+}
+.left_item_serviços{
+    display: flex;
+}
+.img_item_serviços{
+    width: 20%;
+    border-radius: 10px;
+}
+.escritos_item_serviços{
+    font-size: 8pt;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tit_item_serviços{
+    color: #ff0084;
+    
+}
+.desc_item_serviços{
+   
+}
+.botao_item_serviços{
+    width: 20vh;
+    font-size: 6pt;
+    
+}
+.button_icon{
+    display: none;
+}
+
+
+/*SERVIÇOS FINALIZADO*/
+
+/*FOOTER INICIADO*/
+.footer{
+    /*espaçamento*/
+    
+}
+#footer-logo-link{
+    
+}
+.footer-logo{
+    width: 20%;
+    height: auto;
+     
+}
+/*FOOTER FINALIZADO*/
+
+}
