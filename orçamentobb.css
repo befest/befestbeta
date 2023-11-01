@@ -486,19 +486,19 @@ body{
     
 }
 .img_logo_prestador{
-    width: 40%;
+    width: 50%;
     
 }
 .description{
     
 }
 .header_titulo{
-    font-size: 12pt;
+    font-size: 16pt;
    
     
 }
 .header_festarea_nicho{
-    font-size: 8pt;
+    font-size: 10pt;
     
 
 }
@@ -529,6 +529,7 @@ a{
 
 }
 /*MENU SOUND-BAR FINALIZADO*/
+
 
 
 
@@ -628,7 +629,7 @@ body{
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
     /*espaçamento*/
-    width: 100%;
+    width: 70%;
     /*estilização*/
 
 }
@@ -641,19 +642,19 @@ body{
     
 }
 .img_logo_prestador{
-    width: 20%;
+    width: 30%;
     
 }
 .description{
     
 }
 .header_titulo{
-    font-size: 12pt;
+    font-size: 16pt;
    
     
 }
 .header_festarea_nicho{
-    font-size: 8pt;
+    font-size: 10pt;
     
 
 }
@@ -665,7 +666,7 @@ body{
 /*MENU SOUND-BAR INICIADO*/
 .menu-soundbar{
     background-color: white;
-    width: 100%;
+    width: 70%;
 }
 .menu-item{
     font-size: 6.5pt; 
@@ -683,7 +684,6 @@ a{
 
 }
 /*MENU SOUND-BAR FINALIZADO*/
-
 
 
 
