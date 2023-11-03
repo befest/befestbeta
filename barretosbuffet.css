@@ -126,57 +126,27 @@ body{
 /*CONTAINER-HEADER FINALIZADO*/
 
 
-
 /*MENU SOUND-BAR INICIADO*/
-.menu-soundbar{
-    /*espaçamento*/
+.menu_soundbar{
+    background-color: white;
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    padding: 0.5em;
-    
-    
-    gap: 5vh;
-    /*estilização*/
-    background-color: white;
-}
-
-
-.menu-item{
-    /*espaçamento*/
-    
     padding: 2.5vh;
-    font-size: 10pt;
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap: -1vh;
-    /*estilização*/
-    font-family: bahnschrift;
-    color:black;
-    
+    column-gap: 5vh;
 }
-#icon-soundbar-restaurant{
-    background-color: transparent;
-    color: rgb(172,0,0);
-    
-    
-
+.item_menu_soundbar{
+    display: flex;
+    column-gap: 1vh;
+    align-items: center;
+    color: black;
+    padding: 0.25vh;
 }
-#serviços_principais{ /*Estilização para Destacar a página navegada no momento.*/
-    /*espaçamento*/
-    padding: 1vh;
-    /*estilização*/
-    color: rgb(172, 0, 0);
-    border-bottom: 3px solid rgb(172, 0, 0);
+.serviços_principais{
+    color: red;
+    border-bottom: 2px solid red;
 }
-a{
-    /*estilização*/
-    text-decoration: none;
-}
-
 
 /*MENU SOUND-BAR FINALIZADO*/
 
@@ -317,73 +287,58 @@ a{
 /*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
 
 @media (min-width: 321px) and (max-width: 425px){
-    /*BODY INICIADO*/
-body{
-    /*espaçamento*/
-    
-}
-/*BODY FINALIZADO*/
-
-/*CONTAINER-HEADER INICIADO*/
-.container-header{
-    /*espaçamento*/
-    width: 100%;
-    /*estilização*/
-
-}
-.header{
-    /*espaçamento*/
-   
-}
-.header_images{
-    /*espaçamento*/
-    
-}
-.img_logo_prestador{
-    width: 50%;
-    
-}
-.description{
-    
-}
-.header_titulo{
-    font-size: 16pt;
-   
-    
-}
-.header_festarea_nicho{
-    font-size: 10pt;
-    
-
-}
-/*CONTAINER-HEADER FINALIZADO*/
-
-
-
-
-/*MENU SOUND-BAR INICIADO*/
-.menu-soundbar{
-    background-color: white;
-    width: 100%;
-}
-.menu-item{
-    font-size: 6.5pt;
-    padding: 0; 
-}
-#serviços_principais{ 
-}
-a{
-
-}
-
-#icon-soundbar{
-   
-    
-    
-
-}
-/*MENU SOUND-BAR FINALIZADO*/
-
+   /*BODY INICIADO*/
+            body{
+                /*espaçamento*/
+                
+            }
+            /*BODY FINALIZADO*/
+        
+            /*CONTAINER-HEADER INICIADO*/
+            .container-header{
+                /*espaçamento*/
+                width: 100%;
+            }
+            .header{
+                /*espaçamento*/
+        
+            }
+            .header_images{
+                /*espaçamento*/
+            }
+            .img_logo_prestador{
+                /*espaçamento*/
+                width: 50%;    
+            }
+            .description{
+                /*espaçamento*/
+            }
+            .header_titulo{
+                /*espaçamento*/
+                font-size: 18pt;
+            }
+            .header_festarea_nicho{
+                /*espaçamento*/
+                font-size: 12pt;
+            }
+            /*CONTAINER-HEADER FINALIZADO*/
+        
+        
+            /*MENU SOUND-BAR INICIADO*/
+            .menu_soundbar{
+                width: 100%;
+                overflow-x: scroll;
+                justify-content: left;
+                
+            }
+            .item_menu_soundbar{
+                
+            }
+            .serviços_principais,.serviços_adicionais{
+                width: 22.5vh;
+            }
+        
+            /*MENU SOUND-BAR FINALIZADO*/
 
 
 
@@ -452,85 +407,79 @@ a{
 
 
 /*FOOTER INICIADO*/
-.footer{
-    
-}
-.footer-logo{
-    width: 50%;
-    
-}
-/*FOOTER FINALIZADO*/
+            .footer{
+                /*espaçamento*/
+                width: 100%;
+                background-color: white;
+                
+            }
+            #footer-logo-link{
+                
+            }
+            .footer-logo{
+                /*espalamento*/
+                width: 25%;
+                 
+            }
+            /*FOOTER FINALIZADO*/
 
 }
 
 /*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 1024PX <<<----------------------------------------------------*/
 
 @media (min-width: 426px) and (max-width: 1024px){
-    /*BODY INICIADO*/
-body{
-    /*espaçamento*/
-    
-}
-/*BODY FINALIZADO*/
-
-/*CONTAINER-HEADER INICIADO*/
-.container-header{
-    /*espaçamento*/
-    width: 70%;
-    /*estilização*/
-
-}
-.header{
-    /*espaçamento*/
-   
-}
-.header_images{
-    /*espaçamento*/
-    
-}
-.img_logo_prestador{
-    width: 30%;
-    
-}
-.description{
-    
-}
-.header_titulo{
-    font-size: 16pt;
-   
-    
-}
-.header_festarea_nicho{
-    font-size: 10pt;
-    
-
-}
-/*CONTAINER-HEADER FINALIZADO*/
-
-
-
-
-/*MENU SOUND-BAR INICIADO*/
-.menu-soundbar{
-    background-color: white;
-    width: 70%;
-}
-.menu-item{
-    font-size: 6.5pt; 
-}
-#serviços_principais{ 
-}
-a{
-
-}
-
-#icon-soundbar{
-   
-    
-    
-
-}
-/*MENU SOUND-BAR FINALIZADO*/
+   /*BODY INICIADO*/
+            body{
+                /*espaçamento*/
+                
+            }
+            /*BODY FINALIZADO*/
+        
+            /*CONTAINER-HEADER INICIADO*/
+            .container-header{
+                /*espaçamento*/
+                width: 80%;
+            }
+            .header{
+                /*espaçamento*/
+        
+            }
+            .header_images{
+                /*espaçamento*/
+            }
+            .img_logo_prestador{
+                /*espaçamento*/
+                width: 50%;    
+            }
+            .description{
+                /*espaçamento*/
+            }
+            .header_titulo{
+                /*espaçamento*/
+                font-size: 18pt;
+            }
+            .header_festarea_nicho{
+                /*espaçamento*/
+                font-size: 14pt;
+            }
+            /*CONTAINER-HEADER FINALIZADO*/
+        
+        
+            /*MENU SOUND-BAR INICIADO*/
+            .menu_soundbar{
+                width: 80%;
+                overflow-x: scroll;
+                justify-content: left;
+                
+            }
+            .item_menu_soundbar{
+                
+            }
+            .serviços_principais,.serviços_adicionais{
+                width: 35vh;
+            }
+        
+            /*MENU SOUND-BAR FINALIZADO*/
 
 
 
@@ -601,13 +550,20 @@ a{
 
 
 /*FOOTER INICIADO*/
-.footer{
-    
-}
-.footer-logo{
-    width: 20%;
-    
-}
-/*FOOTER FINALIZADO*/
+            .footer{
+                /*espaçamento*/
+                width: 80%;
+                background-color: white;
+                
+            }
+            #footer-logo-link{
+                
+            }
+            .footer-logo{
+                /*espalamento*/
+                width: 25%;
+                 
+            }
+            /*FOOTER FINALIZADO*/
 
 }
