@@ -1,33 +1,5 @@
-/* ESTRUTURA : OBJETIVOS 
--Body
-    - Container-Header
-        - header
-            - header_images
-                - img_logo_prestador
-            - description
-                - header_titulo
-                - header_festarea_nicho
+/* ESTRUTURA DE LAYOUT PRINCIPAL */
 
-    - Menu Soundbar
-
-        - menu-item
-
-    - Serviços
-        - serviços-item
-            - serviços-item-topico
-                - serviços-item-imagem
-                - serviços-item-escritos
-                    - serviços-item-tit
-                    - serviços-item-desc
-            - contratar
-                - contratar-tit
-                - material-symbol        
-    - Footer
-        - footer-logo
-
-
-
-*/
 
 /*CONFIGURAÇÕES GERAIS INICIADAS*/
 *{
@@ -212,7 +184,7 @@ body{
     }
     .img_logo_prestador{
         /*espaçamento*/
-        width: 40%;    
+        width: 50%;    
     }
     .description{
         /*espaçamento*/
@@ -239,7 +211,7 @@ body{
         
     }
     .serviços_principais,.serviços_adicionais{
-        width: 35vh;
+        width: 22.5vh;
     }
 
     /*MENU SOUND-BAR FINALIZADO*/
@@ -292,7 +264,7 @@ body{
             }
             .img_logo_prestador{
                 /*espaçamento*/
-                width: 40%;    
+                width: 50%;    
             }
             .description{
                 /*espaçamento*/
@@ -373,7 +345,7 @@ body{
             }
             .img_logo_prestador{
                 /*espaçamento*/
-                width: 40%;    
+                width: 50%;    
             }
             .description{
                 /*espaçamento*/
