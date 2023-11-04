@@ -323,7 +323,7 @@ body{
             .menu_soundbar{
                 width: 100%;
                 overflow-x: scroll;
-                justify-content: center;
+                justify-content: left;
                 
             }
             .item_menu_soundbar{
