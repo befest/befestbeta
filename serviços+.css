@@ -28,7 +28,7 @@
 
 
 */
-
+/*CONFIGURAÇÕES GERAIS INICIADAS*/
 *{
     /*espaçamento*/
     padding: 0;
@@ -120,7 +120,6 @@ body{
 }
 .header_festarea_nicho{
     /*espaçamento*/
-    
     font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
     /*estilização*/
@@ -150,57 +149,6 @@ body{
 .serviços_adicionais{
     color: red;
     border-bottom: 2px solid red;
-}
-
-/*MENU SOUND-BAR FINALIZADO*/
-
-
-
-/*MENU SOUND-BAR INICIADO*/
-.menu-soundbar{
-    /*espaçamento*/
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    padding: 0.5em;
-    
-    
-    gap: 5vh;
-    /*estilização*/
-    background-color: white;
-}
-
-
-.menu-item{
-    /*espaçamento*/
-    
-    padding: 2.5vh;
-    font-size: 10pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: -1vh;
-    /*estilização*/
-    font-family: bahnschrift;
-    color:black;
-    
-}
-#icon-soundbar-local_bar{
-    background-color: transparent;
-    color: rgb(172,0,0);
-}
-#serviços_adicionais{ /*Estilização para Destacar a página navegada no momento.*/
-    /*espaçamento*/
-    padding: 1vh;
-    /*estilização*/
-    color: rgb(172, 0, 0);
-    border-bottom: 3px solid rgb(172, 0, 0);
-}
-a{
-    /*estilização*/
-    text-decoration: none;
 }
 
 /*MENU SOUND-BAR FINALIZADO*/
@@ -375,14 +323,14 @@ a{
             .menu_soundbar{
                 width: 100%;
                 overflow-x: scroll;
-                justify-content: left;
+                justify-content: center;
                 
             }
             .item_menu_soundbar{
                 
             }
             .serviços_principais,.serviços_adicionais{
-                width: 22.5vh;
+                width: 24vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
@@ -517,7 +465,7 @@ a{
             .menu_soundbar{
                 width: 80%;
                 overflow-x: scroll;
-                justify-content: left;
+                justify-content: center;
                 
             }
             .item_menu_soundbar{
