@@ -36,6 +36,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: transparent;
+}
 /*CONFIGURAÇÕES GERAIS FINALIZADAS*/
 
 
@@ -126,58 +130,29 @@ body{
 /*CONTAINER-HEADER FINALIZADO*/
 
 
-
 /*MENU SOUND-BAR INICIADO*/
-.menu-soundbar{
-    /*espaçamento*/
+.menu_soundbar{
+    background-color: white;
     width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    padding: 0.5em;
-    
-    
-    gap: 5vh;
-    /*estilização*/
-    background-color: white;
-}
-
-
-.menu-item{
-    /*espaçamento*/
-    
     padding: 2.5vh;
-    font-size: 10pt;
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap: -1vh;
-    /*estilização*/
-    font-family: bahnschrift;
-    color:black;
-    
+    column-gap: 5vh;
 }
-#icon-soundbar-smartphone{
-    background-color: transparent;
-    color: rgb(172,0,0);
-    
-
+.item_menu_soundbar{
+    display: flex;
+    column-gap: 1vh;
+    align-items: center;
+    color: black;
+    padding: 0.25vh;
 }
-#contatos{ /*Estilização para Destacar a página navegada no momento.*/
-    /*espaçamento*/
-    padding: 1vh;
-    /*estilização*/
-    color: rgb(172, 0, 0);
-    border-bottom: 3px solid rgb(172, 0, 0);
-}
-a{
-    /*estilização*/
-    text-decoration: none;
+.contatos{
+    color: red;
+    border-bottom: 2px solid red;
 }
 
 /*MENU SOUND-BAR FINALIZADO*/
-
 
 
 
