@@ -43,9 +43,6 @@ a{
 }
 /*CONFIGURAÇÕES GERAIS FINALIZADAS*/
 
-
-
-
 /*BODY INICIADO*/
 body{
     /*espaçamento*/
@@ -59,12 +56,8 @@ body{
 /*BODY FINALIZADO*/
 
 
-
-
-
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
-
     /*espaçamento*/
     width: 50%;
     height: auto;
@@ -139,6 +132,7 @@ body{
     justify-content: center;
     align-items: center;
     column-gap: 5vh;
+    font-family: 'bahnschrift';	
 }
 .item_menu_soundbar{
     display: flex;
@@ -354,7 +348,7 @@ body{
                 
             }
             .serviços_principais,.serviços_adicionais{
-                width: 22.5vh;
+                width: 24vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
@@ -428,14 +422,21 @@ body{
 
 
 /*FOOTER INICIADO*/
-.footer{
-    
-}
-.footer-logo{
-    width: 50%;
-    
-}
-/*FOOTER FINALIZADO*/
+            .footer{
+                /*espaçamento*/
+                width: 100%;
+                background-color: white;
+                
+            }
+            #footer-logo-link{
+                
+            }
+            .footer-logo{
+                /*espalamento*/
+                width: 25%;
+                 
+            }
+            /*FOOTER FINALIZADO*/
 
 }
 
@@ -563,14 +564,21 @@ body{
 /*SERVIÇOS FINALIZADO*/
 
 
-/*FOOTER INICIADO*/
-.footer{
-    
-}
-.footer-logo{
-    width: 20%;
-    
-}
-/*FOOTER FINALIZADO*/
+*FOOTER INICIADO*/
+            .footer{
+                /*espaçamento*/
+                width: 80%;
+                background-color: white;
+                
+            }
+            #footer-logo-link{
+                
+            }
+            .footer-logo{
+                /*espalamento*/
+                width: 25%;
+                 
+            }
+            /*FOOTER FINALIZADO*/
 
 }
