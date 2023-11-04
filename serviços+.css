@@ -29,12 +29,16 @@
 
 */
 
-/*CONFIGURAÇÕES GERAIS INICIADAS*/
 *{
     /*espaçamento*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'bahnschrift';
+}
+a{
+    text-decoration: none;
+    color: transparent;
 }
 /*CONFIGURAÇÕES GERAIS FINALIZADAS*/
 
@@ -124,6 +128,31 @@ body{
 
 }
 /*CONTAINER-HEADER FINALIZADO*/
+
+
+/*MENU SOUND-BAR INICIADO*/
+.menu_soundbar{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    padding: 2.5vh;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vh;
+}
+.item_menu_soundbar{
+    display: flex;
+    column-gap: 1vh;
+    align-items: center;
+    color: black;
+    padding: 0.25vh;
+}
+.serviços_adicionais{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+/*MENU SOUND-BAR FINALIZADO*/
 
 
 
