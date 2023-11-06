@@ -345,12 +345,14 @@ body{
 
             .serviços{
                 width: 100%;
+                padding: 2.5vh;
             }
             .serviços_item{
-                width: 105%;
+                width: 100%;
+                height: 25vh;
             }
             .serviços_item_imagem{
-                width: 30%;
+                width: 40%;
             }
             .serviços_item_escritos_imagem{
                 
