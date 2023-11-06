@@ -348,7 +348,6 @@ body{
             }
             .serviços_item{
                 width: 100%;
-                
             }
             .serviços_item_imagem{
                 width: 30%;
@@ -364,6 +363,7 @@ body{
                 
             }
             .serviços_item_escritos_desc{
+                font-size: 10pt;
                 
             }
             .serviços_item_button{
@@ -481,7 +481,7 @@ body{
                 
             }
             .serviços_item_escritos_desc{
-                
+                font-size: 10pt;
             }
             .serviços_item_button{
                 padding: 1vh;
