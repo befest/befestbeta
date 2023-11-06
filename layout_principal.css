@@ -325,8 +325,8 @@ body{
             /*CONTAINER-HEADER FINALIZADO*/
         
         
-            /*MENU SOUND-BAR INICIADO*/
-            .menu_soundbar{
+             /*MENU SOUND-BAR INICIADO*/
+             .menu_soundbar{
                 width: 100%;
                 overflow-x: scroll;
                 justify-content: left;
@@ -336,7 +336,7 @@ body{
                 
             }
             .serviços_principais,.serviços_adicionais{
-                width: 35vh;
+                width: 24vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
@@ -349,7 +349,7 @@ body{
             }
             .serviços_item{
                 width: 100%;
-                height: auto;
+                height: 25vh;
             }
             .serviços_item_imagem{
                 width: 40%;
@@ -446,7 +446,7 @@ body{
         
             /*MENU SOUND-BAR INICIADO*/
             .menu_soundbar{
-                width: 80%;
+                width: 100%;
                 overflow-x: scroll;
                 justify-content: left;
                 
@@ -455,7 +455,7 @@ body{
                 
             }
             .serviços_principais,.serviços_adicionais{
-                width: 35vh;
+                width: 24vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
