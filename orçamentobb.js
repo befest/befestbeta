@@ -33,7 +33,7 @@ function execucao(){
     // CARDÁPIO CHURRAS MASTER //
 
     if(cardapioescolhido === 'Churras Master' && totconv<30){
-        precoconv += (125*30)/totconv
+        precoconv += (135*30)/totconv
     }
     if(cardapioescolhido === 'Churras Master' && totconv>=30 && totconv<=49){
         precoconv += 125
@@ -59,7 +59,7 @@ function execucao(){
     // CARDÁPIO CHURRAS GOLD //
 
     if(cardapioescolhido === 'Churras Gold' && totconv<30){
-        precoconv += (90*30)/totconv
+        precoconv += (100*30)/totconv
     }
     if(cardapioescolhido === 'Churras Gold' && totconv>=30 && totconv<=49){
         precoconv += 90
@@ -85,7 +85,7 @@ function execucao(){
     // CARDÁPIO CHURRAS SILVER //
 
     if(cardapioescolhido === 'Churras Silver' && totconv<30){
-        precoconv += (85*30)/totconv
+        precoconv += (95*30)/totconv
     }
     if(cardapioescolhido === 'Churras Silver' && totconv>=30 && totconv<=49){
         precoconv += 85
@@ -112,7 +112,7 @@ function execucao(){
     // CARDÁPIO DE ALMOÇO/JANTAR //
 
     if(cardapioescolhido === 'Almoço/Jantar' && totconv<30){
-        precoconv += (85*30)/totconv
+        precoconv += (95*30)/totconv
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=30 && totconv<=49){
         precoconv += 85
@@ -138,7 +138,7 @@ function execucao(){
     // CARDÁPIO DE FEIJOADA //
 
     if(cardapioescolhido === 'Feijoada' && totconv<30){
-        precoconv+= (85*30)/totconv
+        precoconv+= (95*30)/totconv
     }
     if(cardapioescolhido === 'Feijoada' && totconv>=30 && totconv<=49){
         precoconv += 85
@@ -164,7 +164,7 @@ function execucao(){
     // CARDÁPIO DE FESTA BOTEQUIM //
 
     if(cardapioescolhido === 'Festa Botequim' && totconv<30){
-        precoconv += (80*30)/totconv
+        precoconv += (90*30)/totconv
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=30 && totconv<=49){
         precoconv += 80
