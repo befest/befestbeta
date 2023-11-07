@@ -372,8 +372,10 @@ body{
                 
                 
             }
-        
-        
+            .bi{
+		width: 10%;
+	    }  	
+        	
             /*SERVIÇOS FINALIZADO*/
         
         
@@ -449,9 +451,6 @@ body{
             .serviços_principais,.serviços_adicionais{
                 width: 24vh;
             }
-	    .bi{
-		width: 10%;    
-	    } 
         
             /*MENU SOUND-BAR FINALIZADO*/
         
