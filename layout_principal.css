@@ -38,9 +38,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     /*estilização*/
-    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    background-image: url('/Imagens/Plano\ de\ Fundo\ -\ Barreto\'s\ Buffet\ -\ PC.png');
     
     
 }
