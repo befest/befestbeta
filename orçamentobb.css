@@ -572,15 +572,22 @@ a{
 /*SERVIÇOS FINALIZADO*/
 
 
-/*FOOTER INICIADO*/
-.footer{
-    
-}
-.footer-logo{
-    width: 50%;
-    
-}
-/*FOOTER FINALIZADO*/
+ /*FOOTER INICIADO*/
+            .footer{
+                /*espaçamento*/
+                width: 100%;
+                background-color: white;
+                
+            }
+            #footer-logo-link{
+                
+            }
+            .footer-logo{
+                /*espalamento*/
+                width: 25%;
+                 
+            }
+            /*FOOTER FINALIZADO*/
 
 }
 
@@ -706,14 +713,21 @@ a{
 /*SERVIÇOS FINALIZADO*/
 
 
-/*FOOTER INICIADO*/
-.footer{
-    
-}
-.footer-logo{
-    width: 30%;
-    
-}
-/*FOOTER FINALIZADO*/
+ /*FOOTER INICIADO*/
+            .footer{
+                /*espaçamento*/
+                width: 100%;
+                background-color: white;
+                
+            }
+            #footer-logo-link{
+                
+            }
+            .footer-logo{
+                /*espalamento*/
+                width: 25%;
+                 
+            }
+            /*FOOTER FINALIZADO*/
 
 }
