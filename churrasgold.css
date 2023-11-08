@@ -28,6 +28,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+  display: flex;
+  justify-content: center;	
+}
 /*CONFIGURAÇÕES GERAIS FINALIZADA*/
 
 
