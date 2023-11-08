@@ -153,124 +153,59 @@ body{
 
 
 
-/*SERVIÇOS INICIADO */
 .serviços{
-    /*espaçamento*/
     width: 50%;
-    padding: 0.1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*estilização*/
     background-color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 2.5vh;
 }
-.serviços-item{
-    /*espaçamento*/
-    width: 100%;
-    padding: 1.5em;
+.serviços_item{
     display: flex;
+    padding: 2.5vh;
     justify-content: space-between;
     align-items: center;
-    /*estilização*/
-    border: transparent;
-    border-bottom: 2px solid rgb(211, 211, 211);
-    border-style: dotted;
     border-radius: 10px;
-    
+        /*estilização*/
+        -webkit-box-shadow: 9px 7px 5px rgba(214, 214, 214, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(126, 126, 126, 0.932);
+		box-shadow:         9px 7px 5px rgba(223, 223, 223, 0.932);
 }
-#serviços-item-open_bar{
-    border: none;
-}
-
-.serviços-item-topico{
-    /*espaçamento*/
+.icon_escritos{
     display: flex;
-    gap: 15px;
+    width: 100%;
+    column-gap: 2.5vh;
 }
-.serviços-item-imagem{
-    /*espaçamento*/
-    width: 20%;
-    height: auto;
+.serviços_item_escritos{
     display: flex;
-    /*responsividade*/
-    flex-wrap: wrap;
-    border-radius: 10px;
-}
-.serviços-item-escritos{
-    /*espaçamento*/
-    display: flex;
+    width: 40vh;
     flex-direction: column;
+    justify-content: center ;
 }
-.serviços-item-tit{
-    /*identificação*/
-    font-family: bahnschrift;
-    /*estilização*/
-    font-size: 12pt;
-    color: rgb(172, 0, 0);
-    cursor: pointer;
+.serviços_item_escritos_tit{
+    color: red;
 }
-.serviços-item-tit:active{/*RESPONSIVIDADE : Serve para quando clicarmos no item, ele responder com o que foi estabelecido pelo código*/
-    color: rgb(140, 0, 0);
-}
-.serviços-item-desc{
-    /*identificação*/
-    font-family: bahnschrift;
-    /*estilização*/
+.serviços_item_escritos_desc{
     color: black;
-
 }
-#serviços-item-tik_tok{
-    border: none;
-}
-.contratar{
-    /*espaçamento*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*estilização*/
-    border-radius: 100px;
-    background-color: rgb(172, 0, 0);
-    /*responsividade*/
-    cursor: pointer;
-}
-.contratar-tit{
-    /*espaçamento*/
-    font-size: 10pt;
-    /*identificativo*/
-    font-family: bahnschrift;
-    /*responsividade*/
-    color: white;
-}
-
+/*SOCIAL NETWORKS ICONS*/
 .bi{
-    width: 15vh;
-    height: 5.5vh;
+    width: 5%;
+    height: auto;
 }
 .bi-whatsapp{
-    color: #25D366;
+    color: green;
     
-
 }
 .bi-instagram{
-    color: #E1306C;
-    
+    color: #DD2A7B;
 }
 .bi-facebook{
-    color: #00acee;
-    
+    color: blue;
 }
 .bi-tiktok{
     color: black;
-    
-
 }
-
+/*SOCIAL NETWORKS ICONS FIM*/
 /*SERVIÇOS FINALIZADO*/
-
-
-
 
 /*FOOTER INICIADO*/
 .footer{
@@ -297,10 +232,90 @@ body{
 /*FOOTER FINALIZADO*/
 
 
-/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
+@media (min-width: 0px) and (max-width: 320px){
+            /*BODY INICIADO*/
+    body{
+        /*espaçamento*/
+        
+    }
+    /*BODY FINALIZADO*/
 
+    /*CONTAINER-HEADER INICIADO*/
+    .container-header{
+        /*espaçamento*/
+        width: 100%;
+    }
+    .header{
+        /*espaçamento*/
+
+    }
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 50%;    
+    }
+    .description{
+        /*espaçamento*/
+    }
+    .header_titulo{
+        /*espaçamento*/
+        font-size: 18pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 14pt;
+    }
+    /*CONTAINER-HEADER FINALIZADO*/
+
+
+    /*MENU SOUND-BAR INICIADO*/
+    .menu_soundbar{
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: left;
+        
+    }
+    .item_menu_soundbar{
+        
+    }
+    .serviços_principais,.serviços_adicionais{
+        width: 24vh;
+    }
+
+    /*MENU SOUND-BAR FINALIZADO*/
+
+    /*SERVIÇOS INICIADO */
+
+    .bi{
+        width: 10%;
+    }
+    /*SERVIÇOS FINALIZADO*/
+
+
+
+    /*FOOTER INICIADO*/
+    .footer{
+        /*espaçamento*/
+        width: 100%;
+        background-color: white;
+        
+    }
+    #footer-logo-link{
+        
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 25%;
+         
+    }
+    /*FOOTER FINALIZADO*/
+
+}
+/*---------------------------------------------------->>> MEDIA QUERY : 321PX <---> 425PX <<<----------------------------------------------------*/
 @media (min-width: 321px) and (max-width: 425px){
-     /*BODY INICIADO*/
+            /*BODY INICIADO*/
             body{
                 /*espaçamento*/
                 
@@ -337,8 +352,8 @@ body{
             /*CONTAINER-HEADER FINALIZADO*/
         
         
-            /*MENU SOUND-BAR INICIADO*/
-            .menu_soundbar{
+             /*MENU SOUND-BAR INICIADO*/
+             .menu_soundbar{
                 width: 100%;
                 overflow-x: scroll;
                 justify-content: left;
@@ -352,76 +367,55 @@ body{
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
+        
+            /*SERVIÇOS INICIADO */
 
+            .serviços{
+                width: 100%;
+                padding: 1vh;
+            }
+            .serviços_item{
+                width: 100%;
+            }
+            .serviços_item_imagem{
+                width: 40%;
+            }
+            .serviços_item_escritos_imagem{
+                
+            }
+            .serviços_item_escritos{
+                
+            
+            }
+            .serviços_item_escritos_tit{
+                
+            }
+            .serviços_item_escritos_desc{
+                font-size: 10pt;
+                
+            }
+            .serviços_item_button{
+                padding: 0vh;
+                width: 60%;
+                border-radius: 500px;
+            }
+            .serviços_item_button_tit{
+                display: none;
+            }
+            .serviços_item_button_tit, .restaurant_menu{
+                
+                
+            }
 
-
-
-/*SERVIÇOS INICIADO */
-.serviços{
-    width: 100%;
-}
-.serviços-item{
-     
-}
-
-.serviços-item-topico{
-    /*espaçamento*/
-    display: flex;
-    align-items: center;
-
-}
-
-.serviços-item-imagem{
-    width: 50%;
-    height: 15vh;
-}
-.serviços-item-escritos{
-    
-}
- 
-.serviços-item-tit{
-    
-    font-size: 12pt;
-   
-}
-.serviços-item-desc{
-    width: 200%;
-    
-    font-size: 8pt;
-    
-    
-    
-
-}
-#serviços-item-festabotequim{
-   
-}
-.contratar{
-    width: 100%;
-    padding: 7.5px;
-    border-radius: 500px;
-    
-
-}
-.contratar-tit{
-    
-    font-size: 6pt;
-    
-    
-}
-.bi{
-    width: 25%;
-    
-    
-    
-}
-
-/**/
-
-/*SERVIÇOS FINALIZADO*/
-
-
-/*FOOTER INICIADO*/
+            .bi{
+                width: 10%;
+            }
+        
+            /*SERVIÇOS FINALIZADO*/
+        
+        
+        
+            /*FOOTER INICIADO*/
             .footer{
                 /*espaçamento*/
                 width: 100%;
@@ -439,11 +433,9 @@ body{
             /*FOOTER FINALIZADO*/
 
 }
-
 /*---------------------------------------------------->>> MEDIA QUERY : 426PX <---> 1024PX <<<----------------------------------------------------*/
-
 @media (min-width: 426px) and (max-width: 1024px){
-    /*BODY INICIADO*/
+            /*BODY INICIADO*/
             body{
                 /*espaçamento*/
                 
@@ -482,7 +474,7 @@ body{
         
             /*MENU SOUND-BAR INICIADO*/
             .menu_soundbar{
-                width: 80%;
+                width: 100%;
                 overflow-x: scroll;
                 justify-content: left;
                 
@@ -491,80 +483,58 @@ body{
                 
             }
             .serviços_principais,.serviços_adicionais{
-                width: 35vh;
+                width: 24vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
         
+            /*SERVIÇOS INICIADO */
 
-/*SERVIÇOS INICIADO */
-.serviços{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    
-}
-.serviços-item{ 
-}
-
-.serviços-item-topico{
-    /*espaçamento*/
-    display: flex;
-    align-items: center;
-
-}
-.serviços-item-imagem{
-    width: 50%;
-    height: 20vh;
-    
-}
-.serviços-item-escritos{
-    
-    
-}
-.serviços-item-tit{
-    
-    font-size: 12pt;
-   
-}
-.serviços-item-desc{
-    width: 200%;
-    
-    font-size: 8pt;
-    
-    
-    
-
-}
-#serviços-item-festabotequim{
-   
-}
-.contratar{
-    width: 100%;
-    padding: 7.5px;
-    border-radius: 500px;
-    
-
-}
-.contratar-tit{
-    
-    font-size: 6pt;
-    
-    
-}
-.bi{
-    width: 25%;
-    
-    
-    
-}
-
-/**/
-
-/*SERVIÇOS FINALIZADO*/
-
-
-*FOOTER INICIADO*/
+            .serviços{
+                width: 80%;
+            }
+            .serviços_item{
+                width: 100%;
+                
+            }
+            .serviços_item_imagem{
+                width: 30%;
+            }
+            .serviços_item_escritos_imagem{
+                
+            }
+            .serviços_item_escritos{
+                
+            
+            }
+            .serviços_item_escritos_tit{
+                
+            }
+            .serviços_item_escritos_desc{
+                font-size: 10pt;
+            }
+            .serviços_item_button{
+                padding: 1vh;
+                width: 70%;
+                border-radius: 500px;
+            }
+            .serviços_item_button_tit{
+                display: none;
+            }
+            .serviços_item_button_tit, .restaurant_menu{
+                
+                
+            }
+            .bi{
+                width: 10%;
+            }
+        
+        
+            /*SERVIÇOS FINALIZADO*/
+        
+        
+        
+            /*FOOTER INICIADO*/
             .footer{
                 /*espaçamento*/
                 width: 80%;
