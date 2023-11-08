@@ -26,9 +26,7 @@
         - footer-logo
 
 
-
 */
-
 /*CONFIGURAÇÕES GERAIS INICIADAS*/
 *{
     /*espaçamento*/
@@ -55,9 +53,9 @@ body{
 }
 /*BODY FINALIZADO*/
 
-
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
+
     /*espaçamento*/
     width: 50%;
     height: auto;
@@ -131,8 +129,7 @@ body{
     padding: 2.5vh;
     justify-content: center;
     align-items: center;
-    column-gap: 5vh;
-    font-family: 'bahnschrift';	
+    column-gap: 4vh;
 }
 .item_menu_soundbar{
     display: flex;
@@ -141,7 +138,7 @@ body{
     color: black;
     padding: 0.25vh;
 }
-.contatos{
+.serviços_principais{
     color: red;
     border-bottom: 2px solid red;
 }
@@ -149,10 +146,7 @@ body{
 /*MENU SOUND-BAR FINALIZADO*/
 
 
-
-
-
-
+/*SERVIÇOS INICIADO*/
 .serviços{
     width: 50%;
     background-color: white;
@@ -207,6 +201,7 @@ body{
 /*SOCIAL NETWORKS ICONS FIM*/
 /*SERVIÇOS FINALIZADO*/
 
+
 /*FOOTER INICIADO*/
 .footer{
     /*espaçamento*/
@@ -228,10 +223,10 @@ body{
     width: 15%;
     height: auto;   
 }
-
 /*FOOTER FINALIZADO*/
 
 
+/*---------------------------------------------------->>> MEDIA QUERY : 320PX <<<----------------------------------------------------*/
 @media (min-width: 0px) and (max-width: 320px){
             /*BODY INICIADO*/
     body{
