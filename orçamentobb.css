@@ -505,6 +505,8 @@ a{
 /*SERVIÇOS INICIADO */
 .serviços{
     width: 100%;
+    border-radius: 0px;	 
+	
     
 }
 .serviços-item{
@@ -651,6 +653,7 @@ a{
 /*SERVIÇOS INICIADO */
 .serviços{
     width: 100%;
+    border-radius: 0px; 	
     
 }
 .serviços-item{
