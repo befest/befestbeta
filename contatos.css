@@ -370,6 +370,7 @@ body{
             .serviços{
                 width: 100%;
                 padding: 1vh;
+		border-radius: 0px;    
             }
             .serviços_item{
                 width: 100%;
@@ -489,6 +490,7 @@ body{
 
             .serviços{
                 width: 80%;
+		border-radius: 0px;    
             }
             .serviços_item{
                 width: 100%;
