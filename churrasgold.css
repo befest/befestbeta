@@ -31,6 +31,7 @@
 a{
   display: flex;
   justify-content: center;	
+  text-decoration: none;
 }
 /*CONFIGURAÇÕES GERAIS FINALIZADA*/
 
