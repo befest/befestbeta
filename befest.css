@@ -264,7 +264,9 @@ a{
     font-family: bahnschrift;
     /*estilização*/
     color: black;
-
+}
+#serviços-item-negroni{
+    border: none;
 }
 #serviços-item-barretosbar{
     border: none;
