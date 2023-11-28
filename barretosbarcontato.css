@@ -1,5 +1,32 @@
-/* ESTRUTURA*/
+/* ESTRUTURA : OBJETIVOS 
+-Body
+    - Container-Header
+        - header
+            - header_images
+                - img_logo_prestador
+            - description
+                - header_titulo
+                - header_festarea_nicho
 
+    - Menu Soundbar
+
+        - menu-item
+
+    - Serviços
+        - serviços-item
+            - serviços-item-topico
+                - serviços-item-imagem
+                - serviços-item-escritos
+                    - serviços-item-tit
+                    - serviços-item-desc
+            - contratar
+                - contratar-tit
+                - material-symbol        
+    - Footer
+        - footer-logo
+
+
+*/
 /*CONFIGURAÇÕES GERAIS INICIADAS*/
 *{
     /*espaçamento*/
@@ -28,6 +55,7 @@ body{
 
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
+
     /*espaçamento*/
     width: 50%;
     height: auto;
@@ -36,8 +64,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     /*estilização*/
     background-image: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
+    
+    
 }
 .header{
     /*espaçamento*/
@@ -107,7 +138,7 @@ body{
     color: black;
     padding: 0.25vh;
 }
-.serviços_principais{
+.contatos{
     color: rgb(120, 0, 150);
     border-bottom: 2px solid rgb(120, 0, 150);
 }
@@ -121,12 +152,11 @@ body{
     background-color: white;
     padding: 2.5vh;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;	
 }
 .serviços_item{
     display: flex;
-    padding: 1vh;
-    border: 2px solid 9px 7px 5px rgba(139, 139, 139, 0.932);
+    padding: 2.5vh;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
@@ -135,21 +165,16 @@ body{
 		-moz-box-shadow:    9px 7px 5px rgba(126, 126, 126, 0.932);
 		box-shadow:         9px 7px 5px rgba(223, 223, 223, 0.932);
 }
-.serviços_item_imagem{
-    width: 15%;
-    border-radius: 10px;
-}
-.serviços_item_escritos_imagem{
-    column-gap: 1vh;
+.icon_escritos{
     display: flex;
-
-    padding: 1vh;
+    width: 100%;
+    column-gap: 2.5vh;
 }
 .serviços_item_escritos{
     display: flex;
+    width: 40vh;
     flex-direction: column;
     justify-content: center ;
-
 }
 .serviços_item_escritos_tit{
     color: rgb(120, 0, 150);
@@ -157,24 +182,25 @@ body{
 .serviços_item_escritos_desc{
     color: black;
 }
-.serviços_item_button{
-    display: flex;
-    width: 22.5vh;
-    background-color: rgb(173, 0, 216);
-    border: 3px solid rgb(96, 0, 121);
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    padding-block: 2vh;
-    margin-inline: 2vh;
-    column-gap: 1.5vh;
-
+/*SOCIAL NETWORKS ICONS*/
+.bi{
+    width: 5%;
+    height: auto;
 }
-.serviços_item_button_tit, .cake_add{
-    color: white;
+.bi-whatsapp{
+    color: green;
     
 }
-
+.bi-instagram{
+    color: #DD2A7B;
+}
+.bi-facebook{
+    color: blue;
+}
+.bi-tiktok{
+    color: black;
+}
+/*SOCIAL NETWORKS ICONS FIM*/
 /*SERVIÇOS FINALIZADO*/
 
 
@@ -259,7 +285,9 @@ body{
 
     /*SERVIÇOS INICIADO */
 
-
+    .bi{
+        width: 10%;
+    }
     /*SERVIÇOS FINALIZADO*/
 
 
@@ -342,7 +370,7 @@ body{
             .serviços{
                 width: 100%;
                 padding: 1vh;
-                border-radius: 0px;
+		border-radius: 0px;    
             }
             .serviços_item{
                 width: 100%;
@@ -365,8 +393,8 @@ body{
                 
             }
             .serviços_item_button{
-                padding: 1vh;
-                width: 70%;
+                padding: 0vh;
+                width: 60%;
                 border-radius: 500px;
             }
             .serviços_item_button_tit{
@@ -376,7 +404,10 @@ body{
                 
                 
             }
-        
+
+            .bi{
+                width: 10%;
+            }
         
             /*SERVIÇOS FINALIZADO*/
         
@@ -459,7 +490,7 @@ body{
 
             .serviços{
                 width: 80%;
-                border-radius: 0px;
+		border-radius: 0px;    
             }
             .serviços_item{
                 width: 100%;
@@ -492,6 +523,9 @@ body{
             .serviços_item_button_tit, .restaurant_menu{
                 
                 
+            }
+            .bi{
+                width: 10%;
             }
         
         
