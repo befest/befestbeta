@@ -136,26 +136,60 @@ function execucao(){
     if(cardapioescolhido === 'Festa Botequim' && totconv<30){
         precoconv += (90*30)/totconv
     }
-    if(cardapioescolhido === 'Festa Botequim' && totconv>=30 && totconv<=49){
+    if(cardapioescolhido === 'Festa Botequim' && totconv>=30 && totconv<=70){
         precoconv += 85
     }
-    if(cardapioescolhido === 'Festa Botequim' && totconv>=50 && totconv<=69){
+    if(cardapioescolhido === 'Festa Botequim' && totconv>=71 && totconv<=100){
         precoconv += 75
     }
-    if(cardapioescolhido === 'Festa Botequim' && totconv>=70 && totconv<=89){
+    if(cardapioescolhido === 'Festa Botequim' && totconv>=101 && totconv<=120){
         precoconv += 70
     }
-    if(cardapioescolhido === 'Festa Botequim' && totconv>=90 && totconv<=109){
+    if(cardapioescolhido === 'Festa Botequim' && totconv>=121 && totconv<=150){
         precoconv += 65
-    }
-    if(cardapioescolhido === 'Festa Botequim' && totconv>=110 && totconv<=129){
-        precoconv += 62.5
-    }
-    if(cardapioescolhido === 'Festa Botequim' && totconv>=130){
-        precoconv += 60
     }
 
     // FIM DO CARDÁPIO DE FESTA BOTEQUIM //
+
+    // CARDÁPIO DE COFFEE BREAK //
+
+    if(cardapioescolhido === 'Coffee Break' && totconv<30){
+        precoconv += (60*30)/totconv
+    }
+    if(cardapioescolhido === 'Coffee Break' && totconv>=30 && totconv<=70){
+        precoconv += 60
+    }
+    if(cardapioescolhido === 'Coffee Break' && totconv>=71 && totconv<=100){
+        precoconv += 55
+    }
+    if(cardapioescolhido === 'Coffee Break' && totconv>=101 && totconv<=120){
+        precoconv += 50
+    }
+    if(cardapioescolhido === 'Coffee Break' && totconv>=121 && totconv<=150){
+        precoconv += 45
+    }
+
+    // FIM DO CARDÁPIO DE COFFEE BREAK //
+
+    // CARDÁPIO DE COCKTAIL //
+
+    if(cardapioescolhido === 'Cocktail' && totconv<30){
+        precoconv += (65*30)/totconv
+    }
+    if(cardapioescolhido === 'Cocktail' && totconv>=30 && totconv<=70){
+        precoconv += 65
+    }
+    if(cardapioescolhido === 'Cocktail' && totconv>=71 && totconv<=100){
+        precoconv += 60
+    }
+    if(cardapioescolhido === 'Cocktail' && totconv>=101 && totconv<=120){
+        precoconv += 55
+    }
+    if(cardapioescolhido === 'Cocktail' && totconv>=121 && totconv<=150){
+        precoconv += 50
+    }
+
+    // FIM DO CARDÁPIO DE COCKTAIL //
 
     // COMEÇO DA ESCOLHA DA CERVEJA
 
