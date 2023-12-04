@@ -35,23 +35,17 @@ function execucao(){
     if(cardapioescolhido === 'Churras Master' && totconv<30){
         precoconv += (135*30)/totconv
     }
-    if(cardapioescolhido === 'Churras Master' && totconv>=30 && totconv<=49){
+    if(cardapioescolhido === 'Churras Master' && totconv>=30 && totconv<=70){
         precoconv += 125
     }
-    if(cardapioescolhido === 'Churras Master' && totconv>=50 && totconv<=69){
+    if(cardapioescolhido === 'Churras Master' && totconv>=71 && totconv<=100){
        precoconv += 120
     }
-    if(cardapioescolhido === 'Churras Master' && totconv>=70 && totconv<=89){
+    if(cardapioescolhido === 'Churras Master' && totconv>=101 && totconv<=120){
        precoconv += 115
     }
-    if(cardapioescolhido === 'Churras Master' && totconv>=90 && totconv<=109){
+    if(cardapioescolhido === 'Churras Master' && totconv>=121 && totconv<=150){
         precoconv += 110
-    }
-    if(cardapioescolhido === 'Churras Master' && totconv>=110 && totconv<=129){
-        precoconv += 107.5
-    }
-    if(cardapioescolhido === 'Churras Master' && totconv>=130){
-        precoconv += 105
     }
 
     // FINAL DO CARDÁPIO CHURRAS MASTER //
@@ -82,25 +76,18 @@ function execucao(){
     if(cardapioescolhido === 'Churras Silver' && totconv<30){
         precoconv += (95*30)/totconv
     }
-    if(cardapioescolhido === 'Churras Silver' && totconv>=30 && totconv<=49){
+    if(cardapioescolhido === 'Churras Silver' && totconv>=30 && totconv<=70){
         precoconv += 85
     }
-    if(cardapioescolhido === 'Churras Silver' && totconv>=50 && totconv<=69){
+    if(cardapioescolhido === 'Churras Silver' && totconv>=71 && totconv<=100){
         precoconv += 80
     }
-    if(cardapioescolhido === 'Churras Silver' && totconv>=70 && totconv<=89){
+    if(cardapioescolhido === 'Churras Silver' && totconv>=101 && totconv<=120){
         precoconv += 75
     }
-    if(cardapioescolhido === 'Churras Silver' && totconv>=90 && totconv<=109){
+    if(cardapioescolhido === 'Churras Silver' && totconv>=121 && totconv<=150){
         precoconv += 70
     }
-    if(cardapioescolhido === 'Churras Silver' && totconv>=110 && totconv<=129){
-        precoconv += 67.5
-    }
-    if(cardapioescolhido === 'Churras Silver' && totconv>=130){
-        precoconv += 65
-    }
-
 
     // FINAL DO CARDÁPIO CHURRAS SILVER //
 
@@ -109,23 +96,17 @@ function execucao(){
     if(cardapioescolhido === 'Almoço/Jantar' && totconv<30){
         precoconv += (95*30)/totconv
     }
-    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=30 && totconv<=49){
+    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=30 && totconv<=70){
         precoconv += 85
     }
-    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=50 && totconv<=69){
+    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=71 && totconv<=100){
         precoconv += 80
     }
-    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=70 && totconv<=89){
+    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=101 && totconv<=120){
         precoconv += 75
     }
-    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=90 && totconv<=109){
+    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=120 && totconv<=150){
         precoconv += 70
-    }
-    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=110 && totconv<=129){
-        precoconv += 67.5
-    }
-    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=130){
-        precoconv += 65
     }
 
     // FIM DO CARDÁPIO ALMOÇO/JANTAR //
@@ -156,7 +137,7 @@ function execucao(){
         precoconv += (90*30)/totconv
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=30 && totconv<=49){
-        precoconv += 80
+        precoconv += 85
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=50 && totconv<=69){
         precoconv += 75
