@@ -140,23 +140,17 @@ function execucao(){
     if(cardapioescolhido === 'Feijoada' && totconv<30){
         precoconv+= (95*30)/totconv
     }
-    if(cardapioescolhido === 'Feijoada' && totconv>=30 && totconv<=49){
+    if(cardapioescolhido === 'Feijoada' && totconv>=30 && totconv<=70){
         precoconv += 85
     }
-    if(cardapioescolhido === 'Feijoada' && totconv>=50 && totconv<=69){
+    if(cardapioescolhido === 'Feijoada' && totconv>=71 && totconv<=100){
         precoconv += 80
     }
-    if(cardapioescolhido === 'Feijoada' && totconv>=70 && totconv<=89){
+    if(cardapioescolhido === 'Feijoada' && totconv>=101 && totconv<=120){
         precoconv = 75
     }
-    if(cardapioescolhido === 'Feijoada' && totconv>=90 && totconv<=109){
+    if(cardapioescolhido === 'Feijoada' && totconv>=121 && totconv<=150){
         precoconv += 70
-    }
-    if(cardapioescolhido === 'Feijoada' && totconv>=110 && totconv<=129){
-        precoconv += 67.5
-    }
-    if(cardapioescolhido === 'Feijoada' && totconv>=130){
-        precoconv += 65
     }
 
     // FIM DO CARDÁPIO DE FEIJOADA //
@@ -242,7 +236,7 @@ function execucao(){
         precoopenbar += 0
     }
     if(openbarescolhido=== 'Com Open-Bar'){
-        precoopenbar += 20
+        precoopenbar += 25
     }
 
 
