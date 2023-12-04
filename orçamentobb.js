@@ -61,24 +61,19 @@ function execucao(){
     if(cardapioescolhido === 'Churras Gold' && totconv<30){
         precoconv += (100*30)/totconv
     }
-    if(cardapioescolhido === 'Churras Gold' && totconv>=30 && totconv<=49){
+    if(cardapioescolhido === 'Churras Gold' && totconv>=30 && totconv<=70){
         precoconv += 90
     }
-    if(cardapioescolhido === 'Churras Gold' && totconv>=50 && totconv<=69){
+    if(cardapioescolhido === 'Churras Gold' && totconv>=71 && totconv<=100){
         precoconv += 85
     }
-    if(cardapioescolhido === 'Churras Gold' && totconv>=70 && totconv<=89){
+    if(cardapioescolhido === 'Churras Gold' && totconv>=101 && totconv<=120){
         precoconv += 80
     }
-    if(cardapioescolhido === 'Churras Gold' && totconv>=90 && totconv<=109){
+    if(cardapioescolhido === 'Churras Gold' && totconv>=121 && totconv<=150){
         precoconv += 75
     }
-    if(cardapioescolhido === 'Churras Gold' && totconv>=110 && totconv<=129){
-        precoconv += 72.5
-    }
-    if(cardapioescolhido === 'Churras Gold' && totconv>=130){
-        precoconv += 70
-    }
+   
 
     // FINAL DO CARDÁPIO CHURRAS GOLD
 
