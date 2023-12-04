@@ -199,34 +199,34 @@ function execucao(){
         precocerva += 0
     }
     if( cervejaescolhida=== 'Brahma + Antarctica'){
-        precocerva += 10
+        precocerva += 20
     }
     if( cervejaescolhida=== 'Brahma Duplo/Puro Malte'){
-        precocerva += 15
+        precocerva += 25
     }
     if( cervejaescolhida=== 'Antarctica Original'){
-        precocerva += 15
+        precocerva += 25
     }
     if( cervejaescolhida=== 'Império'){
-        precocerva += 20
+        precocerva += 30
     }
     if( cervejaescolhida=== 'Amstel'){
-        precocerva += 15
+        precocerva += 25
     }
     if( cervejaescolhida=== 'Heineken'){
-        precocerva += 30
+        precocerva += 45
     }
     if( cervejaescolhida=== 'Corona'){
-        precocerva += 25
+        precocerva += 35
     }
     if( cervejaescolhida=== 'Stella Artois'){
-        precocerva += 30
+        precocerva += 40
     }
     if( cervejaescolhida=== 'Budweiser'){
-        precocerva += 25
+        precocerva += 35
     }
     if( cervejaescolhida=== 'Bohemia'){
-        precocerva += 20
+        precocerva += 30
     }
     // FINAL DA CERVEJA
 
