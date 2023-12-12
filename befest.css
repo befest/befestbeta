@@ -307,7 +307,7 @@ body{
             }
             .img_logo_prestador{
                 /*espaçamento*/
-                width: 50%;    
+                width: 80%;    
             }
             .description{
                 /*espaçamento*/
@@ -333,8 +333,8 @@ body{
             .item_menu_soundbar{
                 
             }
-            .serviços_principais,.serviços_adicionais{
-                width: 30vh;
+            .serviços_principais{
+                width: 25vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
