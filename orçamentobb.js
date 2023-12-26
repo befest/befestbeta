@@ -248,11 +248,35 @@ function execucao(){
     if(openbarescolhido=== 'Com Open-Bar'){
         precoopenbar += 25
     }
-
-
-
-
     //OPEN-BAR FINAL
+
+
+    //TOALHA INICIO
+    var select = document.querySelector('#toalhas')
+    var option = select.children[select.selectedIndex];
+    var toalhaEscolhida = option.textContent;
+
+    var precotoalha = 0
+
+    if(toalhaEscolhida=== 'Toalha Branca Lisa'){
+        precotoalha += 15
+    }
+    if(toalhaEscolhida=== 'Toalha Vermelha Lisa'){
+        precotoalha += 10
+    }
+    if(toalhaEscolhida=== 'Toalha Vermelha e Branca Quadriculada'){
+        precotoalha += 5
+    }
+    if(toalhaEscolhida=== 'Toalha Azul e Branca Quadriculada'){
+        precotoalha += 5
+    }
+    if(toalhaEscolhida=== 'Toalha Verde e Branca Quadriculada'){
+        precotoalha += 5
+    }
+    if(toalhaEscolhida=== 'Toalha Preta e Branca Quadriculada'){
+        precotoalha += 5
+    }
+    //TOALHA FINAL
 
     // UNIFICAÇÃO PARA O TOTAL
 
@@ -260,8 +284,14 @@ function execucao(){
     var precocerva1 = precocerva.toFixed(2).replace('.',',')
     var precoopenbar1 = precoopenbar.toFixed(2).replace('.',',')
 
+        // preço por toalha 
+    var precoportoalha = precotoalha.toFixed(2).replace('.',',')
+    var n_de_toalhas = parseInt(totconv/4)
+
+    var preco_total_toalhas = parseInt(precoportoalha)*parseInt(n_de_toalhas)
+    var preco_total_toalhas1 = preco_total_toalhas.toFixed(2).replace('.',',')
+
         // preço por convidado
-            
     var precoporconvtotal = precoconv + precocerva + precoopenbar + preço_mes
     var precoporconvtotal_compontos = precoporconvtotal.toFixed(2).replace('.',',')
             // preço por convidado meia
@@ -269,20 +299,26 @@ function execucao(){
     var precoporconvidadomeia_compontos = precoporconvidadomeia.toFixed(2).replace('.',',')
 
         // preço total
-    var preco_total = (precoporconvtotal*integrais) + (precoporconvidadomeia*meias)
+    var preco_total = (precoporconvtotal*integrais) + (precoporconvidadomeia*meias) + preco_total_toalhas 
     var preco_total_compontos = preco_total.toFixed(2).replace('.',',')
     
 
-    res.innerHTML = `ORÇAMENTO BARRETO'S BUFFET🔴⚪<br><br>
+    res.innerHTML = `Orçamento Barreto's Buffet<br><br>
 
-    Data do Evento📆: ${data_nova}<br><br>
+    Data do Evento📆: ${data_nova}<br><br><br>
     
     Cardápio Escolhido🍽️: ${cardapioescolhido}<br><br>
     Cerveja Escolhida🍺: ${cervejaescolhida}<br><br>
-    Open-Bar Escolhido🍹: ${openbarescolhido}<br><br>
+    Open-Bar Escolhido🍹: ${openbarescolhido}<br><br><br>
 
     Convidados Integrais: ${integrais}<br><br>
-    Convidados Meias: ${meias}<br><br>
+    Convidados Meias: ${meias}<br><br><br>
+
+    Toalha Escolhida : ${toalhaEscolhida} <br><br>
+    Preço por Toalha : R$ ${precoportoalha} <br><br>
+    Nº de Toalhas :  ${n_de_toalhas} unidades <br><br>
+    Preço Total de Toalhas : R$ ${preco_total_toalhas1}<br><br><br>
+
 
     Preço por Convidado (INTEIRA):R$ ${precoporconvtotal_compontos} <br><br>
     Preço por Convidado (MEIA):R$ ${precoporconvidadomeia_compontos}<br><br>
@@ -290,6 +326,7 @@ function execucao(){
 
     
 }
+
 
 
 
