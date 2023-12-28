@@ -207,7 +207,7 @@ body{
 }
 
 #res{
-    width: 200%;
+    width: 100%;
     height: auto;
     background-color: rgb(120, 0, 150);
     align-items: center;
