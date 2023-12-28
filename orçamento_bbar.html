@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="BEFESTICO.png" type="image/x-icon">
+    <link rel="stylesheet" href="orçamento_bbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="orçamento_bbar.js"></script>
+    <title>Barreto's Bar | Be fest</title>
+</head>
+<body>
+
+
+    <div class="container-header">
+
+        <div class="header">
+
+            <div class="header_images">
+
+                <img src="/Imagens/Barreto's Bar - Imagem Principal.png" alt="" class="img_logo_prestador">
+        
+            </div>
+
+            <div class="description">
+
+                <p class="header_titulo">Barreto's Bar</p>
+    
+                <p class="header_festarea_nicho">Comida e Bebida | Serviço de Open-Bar</p>
+        
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="menu_soundbar">
+
+
+        <a href="/Barreto's Bar/barretosbar.html"><div class="item_menu_soundbar serviços_principais">
+            <p class="tit_item_menu_soundbar">Serviços Principais</p>
+            <span class="material-symbols-outlined restaurant restaurant">local_bar</span>
+        </div></a>
+
+        <a href="/Barreto's Bar/Orçamento/orçamento_bbar.html"><div class="item_menu_soundbar orçamento">
+            <p class="tit_item_menu_soundbar">Orçamento</p>
+            <span class="material-symbols-outlined">payments</span>
+        </div></a>
+
+
+        <a href="/Barreto's Bar/Contatos/barretosbarcontato.html"><div class="item_menu_soundbar contatos">
+            <p class="tit_item_menu_soundbar">Contatos</p>
+            <span class="material-symbols-outlined phone">phone</span>
+        </div></a>
+
+
+
+
+
+    </div>
+
+    <div class="serviços">
+        <div class="serviços">
+
+            <p class="titulo_servicos">Realize seu Orçamento Aqui!</p>
+   
+           <div class="dadosparaorçamento">
+               <div class="dadosserviço">
+                   
+                   <p class="tit">Dados do Serviço</p>
+                   
+                   <label for="data" class="label">Data da Festa : </label>
+                   <input type="date" name="data" id="data" class="topico" placeholder="dd/mm/aaaa">
+   
+                   <select id="cardapios" class="topico">
+                       <option disabled selected style="display: none">Cardápios</option>
+                       <option value="Open-Bar I">Open-Bar I</option>
+                       <option value="Open-Bar II">Open-Bar II</option>
+                       <option value="Open-Bar III">Open-Bar III</option>
+                       <option value="Open-Bar IV">Open-Bar IV</option>
+                       
+                   </select> 
+                   
+       
+               </div>
+       
+               <div class="dadosconvidados">
+       
+                   <p class="tit">Dados dos Convidados</p>
+       
+                   <input type="number" class="topico" id="convint" placeholder="Nº de Convidados (Integral)">
+                   <input type="number" class="topico" id="convmeia" placeholder="Nº de Convidados (Meia)"> <br>
+   
+                   <li class="tit">OBS🚨:Os valores descritos abaixo tem validade até dia 30/11/2023 , de 01/12/2023 até 31/12/2023 é acrescentado R$ 10,00 em cada no preço por convidado.</li>
+                   
+                   <input type="button" class="topico1" value="Realizar Orçamento!" onclick="execucao()">
+   
+               
+       
+               </div>
+               
+           </div>
+   
+           <div id="res">
+               <p>Orçamento Barreto's Buffet</p>
+           </div> 
+   
+       </div>
+    </div>
+    
+    <footer class="footer">
+
+        <a  id="footer-logo-link" href="befest.html"><img src="/Imagens/Logo Secundária - Be fest (Rosa).png" alt="footer-logo" class="footer-logo"></a>
+
+    </footer>
+
+
+
+</body>
+</html>
