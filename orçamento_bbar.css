@@ -140,7 +140,7 @@ body{
     
 }
 .dadosparaorçamento{
-    width: 200%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 2.5vh;
