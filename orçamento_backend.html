@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="BEFESTICO.png" type="image/x-icon">
+    <link rel="stylesheet" href="orçamento_backend.css">
+    <script src="orçamento_backend.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Barreto's Buffet | Be fest</title>
+</head>
+<body>
+    <div class="container-header">
+
+        <div class="header">
+
+            <div class="header_images">
+
+                <img src="Logo Barreto's Buffet Instagram.png" alt="" class="img_logo_prestador">
+        
+            </div>
+
+            <div class="description">
+
+                <p class="header_titulo">Barreto's Buffet</p>
+        
+                <p class="header_festarea_nicho">Comida e Bebida | Serviço de Buffet</p>
+        
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="serviços">
+
+         <p class="titulo_servicos">Realização de Orçamento</p>
+
+        <div class="dadosparaorçamento">
+            <div class="dadosserviço">
+                
+                <p class="tit">Dados do Serviço</p>
+                
+                <label for="data" class="label">Data da Festa : </label>
+                <input type="date" name="data" id="data" class="topico" placeholder="dd/mm/aaaa">
+
+                <select id="cardapios" class="topico">
+                    <option disabled selected style="display: none">Cardápios</option>
+                    <option value="Churras Master">Churras Master</option>
+                    <option value="Churras Gold">Churras Gold</option>
+                    <option value="Churras Silver">Churras Silver</option>
+                    <option value="Almoço/Jantar">Almoço/Jantar</option>
+                    <option value="Feijoada">Feijoada</option>
+                    <option value="Festa Botequim">Festa Botequim</option>
+                    <option value="Coffee Break">Coffee Break</option>
+                    <option value="Cocktail">Cocktail</option>
+                </select> 
+    
+                <select id="cervejas" class="topico">
+                    <option disabled selected style="display: none">Cervejas</option>
+                    <option value="semcervejas">Sem Cerveja</option>
+                    <option value="cervejatradicional">Brahma</option>
+                    <option value="brahmas">Brahma Duplo/Puro Malte</option>
+                    <option value="antarctica">Antarctica Original</option>
+                    <option value="imperio">Império</option>
+                    <option value="Amstel">Amstel</option>
+                    <option value="heineken">Heineken</option>
+                    <option value="corona">Corona</option>
+                    <option value="stella">Stella Artois</option>
+                    <option value="budweiser">Budweiser</option>
+                    <option value="bohemia">Bohemia</option>
+                </select>
+    
+                <select id="open-bar" class="topico">
+                    <option disabled selected style="display: none">Open-Bar</option>
+                    <option value="Sem Open-Bar">Sem Open-Bar</option>
+                    <option value="Com Open-Bar">Com Open-Bar</option>
+                   
+                    
+                </select>
+
+                <select id="toalhas" class="topico">
+                    <option disabled selected style="display: none">Toalhas</option>
+                    <option value="Toalha Branca Lisa">Toalha Branca Lisa</option>
+                    <option value="Toalha Vermelha Lisa">Toalha Vermelha Lisa</option>
+                    <option value="Toalha Vermelha e Branca Quadriculada">Toalha Vermelha e Branca Quadriculada</option>
+                    <option value="Toalha Azul e Branca Quadriculada">Toalha Azul e Branca Quadriculada</option>
+                    <option value="Toalha Verde e Branca Quadriculada">Toalha Verde e Branca Quadriculada</option>
+                    <option value="Toalha Preta e Branca Quadriculada">Toalha Preta e Branca Quadriculada</option>
+                   
+                    
+                </select>
+
+            </div>
+    
+            <div class="dadosconvidados">
+    
+                <p class="tit">Dados dos Convidados</p>
+    
+                <input type="number" class="topico" id="convint" placeholder="Nº de Convidados (Integral)">
+                <input type="number" class="topico" id="convmeia" placeholder="Nº de Convidados (Meia)"> <br>
+
+            </div>
+
+            <div class="dadospreço">
+    
+                <p class="tit">Dados de Preço</p>
+    
+                <input type="number" class="topico" id="preco_convidado" placeholder="Digite o Preço por Convidado">
+
+            </div>
+            
+            <li class="tit">OBS🚨:Os valores descritos abaixo tem validade até dia 30/11/2023 , de 01/12/2023 até 31/12/2023 é acrescentado R$ 10,00 em cada no preço por convidado.</li>
+
+            <input type="button" class="topico1" value="Realizar Orçamento!" onclick="execucao()">
+            
+        </div>
+
+        <div id="res">
+            <p>Orçamento Barreto's Buffet</p>
+        </div> 
+
+    </div>
+
+      
+
+    </div>
+
+
+
+    <footer class="footer">
+
+        <a  id="footer-logo-link" href="befest.html"><img src="Logo Secundária - Be fest (Rosa).png" alt="footer-logo" class="footer-logo"></a>
+
+    </footer>
+
+</body>
+</html>
