@@ -279,7 +279,7 @@ body{
     .menu_soundbar{
         width: 100%;
         overflow-x: scroll;
-        justify-content: left;
+        justify-content: center;
         
     }
     .item_menu_soundbar{
@@ -359,7 +359,7 @@ body{
              .menu_soundbar{
                 width: 100%;
                 overflow-x: scroll;
-                justify-content: left;
+                justify-content: center;
                 
             }
             .item_menu_soundbar{
@@ -478,7 +478,7 @@ body{
             .menu_soundbar{
                 width: 100%;
                 overflow-x: scroll;
-                justify-content: left;
+                justify-content: center;
                 
             }
             .item_menu_soundbar{
