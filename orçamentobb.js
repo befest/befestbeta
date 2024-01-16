@@ -246,7 +246,7 @@ function execucao(){
         precoopenbar += 0
     }
     if(openbarescolhido=== 'Com Open-Bar'){
-        precoopenbar += 25
+        precoopenbar += 30
     }
     //OPEN-BAR FINAL
 
