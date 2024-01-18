@@ -365,8 +365,8 @@ body{
                 
             }
             .serviços_item_button{
-                padding: 0;
-                
+                padding: 1vh;
+                width: 70% ;
                 border-radius: 50%;
             }
             .serviços_item_button_tit{
