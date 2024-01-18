@@ -307,7 +307,7 @@ body{
             }
             .img_logo_prestador{
                 /*espaçamento*/
-                width: 80%;    
+                width: 50%;    
             }
             .description{
                 /*espaçamento*/
@@ -327,14 +327,14 @@ body{
              .menu_soundbar{
                 width: 100%;
                 overflow-x: scroll;
-                justify-content: left;
+                justify-content: center;
                 
             }
             .item_menu_soundbar{
                 
             }
-            .serviços_principais{
-                width: 20vh;
+            .serviços_principais,.serviços_adicionais{
+                width: 30vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
@@ -363,13 +363,17 @@ body{
                 
             }
             .serviços_item_escritos_desc{
+                width: 90%;
+          
                 font-size: 8pt;
+                
                 
             }
             .serviços_item_button{
-                padding: 1vh;
-                width: 70%;
-                border-radius: 500px;
+                padding: 0.5vh;
+                width: 62.5%;
+                
+                border-radius: 50%;
             }
             .serviços_item_button_tit{
                 display: none;
@@ -452,7 +456,7 @@ body{
                 
             }
             .serviços_principais,.serviços_adicionais{
-                width: 22.5vh;
+                width: 24vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
