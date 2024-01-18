@@ -399,9 +399,10 @@ body{
                 
             }
             .serviços_item_button{
-                padding: 1vh;
-                width: 70%;
-                border-radius: 500px;
+               padding: 0.5vh;
+                width: 50%;
+                
+                border-radius: 50%;
             }
             .serviços_item_button_tit{
                 display: none;
