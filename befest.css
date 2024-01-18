@@ -334,7 +334,7 @@ body{
                 
             }
             .serviços_principais,.serviços_adicionais{
-                width: 30vh;
+                
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
@@ -447,14 +447,14 @@ body{
             .menu_soundbar{
                 width: 100%;
                 overflow-x: scroll;
-                justify-content: left;
+                justify-content: center;
                 
             }
             .item_menu_soundbar{
                 
             }
             .serviços_principais,.serviços_adicionais{
-                width: 24vh;
+               
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
