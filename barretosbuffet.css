@@ -131,7 +131,7 @@ body{
     padding: 2.5vh;
     justify-content: center;
     align-items: center;
-    column-gap: 8vh;
+    column-gap: 10vh;
     overflow-x: scroll;
 }
 .item_menu_soundbar{
@@ -139,7 +139,7 @@ body{
     column-gap: 1vh;
     align-items: center;
     color: black;
-    padding: 0.25vh;
+    padding: 0.50vh;
 }
 .serviços_principais{
     color: red;
