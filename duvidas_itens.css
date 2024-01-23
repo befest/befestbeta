@@ -408,8 +408,9 @@ body{
             }
             .serviços_item_button{
                 padding: 1vh;
-                width: 70%;
-                border-radius: 500px;
+                width: 57.5% ;
+		height : auto;    
+                border-radius: 50%;
             }
             .serviços_item_button_tit{
                 display: none;
