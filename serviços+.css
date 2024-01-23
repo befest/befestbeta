@@ -131,7 +131,7 @@ body{
     padding: 2.5vh;
     justify-content: left;
     align-items: center;
-    column-gap: 8vh;
+    column-gap: 4vh;
     overflow-x: scroll;
 }
 .item_menu_soundbar{
