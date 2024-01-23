@@ -375,9 +375,12 @@ body{
 		
                 
             }
-            .serviços_principais,.serviços_adicionais,.duvidas_itens{
+            .serviços_principais,.serviços_adicionais{
                 width: 22.5vh;
             }
+	    .duvidas_itens{
+	        width: 17.5vh;
+	    }
         
             /*MENU SOUND-BAR FINALIZADO*/
         
