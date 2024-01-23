@@ -131,7 +131,7 @@ body{
     padding: 2.5vh;
     justify-content: left;
     align-items: center;
-    column-gap: 6vh;
+    column-gap: 4vh;
     overflow-x: scroll;
 }
 .item_menu_soundbar{
@@ -372,11 +372,11 @@ body{
                 
             }
             .item_menu_soundbar{
-		width : 15vh;
+		
                 
             }
-            .serviços_principais,.serviços_adicionais{
-                width: 22.5vh;
+            .serviços_principais,.serviços_adicionais,.duvidas_itens{
+                width: 20vh;
             }
         
             /*MENU SOUND-BAR FINALIZADO*/
