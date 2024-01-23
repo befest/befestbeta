@@ -129,9 +129,9 @@ body{
     width: 50%;
     display: flex;
     padding: 2.5vh;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    column-gap: 10vh;
+    column-gap: 8vh;
     overflow-x: scroll;
 }
 .item_menu_soundbar{
@@ -139,13 +139,21 @@ body{
     column-gap: 1vh;
     align-items: center;
     color: black;
-    padding: 0.50vh;
+    padding: 0.25vh;
 }
 .serviços_principais{
+    width: 23vh;
     color: red;
     border-bottom: 2px solid red;
 }
+.serviços_adicionais{
+    width: 23vh;
+    
+}
+.duvidas_itens{
+    width: 19vh;
 
+}
 /*MENU SOUND-BAR FINALIZADO*/
 
 
