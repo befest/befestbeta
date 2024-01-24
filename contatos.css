@@ -130,6 +130,7 @@ body{
     justify-content: center;
     align-items: center;
     column-gap: 4vh;
+    overflow-x: scroll;	
 }
 .item_menu_soundbar{
     display: flex;
