@@ -155,7 +155,9 @@ body{
 .duvidas_itens{
      width: 17.5vh;	 	
 }
-
+.serviços_principais,.serviços_adicionais{
+	width: 22.5vh;
+}
 /*MENU SOUND-BAR FINALIZADO*/
 
 
