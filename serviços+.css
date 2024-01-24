@@ -142,13 +142,16 @@ body{
     padding: 0.25vh;
 }
 .serviços_adicionais{
+    width: 22.5vh ;
     color: red;
     border-bottom: 2px solid red;
 }
 .duvidas_itens{
      width: 17.5vh;	 	
 }
-
+.serviços_principais{
+     width: 22.5vh ;
+}
 /*MENU SOUND-BAR FINALIZADO*/
 
 
