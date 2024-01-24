@@ -21,7 +21,6 @@
 */
 
 
-/*CONFIGURAÇÕES GERAIS INICIADA*/
 *{
     /*espaçamento*/
     padding: 0;
@@ -49,10 +48,7 @@ body{
     width: 50%;
     background-color: white;
     height: auto;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding: 2.5vh;
-
+    border-radius: 50px;
 }
 /*CONTAINER FINALIZADO*/
 
@@ -76,6 +72,7 @@ body{
     /*espaçamento*/
     width: 7.5%;
     height: auto;
+    margin: 10px;
     /*estilização*/
     border-radius: 30px;
 }
@@ -97,7 +94,6 @@ body{
     cursor: pointer;
 }
 /*HEADER TERMINADO*/
-
 
 
 
