@@ -142,6 +142,9 @@ body{
     color: red;
     border-bottom: 2px solid red;
 }
+.serviços_principais,.serviços_adicionais{
+     width: 22.5vh ;
+}
 .duvidas_itens{
      width: 17.5vh;	 	
 }
