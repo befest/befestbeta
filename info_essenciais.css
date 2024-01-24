@@ -254,12 +254,12 @@ body{
 }
 /*FOOTER FINALIZADO*/
 
-
+/*_______________________________________________________________________________________________________________________________________*/
 @media (min-width: 0px) and (max-width: 426px){
 
     body{
     /*espaçamento*/
-    
+    background-color: white;
     /*estilização*/
     
 }
