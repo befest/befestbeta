@@ -281,6 +281,7 @@ body{
 /*HEADER INICIADO*/
 .header{
     /*espaçamento*/
+    width: 100%;	
     position: fixed;
     
     -webkit-box-shadow: 9px 7px 5px rgba(187, 187, 187, 0.932);
