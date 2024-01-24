@@ -127,7 +127,7 @@ body{
     width: 50%;
     display: flex;
     padding: 2.5vh;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     column-gap: 4vh;
     overflow-x: scroll;	
