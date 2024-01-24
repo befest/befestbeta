@@ -280,7 +280,7 @@ body{
 .header{
     /*espaçamento*/
     position: fixed;
-    
+    margin-bottom: 2.5vh;
     -webkit-box-shadow: 9px 7px 5px rgba(187, 187, 187, 0.932);
 		-moz-box-shadow:    9px 7px 5px rgba(123, 123, 123, 0.932);
 		box-shadow:         9px 7px 5px rgba(157, 157, 157, 0.932);
