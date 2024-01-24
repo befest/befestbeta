@@ -253,7 +253,7 @@ body{
     height: auto;   
 }
 /*FOOTER FINALIZADO*/
-
+/*___________________________________________________________________________________________________________________________________*/
 
 @media (min-width: 0px) and (max-width: 426px){
 
@@ -321,7 +321,7 @@ body{
 .serviços{
     /*espaçamento*/
     padding-top: 100px;
-    
+    background-color: white;
     /*estilização*/
     
     /*responsividade*/
