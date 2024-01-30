@@ -278,7 +278,6 @@ body{
 .header{
     /*espaçamento*/
     position: fixed;
-    
     -webkit-box-shadow: 9px 7px 5px rgba(187, 187, 187, 0.932);
 		-moz-box-shadow:    9px 7px 5px rgba(123, 123, 123, 0.932);
 		box-shadow:         9px 7px 5px rgba(157, 157, 157, 0.932);
@@ -318,8 +317,8 @@ body{
 /*SERVIÇOS INICIADO*/
 .serviços{
     /*espaçamento*/
-    padding-top: 100px;
-    
+    padding-top: 1vh;
+    background-color: white;
     /*estilização*/
     
     /*responsividade*/
