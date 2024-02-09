@@ -129,7 +129,7 @@ body{
     width: 50%;
     display: flex;
     padding: 2.5vh;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     column-gap: 4vh;
 }
