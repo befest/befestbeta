@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="BEFESTICO.png" type="image/x-icon">
+    <link rel="stylesheet" href="orçamento_miele.css">
+    <script src="orçamento_miele.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Miele Delícias | Be fest</title>
+</head>
+<body>
+    <div class="container-header">
+
+        <div class="header">
+
+            <div class="header_images">
+
+                <img src="/Imagens/MIELE DELÍCIAS/LOGO/MIELE DELÍCIAS - LOGO.jpg" alt="" class="img_logo_prestador">
+        
+            </div>
+
+            <div class="description">
+
+                <p class="header_titulo">Miele Delícias</p>
+        
+                <p class="header_festarea_nicho">Comida e Bebida | Serviço de Confeitaria</p>
+        
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="menu_soundbar">
+
+
+        <a href="/Miele Delícias/Página Principal/miele_delicias.html"><div class="item_menu_soundbar serviços_principais">
+            <p class="tit_item_menu_soundbar">Serviços Principais</p>
+            <span class="material-symbols-outlined restaurant restaurant">cake</span>
+        </div></a>
+
+        <a href="/Miele Delícias/Orçamento/orçamento_miele.html"><div class="item_menu_soundbar orçamento_miele">
+            <p class="tit_item_menu_soundbar">Orçamento</p>
+            <span class="material-symbols-outlined cake">payments</span>
+        </div></a>
+
+
+        <a href="/Miele Delícias/Contatos/miele_contatos.html"><div class="item_menu_soundbar contatos">
+            <p class="tit_item_menu_soundbar">Contatos</p>
+            <span class="material-symbols-outlined phone">phone</span>
+        </div></a>
+
+
+    </div>
+
+    <div class="serviços">
+
+         <p class="titulo_servicos">Realize seu Orçamento aqui!</p>
+
+        <div class="dadosparaorçamento">
+            <div class="dadosserviço">
+                
+                <label for="data" class="label">Data da Festa : </label>
+                <input type="date" name="data" id="data" class="topico" placeholder="dd/mm/aaaa">
+
+
+                <select id="bolos" class="topico">
+                    <option disabled selected style="display: none">Sabores de Bolos</option>
+                    <option value="Sem Bolo">Sem Bolo</option>
+                    <option value="Ninho">Ninho</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Doce de Leite">Doce de Leite</option>
+                    <option value="Coco">Coco</option>
+                    <option value="Paçoca">Paçoca</option>
+                    <option value="Amendoim">Amendoim</option>
+                    <option value="Coco Queimado">Coco Queimado</option>
+                    
+                </select> 
+
+                <select id="adicionais_bolos" class="topico">
+                    <option disabled selected style="display: none">Sabores Adicionais de Bolos</option>
+                    <option value="Sem Bolo">Sem Sabores Adicionais</option>
+                    <option value="Doce de Leite com Ameixa">Doce de Leite com Ameixa</option>
+                    <option value="Maracujá">Maracujá</option>
+                    <option value="Frutas Frescas">Frutas Frescas</option>
+                    
+                    
+                </select> 
+
+
+
+                <select id="qntd_pedaços" class="topico">
+                    <option disabled selected style="display: none">Quantidade de Pedaços</option>
+                    <option value="De 15-18 fatias">De 15-18 fatias</option>
+                    <option value="De 20-30 fatias">De 20-30 fatias</option>
+                    <option value="De 35-40 fatias">De 35-40 fatias</option>
+                </select>  
+                 
+            </div>
+
+            <br>
+            <input type="button" class="topico1" value="Realizar Orçamento!" onclick="execucao()">
+            
+        </div>
+
+        <div id="resultado">
+            <img src="/Imagens/MIELE DELÍCIAS/LOGO/MIELE DELÍCIAS - LOGO.jpg" alt="imagem_logo_miele_delicias" class="logo_miele_delicias">
+
+            <div id="res"></div>
+        </div> 
+
+    </div>
+
+      
+
+    </div>
+
+
+
+    <footer class="footer">
+
+        <a  id="footer-logo-link" href="befest.html"><img src="/Imagens/BE FEST/LOGO/Logo Secundária - Be fest (Rosa).png" alt="footer-logo" class="footer-logo"></a>
+
+    </footer>
+
+</body>
+</html>
