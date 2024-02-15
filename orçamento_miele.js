@@ -73,25 +73,25 @@ function execucao(){
         preco_docinho_gourmet += 75
         quantidade_docinhos_gourmet += 50
         var qntd_docinhos_gourmet_por_sabor = parseInt(quantidade_docinhos_gourmet/sabores_docinhos_gourmet_selecionados.length)
-        alert('Você terá direito a escolher 2 sabores de Docinhos Gourmet')
+        
     }
     if(qntd_escolhida_docinhos_gourmet === '100 unidades ( 4 sabores disponíveis )'){
         preco_docinho_gourmet += 150
         quantidade_docinhos_gourmet += 100
         var qntd_docinhos_gourmet_por_sabor = parseInt(quantidade_docinhos_gourmet/sabores_docinhos_gourmet_selecionados.length)
-        alert('Você terá direito a escolher 4 sabores de Docinhos Gourmet')
+        
     }
     if(qntd_escolhida_docinhos_gourmet === '150 unidades ( 6 sabores disponíveis )'){
         preco_docinho_gourmet += 225
         quantidade_docinhos_gourmet += 150
         var qntd_docinhos_gourmet_por_sabor = parseInt(quantidade_docinhos_gourmet/sabores_docinhos_gourmet_selecionados.length)
-        alert('Você terá direito a escolher 6 sabores de Docinhos Gourmet')
+        
     }
     if(qntd_escolhida_docinhos_gourmet === '200 unidades ( 8 sabores disponíveis )'){
         preco_docinho_gourmet += 300
         quantidade_docinhos_gourmet += 200
         var qntd_docinhos_gourmet_por_sabor = parseInt(quantidade_docinhos_gourmet/sabores_docinhos_gourmet_selecionados.length)
-        alert('Você terá direito a escolher 8 sabores de Docinhos Gourmet')
+        
     }
 
 
@@ -120,31 +120,31 @@ function execucao(){
         preco_docinho_tradicionais += 0
         quantidade_docinhos_tradicionais += 0
         
-        alert('Você terá direito a escolher 0 sabores')
+       
     }
     if(qntd_escolhida_docinhos_tradicionais === '50 unidades ( 2 sabores disponíveis )'){
         preco_docinho_tradicionais += 50
         quantidade_docinhos_tradicionais += 50
         var qntd_docinhos_tradicionais_por_sabor = parseInt(quantidade_docinhos_tradicionais/sabores_docinhos_tradicionais_selecionados.length)
-        alert('Você terá direito a escolher 2 sabores de Docinhos Tradicionais')
+        
     }
     if(qntd_escolhida_docinhos_tradicionais === '100 unidades ( 4 sabores disponíveis )'){
         preco_docinho_tradicionais += 100
         quantidade_docinhos_tradicionais += 100
         var qntd_docinhos_tradicionais_por_sabor = parseInt(quantidade_docinhos_tradicionais/sabores_docinhos_tradicionais_selecionados.length)
-        alert('Você terá direito a escolher 4 sabores de Docinhos Tradicionais')
+        
     }
     if(qntd_escolhida_docinhos_tradicionais === '150 unidades ( 4 sabores disponíveis )'){
         preco_docinho_tradicionais += 150
         quantidade_docinhos_tradicionais += 150
         var qntd_docinhos_tradicionais_por_sabor = parseInt(quantidade_docinhos_tradicionais/sabores_docinhos_tradicionais_selecionados.length)
-        alert('Você terá direito a escolher 4 sabores de Docinhos Tradicionais')
+        
     }
     if(qntd_escolhida_docinhos_tradicionais === '200 unidades ( 4 sabores disponíveis )'){
         preco_docinho_tradicionais += 200
         quantidade_docinhos_tradicionais += 200
         var qntd_docinhos_tradicionais_por_sabor = parseInt(quantidade_docinhos_tradicionais/sabores_docinhos_tradicionais_selecionados.length)
-        alert('Você terá direito a escolher 4 sabores de Docinhos Tradicionais')
+        
     }
 
 
