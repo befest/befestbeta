@@ -55,7 +55,8 @@
 
     </div>
 
-    <div class="serviços">
+
+<div class="serviços">
 
          <p class="titulo_servicos">Realize seu Orçamento aqui!</p>
 
@@ -78,7 +79,6 @@
                     <option value="Coco Queimado">Coco Queimado</option>
                     
                 </select> 
-
                 <select id="adicionais_bolos" class="topico">
                     <option disabled selected style="display: none">Sabores Adicionais de Bolos</option>
                     <option value="Sem Bolo">Sem Sabores Adicionais</option>
@@ -88,20 +88,125 @@
                     
                     
                 </select> 
-
-
-
                 <select id="qntd_pedaços" class="topico">
                     <option disabled selected style="display: none">Quantidade de Pedaços</option>
                     <option value="De 15-18 fatias">De 15-18 fatias</option>
                     <option value="De 20-30 fatias">De 20-30 fatias</option>
                     <option value="De 35-40 fatias">De 35-40 fatias</option>
                 </select>  
+
+                <p class="tit">Docinhos Gourmet</p>
+
+                <select id="qntd_docinhos_gourmet" class="topico">
+                    <option disabled selected style="display: none">Quantidade de Docinhos</option>
+                    <option value="Sem Docinhos">Sem Docinhos</option>
+                    <option value="50 unidades">50 unidades ( 2 sabores disponíveis )</option>
+                    <option value="100 unidades">100 unidades ( 4 sabores disponíveis ) </option>
+                    <option value="150 unidades">150 unidades ( 6 sabores disponíveis )</option>
+                    <option value="200 unidades">200 unidades ( 8 sabores disponíveis ) </option>
+                    
+                </select> 
+                <br>
+                <p class="tit">Escolha os Sabores de Docinhos Gourmet abaixo :</p>
+
+                <div class="docinhos_configuração">
+
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="ninho_com_doce_de_leite" name="checkbox_docinhos_gourmet" value="Ninho com Doce de Leite">
+                        <label for="ninho_com_doce_de_leite">Ninho com Doce de Leite</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="brigadeiro_gourmet" name="checkbox_docinhos_gourmet" value="Brigadeiro Gourmet">
+                        <label for="brigadeiro_gourmet">Brigadeiro Gourmet</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="brigadeiro_com_amendoim" name="checkbox_docinhos_gourmet" value="Brigadeiro com Amendoim">
+                        <label for="brigadeiro_com_amendoim">Brigadeiro com Amendoim</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="oreo" name="checkbox_docinhos_gourmet" value="Oreo">
+                        <label for="oreo">Oreo</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="disquete" name="checkbox_docinhos_gourmet" value="Disquete">
+                        <label for="disquete">Disquete</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="romeu_e_julieta" name="checkbox_docinhos_gourmet" value="Romeu e Julieta">
+                        <label for="romeu_e_julieta">Romeu e Julieta</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="churros" name="checkbox_docinhos_gourmet" value="Churros">
+                        <label for="churros">Churros</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="ferrero" name="checkbox_docinhos_gourmet" value="Ferrero">
+                        <label for="ferrero">Ferrero</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="fini" name="checkbox_docinhos_gourmet" value="Fini">
+                        <label for="fini">Fini</label>
+                    </div>
+
+
+
+                </div>
+
+
+                <p class="tit">Docinhos Tradicionais</p>
+
+                <select id="qntd_docinhos_tradicionais" class="topico">
+                    <option disabled selected style="display: none">Quantidade de Docinhos</option>
+                    <option value="Sem Docinhos">Sem Docinhos</option>
+                    <option value="50 unidades">50 unidades ( 2 sabores disponíveis )</option>
+                    <option value="100 unidades">100 unidades</option>
+                    <option value="150 unidades">150 unidades</option>
+                    <option value="200 unidades">200 unidades</option>
+                    
+                </select> 
+                <br>
+                <p class="tit">Escolha os Sabores de Docinhos Tradicionais abaixo :</p>
+
+                <div class="docinhos_configuração">
+
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="brigadeiro" name="checkbox_docinhos_tradicionais" value="Brigadeiro">
+                        <label for="brigadeiro">Brigadeiro</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="beijinho" name="checkbox_docinhos_tradicionais" value="Beijinho">
+                        <label for="beijinho">Beijinho</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="cajuzinho" name="checkbox_docinhos_tradicionais" value="Cajuzinho">
+                        <label for="cajuzinho">Cajuzinho</label>
+                    </div>
+
+                    <div class="docinhos_checkbox">
+                        <input type="checkbox" id="morango" name="checkbox_docinhos_tradicionais" value="Morango">
+                        <label for="morango">Morango</label>
+                    </div>
+
+
+                </div>
+                 
                  
             </div>
 
             <br>
-            <input type="button" class="topico1" value="Realizar Orçamento!" onclick="execucao()">
+            <input type="button" class="topico1" id="realizar_orçamento" value="Realizar Orçamento!" onclick="execucao()">
             
         </div>
 
@@ -113,12 +218,9 @@
 
     </div>
 
-      
-
-    </div>
 
 
-
+    
     <footer class="footer">
 
         <a  id="footer-logo-link" href="befest.html"><img src="Logo Secundária - Be fest (Rosa).png" alt="footer-logo" class="footer-logo"></a>
