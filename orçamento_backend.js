@@ -75,7 +75,7 @@ function execucao(){
     
 
 
-    res.innerHTML = `Orçamento Barreto's Buffet<br><br>
+    res.innerHTML = `
  
     Data do Evento📆: ${data_nova}<br><br>
         
