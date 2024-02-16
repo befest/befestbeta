@@ -252,6 +252,18 @@ body{
     background-color: rgb(140, 0, 0);
 }
 
+#resultado{
+    width: 100%;
+    height: auto;
+    background-color: rgb(172, 0, 0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    
+    border-radius: 5px;
+    
+}
 #res{
     width: 100%;
     height: auto;
@@ -264,6 +276,10 @@ body{
     color: white;
     font-size: 10pt;
     border-radius: 5px;
+}
+.img_res_orçamento{
+    width: 30%;
+    padding: 0vh;
     
 }
 
