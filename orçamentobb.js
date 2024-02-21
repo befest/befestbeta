@@ -97,16 +97,16 @@ function execucao(){
         precoconv += (95*30)/totconv
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=30 && totconv<=70){
-        precoconv += 85
+        precoconv += 90
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=71 && totconv<=100){
-        precoconv += 80
+        precoconv += 85
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=101 && totconv<=120){
-        precoconv += 75
+        precoconv += 80
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=120 && totconv<=150){
-        precoconv += 70
+        precoconv += 75
     }
 
     // FIM DO CARDÁPIO ALMOÇO/JANTAR //
