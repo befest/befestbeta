@@ -104,7 +104,7 @@ body{
 /*SERVIÇOS INICIADO*/
 .serviços{
     /*espaçamento*/
-    padding: 30px;
+    padding: 50px;
     display: flex;
     gap: 20px;
     /*estilização*/
