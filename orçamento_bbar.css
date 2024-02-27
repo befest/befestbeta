@@ -219,7 +219,9 @@ body{
     font-size: 10pt;
     border-radius: 5px;
 }
-
+.imagem_resultado{
+   width: 25%;
+}
 /*SERVIÇOS FINALIZADO*/
 
 
