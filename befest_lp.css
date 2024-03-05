@@ -1,0 +1,542 @@
+/*ESTRUTURA DO SITE:
+    === BASE ===
+    *
+    a
+    :root
+    body
+    ============
+
+    - Header
+        - Imagem
+        - Ul_Header
+            - ul_header_item
+    - Main
+        - escritos_main
+            - titulo_escritos_main
+            - subtitulo_escritos_main
+        - quadros
+            - quadros_festcategorias
+                comida_bebida
+            - tit_quadros_festcategorias
+            - comida_bebida
+            - entretenimento
+            - organização
+            - espaço
+        - FestParceiros
+            - fest_parceiros_modelos
+            - festa_parceiro_celular
+            
+        - FestTutorial
+            - fest_tutorial_textos
+            - fest_tutorial_tit
+            - fest_tutorial_escritos
+            - fest_tutorial_btn
+            - link-whatsapp
+            - fest_tutorial_btn:hover
+            - fest_tutorial_btn:active
+            - fest_tutorial_img
+        - Fest_vantagens
+            - fest_vantagens_quadros
+            - fest_vantagens_topico
+            - fest_vantagens_tit
+        - Footer
+            - img_logo_footer
+            - link-whatsapp-footer
+            - footer_btn
+*/
+/*BASE INICIADO*/
+*{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'bahnschrift';
+}
+a{
+    color: inherit;
+    
+}
+:root{
+    --pink : #ff0080;
+    --white : #ffffff;
+    --dark-pink : #7a003d;
+    --dark-grey : rgb(242, 242, 242);
+}
+body{
+    background-color: var(--dark-grey);
+}
+/*BASE FINALIZADO*/
+
+/*HEADER INICIADO*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--pink);
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;    
+}
+.img_logo_header{
+    width: 10%;
+}
+.ul_header{
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    column-gap: 5vh;
+    list-style-type: none;
+    color: var(--white);
+    padding: 10vh;
+}
+.ul_header_item{ color: var(--white);display:inline-block; margin:0; }
+.ul_header_item:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px var(--white);  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.ul_header_item:hover:after { transform: scaleX(1); }
+/*HEADER FINALIZADO  */
+
+/*MAIN INICIADO*/
+.main{
+    height: auto;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.escritos_main{
+    width: 100%;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.titulo_escritos_main{
+    font-size: 22pt;
+}
+
+/*Div : Quadros*/
+.quadros{
+    background-color: var(--white);
+    padding: 5vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+}
+.quadros_festcategorias{
+    border: none;
+    width: 35%;
+    padding: 5vh;
+    text-align: center;
+    border-radius: 1vh;
+}
+.tit_quadros_festcategorias{
+    color: white;
+}
+.comida_bebida{
+    background-color: red;
+}
+.entretenimento{
+    background-color: blue;
+
+}
+.organização{
+    background-color: orangered;
+}
+.espaço{
+    background-color: green;
+}
+
+/*Div : FestParceiros*/
+
+.fest_parceiros{
+    width: 100%;
+    text-align: center;
+    padding: 5vh;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+.fest_parceiros_modelos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fest_parceiro_celular{
+    width: 20%;
+    height: 75vh;
+}
+.fest_parceiro_celular:hover{
+    width: 21%;
+    height: 76vh;
+}
+/*Div : FestTutorial*/
+
+.fest_tutorial{
+    width: 100%;
+    height: auto;
+    padding: 2.5vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2.5vh;
+    align-items: center;
+    
+}
+.fest_tutorial_textos{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    height: 40vh;
+    align-items: center;
+    row-gap: 2.5vh;
+    
+}
+.fest_tutorial_tit{
+    font-size: 42pt;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+}
+.fest_tutorial_escritos{
+   
+    text-align: center;
+    width: 60%;
+    font-size: 24pt;
+
+}
+.fest_tutorial_btn{
+    width: 60%;
+    padding: 2.5vh;
+    border: 5px solid var(--pink);
+    color: var(--pink);
+    background-color: var(--white);
+    font-size: 16pt;
+    border-radius: 2.5vh;
+}
+.link-whatsapp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.fest_tutorial_btn:hover{
+    transition: 0.50s all;
+    background-color: var(--pink);
+    color: var(--white);
+}
+.fest_tutorial_btn:active{
+    background-color: var(--dark-pink);
+    border: 5px solid var(--dark-pink);
+}
+.fest_tutorial_img{
+    width: 40%;   
+}
+/*Div : FestApresentaçãoPrestadores*/
+
+.fest_apresentacao_prestadores{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+.fest_apresentacao_prestadores_escritos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+
+}
+.fest_apresentacao_titulo{
+    font-size: 42pt;
+}
+.fest_apresentacao_texto{
+    font-size: 20pt;
+    padding: 1vh;
+}
+.fest_apresentacao_exemplos{
+    
+}
+.mark_comida_bebida{
+    background-color: red;
+    color: white;
+    padding: 0.1vh;
+}
+.mark_entretenimento{
+    background-color: blue;
+    color: white;
+    padding: 0.1vh;
+}
+.mark_espaço{
+    background-color: green;
+    color: white;
+    padding: 0.1vh;
+}
+.mark_organizacao{
+    background-color: orangered;
+    color: white;
+    padding: 0.1vh;
+}
+.fest_apresentacao_img{
+    width: 70vh;
+    height: 70vh;
+}
+
+/*Div : Fest_Vantagens*/
+.fest_vantagens{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    width: 100%;
+    height: auto;
+    padding: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+.fest_vantagens_quadros{
+    width: 90%;
+    padding: 2.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5vh;
+    align-items: center;
+    justify-content: center;
+}
+.fest_vantagens_topico{
+    width: 30%;
+    display: flex;   
+    border: 2px solid none;
+    border-radius: 10px;
+    padding: 2.5vh;
+    column-gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-grey);
+    color: var(--pink);
+    -webkit-box-shadow: 9px 7px 5px rgba(229, 229, 229, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(182, 182, 182, 0.932);
+		box-shadow:         9px 7px 5px rgba(149, 149, 149, 0.932);
+    
+}
+.fest_vantagens_tit{
+    font-size: 24pt;
+    
+    padding: 2.5vh;
+}
+/*MAIN FINALIZADO*/
+
+/*FOOTER INICIADO*/
+.footer{
+    background-color: var(--dark-pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vh;
+    padding-left: 5vh;
+}
+.img_logo_footer{
+    width: 10%;
+}
+.link-whatsapp-footer{
+    
+}
+.footer_btn{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 2.5vh;
+    color: var(--dark-pink);
+    cursor: pointer;
+}
+
+/*FOOTER FINALIZADO*/
+
+
+
+/**/
+@media (min-width: 0px) and (max-width: 320px){
+
+    /*BASE*/
+    body{
+        width: 100%;
+    }
+    /*HEADER*/
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img_logo_header{
+        width: 50%;
+    }
+    .ul_header{
+        display: none;
+    }
+    /*MAIN*/
+    .escritos_main{
+        display: none;
+    }
+    .quadros{
+        display: flex;
+        flex-direction: column;
+    }
+    .quadros_festcategorias{
+        width: 90%;
+    }
+    /*FESTPARCEIROS*/
+    .titulo_escritos_main{
+        display: none;
+    }
+    .fest_parceiros_modelos{
+        overflow-x: scroll;
+        display: flex;
+        justify-content: left;
+        flex-wrap: nowrap;
+    }
+    .fest_parceiro_celular{
+        width: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .fest_tutorial{
+        display: none;
+    }
+    .fest_apresentacao_prestadores{
+        display: none;
+    }
+    .fest_vantagens_tit{
+        font-size: 18pt;
+        text-align: center;
+    }
+    .fest_vantagens_quadros{
+        display: flex;
+    }
+    .fest_vantagens_topico{
+        width: 100%;
+    }
+
+    /*FOOTER*/
+
+    .footer{
+        height: auto;
+    }
+    .footer_btn{
+        padding: 1vh;
+        font-size: 10pt;
+    }
+    .img_logo_footer{
+        width: 30%;
+
+    }
+    
+    
+
+}
+
+@media (min-width: 321px) and (max-width: 425px){
+    .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_logo_header{
+        width: 30%;
+    }
+    .ul_header{
+        display: none;
+    }
+    .quadros{
+        display: none;
+    }
+    .fest_parceiros{
+        
+    }
+    .fest_parceiros_modelos{
+        display: flex;
+        justify-content: left;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .fest_parceiro_celular{
+        display: flex;
+        width: 65%;
+    }
+
+
+    /*Festtutorial*/
+
+    .fest_tutorial{
+        column-gap: 0vh;
+    }
+    .fest_tutorial_textos{
+        font-size: 10pt;
+    }
+    .fest_tutorial_tit{
+        font-size: 14pt;
+    }
+    .fest_tutorial_escritos{
+        font-size: 8pt;
+    }
+    .fest_tutorial_btn{
+        width: 90%;
+        font-size: 8pt;
+    }
+
+
+    /*FESTAPRESENTACAOPRESTADORES*/
+    .fest_apresentacao_prestadores{
+        display: none;
+        column-gap: 0vh;
+    }
+    .fest_apresentacao_prestadores_imagem{
+        width: 5%;
+
+    }
+    .fest_apresentacao_titulo{
+        font-size: 10pt;
+    }
+    .fest_apresentacao_texto{
+        font-size: 10pt;
+    }
+    .fest_apresentacao_exemplos{
+        font-size: 10pt;
+    }
+
+    /*FESTVANTAGENS*/
+    .fest_vantagens{
+    }
+    .fest_vantagens_quadros{
+        width: 150%;
+     
+    }
+    .fest_vantagens_topico{
+        width: 100%;
+    }
+    .fest_vantagens_tit{
+        font-size: 16pt;
+        text-align: center;
+    }
+    .fest_vantagens_topico_texto{
+        font-size: 6pt;
+    }
+
+    /*FOOTER*/
+    .footer{
+    }
+    .img_logo_footer{
+        width: 20%;
+    }
+
+}
