@@ -66,8 +66,8 @@ function execucao(){
     if(qntd_escolhida_docinhos_gourmet === 'Sem Docinhos'){
         preco_docinho_gourmet += 0
         quantidade_docinhos_gourmet += 0
-        
-        alert('Você terá direito a escolher 0 sabores')
+        var qntd_docinhos_gourmet_por_sabor = 0
+
     }
     if(qntd_escolhida_docinhos_gourmet === '50 unidades ( 2 sabores disponíveis )'){
         preco_docinho_gourmet += 75
@@ -119,6 +119,7 @@ function execucao(){
     if(qntd_escolhida_docinhos_tradicionais === 'Sem Docinhos'){
         preco_docinho_tradicionais += 0
         quantidade_docinhos_tradicionais += 0
+        var qntd_docinhos_tradicionais_por_sabor = 0
         
        
     }
