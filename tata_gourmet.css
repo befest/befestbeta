@@ -398,6 +398,7 @@ body{
       .menu_soundbar{
           width: 100%;
           column-gap: 5vh;
+	  overflow-x: scroll;
           justify-content: start;
       }
       .item_menu_soundbar{
@@ -512,6 +513,7 @@ body{
       .menu_soundbar{
           width: 100%;
           column-gap: 5vh;
+	  overflow-x: scroll;
           justify-content: start;
       }
       .item_menu_soundbar{
