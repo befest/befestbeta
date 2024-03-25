@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="BEFESTICO.png" type="image/x-icon">
     <link rel="stylesheet" href="orçamento_tata_gourmet.css">
-    <script src="orçamento_tata_gourmet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Tata Gourmet | Be fest</title>
     <!-- Google tag (gtag.js) -->
@@ -29,7 +29,7 @@
 
             <div class="header_images">
 
-                <img src="/Imagens/TATA GOURMET/LOGO/logo_tata_gourmet.png" alt="" class="img_logo_prestador">
+                <img src="logo_tata_gourmet.png" alt="" class="img_logo_prestador">
         
             </div>
 
@@ -48,17 +48,17 @@
     <div class="menu_soundbar">
 
 
-        <a href="/Tata Gourmet/tata_gourmet.html"><div class="item_menu_soundbar serviços_principais">
+        <a href="tata_gourmet.html"><div class="item_menu_soundbar serviços_principais">
             <p class="tit_item_menu_soundbar">Serviços Principais</p>
             <span class="material-symbols-outlined restaurant restaurant">restaurant</span>
         </div></a>
 
-        <a href="Orçamento/orçamento_tata_gourmet.html"><div class="item_menu_soundbar orçamento">
+        <a href="orçamento_tata_gourmet.html"><div class="item_menu_soundbar orçamento">
             <p class="tit_item_menu_soundbar">Orçamento</p>
             <span class="material-symbols-outlined payments">payments</span>
         </div></a>
 
-        <a href="/Tata Gourmet/Contatos/contatos_tata_gourmet.html"><div class="item_menu_soundbar contatos">
+        <a href="contatos_tata_gourmet.html"><div class="item_menu_soundbar contatos">
             <p class="tit_item_menu_soundbar">Contatos</p>
             <span class="material-symbols-outlined phone">phone</span>
         </div></a>
@@ -82,17 +82,17 @@
 
         <!--Nº de convidados-->
 
-        <label for="nºde_convidados" class="label_topico">Nº de Convidados</label>
-        <input type="number" name="nºde_convidados" id="n_de_convidados" class="topico" placeholder="Nº de Convidados">
+        <label for="n_de_convidados" class="label_topico">Nº de Convidados</label>
+        <input type="number" value="30" name="n_de_convidados" id="n_de_convidados" class="topico" placeholder="Nº de Convidados" min="30" max="200" oninput="getInformacoesFesta(),verificarConvidados(),reconstruirLista()">
 
         <!--Duração da Festa-->
 
         <label for="duração" class="label_topico">Duração da Festa</label>
-        <select name="duração" id="duracao" class="topico">
+        <select name="duração" id="duracao" class="topico" onchange="getInformacoesFesta()">
             <option disabled selected style="display: none">Duração da Festa</option>
-            <option value="3 horas">3 horas</option>
-            <option value="4 horas">4 horas</option>
-            <option value="5 horas">5 horas</option>
+            <option value="3" selected>3 horas</option>
+            <option value="4">4 horas</option>
+            <option value="5">5 horas</option>
         </select>
 
         <!--Serviços-->
@@ -103,87 +103,121 @@
 
 
             <div class="item_checkbox">
-                <label for="buffet_churrasco">Buffet de Churrasco</label>
-                <input type="checkbox" name="itens_checkbox" value="Buffet de Churrasco" id="buffet_de_churrasco">
+                <label for="buffet_churrasco">Buffet de Churrasco R$60</label>
+                <input type="checkbox" name="itens_checkbox" value="60" id="buffet_churrasco">
+            </div>
+            
+            <div class="item_checkbox">
+                <label for="buffet_completo">Buffet Completo R$75</label>
+                <input type="checkbox" name="itens_checkbox" value="75" id="buffet_completo">
+            </div>
+
+
+
+            <div class="item_checkbox">
+                <label for="crepes_no_palito">Crepes no Palito R$580</label>
+                <input type="checkbox" name="itens_checkbox" value="580" id="crepes_no_palito" class="itens_checkbox">
             </div>
 
 
             <div class="item_checkbox">
-                <label for="buffet_completo">Buffet Completo</label>
-                <input type="checkbox" name="itens_checkbox" value="Buffet Completo" id="buffet_completo">
-            </div>
-
-
-
-            <div class="item_checkbox">
-                <label for="crepes_no_palito">Crepes no Palito</label>
-                <input type="checkbox" name="itens_checkbox" value="Crepes no Palito" id="crepes_no_palito" class="itens_checkbox">
-            </div>
-
-
-            <div class="item_checkbox">
-                <label for="tapioca">Tapioca</label>
-                <input type="checkbox" name="itens_checkbox" value="Tapioca" id="tapioca">
+                <label for="tapioca">Tapioca R$580</label>
+                <input type="checkbox" name="itens_checkbox" value="580" id="tapioca">
             </div>
 
             <div class="item_checkbox">
-                <label for="churros">Churros</label>
-                <input type="checkbox" name="itens_checkbox" value="Churros" id="churros">
+                <label for="churros">Churros R$500</label>
+                <input type="checkbox" name="itens_checkbox" value="500" id="churros">
             </div>
 
             <div class="item_checkbox">
-                <label for="donuts">Donuts</label>
-                <input type="checkbox" name="itens_checkbox" value="Donuts" id="donuts">
+                <label for="donuts">Donuts R$6</label>
+                <input type="checkbox" name="itens_checkbox" value="6" id="donuts">
+                <div id="quantidadeDonuts" style="display: none;">
+                    <label for="quantidade_donuts">Quantidade:</label>
+                    <input type="number" name="quantidade_donuts" oninput="reconstruirLista()" id="quantidade_donuts" min="100" value="100">
+                </div>
             </div>
 
             <div class="item_checkbox">
-                <label for="açaí_sorvete">Açaí e Sorvete</label>
-                <input type="checkbox" name="itens_checkbox" value="Açaí e Sorvete" id="açaí_sorvete">
+                <label for="acaiList">Açaí e Sorvete</label>
+                <select id="acaiList">
+                    <option value="">Selecione uma opção</option>
+                    <option value="480">10 litros : R$ 480,00</option>
+                    <option value="580">15 litros : R$ 580,00</option>
+                    <option value="680">20 litros : R$ 680,00</option>
+                    <option value="780">25 litros : R$ 780,00</option>
+                </select>
             </div>
 
             <div class="item_checkbox">
-                <label for="pipoca_algodão">Pipoca e Algodão</label>
-                <input type="checkbox" name="itens_checkbox" value="Pipoca e Algodão" id="pipoca_algodão">
+                <label for="pipoca_algodão">Pipoca e Algodão Doce R$300</label>
+                <input type="checkbox" name="itens_checkbox" value="300" id="pipoca_algodão">
             </div>
 
             <div class="item_checkbox">
-                <label for="brigadeiro_volante">Brigadeiro Volante</label>
-                <input type="checkbox" name="itens_checkbox" value="Brigadeiro Volante" id="brigadeiro_volante">
+                <label for="brigadeiro_volante">Brigadeiro Volante R$550</label>
+                <input type="checkbox" name="itens_checkbox" value="550" id="brigadeiro_volante">
             </div>
 
             <div class="item_checkbox">
-                <label for="guloseimas_volante">Guloseimas Volante</label>
-                <input type="checkbox" name="itens_checkbox" value="Guloseimas Volante" id="guloseimas_volante">
+                <label for="guloseimas_volante">Guloseimas Volante R$550</label>
+                <input type="checkbox" name="itens_checkbox" value="550" id="guloseimas_volante">
             </div>
 
             <div class="item_checkbox">
-                <label for="batata_maluca">Batata Maluca</label>
-                <input type="checkbox" name="itens_checkbox" value="Batata Maluca" id="batata_maluca">
+                <label for="batata_maluca">Batata Maluca R$500</label>
+                <input type="checkbox" name="itens_checkbox" value="500" id="batata_maluca">
             </div>
 
             <div class="item_checkbox">
-                <label for="hamburguer_artesanal">Hamburguer Artesanal</label>
-                <input type="checkbox" value="Hamburguer Artesanal" name="itens_checkbox" id="hamburguer_artesanal">
+                <label for="hamburger_artesanal">Hamburger Artesanal R$8</label>
+                <input type="checkbox" name="itens_checkbox" value="8" id="hamburger_artesanal">
+                <div id="quantidadeHamburger" style="display: none;">
+                    <label for="quantidade_hamburger_artesanal">Quantidade:</label>
+                    <input type="number" name="quantidade_hamburger_artesanal" oninput="reconstruirLista()" id="quantidade_hamburger_artesanal" min="50" value="50">
+                </div>
             </div>
 
             <div class="item_checkbox">
-                <label for="hot-dog">Hot-Dog</label>
-                <input type="checkbox" name="itens_checkbox" value="Hot-Dog" id="hot-dog">
+                <label for="hot_dog">Hot-Dog R$550</label>
+                <input type="checkbox" name="itens_checkbox" value="550" id="hot_dog">
             </div>
 
             <div class="item_checkbox">
-                <label for="monte_seu_pastel">Monte seu Pastel</label>
-                <input type="checkbox" name="itens_checkbox" value="Monte seu Pastel" id="monte_seu_pastel">
+                <label for="monte_seu_pastel">Monte seu Pastel R$680</label>
+                <input type="checkbox" name="itens_checkbox" value="680" id="monte_seu_pastel">
             </div>
 
             <div class="item_checkbox">
-                <label for="lanchinho">Lanchinho</label>
-                <input type="checkbox" name="itens_checkbox" value="Lanchinho" id="lanchinho">
+                <label for="estacao_massa">Estações de Massas R$600</label>
+                <input type="checkbox" name="itens_checkbox" value="600" id="estacao_massa">
             </div>
 
             <div class="item_checkbox">
-                <label for="buffet_completo">Petiscos</label>
-                <input type="checkbox" name="itens_checkbox" value="Petiscos" id="petiscos">
+                <label for="lanchinhoList">Lanchinho</label>
+                <select id="lanchinhoList">
+                    <option value="">Selecione uma opção</option>
+                    <option value="790">300 unidades : R$ 790,00</option>
+                    <option value="890">400 unidades : R$ 890,00</option>
+                    <option value="990">500 unidades : R$ 990,00</option>
+                    <option value="1090">600 unidades : R$ 1090,00</option>
+                    <option value="1190">700 unidades : R$ 1190,00</option>
+                    <option value="1390">800 unidades : R$ 1390,00</option>
+                </select>
+            </div>
+
+            <div class="item_checkbox">
+                <label for="petiscosList">Petiscos</label>
+                <select id="petiscosList">
+                    <option value="">Selecione uma opção</option>
+                    <option value="790">300 unidades : R$ 790,00</option>
+                    <option value="890">400 unidades : R$ 890,00</option>
+                    <option value="990">500 unidades : R$ 990,00</option>
+                    <option value="1090">600 unidades : R$ 1100,00</option>
+                    <option value="1190">700 unidades : R$ 1200,00</option>
+                    <option value="1390">800 unidades : R$ 1300,00</option>
+                </select>
             </div>
        
 
@@ -195,46 +229,442 @@
         <div class="topico_checkbox">
 
             <div class="item_checkbox">
-                <label for="nutella">Nutella</label>
-                <input type="checkbox" name="itens_checkbox+" value="Nutella" id="nutella">
+                <label for="nutella">Nutella R$50</label>
+                <input type="checkbox" name="itens_checkbox+" value="50" id="nutella">
             </div>
 
             <div class="item_checkbox">
-                <label for="bebidas">Bebidas</label>
-                <input type="checkbox" name="itens_checkbox+" value="Bebidas" id="bebidas">
+                <label for="bebidas">Bebidas R$15</label>
+                <input type="checkbox" name="itens_checkbox+" value="15" id="bebidas">
             </div>
             
         </div>
 
-        <div class="topico_mao_de_obra">
-            <label for="mao_de_obra_funcoes" class="label_topico">Serviços Adicionais de Mão-de-Obra caso necessário</label>
-
-            <div class="itens_mao_de_obra">
-                <label for="garçom">Garçom(ns) : </label>
-                <input type="number" class="topico" name="garçom" id="garçom" placeholder="Quantidade de Colaboradores">
-            </div>
-
-            <div class="itens_mao_de_obra">
-                <label for="copeiras">Copeiras(os) : </label>
-                <input type="number" class="topico" name="copeiras" id="copeiras" placeholder="Quantidade de Colaboradores">
-            </div>
-
-            <div class="itens_mao_de_obra">
-                <label for="fritadeira">Fritadeira(s) : </label>
-                <input type="number" class="topico" name="fritadeira" id="fritadeira" placeholder="Quantidade de Colaboradores">
-            </div>
-            
-
-        </div>        
+       
 
         <input type="button" value="Realizar Orçamento" class="topico orçamento_btn" onclick="execucao()">
 
 
         <div class="resultado">
-            <img src="/Imagens/TATA GOURMET/LOGO/logo_tata_gourmet.png" alt="logo_tata_gourmet" class="logo_tata_gourmet">
-            <div id="res"></div>
+            <img src="logo_tata_gourmet.png" alt="logo_tata_gourmet" class="logo_tata_gourmet">
+            <ul id="lista_itens">
+            </ul>
+            <div id="res">Total: R$0</div>
         </div>
 
+        <script>
+
+var valorTotal_donuts = 0;
+var valorTotal_hamburger = 0;
+
+
+    $('#quantidadeDonuts').hide(); // Esconde o input de quantidade inicialmente
+    $('#quantidadeHamburger').hide(); // Esconde o input de quantidade inicialmente
+
+    $('#donuts').change(function() {
+        if ($(this).is(':checked')) {
+            console.log('teste');
+
+            $('#quantidadeDonuts').show(); // Exibe o input de quantidade se o checkbox estiver marcado
+            $('#quantidade_donuts').trigger('change'); // Atualiza o valor do checkbox com o valor total
+
+
+        } else {
+            $('#quantidadeDonuts').hide(); // Esconde o input de quantidade se o checkbox estiver desmarcado
+        }
+    });
+
+    $('#hamburger_artesanal').change(function() {
+        if ($(this).is(':checked')) {
+            $('#quantidadeHamburger').show(); // Exibe o input de quantidade se o checkbox estiver marcado
+            $('#quantidade_hamburger_artesanal').trigger('change');
+        } else {
+            $('#quantidadeHamburger').hide(); // Esconde o input de quantidade se o checkbox estiver desmarcado
+        }
+    });
+
+    $('#quantidade_donuts').change(function() {
+        var quantidade = parseInt($(this).val()); // Obtém a quantidade digitada e converte para número
+        console.log('teste agora');
+        if (quantidade < 100) {
+            alert("A quantidade mínima de Donuts é 100.");
+            $(this).val(100); // Define o valor mínimo como 100
+            quantidade = 100; // Atualiza a quantidade para 100
+        }
+
+        valorTotal_donuts = quantidade * 6;
+        $('#donuts').val(valorTotal_donuts); // Atualiza o valor do checkbox com o valor total
+        
+        // Chama a função reconstruirLista() sempre que o valor do input de quantidade for alterado
+        reconstruirLista();
+    });
+
+    $('#quantidade_hamburger_artesanal').change(function() {
+        var quantidade = parseInt($(this).val()); // Obtém a quantidade digitada e converte para número
+
+        if (quantidade < 50) {
+            alert("A quantidade mínima de Hamburgers é 50.");
+            $(this).val(50); // Define o valor mínimo como 50
+            quantidade = 50; // Atualiza a quantidade para 50
+        }
+
+        valorTotal_hamburger = quantidade * 8;
+        $('#hamburger_artesanal').val(valorTotal_hamburger); // Atualiza o valor do checkbox com o valor total
+        
+        // Chama a função reconstruirLista() sempre que o valor do input de quantidade for alterado
+        reconstruirLista();
+    });
+
+
+
+let numeroDeConvidados = document.getElementById("n_de_convidados").value;;
+
+
+
+let buffetChurrasco = 60;
+let buffetCompleto = 75;
+let crepesPalito3h = 580;
+let crepesPalito4h = 680;
+let tapioca3h = 580;
+let tapioca4h = 680;
+let churros3h50a99 = 500;
+let churros4h50a99 = 600;
+let churros3h100a200 = 600;
+let churros4h100a200 = 700;
+let donuts = valorTotal_donuts;
+let acaiSorvete = 480;
+let pipocaAlgodaoDoce3h = 300;
+let pipocaAlgodaoDoce4h = 350;
+let brigadeiroVolante50a99 = 550;
+let brigadeiroVolante100a200 = 650;
+let guloseimasVolante50a99 = 550;
+let guloseimasVolante100a200 = 650;
+let batataMaluca3h50a99 = 500;
+let batataMaluca4h50a99 = 600;
+let batataMaluca3h100a200 = 650;
+let batataMaluca4h100a200 = 700;
+let hamburguerArtesanal = valorTotal_hamburger;
+let hotDog3h50a99 = 550;
+let hotDog4h50a99 = 600;
+let hotDog3h100a200 = 650;
+let hotDog4h100a200 = 700;
+let monteSeuPastel3h50a99 = 680;
+let monteSeuPastel4h50a99 = 780;
+let monteSeuPastel3h100a200 = 750;
+let monteSeuPastel4h100a200 = 850;
+let lanchinho = 790;
+let petiscos = 790;
+let estacoesMassas3h50a99 = 600;
+let estacoesMassas4h50a99 = 700;
+let estacoesMassas3h100a200 = 800;
+let estacoesMassas4h100a200 = 900;
+let nutella = 50;
+let bebidas = 15;
+
+function getInformacoesFesta() {
+    const duracao = document.getElementById("duracao").value;
+    numeroDeConvidados = document.getElementById("n_de_convidados").value;
+    if(duracao == 3){
+
+        $('label[for="buffet_churrasco"]').text('Buffet de Churrasco R$' + buffetChurrasco);
+        $('#buffet_churrasco').val(buffetChurrasco);
+        
+        $('label[for="buffet_completo"]').text('Buffet Completo R$' + buffetCompleto);
+        $('#buffet_completo').val(buffetCompleto);
+
+        $('label[for="crepes_no_palito"]').text('Crepes no Palito R$' + crepesPalito3h);
+        $('#crepes_no_palito').val(crepesPalito3h);
+
+
+        $('label[for="tapioca"]').text('Tapioca R$' + tapioca3h);
+        $('#tapioca').val(tapioca3h);
+
+
+        $('label[for="pipoca_algodão"]').text('Pipoca e Algodão Doce R$' + pipocaAlgodaoDoce3h);
+        $('#pipoca_algodão').val(pipocaAlgodaoDoce3h);
+
+        
+    }else if(duracao > 3){
+        
+        $('label[for="buffet_churrasco"]').text('Buffet de Churrasco R$' + buffetChurrasco);
+        $('#buffet_churrasco').val(buffetChurrasco);
+
+        $('label[for="buffet_completo"]').text('Buffet Completo R$' + buffetCompleto);
+        $('#buffet_completo').val(buffetCompleto);
+        
+        $('label[for="crepes_no_palito"]').text('Crepes no Palito R$' + crepesPalito4h);
+        $('#crepes_no_palito').val(crepesPalito4h);
+
+
+        $('label[for="tapioca"]').text('Tapioca R$' + tapioca4h);
+        $('#tapioca').val(tapioca4h);
+
+
+        $('label[for="pipoca_algodão"]').text('Pipoca e Algodão Doce R$' + pipocaAlgodaoDoce4h);
+        $('#pipoca_algodão').val(pipocaAlgodaoDoce4h);
+        
+    }
+
+    if(numeroDeConvidados <= 99){
+    
+        $('label[for="brigadeiro_volante"]').text('Brigadeiro Volante R$' + brigadeiroVolante50a99);
+        $('#brigadeiro_volante').val(brigadeiroVolante50a99);
+        $('label[for="guloseimas_volante"]').text('Guloseimas Volante R$' + guloseimasVolante50a99);
+        $('#guloseimas_volante').val(guloseimasVolante50a99);
+
+        
+    }else if(numeroDeConvidados >= 100 && numeroDeConvidados <= 200){
+
+        $('label[for="brigadeiro_volante"]').text('Brigadeiro Volante R$' + brigadeiroVolante100a200);   
+        $('#brigadeiro_volante').val(brigadeiroVolante100a200);
+
+        $('label[for="guloseimas_volante"]').text('Guloseimas Volante R$' + guloseimasVolante100a200);
+        $('#guloseimas_volante').val(guloseimasVolante100a200);
+
+        
+    }
+
+
+    if(duracao == 3 && numeroDeConvidados <= 99 ){
+        $('label[for="churros"]').text('Churros R$' + churros3h50a99);
+        $('#churros').val(churros3h50a99);
+
+        $('label[for="batata_maluca"]').text('Batata maluca R$' + batataMaluca3h50a99);
+        $('#batata_maluca').val(batataMaluca3h50a99);
+
+        $('label[for="hot_dog"]').text('Hot-Dog R$' + hotDog3h50a99);
+        $('#hot_dog').val(hotDog3h50a99);
+        
+        $('label[for="monte_seu_pastel"]').text('Monte seu Pastel R$' + monteSeuPastel3h50a99);
+        $('#monte_seu_pastel').val(monteSeuPastel3h50a99);
+
+        $('label[for="estacao_massa"]').text('Estações de Massas R$' + estacoesMassas3h50a99);
+        $('#estacao_massa').val(estacoesMassas3h50a99);
+
+        
+    }else if(duracao == 3 && numeroDeConvidados >= 100 && numeroDeConvidados <= 200 ){
+        $('label[for="churros"]').text('Churros R$' + churros3h100a200);
+        $('#churros').val(churros3h100a200);
+
+        $('label[for="batata_maluca"]').text('Batata maluca R$' + batataMaluca3h100a200);
+        $('#batata_maluca').val(batataMaluca3h100a200);
+
+        $('label[for="hot_dog"]').text('Hot-Dog R$' + hotDog3h100a200);
+        $('#hot_dog').val(hotDog3h100a200);
+
+        $('label[for="monte_seu_pastel"]').text('Monte seu Pastel R$' + monteSeuPastel3h100a200);
+        $('#monte_seu_pastel').val(monteSeuPastel3h100a200);
+
+        $('label[for="estacao_massa"]').text('Estações de Massas R$' + estacoesMassas3h100a200);
+        $('#estacao_massa').val(estacoesMassas3h100a200);
+
+
+
+    }else if(duracao > 3 && numeroDeConvidados <= 99 ){
+        $('label[for="churros"]').text('Churros R$' + churros4h50a99);
+        $('#churros').val(churros4h50a99);
+
+        $('label[for="batata_maluca"]').text('Batata maluca R$' + batataMaluca4h50a99);
+        $('#batata_maluca').val(batataMaluca4h50a99);
+
+        $('label[for="hot_dog"]').text('Hot-Dog R$' + hotDog4h50a99);
+        $('#hot_dog').val(hotDog4h50a99);
+
+        $('label[for="monte_seu_pastel"]').text('Monte seu Pastel R$' + monteSeuPastel4h50a99);
+        $('#monte_seu_pastel').val(monteSeuPastel4h50a99);
+
+
+        $('label[for="estacao_massa"]').text('Estações de Massas R$' + estacoesMassas4h50a99);
+        $('#estacao_massa').val(estacoesMassas4h50a99);
+
+
+
+    }else if(duracao > 3 && numeroDeConvidados >= 100 && numeroDeConvidados <= 200 ){
+        $('label[for="churros"]').text('Churros R$' + churros4h100a200);
+        $('#churros').val(churros4h100a200);
+
+        $('label[for="batata_maluca"]').text('Batata maluca R$' + batataMaluca4h100a200);
+        $('#batata_maluca').val(batataMaluca4h100a200);
+        
+        $('label[for="hot_dog"]').text('Hot-Dog R$' + hotDog4h100a200);
+        $('#hot_dog').val(hotDog4h100a200);
+
+        $('label[for="monte_seu_pastel"]').text('Monte seu Pastel R$' + monteSeuPastel4h100a200);
+        $('#monte_seu_pastel').val(monteSeuPastel4h100a200);
+
+        $('label[for="estacao_massa"]').text('Estações de Massas R$' + estacoesMassas4h100a200);
+        $('#estacao_massa').val(estacoesMassas4h100a200);
+
+
+
+    }
+
+
+    // calcularTotal()
+}
+
+
+
+
+
+
+
+
+
+
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+
+// checkboxes.forEach(function(checkbox) {
+//     checkbox.addEventListener('change', function() {
+//         atualizarLista();
+//         calcularTotal();
+//     });
+// });
+
+
+const lista = document.getElementById('lista_itens');
+let lista_checkbox = '';
+let item = null
+
+
+function reconstruirLista() {
+    // Limpa a lista antes de reconstruí-la
+    lista.innerHTML = '';
+
+    var total = 0; // Inicializa o total como zero
+
+    // Itera sobre todos os checkboxes selecionados
+    $('input[type="checkbox"]').filter(function() {
+        return this.checked; // Retorna true apenas para checkboxes selecionados
+    }).each(function() {
+        // Obtém o texto da label associada ao checkbox
+        if($(this).attr('id') == 'donuts'){
+            var labelText = 'Donuts R$'+ valorTotal_donuts;
+            total += valorTotal_donuts; // Adiciona o valor dos donuts ao total
+        }else if($(this).attr('id') == 'hamburger_artesanal'){
+            var labelText = 'Hamburger Artesanal R$'+ valorTotal_hamburger;
+            total += valorTotal_hamburger; // Adiciona o valor do hamburger artesanal ao total
+        }else if($(this).attr('id') == 'buffet_churrasco'){
+            var labelText = 'Buffet Churrasco R$'+ buffetChurrasco * numeroDeConvidados;
+            total += buffetChurrasco * numeroDeConvidados; // Adiciona o valor do hamburger artesanal ao total
+        }else if($(this).attr('id') == 'buffet_completo'){
+            var labelText = 'Buffet Completo R$'+ buffetCompleto * numeroDeConvidados;
+            total += buffetCompleto * numeroDeConvidados; // Adiciona o valor do hamburger artesanal ao total
+        }else if($(this).attr('id') == 'bebidas'){
+            var labelText = 'Bebidas R$'+ bebidas * numeroDeConvidados;
+            total += bebidas * numeroDeConvidados; // Adiciona o valor do hamburger artesanal ao total
+        }else{
+            var labelText = $('label[for="' + $(this).attr('id') + '"]').text();
+            total += parseFloat($(this).val());
+
+
+        }
+        var item = document.createElement('li');
+        item.textContent = labelText;
+        lista.appendChild(item); // Adiciona o item à lista
+        
+        // Cria um novo item de lista
+    });
+
+    // Itera sobre todos os selects que têm um valor selecionado diferente de vazio
+    $('select').filter(function() {
+        if ($(this).val() !== '' && $(this).attr('id') !== 'duracao') {
+            return true; // Retorna true apenas para selects com valor diferente de vazio
+        }
+    }).each(function() {
+        // Obtém o texto da label associada ao select
+        var labelText = $('label[for="' + $(this).attr('id') + '"]').text();
+        
+        // Cria um novo item de lista
+        var item = document.createElement('li');
+        item.textContent = labelText + ': R$' + $(this).val(); // Adiciona o texto da label e o valor selecionado ao item da lista
+        lista.appendChild(item); // Adiciona o item à lista
+
+        // Adiciona o valor do select ao total
+        total += parseFloat($(this).val());
+    });
+
+    // Atualiza o total na lista
+    document.getElementById('res').textContent = 'Total: R$' + total.toFixed(2);
+}
+
+// Ao mudar o estado de um checkbox
+$('input[type="checkbox"]').change(reconstruirLista);
+$('input[type="text"]').change(reconstruirLista);
+
+// Ao mudar um select
+$('select').change(reconstruirLista);
+
+function atualizarLista() {
+
+    lista.innerHTML = '';
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            item = document.createElement('li');
+            item.textContent = checkbox.parentNode.querySelector('label').textContent;
+            console.log(item)
+            lista.appendChild(item);
+        }
+    });
+
+    $('select').change(function() {
+        var labelForSelect = $('label[for="' + $(this).attr('id') + '"]').text();
+        console.log('Label do Select:', labelForSelect);
+    });
+    // lista.appendChild(lista_checkbox);
+
+    console.log(lista)
+}
+
+
+// function calcularTotal() {
+//     let total = 0;
+//     checkboxes.forEach(function(checkbox) {
+//         if (checkbox.checked) {
+//             setTimeout
+//             total += parseFloat(checkbox.value);
+//         }
+//     });
+
+//     $('select').filter(function() {
+//         if($(this).val() !== '' && $(this).attr('id') != 'duracao'){
+//             return $(this).val() !== ''; // Retorna true apenas para selects com valor diferente de vazio
+//         }
+//     }).each(function() {
+//         // Obtém o texto da label associada ao select
+//         // var labelText = $('label[for="' + $(this).attr('id') + '"]').text();
+//         console.log($(this).val())
+//         // Cria um novo item de lista
+//         // var item = document.createElement('li');
+//         total += parseFloat($(this).val()); // Adiciona o texto da label e o valor selecionado ao item da lista
+//         console.log(total);
+//         // Adiciona o item à lista
+//     });
+
+//     document.getElementById('res').textContent = 'Total: R$' + total.toFixed(2);
+// }
+
+function verificarConvidados() {
+    let inputConvidados = document.getElementById("n_de_convidados");
+    let valor = parseInt(inputConvidados.value);
+    
+
+    if(valor < 0){
+        $('#n_de_convidados').val(30).trigger('input');
+        alert("O número mínimo de convidados é 30.");
+    }else if(valor < 50){
+        
+
+
+    }else if (valor > 200) {
+        $('#n_de_convidados').val(200).trigger('input');
+        alert("O número máximo de convidados é 200.");
+    }
+}
+
+            
+        </script>
 
     </div>
     
