@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="BEFESTICO.png" type="image/x-icon">
+    <link rel="stylesheet" href="orçamento_tata_gourmet.css">
+    <script src="orçamento_tata_gourmet.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Tata Gourmet | Be fest</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZ8LL5WGHT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-QZ8LL5WGHT');
+    </script>
+</head>
+
+<body>
+
+
+    <div class="container-header">
+
+        <div class="header">
+
+            <div class="header_images">
+
+                <img src="/Imagens/TATA GOURMET/LOGO/logo_tata_gourmet.png" alt="" class="img_logo_prestador">
+        
+            </div>
+
+            <div class="description">
+
+                <p class="header_titulo">Tata Gourmet</p>
+    
+                <p class="header_festarea_nicho">Comida e Bebida | Serviço de Estações e Buffet</p>
+        
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="menu_soundbar">
+
+
+        <a href="/Tata Gourmet/tata_gourmet.html"><div class="item_menu_soundbar serviços_principais">
+            <p class="tit_item_menu_soundbar">Serviços Principais</p>
+            <span class="material-symbols-outlined restaurant restaurant">restaurant</span>
+        </div></a>
+
+        <a href="Orçamento/orçamento_tata_gourmet.html"><div class="item_menu_soundbar orçamento">
+            <p class="tit_item_menu_soundbar">Orçamento</p>
+            <span class="material-symbols-outlined payments">payments</span>
+        </div></a>
+
+        <a href="/Tata Gourmet/Contatos/contatos_tata_gourmet.html"><div class="item_menu_soundbar contatos">
+            <p class="tit_item_menu_soundbar">Contatos</p>
+            <span class="material-symbols-outlined phone">phone</span>
+        </div></a>
+
+
+
+
+
+    </div>
+
+    <div class="serviços">
+
+        <!--Data , Hora e Local-->
+
+        <label for="data_hora_local" class="label_topico">Data , Horário de Início e Local</label>
+        <div class="data_hora_local">
+            <input type="date" name="data" id="data" class="topico">
+            <input type="time" name="hora" id="hora" class="topico">
+            <input type="text" name="local" id="local" class="topico" placeholder="Local da Festa">
+        </div>
+
+        <!--Nº de convidados-->
+
+        <label for="nºde_convidados" class="label_topico">Nº de Convidados</label>
+        <input type="number" name="nºde_convidados" id="n_de_convidados" class="topico" placeholder="Nº de Convidados">
+
+        <!--Duração da Festa-->
+
+        <label for="duração" class="label_topico">Duração da Festa</label>
+        <select name="duração" id="duracao" class="topico">
+            <option disabled selected style="display: none">Duração da Festa</option>
+            <option value="3 horas">3 horas</option>
+            <option value="4 horas">4 horas</option>
+            <option value="5 horas">5 horas</option>
+        </select>
+
+        <!--Serviços-->
+
+        <label for="crepes" class="label_topico">Selecione os serviços que você quer orçar abaixo : </label>
+
+        <div class="topico_checkbox">
+
+
+            <div class="item_checkbox">
+                <label for="buffet_churrasco">Buffet de Churrasco</label>
+                <input type="checkbox" name="itens_checkbox" value="Buffet de Churrasco" id="buffet_de_churrasco">
+            </div>
+
+
+            <div class="item_checkbox">
+                <label for="buffet_completo">Buffet Completo</label>
+                <input type="checkbox" name="itens_checkbox" value="Buffet Completo" id="buffet_completo">
+            </div>
+
+
+
+            <div class="item_checkbox">
+                <label for="crepes_no_palito">Crepes no Palito</label>
+                <input type="checkbox" name="itens_checkbox" value="Crepes no Palito" id="crepes_no_palito" class="itens_checkbox">
+            </div>
+
+
+            <div class="item_checkbox">
+                <label for="tapioca">Tapioca</label>
+                <input type="checkbox" name="itens_checkbox" value="Tapioca" id="tapioca">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="churros">Churros</label>
+                <input type="checkbox" name="itens_checkbox" value="Churros" id="churros">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="donuts">Donuts</label>
+                <input type="checkbox" name="itens_checkbox" value="Donuts" id="donuts">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="açaí_sorvete">Açaí e Sorvete</label>
+                <input type="checkbox" name="itens_checkbox" value="Açaí e Sorvete" id="açaí_sorvete">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="pipoca_algodão">Pipoca e Algodão</label>
+                <input type="checkbox" name="itens_checkbox" value="Pipoca e Algodão" id="pipoca_algodão">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="brigadeiro_volante">Brigadeiro Volante</label>
+                <input type="checkbox" name="itens_checkbox" value="Brigadeiro Volante" id="brigadeiro_volante">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="guloseimas_volante">Guloseimas Volante</label>
+                <input type="checkbox" name="itens_checkbox" value="Guloseimas Volante" id="guloseimas_volante">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="batata_maluca">Batata Maluca</label>
+                <input type="checkbox" name="itens_checkbox" value="Batata Maluca" id="batata_maluca">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="hamburguer_artesanal">Hamburguer Artesanal</label>
+                <input type="checkbox" value="Hamburguer Artesanal" name="itens_checkbox" id="hamburguer_artesanal">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="hot-dog">Hot-Dog</label>
+                <input type="checkbox" name="itens_checkbox" value="Hot-Dog" id="hot-dog">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="monte_seu_pastel">Monte seu Pastel</label>
+                <input type="checkbox" name="itens_checkbox" value="Monte seu Pastel" id="monte_seu_pastel">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="lanchinho">Lanchinho</label>
+                <input type="checkbox" name="itens_checkbox" value="Lanchinho" id="lanchinho">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="buffet_completo">Petiscos</label>
+                <input type="checkbox" name="itens_checkbox" value="Petiscos" id="petiscos">
+            </div>
+       
+
+            
+        </div>
+
+        <label for="topico_checkbox" class="label_topico">Serviços Adicionais a serem escolhidos : </label>
+
+        <div class="topico_checkbox">
+
+            <div class="item_checkbox">
+                <label for="nutella">Nutella</label>
+                <input type="checkbox" name="itens_checkbox+" value="Nutella" id="nutella">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="bebidas">Bebidas</label>
+                <input type="checkbox" name="itens_checkbox+" value="Bebidas" id="bebidas">
+            </div>
+            
+        </div>
+
+        <div class="topico_mao_de_obra">
+            <label for="mao_de_obra_funcoes" class="label_topico">Serviços Adicionais de Mão-de-Obra caso necessário</label>
+
+            <div class="itens_mao_de_obra">
+                <label for="garçom">Garçom(ns) : </label>
+                <input type="number" class="topico" name="garçom" id="garçom" placeholder="Quantidade de Colaboradores">
+            </div>
+
+            <div class="itens_mao_de_obra">
+                <label for="copeiras">Copeiras(os) : </label>
+                <input type="number" class="topico" name="copeiras" id="copeiras" placeholder="Quantidade de Colaboradores">
+            </div>
+
+            <div class="itens_mao_de_obra">
+                <label for="fritadeira">Fritadeira(s) : </label>
+                <input type="number" class="topico" name="fritadeira" id="fritadeira" placeholder="Quantidade de Colaboradores">
+            </div>
+            
+
+        </div>        
+
+        <input type="button" value="Realizar Orçamento" class="topico orçamento_btn" onclick="execucao()">
+
+
+        <div class="resultado">
+            <img src="/Imagens/TATA GOURMET/LOGO/logo_tata_gourmet.png" alt="logo_tata_gourmet" class="logo_tata_gourmet">
+            <div id="res"></div>
+        </div>
+
+
+    </div>
+    
+    <footer class="footer">
+
+        <a  id="footer-logo-link" href="befest.html"><img src="/Imagens/BE FEST/LOGO/Logo Secundária - Be fest (Rosa).png" alt="footer-logo" class="footer-logo"></a>
+
+    </footer>
+
+
+
+</body>
+</html>
