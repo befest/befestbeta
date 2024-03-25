@@ -71,6 +71,9 @@
 
     <div class="serviços">
 
+        <p class="titulo_servicos">Realize seu Orçamento aqui!</p>
+
+    
         <!--Data , Hora e Local-->
 
         <label for="data_hora_local" class="label_topico">Data , Horário de Início e Local</label>
@@ -83,7 +86,7 @@
         <!--Nº de convidados-->
 
         <label for="n_de_convidados" class="label_topico">Nº de Convidados</label>
-        <input type="number" value="30" name="n_de_convidados" id="n_de_convidados" class="topico" placeholder="Nº de Convidados" min="30" max="200" oninput="getInformacoesFesta(),verificarConvidados(),reconstruirLista()">
+        <input type="number" value="30" name="n_de_convidados" id="n_de_convidados" class="topico" placeholder="Nº de Convidados" min="0" max="100" oninput="getInformacoesFesta(),verificarConvidados(),reconstruirLista()">
 
         <!--Duração da Festa-->
 
@@ -180,6 +183,11 @@
             </div>
 
             <div class="item_checkbox">
+                <label for="hamburguer_tradicional">Estação de Hamburguer Tradicional R$550</label>
+                <input type="checkbox" name="itens_checkbox" value="550" id="hamburguer_tradicional">
+            </div>
+
+            <div class="item_checkbox">
                 <label for="hot_dog">Hot-Dog R$550</label>
                 <input type="checkbox" name="itens_checkbox" value="550" id="hot_dog">
             </div>
@@ -236,6 +244,11 @@
             <div class="item_checkbox">
                 <label for="bebidas">Bebidas R$15</label>
                 <input type="checkbox" name="itens_checkbox+" value="15" id="bebidas">
+            </div>
+
+            <div class="item_checkbox">
+                <label for="fritas">Batata Frita R$50</label>
+                <input type="checkbox" name="itens_checkbox+" value="50" id="fritas">
             </div>
             
         </div>
@@ -323,10 +336,16 @@ let numeroDeConvidados = document.getElementById("n_de_convidados").value;;
 
 let buffetChurrasco = 60;
 let buffetCompleto = 75;
-let crepesPalito3h = 580;
-let crepesPalito4h = 680;
-let tapioca3h = 580;
-let tapioca4h = 680;
+let crepesPalito3h0a50 = 580;
+let crepesPalito4h0a50 = 680;
+let crepesPalito3h50a100 = 680;
+let crepesPalito4h50a100 = 780;
+
+let tapioca3h0a50 = 680;
+let tapioca3h50a100 = 750;
+let tapioca4h0a50 = 780;
+let tapioca4h50a100 = 850;
+
 let churros3h50a99 = 500;
 let churros4h50a99 = 600;
 let churros3h100a200 = 600;
@@ -344,10 +363,16 @@ let batataMaluca4h50a99 = 600;
 let batataMaluca3h100a200 = 650;
 let batataMaluca4h100a200 = 700;
 let hamburguerArtesanal = valorTotal_hamburger;
+let hamburguer_tradicional3h50a99 = 550;
+let hamburguer_tradicional4h50a99 = 650;
+let hamburguer_tradicional3h100a200 = 750;
+let hamburguer_tradicional4h100a200 = 850;
+
 let hotDog3h50a99 = 550;
-let hotDog4h50a99 = 600;
+let hotDog4h50a99 = 650;
 let hotDog3h100a200 = 650;
 let hotDog4h100a200 = 700;
+
 let monteSeuPastel3h50a99 = 680;
 let monteSeuPastel4h50a99 = 780;
 let monteSeuPastel3h100a200 = 750;
@@ -360,6 +385,7 @@ let estacoesMassas3h100a200 = 800;
 let estacoesMassas4h100a200 = 900;
 let nutella = 50;
 let bebidas = 15;
+let fritas = 50; 
 
 function getInformacoesFesta() {
     const duracao = document.getElementById("duracao").value;
@@ -372,14 +398,6 @@ function getInformacoesFesta() {
         $('label[for="buffet_completo"]').text('Buffet Completo R$' + buffetCompleto);
         $('#buffet_completo').val(buffetCompleto);
 
-        $('label[for="crepes_no_palito"]').text('Crepes no Palito R$' + crepesPalito3h);
-        $('#crepes_no_palito').val(crepesPalito3h);
-
-
-        $('label[for="tapioca"]').text('Tapioca R$' + tapioca3h);
-        $('#tapioca').val(tapioca3h);
-
-
         $('label[for="pipoca_algodão"]').text('Pipoca e Algodão Doce R$' + pipocaAlgodaoDoce3h);
         $('#pipoca_algodão').val(pipocaAlgodaoDoce3h);
 
@@ -391,13 +409,6 @@ function getInformacoesFesta() {
 
         $('label[for="buffet_completo"]').text('Buffet Completo R$' + buffetCompleto);
         $('#buffet_completo').val(buffetCompleto);
-        
-        $('label[for="crepes_no_palito"]').text('Crepes no Palito R$' + crepesPalito4h);
-        $('#crepes_no_palito').val(crepesPalito4h);
-
-
-        $('label[for="tapioca"]').text('Tapioca R$' + tapioca4h);
-        $('#tapioca').val(tapioca4h);
 
 
         $('label[for="pipoca_algodão"]').text('Pipoca e Algodão Doce R$' + pipocaAlgodaoDoce4h);
@@ -405,7 +416,7 @@ function getInformacoesFesta() {
         
     }
 
-    if(numeroDeConvidados <= 99){
+    if(numeroDeConvidados <= 50){
     
         $('label[for="brigadeiro_volante"]').text('Brigadeiro Volante R$' + brigadeiroVolante50a99);
         $('#brigadeiro_volante').val(brigadeiroVolante50a99);
@@ -413,7 +424,7 @@ function getInformacoesFesta() {
         $('#guloseimas_volante').val(guloseimasVolante50a99);
 
         
-    }else if(numeroDeConvidados >= 100 && numeroDeConvidados <= 200){
+    }else if(numeroDeConvidados >= 51 && numeroDeConvidados <= 100){
 
         $('label[for="brigadeiro_volante"]').text('Brigadeiro Volante R$' + brigadeiroVolante100a200);   
         $('#brigadeiro_volante').val(brigadeiroVolante100a200);
@@ -425,9 +436,16 @@ function getInformacoesFesta() {
     }
 
 
-    if(duracao == 3 && numeroDeConvidados <= 99 ){
+    if(duracao == 3 && numeroDeConvidados <= 50 ){
+
+        $('label[for="crepes_no_palito"]').text('Crepes no Palito R$' + crepesPalito3h0a50);
+        $('#crepes_no_palito').val(crepesPalito3h0a50);
+
         $('label[for="churros"]').text('Churros R$' + churros3h50a99);
         $('#churros').val(churros3h50a99);
+
+        $('label[for="tapioca"]').text('Tapioca R$' + tapioca3h0a50);
+        $('#tapioca').val(tapioca3h0a50);
 
         $('label[for="batata_maluca"]').text('Batata maluca R$' + batataMaluca3h50a99);
         $('#batata_maluca').val(batataMaluca3h50a99);
@@ -441,8 +459,17 @@ function getInformacoesFesta() {
         $('label[for="estacao_massa"]').text('Estações de Massas R$' + estacoesMassas3h50a99);
         $('#estacao_massa').val(estacoesMassas3h50a99);
 
+        $('label[for="hamburguer_tradicional"]').text('Estação de Hamburguer Tradicional R$'+ hamburguer_tradicional3h50a99);
+        $('#hamburguer_tradicional').val(hamburguer_tradicional3h50a99)
+
         
-    }else if(duracao == 3 && numeroDeConvidados >= 100 && numeroDeConvidados <= 200 ){
+    }else if(duracao == 3 && numeroDeConvidados >= 51 && numeroDeConvidados <= 100 ){
+        $('label[for="crepes_no_palito"]').text('Crepes no Palito R$' + crepesPalito3h50a100);
+        $('#crepes_no_palito').val(crepesPalito3h50a100);
+
+        $('label[for="tapioca"]').text('Tapioca R$' + tapioca3h50a100);
+        $('#tapioca').val(tapioca3h50a100);
+
         $('label[for="churros"]').text('Churros R$' + churros3h100a200);
         $('#churros').val(churros3h100a200);
 
@@ -458,9 +485,18 @@ function getInformacoesFesta() {
         $('label[for="estacao_massa"]').text('Estações de Massas R$' + estacoesMassas3h100a200);
         $('#estacao_massa').val(estacoesMassas3h100a200);
 
+        $('label[for="hamburguer_tradicional"]').text('Estação de Hamburguer Tradicional R$'+ hamburguer_tradicional3h100a200);
+        $('#hamburguer_tradicional').val(hamburguer_tradicional3h100a200)
 
 
-    }else if(duracao > 3 && numeroDeConvidados <= 99 ){
+
+    }else if(duracao > 3 && numeroDeConvidados <= 50 ){
+        $('label[for="crepes_no_palito"]').text('Crepes no Palito R$' + crepesPalito4h0a50);
+        $('#crepes_no_palito').val(crepesPalito4h0a50);
+
+        $('label[for="tapioca"]').text('Tapioca R$' + tapioca4h0a50);
+        $('#tapioca').val(tapioca4h0a50);
+
         $('label[for="churros"]').text('Churros R$' + churros4h50a99);
         $('#churros').val(churros4h50a99);
 
@@ -477,9 +513,17 @@ function getInformacoesFesta() {
         $('label[for="estacao_massa"]').text('Estações de Massas R$' + estacoesMassas4h50a99);
         $('#estacao_massa').val(estacoesMassas4h50a99);
 
+        $('label[for="hamburguer_tradicional"]').text('Estação de Hamburguer Tradicional R$'+ hamburguer_tradicional4h50a99);
+        $('#hamburguer_tradicional').val(hamburguer_tradicional4h50a99)
 
 
-    }else if(duracao > 3 && numeroDeConvidados >= 100 && numeroDeConvidados <= 200 ){
+    }else if(duracao > 3 && numeroDeConvidados >= 51 && numeroDeConvidados <= 100 ){
+        $('label[for="crepes_no_palito"]').text('Crepes no Palito R$' + crepesPalito4h50a100);
+        $('#crepes_no_palito').val(crepesPalito4h50a100);
+
+        $('label[for="tapioca"]').text('Tapioca R$' + tapioca4h50a100);
+        $('#tapioca').val(tapioca4h50a100);
+
         $('label[for="churros"]').text('Churros R$' + churros4h100a200);
         $('#churros').val(churros4h100a200);
 
@@ -494,6 +538,9 @@ function getInformacoesFesta() {
 
         $('label[for="estacao_massa"]').text('Estações de Massas R$' + estacoesMassas4h100a200);
         $('#estacao_massa').val(estacoesMassas4h100a200);
+
+        $('label[for="hamburguer_tradicional"]').text('Estação de Hamburguer Tradicional R$'+ hamburguer_tradicional4h100a200);
+        $('#hamburguer_tradicional').val(hamburguer_tradicional4h100a200)
 
 
 
@@ -657,9 +704,9 @@ function verificarConvidados() {
         
 
 
-    }else if (valor > 200) {
+    }else if (valor > 100) {
         $('#n_de_convidados').val(200).trigger('input');
-        alert("O número máximo de convidados é 200.");
+        alert("O número máximo de convidados é 100.");
     }
 }
 
