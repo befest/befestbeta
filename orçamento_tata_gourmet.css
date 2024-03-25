@@ -161,6 +161,15 @@ body{
     align-items: center;
     row-gap: 2.5vh;
 }
+.titulo_servicos{
+    background-color: #d88ca8;
+    padding: 1em;
+    font-size: 16pt;
+    font-family: bahnschrift;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+}
 .topico{
     width: 60%;
     border: 0px solid;
