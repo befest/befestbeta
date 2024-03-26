@@ -57,7 +57,7 @@ function execucao(){
         precotoalha += 5
     }
 
-    var n_de_toalhas = parseInt(totconv/4)
+    var n_de_toalhas = totconv/4
     var preco_toalhas_total = precotoalha*n_de_toalhas
     
 
