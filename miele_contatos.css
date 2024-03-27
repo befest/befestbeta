@@ -284,6 +284,7 @@ body{
          width: 100%;
          column-gap: 5vh;
          justify-content: start;
+	  overflow-x: scroll;    
      }
      .item_menu_soundbar{
          width: max-content;
@@ -400,6 +401,7 @@ body{
           width: 100%;
           column-gap: 5vh;
           justify-content: start;
+	   overflow-x: scroll;    
       }
       .item_menu_soundbar{
           width: max-content;
@@ -518,6 +520,7 @@ body{
           width: 100%;
           column-gap: 5vh;
           justify-content: start;
+	   overflow-x: scroll;    
       }
       .item_menu_soundbar{
           width: max-content;
@@ -635,6 +638,7 @@ body{
           width: 80%;
           column-gap: 5vh;
           justify-content: start;
+	   overflow-x: scroll;    
       }
       .item_menu_soundbar{
           width: max-content;
