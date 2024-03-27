@@ -278,7 +278,7 @@ body{
     border-radius: 5px;
 }
 .img_res_orçamento{
-    width: 30%;
+    width: 50%;
     padding: 0vh;
     
 }
@@ -402,6 +402,11 @@ body{
      .serviço_item_button_icon{
          
      }
+     .img_res_orçamento{
+	    width: 35%;
+	    padding: 0vh;
+    
+	}	
  
      /*SERVIÇOS FINALIZADO*/
  
@@ -516,7 +521,10 @@ body{
       .serviço_item_button_icon{
           
       }
-  
+      .img_res_orçamento{
+	    width: 35%;
+	    padding: 0vh;
+       }
       /*SERVIÇOS FINALIZADO*/
   
       /*FOOTER INICIADO*/
@@ -529,7 +537,7 @@ body{
       }
       .footer-logo{
           /*espalamento*/
-          width: 40%;
+          width: 30%;
           height: auto;   
       }
       /*FOOTER FINALIZADO*/
@@ -629,6 +637,11 @@ body{
       }
       .serviço_item_button_icon{
           
+      }
+     .img_res_orçamento{
+	width: 35%;
+	padding: 0vh;
+    
       }
   
       /*SERVIÇOS FINALIZADO*/
@@ -743,6 +756,11 @@ body{
       .serviço_item_button_icon{
           
       }
+      .img_res_orçamento{
+	width: 35%;
+ 	padding: 0vh;
+    
+       }
   
       /*SERVIÇOS FINALIZADO*/
   
