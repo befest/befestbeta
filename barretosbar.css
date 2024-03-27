@@ -194,8 +194,8 @@ body{
 .serviços_item_button{
     display: flex;
     width: 22.5vh;
-    background-color: red;
-    border: 3px solid rgb(102, 0, 0);
+    background-color:  rgb(120, 0, 150);
+    border: 3px solid rgb(171, 0, 213);
     border-radius: 10px;
     align-items: center;
     justify-content: center;
