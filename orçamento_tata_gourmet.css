@@ -319,7 +319,6 @@ body{
          width: 100%;
          column-gap: 5vh;
          justify-content: start;
-	 overflow-x: scroll;    
      }
      .item_menu_soundbar{
          width: max-content;
@@ -360,6 +359,11 @@ body{
      .serviço_item_button_icon{
          
      }
+     .img_res_orçamento{
+	    width: 40%;
+	    padding: 0vh;
+    
+	}	
  
      /*SERVIÇOS FINALIZADO*/
  
@@ -432,7 +436,6 @@ body{
           width: 100%;
           column-gap: 5vh;
           justify-content: start;
-	  overflow-x: scroll;        
       }
       .item_menu_soundbar{
           width: max-content;
@@ -475,7 +478,10 @@ body{
       .serviço_item_button_icon{
           
       }
-  
+      .img_res_orçamento{
+	    width: 40%;
+	    padding: 0vh;
+       }
       /*SERVIÇOS FINALIZADO*/
   
       /*FOOTER INICIADO*/
@@ -547,7 +553,6 @@ body{
           width: 100%;
           column-gap: 5vh;
           justify-content: start;
-	  overflow-x: scroll;    
       }
       .item_menu_soundbar{
           width: max-content;
@@ -589,6 +594,11 @@ body{
       }
       .serviço_item_button_icon{
           
+      }
+     .img_res_orçamento{
+	width: 40%;
+	padding: 0vh;
+    
       }
   
       /*SERVIÇOS FINALIZADO*/
@@ -703,6 +713,11 @@ body{
       .serviço_item_button_icon{
           
       }
+      .img_res_orçamento{
+	width: 40%;
+ 	padding: 0vh;
+    
+       }
   
       /*SERVIÇOS FINALIZADO*/
   
