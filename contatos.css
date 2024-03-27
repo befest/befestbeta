@@ -219,7 +219,7 @@ body{
 .footer{
     /*espaçamento*/
     width: 50%;
-    height: auto;
+     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,6 +329,10 @@ body{
      }
      .serviço_item_button_icon{
          
+     }
+     .bi{
+	width: 15%;
+	height: auto;
      }
  
      /*SERVIÇOS FINALIZADO*/
@@ -444,6 +448,10 @@ body{
       .serviço_item_button_icon{
           
       }
+      .bi{
+	 width: 15%;
+	 height: auto;
+       }
   
       /*SERVIÇOS FINALIZADO*/
   
@@ -558,6 +566,10 @@ body{
       .serviço_item_button_icon{
           
       }
+      .bi{
+	   width: 15%;
+	   height: auto;
+       }
   
       /*SERVIÇOS FINALIZADO*/
   
