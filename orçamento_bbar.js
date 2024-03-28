@@ -13,16 +13,14 @@ function execucao(){
     
     //Data Fim
 
-    var mei = document.querySelector('#convmeia')
     var int = document.querySelector('#convint')
     var integrais = Number(int.value)
-    var meias = Number(mei.value)
-    var totconv = integrais + meias
+    var totconv = integrais
 
     if(totconv>200){
         alert('O número de convidados é 200 convidados ou mais , entre em contato conosco para negociarmos melhor o preço!')
     }
-    var select = document.querySelector('#cardapios')
+    var select = document.querySelector('#open-bar')
     var option = select.children[select.selectedIndex];
     var cardapioescolhido = option.textContent;
 
@@ -101,9 +99,10 @@ function execucao(){
     var preco_total = precoconv*totconv
     var preco_total1 = preco_total.toFixed(2).replace('.',',')
 
-    res.innerHTML = `Orçamento Barreto's Bar<br>
-    Cardápio Escolhido : ${cardapioescolhido}<br>
-    Preço por Convidado : R$ ${precoconv}<br>
+    res.innerHTML = `Data : ${data_nova}<br><br>
+    Nº de Convidados : ${totconv}<br><br>
+    Cardápio Escolhido : ${cardapioescolhido}<br><br>
+    Preço por Convidado : R$ ${precoconv}<br><br>
     Preço Total : R$ ${preco_total1}`
 
 
