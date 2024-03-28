@@ -129,10 +129,9 @@ body{
     width: 50%;
     display: flex;
     padding: 2.5vh;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     column-gap: 6vh;
-    overflow-x: scroll;
 }
 .item_menu_soundbar{
     width: max-content;	
