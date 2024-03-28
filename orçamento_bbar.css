@@ -1,4 +1,33 @@
-/* ESTRUTURA*/
+/* ESTRUTURA : OBJETIVOS 
+-Body
+    - Container-Header
+        - header
+            - header_images
+                - img_logo_prestador
+            - description
+                - header_titulo
+                - header_festarea_nicho
+
+    - Menu Soundbar
+
+        - menu-item
+
+    - Serviços
+        - serviços-item
+            - serviços-item-topico
+                - serviços-item-imagem
+                - serviços-item-escritos
+                    - serviços-item-tit
+                    - serviços-item-desc
+            - contratar
+                - contratar-tit
+                - material-symbol        
+    - Footer
+        - footer-logo
+
+
+
+*/
 
 /*CONFIGURAÇÕES GERAIS INICIADAS*/
 *{
@@ -14,6 +43,9 @@ a{
 }
 /*CONFIGURAÇÕES GERAIS FINALIZADAS*/
 
+
+
+
 /*BODY INICIADO*/
 body{
     /*espaçamento*/
@@ -26,8 +58,13 @@ body{
 }
 /*BODY FINALIZADO*/
 
+
+
+
+
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
+
     /*espaçamento*/
     width: 50%;
     height: auto;
@@ -36,6 +73,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     /*estilização*/
     background-image: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
 }
@@ -81,6 +119,7 @@ body{
 }
 .header_festarea_nicho{
     /*espaçamento*/
+    
     font-size: 16pt;
     font-family: Arial, Helvetica, sans-serif;
     /*estilização*/
@@ -115,14 +154,17 @@ body{
 /*MENU SOUND-BAR FINALIZADO*/
 
 
+
+
 /*SERVIÇOS INICIADO */
 .serviços{
     /*espaçamento*/
     width: 50%;
-    padding: 1.5em;
+    padding: 2.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     /*estilização*/
     background-color: white;
     border-bottom-left-radius: 10px;
@@ -137,27 +179,23 @@ body{
     color: white;
     border-radius: 100px;
     text-align: center;
-    
 }
 .dadosparaorçamento{
-    width: 200%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 2.5vh;
     text-align: center;
-    
    
 }
 .dadosserviço{
-    width: 100%;
     display: flex;
     flex-direction: column;
-    
 }
 .dadosconvidados{
     display: flex;
     flex-direction: column;
-
+    
 }
 .tit{
     padding: 1em;
@@ -169,13 +207,14 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .label{
+   
     color: rgb(120, 0, 150);
     padding: 0.75vh;
     font-family: 'bahnschrift';
-
 }
 #data{
     width : 98%;	
@@ -199,15 +238,26 @@ body{
     padding: 1em;
     border: none;
     border-radius: 5px;
-    border: 2px solid black;
     cursor: pointer;
 }
 .topico1:active{
-    background-color: rgb(150, 0, 150);
+    background-color: rgb(88, 0, 94);
 }
 
 #resultado{
-    width: 200%;
+    width: 100%;
+    height: auto;
+    background-color: rgb(120, 0, 150);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    
+    border-radius: 5px;
+    
+}
+#res{
+    width: 100%;
     height: auto;
     background-color: rgb(120, 0, 150);
     align-items: center;
@@ -219,10 +269,14 @@ body{
     font-size: 10pt;
     border-radius: 5px;
 }
-.imagem_resultado{
-   width: 25%;
+.img_res_orçamento{
+    width: 25%;
+    padding: 0vh;
+    
 }
+
 /*SERVIÇOS FINALIZADO*/
+
 
 
 
@@ -300,7 +354,7 @@ body{
          width: 100%;
          column-gap: 5vh;
          justify-content: start;
-	 overflow-x: scroll;
+         overflow-x: scroll;
      }
      .item_menu_soundbar{
          width: max-content;
@@ -418,7 +472,7 @@ body{
           width: 100%;
           column-gap: 5vh;
           justify-content: start;
-	  overflow-x: scroll;
+          overflow-x: scroll;
       }
       .item_menu_soundbar{
           width: max-content;
@@ -536,7 +590,7 @@ body{
           width: 100%;
           column-gap: 5vh;
           justify-content: start;
-	  overflow-x: scroll;
+          overflow-x: scroll;
       }
       .item_menu_soundbar{
           width: max-content;
