@@ -6,6 +6,19 @@ function execucao(){
     var select = document.querySelector('#bolos')
     var option = select.children[select.selectedIndex];
     var boloescolhido = option.textContent;
+
+    var select = document.querySelector('#massa_bolo')
+    var option = select.children[select.selectedIndex];
+    var tipo_de_massa = option.textContent;
+
+    var preco_massa = 0
+
+    if(tipo_de_massa === 'Massa Branca'){
+        preco_massa = 0
+    }
+    if(tipo_de_massa === 'Massa de Chocolate'){
+        preco_massa = 10
+    }
     
     var select = document.querySelector('#adicionais_bolos')
     var option = select.children[select.selectedIndex];
@@ -60,37 +73,32 @@ function execucao(){
     var option = select.children[select.selectedIndex];
     var qntd_escolhida_docinhos_gourmet = option.textContent;
 
-    var preco_docinho_gourmet = 0
+    let preco_docinho_gourmet = 0
     var quantidade_docinhos_gourmet = 0
 
     if(qntd_escolhida_docinhos_gourmet === 'Sem Docinhos'){
         preco_docinho_gourmet += 0
         quantidade_docinhos_gourmet += 0
-        var qntd_docinhos_gourmet_por_sabor = 0
-
     }
     if(qntd_escolhida_docinhos_gourmet === '50 unidades ( 2 sabores disponíveis )'){
         preco_docinho_gourmet += 75
         quantidade_docinhos_gourmet += 50
-        var qntd_docinhos_gourmet_por_sabor = parseInt(quantidade_docinhos_gourmet/sabores_docinhos_gourmet_selecionados.length)
         
     }
     if(qntd_escolhida_docinhos_gourmet === '100 unidades ( 4 sabores disponíveis )'){
         preco_docinho_gourmet += 150
         quantidade_docinhos_gourmet += 100
-        var qntd_docinhos_gourmet_por_sabor = parseInt(quantidade_docinhos_gourmet/sabores_docinhos_gourmet_selecionados.length)
+        
         
     }
     if(qntd_escolhida_docinhos_gourmet === '150 unidades ( 6 sabores disponíveis )'){
         preco_docinho_gourmet += 225
         quantidade_docinhos_gourmet += 150
-        var qntd_docinhos_gourmet_por_sabor = parseInt(quantidade_docinhos_gourmet/sabores_docinhos_gourmet_selecionados.length)
         
     }
     if(qntd_escolhida_docinhos_gourmet === '200 unidades ( 8 sabores disponíveis )'){
         preco_docinho_gourmet += 300
         quantidade_docinhos_gourmet += 200
-        var qntd_docinhos_gourmet_por_sabor = parseInt(quantidade_docinhos_gourmet/sabores_docinhos_gourmet_selecionados.length)
         
     }
 
@@ -113,38 +121,36 @@ function execucao(){
     var option = select.children[select.selectedIndex];
     var qntd_escolhida_docinhos_tradicionais = option.textContent;
 
-    var preco_docinho_tradicionais = 0
+    let preco_docinho_tradicionais = 0
     var quantidade_docinhos_tradicionais = 0
 
     if(qntd_escolhida_docinhos_tradicionais === 'Sem Docinhos'){
         preco_docinho_tradicionais += 0
         quantidade_docinhos_tradicionais += 0
-        var qntd_docinhos_tradicionais_por_sabor = 0
         
        
     }
     if(qntd_escolhida_docinhos_tradicionais === '50 unidades ( 2 sabores disponíveis )'){
         preco_docinho_tradicionais += 50
         quantidade_docinhos_tradicionais += 50
-        var qntd_docinhos_tradicionais_por_sabor = parseInt(quantidade_docinhos_tradicionais/sabores_docinhos_tradicionais_selecionados.length)
+       
         
     }
     if(qntd_escolhida_docinhos_tradicionais === '100 unidades ( 4 sabores disponíveis )'){
         preco_docinho_tradicionais += 100
         quantidade_docinhos_tradicionais += 100
-        var qntd_docinhos_tradicionais_por_sabor = parseInt(quantidade_docinhos_tradicionais/sabores_docinhos_tradicionais_selecionados.length)
+
         
     }
     if(qntd_escolhida_docinhos_tradicionais === '150 unidades ( 4 sabores disponíveis )'){
         preco_docinho_tradicionais += 150
         quantidade_docinhos_tradicionais += 150
-        var qntd_docinhos_tradicionais_por_sabor = parseInt(quantidade_docinhos_tradicionais/sabores_docinhos_tradicionais_selecionados.length)
+        
         
     }
     if(qntd_escolhida_docinhos_tradicionais === '200 unidades ( 4 sabores disponíveis )'){
         preco_docinho_tradicionais += 200
         quantidade_docinhos_tradicionais += 200
-        var qntd_docinhos_tradicionais_por_sabor = parseInt(quantidade_docinhos_tradicionais/sabores_docinhos_tradicionais_selecionados.length)
         
     }
 
@@ -156,26 +162,25 @@ function execucao(){
     var preco_docinho_gourmet_compontos = preco_docinho_gourmet.toFixed(2).replace('.',',')
     var preco_docinho_tradicionais_compontos = preco_docinho_tradicionais.toFixed(2).replace('.',',')
 
-    var preco_total = Number(preco_bolo+preco_adicional+preco_docinho_gourmet+preco_docinho_tradicionais)
+    var preco_total = Number(preco_bolo+preco_adicional+preco_docinho_gourmet+preco_docinho_tradicionais+preco_massa)
     var preco_total_compontos = preco_total.toFixed(2).replace('.',',')
 
     res.innerHTML = `Data para Retirada : ${data_nova}<br><br>
+    Massa Escolhida : ${tipo_de_massa} | R$ ${preco_massa}<br>
     Sabor de Bolo : ${boloescolhido}<br>
     Sabor Adicional Escolhido : ${adicional_bolo_escolhido}<br>
     Quantidade de Pedaços : ${qntd_escolhida}<br><br>
 
     Docinhos Gourmet <br>
-    Sabores Selecionados : ${sabores_docinhos_gourmet_selecionados}<br>
-    Quantidade por Sabor : ${qntd_docinhos_gourmet_por_sabor} unidades por sabor<br><br>
+    Sabores Selecionados : ${sabores_docinhos_gourmet_selecionados}<br><br>
 
     Docinhos Tradicionais <br>
-    Sabores Selecionados : ${sabores_docinhos_tradicionais_selecionados}<br>
-    Quantidade por Sabor : ${qntd_docinhos_tradicionais_por_sabor} unidades por sabor<br><br>
+    Sabores Selecionados : ${sabores_docinhos_tradicionais_selecionados}<br><br>
 
     Preço pelo Bolo : R$ ${preco_bolo_compontos}<br>
     Preço por Sabor Adicional : R$ ${preco_adicional_compontos} <br>
-    Preço por Docinhos Gourmet : R$ ${preco_docinho_gourmet_compontos}<br>
-    Preço por Docinhos Tradicionais : R$ ${preco_docinho_tradicionais_compontos}<br><br>
+    Preço por Docinhos Gourmet : R$ ${preco_docinho_gourmet}<br>
+    Preço por Docinhos Tradicionais : R$ ${preco_docinho_tradicionais}<br><br>
     <strong><h3>Preço Total : R$ ${preco_total_compontos}</h3></strong>
 
     `
