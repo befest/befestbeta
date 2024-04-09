@@ -191,6 +191,26 @@ function execucao(){
 
     // FIM DO CARDÁPIO DE COCKTAIL //
 
+    // CARDÁPIO DE FESTA JUNINA //
+    
+    if(cardapioescolhido === 'Festa Junina' && totconv<30){
+        precoconv += (85*30)/totconv
+    }
+    if(cardapioescolhido === 'Festa Junina' && totconv>=30 && totconv<=70){
+        precoconv += 85
+    }
+    if(cardapioescolhido === 'Festa Junina' && totconv>=71 && totconv<=100){
+        precoconv += 80
+    }
+    if(cardapioescolhido === 'Festa Junina' && totconv>=101 && totconv<=120){
+        precoconv += 75
+    }
+    if(cardapioescolhido === 'Festa Junina' && totconv>=121 && totconv<=150){
+        precoconv += 70
+    }
+
+// FIM DO CARDÁPIO DE FESTA JUNINA //
+
     // COMEÇO DA ESCOLHA DA CERVEJA
 
     var select = document.querySelector('#cervejas')
