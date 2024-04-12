@@ -73,6 +73,16 @@
 
         <p class="titulo_servicos">Realize seu Orçamento aqui!</p>
 
+    
+        <!--Data , Hora e Local-->
+
+        <label for="data_hora_local" class="label_topico">Data , Horário de Início e Local</label>
+        <div class="data_hora_local">
+            <input type="date" name="data" id="data" class="topico">
+            <input type="time" name="hora" id="hora" class="topico">
+            <input type="text" name="local" id="local" class="topico" placeholder="Local da Festa">
+        </div>
+
         <!--Nº de convidados-->
 
         <label for="n_de_convidados" class="label_topico">Nº de Convidados</label>
@@ -93,6 +103,11 @@
         <label for="crepes" class="label_topico">Selecione os serviços que você quer orçar abaixo : </label>
 
         <div class="topico_checkbox">
+
+            <div class="item_checkbox">
+                <label for="festa_junina">Festa Junina R$68</label>
+                <input type="checkbox" name="itens_checkbox" value="68" id="festa_junina">
+            </div>
 
 
             <div class="item_checkbox">
@@ -323,7 +338,7 @@ var valorTotal_hamburger = 0;
 let numeroDeConvidados = document.getElementById("n_de_convidados").value;;
 
 
-
+let festa_junina = 68;
 let buffetChurrasco = 60;
 let buffetCompleto = 75;
 let crepesPalito3h0a50 = 580;
@@ -588,7 +603,11 @@ function reconstruirLista() {
         }else if($(this).attr('id') == 'buffet_completo'){
             var labelText = 'Buffet Completo R$'+ buffetCompleto * numeroDeConvidados;
             total += buffetCompleto * numeroDeConvidados; // Adiciona o valor do hamburger artesanal ao total
-        }else if($(this).attr('id') == 'bebidas'){
+        }else if($(this).attr('id')=='festa_junina'){
+            var labelText = 'Festa Junina R$'+ festa_junina * numeroDeConvidados;
+            total += festa_junina*numeroDeConvidados //Adiciona o valor da Festa Junina ao total
+        }
+        else if($(this).attr('id') == 'bebidas'){
             var labelText = 'Bebidas R$'+ bebidas * numeroDeConvidados;
             total += bebidas * numeroDeConvidados; // Adiciona o valor do hamburger artesanal ao total
         }else{
