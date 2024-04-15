@@ -111,6 +111,26 @@ function execucao(){
 
     // FIM DO CARDÁPIO ALMOÇO/JANTAR //
 
+    // CARDÁPIO DE BUFFET INFANTIL //
+
+    if(cardapioescolhido === 'Buffet Infantil' && totconv<30){
+        precoconv+= (95*30)/totconv
+    }
+    if(cardapioescolhido === 'Buffet Infantil' && totconv>=30 && totconv<=70){
+        precoconv += 85
+    }
+    if(cardapioescolhido === 'Buffet Infantil' && totconv>=71 && totconv<=100){
+        precoconv += 80
+    }
+    if(cardapioescolhido === 'Buffet Infantil' && totconv>=101 && totconv<=120){
+        precoconv = 75
+    }
+    if(cardapioescolhido === 'Buffet Infantil' && totconv>=121 && totconv<=150){
+        precoconv += 70
+    }
+
+    // FIM DO CARDÁPIO DE BUFFET INFANTIL //
+
     // CARDÁPIO DE FEIJOADA //
 
     if(cardapioescolhido === 'Feijoada' && totconv<30){
