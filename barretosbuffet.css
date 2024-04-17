@@ -72,7 +72,7 @@ body{
     
     
 }
-..share,.whatsapp-share-button{
+.share,.whatsapp-share-button{
     width: 20%;
     height: auto;
     color: white;
