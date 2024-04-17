@@ -84,6 +84,11 @@ body{
     padding: 0;
     margin: 0;
 }
+.share,.whatsapp-share-button{
+    width: 20%;
+    height: auto;
+    color: white;
+}
 .header_images{
     /*espaçamento*/
     width: 100%;
