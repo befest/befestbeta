@@ -16,6 +16,28 @@
 
         <div class="header">
 
+            <div class="compartilhado">
+
+                <a href="" id="whatsapp-share-btt" rel="nofollow" target="_blank" class="whatsapp-share-button"><span class="material-symbols-outlined share">
+                    share
+                    </span></a>
+    
+                <!-- Você pode colocar este script num arquivo externo -->
+                <script type="text/javascript">
+                    //Constrói a URL depois que o DOM estiver pronto
+                    document.addEventListener("DOMContentLoaded", function() {
+                        //conteúdo que será compartilhado: Título da página + URL
+                        var conteudo = encodeURIComponent(`https://befest.netlify.app/barretosbuffet\n\nFestPerfil | Barreto's Buffet☝🏼🥂`);
+                        //altera a URL do botão
+                        document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
+                    }, false);
+                </script>
+
+
+            </div>
+
+            
+
             <div class="header_images">
 
                 <img src="Logo Barreto's Buffet Instagram.png" alt="" class="img_logo_prestador">
