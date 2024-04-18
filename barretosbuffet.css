@@ -81,7 +81,7 @@ body{
 }
 
 .dropdown {
-    width: 5%;
+    
     position: absolute;
     flex-direction: column;
     display: flex;
@@ -109,7 +109,6 @@ body{
 .dropdown:hover .dropdown-child {
     display: block;
 }
-
 
 .header{
     /*espaçamento*/
