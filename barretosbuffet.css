@@ -72,43 +72,45 @@ body{
     
     
 }
-
 .mainmenubtn {
     background-color: transparent;
     color: white;
     border: none;
     cursor: pointer;
+    width: 15%;
 }
-
 .dropdown {
-    
     position: absolute;
-    flex-direction: column;
     display: flex;
-}
-.whatsapp-btn{
-    color: green;
-    width: 96%;
-    height: auto;
+    flex-direction: column;
+    width: 10%;
 }
 .dropdown-child {
     display: none;
-    align-items: center;
-    justify-content: center;
-    width: 65px;
     background-color: white;
+    width: 40px;
     border-radius: 10px;
-    
 }
 .dropdown-child a {
-    color: black;
-    padding: 20px;
+    padding: 1vh;
     text-decoration: none;
     display: block;
+
 }
 .dropdown:hover .dropdown-child {
     display: block;
 }
+.whatsapp-btn{
+    color: green;
+    width: 100%;
+    height: auto;
+}
+.instagram-btn{
+    color: #DD2A7B;
+    width: 100%;
+    height: auto;
+}
+
 
 .header{
     /*espaçamento*/
