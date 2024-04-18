@@ -72,11 +72,45 @@ body{
     
     
 }
-.share,.whatsapp-share-button{
-    width: 20%;
-    height: auto;
+
+.mainmenubtn {
+    background-color: transparent;
     color: white;
+    border: none;
+    cursor: pointer;
 }
+
+.dropdown {
+    width: 5%;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+}
+.whatsapp-btn{
+    color: green;
+    width: 96%;
+    height: auto;
+}
+.dropdown-child {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.dropdown-child a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+
 .header{
     /*espaçamento*/
     padding: 0;
