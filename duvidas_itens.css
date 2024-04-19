@@ -57,16 +57,14 @@ body{
 
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
-
     /*espaçamento*/
     width: 50%;
     height: auto;
-    padding: 5vh;
+    padding: 1.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     /*estilização*/
     background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
     
@@ -77,12 +75,19 @@ body{
     padding: 0;
     margin: 0;
 }
+
+
+.compartilhado{
+    
+}
+
 .mainmenubtn {
     background-color: transparent;
     color: white;
     border: none;
     cursor: pointer;
     width: 15%;
+    
 }
 .dropdown {
     position: absolute;
@@ -115,6 +120,18 @@ body{
     width: 100%;
     height: auto;
 }
+.facebook-btn{
+    color: blue;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
 .header_images{
     /*espaçamento*/
     width: 100%;
@@ -122,6 +139,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2.5vh;
 }
 .img_logo_prestador{
     /*espaçamento*/
@@ -131,7 +149,6 @@ body{
     -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
 		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
 		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
-    
 }
 .description{
     /*espaçamento*/
@@ -142,7 +159,6 @@ body{
 .header_titulo{
     /*espaçamento*/
     padding: 0.1em;
-
     /*estilização*/
     font-size: 24pt;
     color: white;
