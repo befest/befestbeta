@@ -57,27 +57,37 @@ body{
 
 /*CONTAINER-HEADER INICIADO*/
 .container-header{
-
     /*espaçamento*/
     width: 50%;
     height: auto;
-    padding: 5vh;
+    padding: 0vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     /*estilização*/
     background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
     
     
 }
+.header{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+}
+
+
+.compartilhado{
+    padding-top: 1vh;
+}
+
 .mainmenubtn {
     background-color: transparent;
     color: white;
     border: none;
     cursor: pointer;
     width: 15%;
+    
 }
 .dropdown {
     position: absolute;
@@ -110,13 +120,18 @@ body{
     width: 100%;
     height: auto;
 }
-
-
-.header{
-    /*espaçamento*/
-    padding: 0;
-    margin: 0;
+.facebook-btn{
+    color: blue;
+    width: 100%;
+    height: auto;
 }
+
+
+
+
+
+
+
 .header_images{
     /*espaçamento*/
     width: 100%;
@@ -124,6 +139,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2.5vh;
 }
 .img_logo_prestador{
     /*espaçamento*/
@@ -133,7 +149,6 @@ body{
     -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
 		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
 		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
-    
 }
 .description{
     /*espaçamento*/
@@ -144,7 +159,6 @@ body{
 .header_titulo{
     /*espaçamento*/
     padding: 0.1em;
-
     /*estilização*/
     font-size: 24pt;
     color: white;
@@ -161,42 +175,30 @@ body{
 
 }
 /*CONTAINER-HEADER FINALIZADO*/
-
-
 /*MENU SOUND-BAR INICIADO*/
 .menu_soundbar{
     background-color: white;
     width: 50%;
     display: flex;
     padding: 2.5vh;
-    justify-content: left;
+    justify-content: start;
     align-items: center;
-    column-gap: 6vh;
+    column-gap: 5vh;
     overflow-x: scroll;
 }
 .item_menu_soundbar{
+    width: max-content;
     display: flex;
     column-gap: 1vh;
     align-items: center;
     color: black;
-    padding: 0.25vh;
+    padding: 1vh;
 }
 .serviços_principais{
-    width: 23vh;
     color: red;
     border-bottom: 2px solid red;
 }
-.serviços_adicionais{
-    width: 23vh;
-    
-}
-.duvidas_itens{
-    width: 19vh;
-
-}
 /*MENU SOUND-BAR FINALIZADO*/
-
-
 /*SERVIÇOS INICIADO*/
 .serviços{
     width: 50%;
@@ -255,12 +257,7 @@ body{
     color: white;
     
 }
-
-
-
 /*SERVIÇOS FINALIZADO*/
-
-
 /*FOOTER INICIADO*/
 .footer{
     /*espaçamento*/
@@ -283,6 +280,8 @@ body{
     height: auto;   
 }
 /*FOOTER FINALIZADO*/
+
+
 
 
 /*MEDIA : 0 ATÉ 320*/
