@@ -60,7 +60,7 @@ body{
     /*espaçamento*/
     width: 50%;
     height: auto;
-    padding: 0vh;
+    padding: 1.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +78,7 @@ body{
 
 
 .compartilhado{
-    padding-top: 1vh;
+    
 }
 
 .mainmenubtn {
