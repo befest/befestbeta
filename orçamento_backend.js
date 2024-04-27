@@ -37,7 +37,10 @@ function execucao(){
     var toalhaEscolhida = option.textContent;
 
     var precotoalha = 0
-
+    
+    if(toalhaEscolhida=== 'Sem Toalha'){
+        precotoalha += 0
+    }
     if(toalhaEscolhida=== 'Toalha Branca Lisa'){
         precotoalha += 15
     }
