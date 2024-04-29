@@ -120,6 +120,57 @@ body{
     color: rgb(255, 255, 255);
 
 }
+
+/*COMPARTILHADO INICIADO*/
+.compartilhado{
+    padding-top: 1vh;
+}
+
+.mainmenubtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    
+}
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+.dropdown-child {
+    display: none;
+    background-color: white;
+    width: 40px;
+    border-radius: 10px;
+}
+.dropdown-child a {
+    padding: 1vh;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.whatsapp-btn{
+    color: green;
+    width: 100%;
+    height: auto;
+}
+.instagram-btn{
+    color: #DD2A7B;
+    width: 100%;
+    height: auto;
+}
+.facebook-btn{
+    color: blue;
+    width: 100%;
+    height: auto;
+}
+/*COMPARTILHADO FINALIZADO*/
 /*CONTAINER-HEADER FINALIZADO*/
 
 
