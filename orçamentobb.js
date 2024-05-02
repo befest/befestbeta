@@ -298,6 +298,9 @@ function execucao(){
 
     var precotoalha = 0
 
+    if(toalhaEscolhida=== 'Sem Aluguel de Toalhas'){
+        precotoalha += 0
+    }
     if(toalhaEscolhida=== 'Toalha Branca Lisa'){
         precotoalha += 15
     }
