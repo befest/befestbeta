@@ -118,15 +118,14 @@ body{
 }
 
 /*COMPARTILHADO INICIADO*/
-.compartilhado{
-    padding-top: 1vh;
+.compartilhado{   
 }
 .mainmenubtn {
     background-color: transparent;
     color: white;
     border: none;
     cursor: pointer;
-    width: 15%;
+    width: 15%; 
 }
 .dropdown {
     position: absolute;
