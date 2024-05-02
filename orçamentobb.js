@@ -249,28 +249,25 @@ function execucao(){
         precocerva += 20
     }
     if( cervejaescolhida=== 'Antarctica Original'){
-        precocerva += 25
-    }
-    if( cervejaescolhida=== 'Império'){
-        precocerva += 30
+        precocerva += 20
     }
     if( cervejaescolhida=== 'Amstel'){
-        precocerva += 25
+        precocerva += 20
     }
     if( cervejaescolhida=== 'Heineken'){
-        precocerva += 45
+        precocerva += 35
     }
     if( cervejaescolhida=== 'Corona'){
-        precocerva += 35
+        precocerva += 25
     }
     if( cervejaescolhida=== 'Stella Artois'){
-        precocerva += 40
+        precocerva += 30
     }
     if( cervejaescolhida=== 'Budweiser'){
-        precocerva += 35
+        precocerva += 25
     }
     if( cervejaescolhida=== 'Bohemia'){
-        precocerva += 30
+        precocerva += 20
     }
     // FINAL DA CERVEJA
 
