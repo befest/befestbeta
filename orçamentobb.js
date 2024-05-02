@@ -243,10 +243,10 @@ function execucao(){
         precocerva += 0
     }
     if( cervejaescolhida=== 'Brahma'){
-        precocerva += 20
+        precocerva += 15
     }
     if( cervejaescolhida=== 'Brahma Duplo/Puro Malte'){
-        precocerva += 25
+        precocerva += 20
     }
     if( cervejaescolhida=== 'Antarctica Original'){
         precocerva += 25
