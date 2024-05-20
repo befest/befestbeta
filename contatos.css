@@ -412,9 +412,14 @@ body{
      #footer-logo-link{
          
      }
+     .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
      .footer-logo{
          /*espalamento*/
-         width: 30%;
+         width: 20%;
          height: auto;   
      }
      /*FOOTER FINALIZADO*/
@@ -524,17 +529,22 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-          /*espaçamento*/
-          width: 100%;
-      }
-      #footer-logo-link{
-          
-      }
-      .footer-logo{
-          /*espalamento*/
-          width: 30%;
-          height: auto;   
-      }
+         /*espaçamento*/
+         width: 100%;
+     }
+     #footer-logo-link{
+         
+     }
+     .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
+     .footer-logo{
+         /*espalamento*/
+         width: 20%;
+         height: auto;   
+     }
       /*FOOTER FINALIZADO*/
   
 }
@@ -642,17 +652,22 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-          /*espaçamento*/
-          width: 100%;
-      }
-      #footer-logo-link{
-          
-      }
-      .footer-logo{
-          /*espalamento*/
-          width: 30%;
-          height: auto;   
-      }
+         /*espaçamento*/
+         width: 100%;
+     }
+     #footer-logo-link{
+         
+     }
+     .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
+     .footer-logo{
+         /*espalamento*/
+         width: 20%;
+         height: auto;   
+     }
       /*FOOTER FINALIZADO*/
 }
 
@@ -755,17 +770,22 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-          /*espaçamento*/
-          width: 80%;
-      }
-      #footer-logo-link{
-          
-      }
-      .footer-logo{
-          /*espalamento*/
-          width: 30%;
-          height: auto;   
-      }
+         /*espaçamento*/
+         width: 100%;
+     }
+     #footer-logo-link{
+         
+     }
+     .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
+     .footer-logo{
+         /*espalamento*/
+         width: 20%;
+         height: auto;   
+     }
       /*FOOTER FINALIZADO*/
   
 }
@@ -867,17 +887,22 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-          /*espaçamento*/
-          width: 50%;
-      }
-      #footer-logo-link{
-          
-      }
-      .footer-logo{
-          /*espalamento*/
-          width: 30%;
-          height: auto;   
-      }
+         /*espaçamento*/
+         width: 100%;
+     }
+     #footer-logo-link{
+         
+     }
+     .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
+     .footer-logo{
+         /*espalamento*/
+         width: 20%;
+         height: auto;   
+     }
       /*FOOTER FINALIZADO*/
   
 }
