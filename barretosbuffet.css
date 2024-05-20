@@ -258,7 +258,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
     padding: 2.5vh;
     /*estilização*/
     background-color: transparent;
