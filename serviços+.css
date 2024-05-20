@@ -24,10 +24,8 @@
                 - material-symbol        
     - Footer
         - footer-logo
-
-
-
-*/
+        
+/
 
 /*CONFIGURAÇÕES GERAIS INICIADAS*/
 *{
@@ -60,7 +58,7 @@ body{
     /*espaçamento*/
     width: 50%;
     height: auto;
-    padding: 1.5vh;
+    padding: 0vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,17 +75,16 @@ body{
 }
 
 
+/*COMPARTILHADO INICIADO*/
 .compartilhado{
-    
+    padding-top: 1vh;
 }
-
 .mainmenubtn {
     background-color: transparent;
     color: white;
     border: none;
     cursor: pointer;
     width: 15%;
-    
 }
 .dropdown {
     position: absolute;
@@ -105,7 +102,6 @@ body{
     padding: 1vh;
     text-decoration: none;
     display: block;
-
 }
 .dropdown:hover .dropdown-child {
     display: block;
@@ -125,11 +121,7 @@ body{
     width: 100%;
     height: auto;
 }
-
-
-
-
-
+/*COMPARTILHADO FINALIZADO*/
 
 
 .header_images{
@@ -175,48 +167,37 @@ body{
 
 }
 /*CONTAINER-HEADER FINALIZADO*/
-
 /*MENU SOUND-BAR INICIADO*/
 .menu_soundbar{
     background-color: white;
     width: 50%;
     display: flex;
     padding: 2.5vh;
-    justify-content: left;
+    justify-content: start;
     align-items: center;
-    column-gap: 4vh;
+    column-gap: 5vh;
     overflow-x: scroll;
 }
 .item_menu_soundbar{
+    width: max-content;
     display: flex;
     column-gap: 1vh;
     align-items: center;
     color: black;
-    padding: 0.25vh;
+    padding: 1vh;
 }
-.serviços_adicionais{
-    width: 22.5vh ;
+.serviços_principais{
     color: red;
     border-bottom: 2px solid red;
 }
-.duvidas_itens{
-     width: 17.5vh;	 	
-}
-.serviços_principais{
-     width: 22.5vh ;
-}
 /*MENU SOUND-BAR FINALIZADO*/
-
-
-
-
 /*SERVIÇOS INICIADO*/
 .serviços{
     width: 50%;
     background-color: white;
     padding: 2.5vh;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;	
+    border-bottom-right-radius: 10px;
 }
 .serviços_item{
     display: flex;
@@ -268,11 +249,10 @@ body{
     color: white;
     
 }
-
-
-
 /*SERVIÇOS FINALIZADO*/
 
+
+/*FOOTER INICIADO*/
 
 /*FOOTER INICIADO*/
 .footer{
@@ -310,10 +290,12 @@ body{
 }
 /*FOOTER FINALIZADO*/
 
+/*FOOTER FINALIZADO*/
+
+
+
 
 /*MEDIA : 0 ATÉ 320*/
-
-
 @media (min-width: 0px) and (max-width: 320px){
     body{
      background-color: white;
@@ -429,8 +411,6 @@ body{
 
 
 /*MEDIA : 320 ATÉ 375*/
-
-
  @media (min-width: 321px) and (max-width: 375px){
      body{
       background-color: white;
@@ -526,30 +506,25 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-         /*espaçamento*/
-         width: 100%;
-     }
-     #footer-logo-link{
-         
-     }
-     .tit_footer{
-        font-size: 10pt;
-     }
-     .subtit_footer{
-     }
-     .footer-logo{
-         /*espalamento*/
-         width: 20%;
-         height: auto;   
-     }
+          /*espaçamento*/
+          width: 100%;
+      }
+      #footer-logo-link{
+          
+      }
+      .tit_footer{
+        font-size: 12pt;
+      }
+      .footer-logo{
+          /*espalamento*/
+          width: 20%;
+          height: auto;   
+      }
       /*FOOTER FINALIZADO*/
   
 }
 
-
 /*MEDIA : 376 ATÉ 425*/
-
-
  @media (min-width: 376px) and (max-width: 425px){
      body{
       background-color: white;
@@ -645,29 +620,22 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-         /*espaçamento*/
-         width: 100%;
-     }
-     #footer-logo-link{
-         
-     }
-     .tit_footer{
-        font-size: 10pt;
-     }
-     .subtit_footer{
-     }
-     .footer-logo{
-         /*espalamento*/
-         width: 20%;
-         height: auto;   
-     }
+          /*espaçamento*/
+          width: 100%;
+      }
+      #footer-logo-link{
+          
+      }
+      .footer-logo{
+          /*espalamento*/
+          width: 30%;
+          height: auto;   
+      }
       /*FOOTER FINALIZADO*/
 }
 
 
 /*MEDIA : 426 ATÉ 768*/
-
-
  @media (min-width: 426px) and (max-width: 768px){
      body{
       
@@ -763,30 +731,26 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-         /*espaçamento*/
-         width: 100%;
-     }
-     #footer-logo-link{
-         
-     }
-     .tit_footer{
-        font-size: 10pt;
-     }
-     .subtit_footer{
-     }
-     .footer-logo{
-         /*espalamento*/
-         width: 20%;
-         height: auto;   
-     }
+          /*espaçamento*/
+          width: 80%;
+      }
+      #footer-logo-link{
+          
+      }
+      .tit_footer{
+        font-size: 12pt;
+      }
+      .footer-logo{
+          /*espalamento*/
+          width: 20%;
+          height: auto;   
+      }
       /*FOOTER FINALIZADO*/
   
 }
 
 
 /*MEDIA : 769 ATÉ 1024*/
-
-
  @media (min-width: 769px) and (max-width: 1024px){
      body{
       
@@ -880,23 +844,22 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-         /*espaçamento*/
-         width: 100%;
-     }
-     #footer-logo-link{
-         
-     }
-     .tit_footer{
-        font-size: 10pt;
-     }
-     .subtit_footer{
-     }
-     .footer-logo{
-         /*espalamento*/
-         width: 20%;
-         height: auto;   
-     }
+          /*espaçamento*/
+          width: 50%;
+      }
+      #footer-logo-link{
+          
+      }
+      .tit_footer{
+        font-size: 12pt;
+      }
+      .footer-logo{
+          /*espalamento*/
+          width: 20%;
+          height: auto;   
+      }
       /*FOOTER FINALIZADO*/
   
 }
+
 
