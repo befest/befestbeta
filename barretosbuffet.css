@@ -24,9 +24,7 @@
                 - material-symbol        
     - Footer
         - footer-logo
-
-
-
+        
 */
 
 /*CONFIGURAÇÕES GERAIS INICIADAS*/
@@ -60,7 +58,7 @@ body{
     /*espaçamento*/
     width: 50%;
     height: auto;
-    padding: 1.5vh;
+    padding: 0vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,17 +75,16 @@ body{
 }
 
 
+/*COMPARTILHADO INICIADO*/
 .compartilhado{
-    
+    padding-top: 1vh;
 }
-
 .mainmenubtn {
     background-color: transparent;
     color: white;
     border: none;
     cursor: pointer;
     width: 15%;
-    
 }
 .dropdown {
     position: absolute;
@@ -105,7 +102,6 @@ body{
     padding: 1vh;
     text-decoration: none;
     display: block;
-
 }
 .dropdown:hover .dropdown-child {
     display: block;
@@ -125,11 +121,7 @@ body{
     width: 100%;
     height: auto;
 }
-
-
-
-
-
+/*COMPARTILHADO FINALIZADO*/
 
 
 .header_images{
@@ -175,11 +167,6 @@ body{
 
 }
 /*CONTAINER-HEADER FINALIZADO*/
-
-
-
-
-
 /*MENU SOUND-BAR INICIADO*/
 .menu_soundbar{
     background-color: white;
@@ -271,6 +258,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
+    padding: 2.5vh;
     /*estilização*/
     background-color: transparent;
 }
@@ -280,7 +269,7 @@ body{
     align-items: center;
 }
 .tit_footer{
-    font-size: 16pt;
+    font-size: 14pt;
     color: #ff0080;
     padding: 1vh;
 }
@@ -292,8 +281,10 @@ body{
 }
 .footer-logo{
     /*espalamento*/
-    width: 15%;
+    width: 10%;
     height: auto;   
+    padding: 0.5vh;
+    
 }
 /*FOOTER FINALIZADO*/
 
@@ -301,8 +292,6 @@ body{
 
 
 /*MEDIA : 0 ATÉ 320*/
-
-
 @media (min-width: 0px) and (max-width: 320px){
     body{
      background-color: white;
@@ -402,9 +391,14 @@ body{
      #footer-logo-link{
          
      }
+     .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
      .footer-logo{
          /*espalamento*/
-         width: 30%;
+         width: 20%;
          height: auto;   
      }
      /*FOOTER FINALIZADO*/
@@ -413,8 +407,6 @@ body{
 
 
 /*MEDIA : 320 ATÉ 375*/
-
-
  @media (min-width: 321px) and (max-width: 375px){
      body{
       background-color: white;
@@ -516,19 +508,19 @@ body{
       #footer-logo-link{
           
       }
+      .tit_footer{
+        font-size: 12pt;
+      }
       .footer-logo{
           /*espalamento*/
-          width: 30%;
+          width: 20%;
           height: auto;   
       }
       /*FOOTER FINALIZADO*/
   
 }
 
-
 /*MEDIA : 376 ATÉ 425*/
-
-
  @media (min-width: 376px) and (max-width: 425px){
      body{
       background-color: white;
@@ -640,8 +632,6 @@ body{
 
 
 /*MEDIA : 426 ATÉ 768*/
-
-
  @media (min-width: 426px) and (max-width: 768px){
      body{
       
@@ -743,9 +733,12 @@ body{
       #footer-logo-link{
           
       }
+      .tit_footer{
+        font-size: 12pt;
+      }
       .footer-logo{
           /*espalamento*/
-          width: 30%;
+          width: 20%;
           height: auto;   
       }
       /*FOOTER FINALIZADO*/
@@ -754,8 +747,6 @@ body{
 
 
 /*MEDIA : 769 ATÉ 1024*/
-
-
  @media (min-width: 769px) and (max-width: 1024px){
      body{
       
@@ -855,9 +846,12 @@ body{
       #footer-logo-link{
           
       }
+      .tit_footer{
+        font-size: 12pt;
+      }
       .footer-logo{
           /*espalamento*/
-          width: 30%;
+          width: 20%;
           height: auto;   
       }
       /*FOOTER FINALIZADO*/
