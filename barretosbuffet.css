@@ -279,6 +279,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+.tit_footer{
+    font-size: 16pt;
+    color: #ff0080;
+    padding: 1vh;
+}
+.subtit_footer{
+    font-size: 20pt;
+    color: #DD2A7B;
+    padding: 0.5vh;
+
+}
 .footer-logo{
     /*espalamento*/
     width: 15%;
