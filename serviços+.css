@@ -412,7 +412,8 @@ body{
      }
      #footer-logo-link{
          
-     }.tit_footer{
+     }
+     .tit_footer{
         font-size: 10pt;
      }
      .subtit_footer{
@@ -525,13 +526,13 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-          /*espaçamento*/
-          width: 100%;
-      }
-      #footer-logo-link{
-          
-      }
-      .tit_footer{
+         /*espaçamento*/
+         width: 100%;
+     }
+     #footer-logo-link{
+         
+     }
+     .tit_footer{
         font-size: 10pt;
      }
      .subtit_footer{
@@ -644,13 +645,13 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-          /*espaçamento*/
-          width: 100%;
-      }
-      #footer-logo-link{
-          
-      }
-      .tit_footer{
+         /*espaçamento*/
+         width: 100%;
+     }
+     #footer-logo-link{
+         
+     }
+     .tit_footer{
         font-size: 10pt;
      }
      .subtit_footer{
@@ -762,13 +763,13 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-          /*espaçamento*/
-          width: 80%;
-      }
-      #footer-logo-link{
-          
-      }
-      .tit_footer{
+         /*espaçamento*/
+         width: 100%;
+     }
+     #footer-logo-link{
+         
+     }
+     .tit_footer{
         font-size: 10pt;
      }
      .subtit_footer{
@@ -879,13 +880,13 @@ body{
   
       /*FOOTER INICIADO*/
       .footer{
-          /*espaçamento*/
-          width: 50%;
-      }
-      #footer-logo-link{
-          
-      }
-      .tit_footer{
+         /*espaçamento*/
+         width: 100%;
+     }
+     #footer-logo-link{
+         
+     }
+     .tit_footer{
         font-size: 10pt;
      }
      .subtit_footer{
