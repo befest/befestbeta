@@ -290,6 +290,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+.tit_footer{
+    font-size: 14pt;
+    color: #ff0080;
+    padding: 1vh;
+}
+.subtit_footer{
+    font-size: 20pt;
+    color: #DD2A7B;
+    padding: 0.5vh;
+
+}
 .footer-logo{
     /*espalamento*/
     width: 15%;
@@ -399,10 +410,14 @@ body{
      }
      #footer-logo-link{
          
+     }.tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
      }
      .footer-logo{
          /*espalamento*/
-         width: 30%;
+         width: 20%;
          height: auto;   
      }
      /*FOOTER FINALIZADO*/
@@ -514,11 +529,16 @@ body{
       #footer-logo-link{
           
       }
-      .footer-logo{
-          /*espalamento*/
-          width: 30%;
-          height: auto;   
-      }
+      .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
+     .footer-logo{
+         /*espalamento*/
+         width: 20%;
+         height: auto;   
+     }
       /*FOOTER FINALIZADO*/
   
 }
@@ -628,11 +648,16 @@ body{
       #footer-logo-link{
           
       }
-      .footer-logo{
-          /*espalamento*/
-          width: 30%;
-          height: auto;   
-      }
+      .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
+     .footer-logo{
+         /*espalamento*/
+         width: 20%;
+         height: auto;   
+     }
       /*FOOTER FINALIZADO*/
 }
 
@@ -741,11 +766,16 @@ body{
       #footer-logo-link{
           
       }
-      .footer-logo{
-          /*espalamento*/
-          width: 30%;
-          height: auto;   
-      }
+      .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
+     .footer-logo{
+         /*espalamento*/
+         width: 20%;
+         height: auto;   
+     }
       /*FOOTER FINALIZADO*/
   
 }
@@ -853,11 +883,16 @@ body{
       #footer-logo-link{
           
       }
-      .footer-logo{
-          /*espalamento*/
-          width: 30%;
-          height: auto;   
-      }
+      .tit_footer{
+        font-size: 10pt;
+     }
+     .subtit_footer{
+     }
+     .footer-logo{
+         /*espalamento*/
+         width: 20%;
+         height: auto;   
+     }
       /*FOOTER FINALIZADO*/
   
 }
