@@ -59,42 +59,28 @@ function execucao(){
       if(cardapioescolhido === 'Open-Bar III' && totconv<30){
         precoconv += (55*30)/totconv
     }
-    if(cardapioescolhido === 'Open-Bar II' && totconv>=30 && totconv<=70){
+    if(cardapioescolhido === 'Open-Bar III' && totconv>=30 && totconv<=70){
         precoconv += 55
     }
-    if(cardapioescolhido === 'Open-Bar II' && totconv>=71 && totconv<=150){
+    if(cardapioescolhido === 'Open-Bar III' && totconv>=71 && totconv<=150){
        precoconv += 50
     }   
     // FINAL DO CARDÁPIO OPEN-BAR III //
 
-
-
-    // CARDÁPIO OPEN-BAR III ///
-
-    if(cardapioescolhido === 'Open-Bar III' && totconv<30){
-        precoconv += (55*30)/totconv
-    }
-    if(cardapioescolhido === 'Open-Bar II' && totconv>=30 && totconv<=70){
-        precoconv += 55
-    }
-    if(cardapioescolhido === 'Open-Bar II' && totconv>=71 && totconv<=150){
-       precoconv += 50
-    }   
-    // FINAL DO CARDÁPIO OPEN-BAR III //
 
 
     // CARDÁPIO OPEN-BAR IV ///
 
     if(cardapioescolhido === 'Open-Bar IV' && totconv<30){
-        precoconv += (55*30)/totconv
+        precoconv += (50*30)/totconv
     }
     if(cardapioescolhido === 'Open-Bar IV' && totconv>=30 && totconv<=70){
-        precoconv += 55
+        precoconv += 50
     }
     if(cardapioescolhido === 'Open-Bar IV' && totconv>=71 && totconv<=150){
-       precoconv += 50
+       precoconv += 45
     }   
-    // FINAL DO CARDÁPIO OPEN-BAR III //
+    // FINAL DO CARDÁPIO OPEN-BAR IV //
 
     var preco_total = precoconv*totconv
     var preco_total1 = preco_total.toFixed(2).replace('.',',')
