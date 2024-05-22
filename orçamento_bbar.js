@@ -42,7 +42,7 @@ function execucao(){
      // CARDÁPIO OPEN-BAR II ///
 
      if(cardapioescolhido === 'Open-Bar II' && totconv<30){
-        precoconv += (30*30)/totconv
+        precoconv += (40*30)/totconv
     }
     if(cardapioescolhido === 'Open-Bar II' && totconv>=30 && totconv<=70){
         precoconv += 40
