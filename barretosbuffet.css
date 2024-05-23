@@ -638,7 +638,7 @@ O header se repete em todas as páginas*/
         overflow-x: scroll;
     }
     .item_menu_soundbar{
-        font-size: 14pt;
+        font-size: 10pt;
         display: flex;
         column-gap: 1vh;
         align-items: center;
@@ -811,7 +811,7 @@ O header se repete em todas as páginas*/
         overflow-x: scroll;
     }
     .item_menu_soundbar{
-        font-size: 16pt;
+        font-size: 10pt;
         display: flex;
         column-gap: 1.5vh;
         align-items: center;
@@ -943,7 +943,7 @@ O header se repete em todas as páginas*/
         overflow-x: scroll;
     }
     .item_menu_soundbar{
-        font-size: 18pt;
+        font-size: 14pt;
         display: flex;
         column-gap: 1.75vh;
         align-items: center;
