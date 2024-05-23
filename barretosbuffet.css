@@ -46,7 +46,7 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-image: linear-gradient( to right, #f077aa, #df6e9d , #d86796 ,#c25b86) ;
+    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
 }
 .header{
     /*espaçamento*/
@@ -170,8 +170,8 @@ O header se repete em todas as páginas*/
     padding: 0.25vh;
 }
 .serviços_principais{
-    color: rgba(240,119,170,255);
-    border-bottom: 2px solid rgba(240,119,170,255);
+    color: red;
+    border-bottom: 2px solid red;
 }
 /*Menu Soundbar Finalizado*/
 
@@ -213,7 +213,7 @@ O header se repete em todas as páginas*/
 
 }
 .serviços_item_escritos_tit{
-    color: #ff0080;
+    color: red;
 }
 .serviços_item_escritos_desc{
     color: black;
