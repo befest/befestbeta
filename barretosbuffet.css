@@ -378,10 +378,6 @@ O header se repete em todas as páginas*/
         color: black;
         padding: 0.25vh;
     }
-    .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
-    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
@@ -433,8 +429,6 @@ O header se repete em todas as páginas*/
     }
     .tit_footer{
         font-size: 12pt;
-        color: #ff0080;
-        padding: 1vh;
     }
     .subtit_footer{
         font-size: 20pt;
@@ -513,10 +507,6 @@ O header se repete em todas as páginas*/
         color: black;
         padding: 0.25vh;
     }
-    .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
-    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
@@ -566,7 +556,6 @@ O header se repete em todas as páginas*/
     }
     .tit_footer{
         font-size: 14pt;
-        color: #ff0080;
         padding: 1vh;
     }
     .subtit_footer{
@@ -647,8 +636,7 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
+        
     }
     /*Menu Soundbar Finalizado*/
 
@@ -704,8 +692,6 @@ O header se repete em todas as páginas*/
     }
     .subtit_footer{
         font-size: 20pt;
-        color: #DD2A7B;
-        padding: 0.5vh;
     }
     .footer-logo{
         /*espalamento*/
@@ -819,10 +805,6 @@ O header se repete em todas as páginas*/
         align-items: center;
         color: black;
         padding: 0.50vh;
-    }
-    .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
     }
     /*Menu Soundbar Finalizado*/
 
@@ -954,10 +936,6 @@ O header se repete em todas as páginas*/
         align-items: center;
         color: black;
         padding: 0.50vh;
-    }
-    .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
     }
     /*Menu Soundbar Finalizado*/
 
