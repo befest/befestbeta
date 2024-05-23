@@ -389,3 +389,118 @@ body{
     }
     /*Menu Soundbar Finalizado*/
 }
+
+
+
+/*De  a 376px a 425px*/
+@media (min-width: 376px) and (max-width: 425px){
+    /*Body Iniciado*/
+    body{
+        
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 100%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+    .compartilhado{
+        padding-top: 1vh;
+    }
+    .mainmenubtn {
+        
+    }
+    .dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+    }
+    .dropdown-child {
+        display: none;
+        background-color: white;
+        width: 40px;
+        border-radius: 10px;
+    }
+    .dropdown-child a {
+        padding: 1vh;
+        text-decoration: none;
+        display: block;
+
+    }
+    .dropdown:hover .dropdown-child {
+        display: block;
+    }
+    .whatsapp-btn{
+        color: green;
+        width: 100%;
+        height: auto;
+    }
+    .instagram-btn{
+        color: #DD2A7B;
+        width: 100%;
+        height: auto;
+    }
+    .facebook-btn{
+        color: blue;
+        width: 100%;
+        height: auto;
+    }
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 50%;
+        border-radius: 100px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 16pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 10pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 10pt;
+        display: flex;
+        column-gap: 1vh;
+        align-items: center;
+        color: black;
+        padding: 0.25vh;
+    }
+    .serviços_principais{
+        color: rgba(240,119,170,255);
+        border-bottom: 2px solid rgba(240,119,170,255);
+    }
+    /*Menu Soundbar Finalizado*/
+}
+
