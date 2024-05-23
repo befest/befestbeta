@@ -1,4 +1,6 @@
-/*Instruções de Padronização:
+/* FESTPADRÃO : TELAS PRINCIPAIS
+
+Instruções de Padronização:
 - Mesma configuração entre todas as páginas
 - Header , Soundbar e footer é a mesma coisa em todas as páginas
 */
@@ -44,7 +46,7 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-image: linear-gradient( to right, #f077aa, #df6e9d , #d86796 ,#c25b86) ;
+    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
 }
 .header{
     /*espaçamento*/
@@ -55,8 +57,9 @@ body{
 
 /*Compartilhado Iniciado*/
 .compartilhado{
-    padding-top: 3vh;
-    padding-left: 3vh;
+    padding-top: 1.5vh;
+    padding-left: 1.5vh;
+    padding-bottom: 1.5vh;
 }
 .mainmenubtn {
     background-color: transparent;
@@ -168,8 +171,8 @@ O header se repete em todas as páginas*/
     padding: 0.25vh;
 }
 .serviços_principais{
-    color: rgba(240,119,170,255);
-    border-bottom: 2px solid rgba(240,119,170,255);
+    color: red;
+    border-bottom: 2px solid red;
 }
 /*Menu Soundbar Finalizado*/
 
@@ -211,7 +214,7 @@ O header se repete em todas as páginas*/
 
 }
 .serviços_item_escritos_tit{
-    color: #ff0080;
+    color: red;
 }
 .serviços_item_escritos_desc{
     color: black;
@@ -219,8 +222,8 @@ O header se repete em todas as páginas*/
 .serviços_item_button{
     display: flex;
     width: 22.5vh;
-    background-color: #ff0080;
-    border: 3px solid #930049;
+    background-color: red;
+    border: 3px solid rgb(102, 0, 0);
     border-radius: 10px;
     align-items: center;
     justify-content: center;
@@ -275,7 +278,7 @@ O header se repete em todas as páginas*/
 @media (min-width: 0px) and (max-width: 320px){
     /*Body Iniciado*/
     body{
-	    background-color: white;        
+        background-color: white;
     }
     /*Body Finalizado*/
     /*Container-Header Iniciado*/
@@ -336,7 +339,7 @@ O header se repete em todas as páginas*/
     }
     .img_logo_prestador{
         /*espaçamento*/
-        width: 50%;
+        width: 40%;
         border-radius: 100px;
         /*estilização*/
     }
@@ -350,11 +353,11 @@ O header se repete em todas as páginas*/
         /*espaçamento*/
         padding: 0.1em;
         /*estilização*/
-        font-size: 24pt;
+        font-size: 22pt;
     }
     .header_festarea_nicho{
         /*espaçamento*/
-        font-size: 14pt;
+        font-size: 12pt;
         font-family: Arial, Helvetica, sans-serif;
         /*estilização*/
         color: rgb(255, 255, 255);
@@ -369,7 +372,7 @@ O header se repete em todas as páginas*/
         overflow-x: scroll;
     }
     .item_menu_soundbar{
-        font-size: 10pt;
+        font-size: 12pt;
         display: flex;
         column-gap: 1vh;
         align-items: center;
@@ -377,14 +380,15 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
+	color: red;
+	border-bottom: 2px solid red;
     }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
     .serviços{
         width: 100%;
+	padding-top: 0;
     }
     .serviços_item{
         
@@ -431,8 +435,6 @@ O header se repete em todas as páginas*/
     }
     .tit_footer{
         font-size: 12pt;
-        color: #ff0080;
-        padding: 1vh;
     }
     .subtit_footer{
         font-size: 20pt;
@@ -447,12 +449,11 @@ O header se repete em todas as páginas*/
 
 }
 
-
 /*De 321px a 375px*/
 @media (min-width: 321px) and (max-width: 375px){
     /*Body Iniciado*/
     body{
-	    background-color: white;
+        background-color: white;
     }
     /*Body Finalizado*/
     /*Container-Header Iniciado*/
@@ -472,7 +473,7 @@ O header se repete em todas as páginas*/
     }
     .img_logo_prestador{
         /*espaçamento*/
-        width: 50%;
+        width: 40%;
         border-radius: 100px;
         /*estilização*/
     }
@@ -486,11 +487,11 @@ O header se repete em todas as páginas*/
         /*espaçamento*/
         padding: 0.1em;
         /*estilização*/
-        font-size: 26pt;
+        font-size: 22pt;
     }
     .header_festarea_nicho{
         /*espaçamento*/
-        font-size: 16pt;
+        font-size: 12pt;
         font-family: Arial, Helvetica, sans-serif;
         /*estilização*/
         color: rgb(255, 255, 255);
@@ -513,14 +514,15 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
+        color: red;
+        border-bottom: 2px solid red;
     }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
     .serviços{
         width: 100%;
+	padding-top: 0;
     }
     .serviços_item{
         
@@ -565,7 +567,6 @@ O header se repete em todas as páginas*/
     }
     .tit_footer{
         font-size: 14pt;
-        color: #ff0080;
         padding: 1vh;
     }
     .subtit_footer{
@@ -581,11 +582,11 @@ O header se repete em todas as páginas*/
 }
 
 
-/*De 321px a 375px*/
+/*De 376px a 425px*/
 @media (min-width: 376px) and (max-width: 425px){
     /*Body Iniciado*/
     body{
-	    background-color: white;
+        background-color: white;
     }
     /*Body Finalizado*/
     /*Container-Header Iniciado*/
@@ -605,7 +606,7 @@ O header se repete em todas as páginas*/
     }
     .img_logo_prestador{
         /*espaçamento*/
-        width: 50%;
+        width: 40%;
         border-radius: 100px;
         /*estilização*/
     }
@@ -619,11 +620,11 @@ O header se repete em todas as páginas*/
         /*espaçamento*/
         padding: 0.1em;
         /*estilização*/
-        font-size: 28pt;
+        font-size: 22pt;
     }
     .header_festarea_nicho{
         /*espaçamento*/
-        font-size: 18pt;
+        font-size: 12pt;
         font-family: Arial, Helvetica, sans-serif;
         /*estilização*/
         color: rgb(255, 255, 255);
@@ -638,7 +639,7 @@ O header se repete em todas as páginas*/
         overflow-x: scroll;
     }
     .item_menu_soundbar{
-        font-size: 14pt;
+        font-size: 12pt;
         display: flex;
         column-gap: 1vh;
         align-items: center;
@@ -646,14 +647,15 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
+	color: red;
+	border-bottom: 2px solid red;
     }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
     .serviços{
         width: 100%;
+	padding-top: 0;
     }
     .serviços_item{
         
@@ -703,8 +705,6 @@ O header se repete em todas as páginas*/
     }
     .subtit_footer{
         font-size: 20pt;
-        color: #DD2A7B;
-        padding: 0.5vh;
     }
     .footer-logo{
         /*espalamento*/
@@ -779,7 +779,7 @@ O header se repete em todas as páginas*/
     }
     .img_logo_prestador{
         /*espaçamento*/
-        width: 50%;
+        width: 40%;
         border-radius: 200px;
         /*estilização*/
     }
@@ -812,22 +812,19 @@ O header se repete em todas as páginas*/
         overflow-x: scroll;
     }
     .item_menu_soundbar{
-        font-size: 16pt;
+        font-size: 10pt;
         display: flex;
         column-gap: 1.5vh;
         align-items: center;
         color: black;
         padding: 0.50vh;
     }
-    .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
-    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
     .serviços{
         width: 75%;
+	padding-top: 0;
     }
     .serviços_item{
         
@@ -914,7 +911,7 @@ O header se repete em todas as páginas*/
     }
     .img_logo_prestador{
         /*espaçamento*/
-        width: 50%;
+        width: 40%;
         border-radius: 200px;
         /*estilização*/
     }
@@ -947,22 +944,19 @@ O header se repete em todas as páginas*/
         overflow-x: scroll;
     }
     .item_menu_soundbar{
-        font-size: 18pt;
+        font-size: 14pt;
         display: flex;
         column-gap: 1.75vh;
         align-items: center;
         color: black;
         padding: 0.50vh;
     }
-    .serviços_principais{
-        color: rgba(240,119,170,255);
-        border-bottom: 2px solid rgba(240,119,170,255);
-    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
     .serviços{
         width: 50%;
+	padding-top: 0;
     }
     .serviços_item{
         
