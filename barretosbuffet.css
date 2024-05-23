@@ -504,7 +504,7 @@ O header se repete em todas as páginas*/
         overflow-x: scroll;
     }
     .item_menu_soundbar{
-        font-size: 12pt;
+        font-size: 10pt;
         display: flex;
         column-gap: 1vh;
         align-items: center;
