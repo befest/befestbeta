@@ -55,6 +55,7 @@ body{
     border: none;
     cursor: pointer;
     width: 15%;
+    
 }
 .dropdown {
     position: absolute;
@@ -72,6 +73,7 @@ body{
     padding: 1vh;
     text-decoration: none;
     display: block;
+
 }
 .dropdown:hover .dropdown-child {
     display: block;
@@ -93,8 +95,8 @@ body{
 }
 /*Compartilhado Finalizado*/
 
-/*Header Iniciado*/
-
+/*Header Iniciado
+O header se repete em todas as páginas*/
 .header_images{
     /*espaçamento*/
     width: 100%;
@@ -136,7 +138,8 @@ body{
 }
 /*Header Finalizado*/
 
-/*Menu Soundbar Iniciado*/
+/*Menu Soundbar Iniciado
+- O soundbar não pode ter nenhuma medida para seus itens*/
 .menu_soundbar{
     background-color: white;
     width: 50%;
@@ -162,8 +165,9 @@ body{
 
 
 /*Início do Media*/
-/*De 0 a 320px*/
 
+
+/*De 0 a 320px*/
 @media (min-width: 0px) and (max-width: 320px){
     /*Body Iniciado*/
     body{
@@ -277,7 +281,6 @@ body{
 
 
 
-
 /*De  a 321px a 375px*/
 @media (min-width: 321px) and (max-width: 375px){
     /*Body Iniciado*/
@@ -357,11 +360,11 @@ body{
         /*espaçamento*/
         padding: 0.1em;
         /*estilização*/
-        font-size: 16pt;
+        font-size: 26pt;
     }
     .header_festarea_nicho{
         /*espaçamento*/
-        font-size: 10pt;
+        font-size: 16pt;
         font-family: Arial, Helvetica, sans-serif;
         /*estilização*/
         color: rgb(255, 255, 255);
@@ -391,8 +394,7 @@ body{
 }
 
 
-
-/*De  a 376px a 425px*/
+/*De  a 321px a 375px*/
 @media (min-width: 376px) and (max-width: 425px){
     /*Body Iniciado*/
     body{
