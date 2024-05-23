@@ -275,7 +275,7 @@ O header se repete em todas as páginas*/
 @media (min-width: 0px) and (max-width: 320px){
     /*Body Iniciado*/
     body{
-        
+	    background-color: white;        
     }
     /*Body Finalizado*/
     /*Container-Header Iniciado*/
@@ -452,7 +452,7 @@ O header se repete em todas as páginas*/
 @media (min-width: 321px) and (max-width: 375px){
     /*Body Iniciado*/
     body{
-        
+	    background-color: white;
     }
     /*Body Finalizado*/
     /*Container-Header Iniciado*/
@@ -585,7 +585,7 @@ O header se repete em todas as páginas*/
 @media (min-width: 376px) and (max-width: 425px){
     /*Body Iniciado*/
     body{
-        
+	    background-color: white;
     }
     /*Body Finalizado*/
     /*Container-Header Iniciado*/
