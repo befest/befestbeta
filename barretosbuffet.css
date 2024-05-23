@@ -378,6 +378,10 @@ O header se repete em todas as páginas*/
         color: black;
         padding: 0.25vh;
     }
+    .serviços_principais{
+	color: red;
+	border-bottom: 2px solid red;
+    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
@@ -575,7 +579,7 @@ O header se repete em todas as páginas*/
 }
 
 
-/*De 321px a 375px*/
+/*De 376px a 425px*/
 @media (min-width: 376px) and (max-width: 425px){
     /*Body Iniciado*/
     body{
@@ -640,7 +644,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        
+	color: red;
+	border-bottom: 2px solid red;
     }
     /*Menu Soundbar Finalizado*/
 
