@@ -485,11 +485,11 @@ O header se repete em todas as páginas*/
         /*espaçamento*/
         padding: 0.1em;
         /*estilização*/
-        font-size: 26pt;
+        font-size: 22pt;
     }
     .header_festarea_nicho{
         /*espaçamento*/
-        font-size: 16pt;
+        font-size: 12pt;
         font-family: Arial, Helvetica, sans-serif;
         /*estilização*/
         color: rgb(255, 255, 255);
