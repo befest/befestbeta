@@ -1,6 +1,4 @@
-/* Be fest | Estrutura Padrão : Cardápios/Serviços/Pacotes
-
-*/
+/* Be fest | Estrutura Padrão : Cardápios/Serviços/Pacotes*/
 
 
 /*Configurações Gerais | Aqui são feitas as configurações para serem exercidas em toda página*/
@@ -9,6 +7,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: transparent;
 }
 /*Configurações Gerais Finalizada*/
 
@@ -184,7 +187,7 @@ body{
     /*identificativo*/
     font-family: bahnschrift;
     /*estilização*/
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: green;
     color: white;
     border: none;
@@ -222,10 +225,26 @@ body{
     /*estilização*/
     background-color: transparent;
 }
+#footer-logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tit_footer{
+    font-size: 16pt;
+    font-family: 'bahnschrift';
+    color: #ff0080;
+    padding: 1vh;
+}
+.subtit_footer{
+    font-size: 20pt;
+    color: #DD2A7B;
+    padding: 0.5vh;
+}
 .footer-logo{
     /*espalamento*/
-    width: 15%;
-    height: auto;   
+    width: 12.5%;
+    height: auto;    
 }
 /*Footer Finalizado*/
 
@@ -602,3 +621,4 @@ body{
     }
 
 }
+
