@@ -1,0 +1,431 @@
+/* Estrutura Padrão : Serviços/Cardápios
+
+- 
+
+*/
+
+
+/*Configurações Gerais Iniciadas*/
+*{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: transparent;
+}
+/*Configurações Gerais Finalizada*/
+
+
+/*Body Iniciada | Plano de Fundo*/
+body{
+    /*espaçamento*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-color: rgb(255, 212, 244);
+}
+/*Body Finalizada*/
+
+
+/*Container Iniciado | Parte mais importante , é a tela das configurações*/
+.container{
+    width: 50%;
+    background-color: white;
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*Container Finalizado*/
+
+
+
+/*Header Iniciado | É a parte da logo , nome e também botão de closa*/
+.header{
+    /*espaçamento*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*estilização*/
+    background-color: white;
+}
+.header-id-prestador{
+    /*espaçamento*/
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    /*espaçamento*/
+    width: 7.5%;
+    height: auto;
+    margin: 10px;
+    /*estilização*/
+    border-radius: 30px;
+}
+.header-tit{
+    /*identificativo*/
+    font-family: bahnschrift;
+    font-size: 12pt;
+}
+#close{
+    /*espaçamento*/
+    padding: 1vh;
+    margin: 10px;
+    height: auto;
+    /*estilização*/
+    color: white;
+    background-color: rgb(172,0, 0);
+    border-radius: 30px;
+    /*responsividade*/
+    cursor: pointer;
+}
+/*Header Finalizado*/
+
+
+
+
+
+
+
+
+/*Serviços Iniciado | Aqui são as fotos dos eventos*/
+.serviços{
+    /*espaçamento*/
+    padding: 3vh;
+    display: flex;
+    gap: 2.5vh;
+    /*estilização*/
+    background-color: rgb(235, 226, 255);
+    /*responsividade*/
+    overflow-x: auto;
+
+}
+.serviços-imgs{
+    /*espaçamento*/
+    width: 60%;
+}
+/*Serviços Finalizado*/
+
+
+
+/*Cardapio | Parte Literal do Cardapio*/
+.cardapio{
+    /*espaçamento*/
+    display: flex;
+    padding: 2.5vh;
+    flex-direction: column;
+    
+}
+.cardapio-tit{
+    /*espaçamento*/
+    width: 100%;
+    padding: 1vh;
+    /*identificativo*/
+    font-size: 18pt;
+    font-family: "bahnschrift";
+    /*estilização*/
+    font-weight: bold;
+}
+.cardapio-descrição-item{
+    /*espaçamento*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /*responsividade*/
+    flex-wrap: wrap;
+}
+.cardapio-descrição-tit{
+    /*espaçamento*/
+    width: 100%;
+    padding: 2vh;
+    /*identificativo*/
+    font-size: 14pt;
+    font-family: bahnschrift;
+    /*estilização*/
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+}
+.cardapio-descrição-conteudo{
+    /*espaçamento*/
+    width: 100%;
+    padding-left: 5vh;
+    /*identificativo*/
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    /*estilização*/
+    color: rgb(27, 27, 27);
+}
+/*Cardapio Finalizado*/
+
+
+
+
+/*Contratar Iniciado | Parte dos dois botões , o de contratar e o de compartilhar*/
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vh;
+    
+}
+.contratar{
+    /*espaçamento*/
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5vh;
+}
+.contratar-button{
+    /*espaçamento*/
+    width: 50vh;
+    height: auto;
+    padding: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    /*identificativo*/
+    font-family: "bahnschrift";
+    /*estilização*/
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    -webkit-box-shadow: 9px 7px 5px rgba(187, 187, 187, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(123, 123, 123, 0.932);
+		box-shadow:         9px 7px 5px rgba(157, 157, 157, 0.932);
+    /*responsividade*/
+    cursor: pointer;
+}
+.contratar-button:active{
+    /*estilização*/
+    background-color: rgb(0, 44, 0);
+    /*responsividade*/
+    transition: 0.50s all;
+}
+.link_contratar{
+    width: 100%;
+    text-decoration: none;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Contratar Finalizado*/
+
+
+
+
+/*Footer Iniciado*/
+.footer{
+    /*espaçamento*/
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-color: transparent;
+}
+#footer-logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tit_footer{
+    font-family: 'bahnschrift';
+    font-size: 16pt;
+    color: #ff0080;
+    padding: 1vh;
+}
+.subtit_footer{
+    font-size: 20pt;
+    color: #DD2A7B;
+    padding: 0.5vh;
+}
+.footer-logo{
+    /*espalamento*/
+    width: 12.5%;
+    height: auto;   
+    
+}
+/*Footer Finalizado*/
+
+
+/*Media : De 0px a 320px*/
+@media (min-width: 0px) and (max-width: 320px){
+    .container{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .header-logo{
+        width: 20%;
+    }
+    #close{
+        padding: 0.5vh;
+    }
+    .serviços-imgs{
+        width: 70%;
+    }
+    .cardapio-tit{
+        font-size: 16pt;
+    }
+    .cardapio-descrição-tit{
+        font-size: 14pt;
+    }
+    .cardapio-descrição-conteudo{
+        font-size: 12pt;
+    }
+    .bi,.share_btn{
+        display: none;
+    }
+    .contratar-button{
+        text-align: center;
+    }
+    .footer{
+        display: none;
+    }
+}
+
+/*Media : 321px a 375px*/
+@media (min-width:321px) and (max-width:375px){
+    .container{
+        width: 100%;
+    }
+    .header-logo{
+        width: 15%;
+    }
+    #close{
+        padding: 0.5vh;
+    }
+    .serviços-imgs{
+        width: 70%;
+    }
+    .cardapio-tit{
+        font-size: 16pt;
+    }
+    .cardapio-descrição-tit{
+        font-size: 14pt;
+    }
+    .cardapio-descrição-conteudo{
+        font-size: 12pt;
+    }
+    .bi{
+        width: 20%;
+        height: auto;
+    }
+    .contratar-button{
+        text-align: center;
+        font-size: 10pt;
+    }
+    .footer{
+        display: none;
+    }
+}
+
+/*Media : 376px a 425px*/
+@media (min-width:376px) and (max-width:425px){
+    .container{
+        width: 100%;
+    }
+    .header-logo{
+        width: 15%;
+    }
+    #close{
+        padding: 0.75vh;
+    }
+    .serviços-imgs{
+        width: 70%;
+    }
+    .cardapio-tit{
+        font-size: 18pt;
+    }
+    .cardapio-descrição-tit{
+        font-size: 16pt;
+    }
+    .cardapio-descrição-conteudo{
+        font-size: 14pt;
+    }
+    .bi,.share_btn{
+        width: 20%;
+        height: auto;
+    }
+    .contratar-button{
+        text-align: center;
+        font-size: 12pt;
+    }
+    .footer{
+        display: none;
+    }
+}
+
+/*Media : 426px a 768px*/
+@media (min-width:425px) and (max-width:768px){
+    .container{
+        width: 75%;
+    }
+    .header-logo{
+        width: 12.5%;
+        border-radius: 300px;
+    }
+    #close{
+        padding: 0.5vh;
+    }
+    .serviços-imgs{
+        width: 70%;
+    }
+    .cardapio-tit{
+        font-size: 20pt;
+    }
+    .cardapio-descrição-tit{
+        font-size: 18pt;
+    }
+    .cardapio-descrição-conteudo{
+        font-size: 16pt;
+    }
+    .contratar-button{
+        column-gap: 2.5vh;
+        
+    }
+    .bi,.share_btn{
+        width: 10%;
+        height: auto;
+    }
+    .footer{
+        width: 75%;
+        height: auto;
+    }
+
+}
+
+/*Media : 769px a 1024px*/
+@media (min-width:769px) and (max-width:1024px){
+    .container{
+        width: 50%;
+    }
+    .header-logo{
+        width: 15%;
+        border-radius: 100px;
+    }
+    .serviços-imgs{
+        width: 70%;
+    }
+    .contratar-button{
+        height: auto;
+    }
+    .footer{
+        height: auto;
+    }
+}
+
+
+
+
+
