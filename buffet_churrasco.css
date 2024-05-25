@@ -1,37 +1,45 @@
-/* ESTRUTURA : OBJETIVOS 
--Body
-    - Container
-        - header
-            - header-id-prestador
-                - header-logo
-                - header-tit
-            - material-symbol
-        - serviços
-            - serviços-imgs
-        - cardapio
-            - cardapio-tit
-            - cardapio-descrição-item
-                - cardapio-descrição-tit
-                - cardapio-descrição-conteúdo
-        - contratar
-            - contratar-button
-    - footer
-        - footer-logo
+/* FESTPADRÃO : TELAS PRINCIPAIS
 
+Instruções de Padronização:
+- Mesma configuração entre todas as páginas
+- Header , Soundbar e footer é a mesma coisa em todas as páginas
 */
 
 
-/*CONFIGURAÇÕES GERAIS INICIADA*/
+
+
+/*Configurações Gerais Iniciadas*/
 *{
     /*espaçamento*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'bahnschrift';
 }
-/*CONFIGURAÇÕES GERAIS FINALIZADA*/
+a{
+    text-decoration: none;
+    color: transparent;
+}
+:root{
+    --barretosbuffet1 : red;
+    --barretosbuffet2: rgb(102, 0, 0);
+    --barretosbuffet_linear: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    --tata_gourmet1: #d88ca8;
+    --tata_gourmet2: #89586a;
+    --tata_gourmet_linear: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
+    --miele_delicias1: #f077aa;
+    --mieledelicias2: #bd5d85;
+    --mieledelicias_linear: linear-gradient( to right, #f077aa, #df6e9d , #d86796 ,#c25b86);
+    --recakes1: blue;
+    --recakes2: rgb(2, 0, 131);
+    --recakes_linear: linear-gradient( to right, rgb(2, 0, 140), rgb(51, 0, 171), rgb(0, 15, 226), rgb(76, 0, 255) ,rgb(65, 132, 255)) ;
+    --barretosbar1: rgb(120, 0, 150);
+    --barretosbar2: rgb(120, 0, 150); 
+    --barretosbar_linear: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
+}
+/*Configurações Gerais Finalizadas*/
 
-
-/*BODY INICIADO*/
+/*Body Iniciado*/
 body{
     /*espaçamento*/
     display: flex;
@@ -39,201 +47,215 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-color: rgb(255, 212, 244);
+    background-color: rgb(255, 212, 244); 
 }
-/*BODY FINALIZADO ===>>> FINALIZAMOS AGORA POIS ELE É POUCO CONFIGURADO*/
+/*Body Finalizado*/
 
 
-/*CONTAINER INICIADO*/
-.container{
+/*Container-Header Iniciado*/
+.container-header{
+    /*espaçamento*/
     width: 50%;
-    background-color: white;
     height: auto;
-    border-radius: 50px;
-}
-/*CONTAINER FINALIZADO*/
-
-
-
-/*HEADER INICIADO*/
-.header{
-    /*espaçamento*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*estilização*/
-    background-color: white;
-}
-.header-id-prestador{
-    /*espaçamento*/
-    display: flex;
-    align-items: center;
-}
-.header-logo{
-    /*espaçamento*/
-    width: 7.5%;
-    height: auto;
-    margin: 10px;
-    /*estilização*/
-    border-radius: 30px;
-}
-.header-tit{
-    /*identificativo*/
-    font-family: bahnschrift;
-    font-size: 12pt;
-}
-#close{
-    /*espaçamento*/
-    padding: 5px;
-    margin: 10px;
-    height: auto;
-    /*estilização*/
-    color: white;
-    background-color: rgb(172,0, 0);
-    border-radius: 30px;
-    /*responsividade*/
-    cursor: pointer;
-}
-/*HEADER TERMINADO*/
-
-
-
-
-
-
-
-
-/*SERVIÇOS INICIADO*/
-.serviços{
-    /*espaçamento*/
-    padding: 30px;
-    display: flex;
-    gap: 20px;
-    /*estilização*/
-    background-color: rgb(235, 226, 255);
-    /*responsividade*/
-    overflow-x: auto;
-
-}
-.serviços-imgs{
-    /*espaçamento*/
-    width: 60%;
-
-}
-/*SERVIÇOS FINALIZADO*/
-
-
-
-/*CARDAPIO INICIADO*/
-.cardapio{
-    /*espaçamento*/
+    padding: 0vh;
     display: flex;
     flex-direction: column;
-    
-}
-.cardapio-tit{
-    /*espaçamento*/
-    padding: 15px;
-    /*identificativo*/
-    font-size: 16pt;
-    font-family: bahnschrift;
-    /*estilização*/
-    font-weight: bold;
-    border: 2px solid white;
-
-
-}
-.cardapio-descrição-item{
-    /*espaçamento*/
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    /*responsividade*/
-    flex-wrap: wrap;
-
-}
-.cardapio-descrição-tit{
-    /*espaçamento*/
-    padding: 15px;
-    /*identificativo*/
-    font-size: 14pt;
-    font-family: bahnschrift;
-    /*estilização*/
-    font-weight: bold;
-    color: rgb(60, 60, 60);
-    border: 2px solid white;
-}
-.cardapio-descrição-conteudo{
-    /*espaçamento*/
-    width: 100%;
-    padding-left: 30px;
-    /*identificativo*/
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    /*estilização*/
-    color: rgb(27, 27, 27);
-}
-/*CARDAPIO FINALIZADO*/
-
-
-
-
-/*CONTRATAR INICIADO*/
-.buttons{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1vh;
-}
-.contratar{
-    /*espaçamento*/
-    width: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-}
-.contratar-button{
-    /*espaçamento*/
-    width: 50vh;
-    height: 7.5vh;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    /*identificativo*/
-    font-family: bahnschrift;
     /*estilização*/
-    border-radius: 30px;
-    background-color: green;
+    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+}
+.header{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+} 
+/*Container-Header Finalizado*/
+
+/*Compartilhado Iniciado*/
+.compartilhado{
+    padding-top: 1.5vh;
+    padding-left: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+.mainmenubtn {
+    background-color: transparent;
     color: white;
     border: none;
-    -webkit-box-shadow: 9px 7px 5px rgba(187, 187, 187, 0.932);
-		-moz-box-shadow:    9px 7px 5px rgba(123, 123, 123, 0.932);
-		box-shadow:         9px 7px 5px rgba(157, 157, 157, 0.932);
-    /*responsividade*/
     cursor: pointer;
+    width: 15%;
+    
 }
-.contratar-button:active{
-    /*estilização*/
-    background-color: rgb(0, 44, 0);
-    /*responsividade*/
-    transition: 0.50s all;
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
 }
-.link_contratar{
-    width: 100%;
+.dropdown-child {
+    display: none;
+    background-color: white;
+    width: 40px;
+    border-radius: 10px;
+}
+.dropdown-child a {
+    padding: 1vh;
     text-decoration: none;
-    color: white; 
+    display: block;
+
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.whatsapp-btn{
+    color: green;
+    width: 100%;
+    height: auto;
+}
+.instagram-btn{
+    color: #DD2A7B;
+    width: 100%;
+    height: auto;
+}
+.facebook-btn{
+    color: blue;
+    width: 100%;
+    height: auto;
+}
+/*Compartilhado Finalizado*/
+
+/*Header Iniciado
+O header se repete em todas as páginas*/
+.header_images{
+    /*espaçamento*/
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/*CONTRATAR FINALIZADO*/
+.img_logo_prestador{
+    /*espaçamento*/
+    width: 25%;
+    background-color: #ff0080;
+    border-radius: 300px;
+    /*estilização*/
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
+		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
+}
+.description{
+    /*espaçamento*/
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+.header_titulo{
+    /*espaçamento*/
+    padding: 0.1em;
+    /*estilização*/
+    font-size: 24pt;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; 
+}
+.header_festarea_nicho{
+    /*espaçamento*/
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    /*estilização*/
+    color: rgb(255, 255, 255);
+}
+/*Header Finalizado*/
+
+/*Menu Soundbar Iniciado
+- O soundbar não pode ter nenhuma medida para seus itens*/
+.menu_soundbar{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    padding: 2.5vh;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vh;
+}
+.item_menu_soundbar{
+    width: max-content;
+    display: flex;
+    column-gap: 1vh;
+    align-items: center;
+    color: black;
+    padding: 0.25vh;
+}
+.serviços_principais{
+    color: var(--barretosbar1);
+    border-bottom: 2px solid var(--barretosbar1);
+}
+/*Menu Soundbar Finalizado*/
 
 
+/*Serviços Iniciado*/
+.serviços{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vh;
+    background-color: white;
+    padding: 2.5vh;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+}
+.serviços_item{
+    display: flex;
+    padding: 1vh;
+    border: 2px solid 9px 7px 5px rgba(139, 139, 139, 0.932);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+        /*estilização*/
+        -webkit-box-shadow: 9px 7px 5px rgba(214, 214, 214, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(126, 126, 126, 0.932);
+		box-shadow:         9px 7px 5px rgba(223, 223, 223, 0.932);
+}
+.serviços_item_imagem{
+    width: 15%;
+    border-radius: 10px;
+    background-color: #ff0080;
+}
+.serviços_item_escritos_imagem{
+    column-gap: 1vh;
+    display: flex;
+    padding: 1vh;
+}
+.serviços_item_escritos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
 
-/*FOOTER INICIADO*/
+}
+.serviços_item_escritos_tit{
+    color: red;
+}
+.serviços_item_escritos_desc{
+    color: black;
+}
+.serviços_item_button{
+    display: flex;
+    width: 22.5vh;
+    background-color: var(--barretosbar1);
+    border: 3px solid var(--barretosbar2);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2vh;
+    margin-inline: 2vh;
+}
+.serviços_item_button_tit, .restaurant_menu{
+    color: white;
+}
+/*Serviços Finalizado*/
+
+/*Footer Iniciado*/
 .footer{
     /*espaçamento*/
     width: 50%;
@@ -249,382 +271,777 @@ body{
     justify-content: center;
     align-items: center;
 }
+.tit_footer{
+    font-size: 16pt;
+    color: #ff0080;
+    padding: 1vh;
+}
+.subtit_footer{
+    font-size: 20pt;
+    color: #DD2A7B;
+    padding: 0.5vh;
+}
 .footer-logo{
     /*espalamento*/
-    width: 15%;
+    width: 12.5%;
     height: auto;   
+    
 }
-/*FOOTER FINALIZADO*/
+/*Footer Finalizado*/
 
 
-@media (min-width: 0px) and (max-width: 426px){
 
+/*Início do Media*/
+
+
+/*De 0 a 320px*/
+@media (min-width: 0px) and (max-width: 320px){
+    /*Body Iniciado*/
     body{
-    /*espaçamento*/
-    
-    /*estilização*/
-    
-}
-/*BODY FINALIZADO ===>>> FINALIZAMOS AGORA POIS ELE É POUCO CONFIGURADO*/
-
-
-/*CONTAINER INICIADO*/
-.container{
-    width: 100%;
-    border-radius: 0;
-    
-}
-/*CONTAINER FINALIZADO*/
-
-
-
-/*HEADER INICIADO*/
-.header{
-    /*espaçamento*/
-    position: fixed;
-    
-    -webkit-box-shadow: 9px 7px 5px rgba(187, 187, 187, 0.932);
-		-moz-box-shadow:    9px 7px 5px rgba(123, 123, 123, 0.932);
-		box-shadow:         9px 7px 5px rgba(157, 157, 157, 0.932);
-   
-    /*estilização*/
-    
-}
-.header-id-prestador{
-    /*espaçamento*/
-    
-}
-.header-logo{
-    /*espaçamento*/
-    width: 15%;
-    
-    /*estilização*/
-    
-}
-.header-tit{
-    /*identificativo*/
-    font-size: 10pt;
-    
-}
-#close{
-    /*espaçamento*/
-    padding: 1px;
-    
-    /*estilização*/
-    
-    /*responsividade*/
-    
-}
-
-/*HEADER TERMINADO*/
-
-
-/*SERVIÇOS INICIADO*/
-.serviços{
-    /*espaçamento*/
-    padding-top: 100px;
-    
-    /*estilização*/
-    
-    /*responsividade*/
-    
-
-}
-.serviços-imgs{
-    /*espaçamento*/
-    width: 100%;
-    
-
-}
-/*SERVIÇOS FINALIZADO*/
-
-
-
-/*CARDAPIO INICIADO*/
-.cardapio{
-    /*espaçamento*/
-    
-    
-}
-.cardapio-tit{
-    /*espaçamento*/
-    
-    /*identificativo*/
-    font-size: 14pt ;
-    
-    /*estilização*/
-    
-
-
-}
-.cardapio-descrição-item{
-    /*espaçamento*/
-   
-    /*responsividade*/
-    
-
-}
-.cardapio-descrição-tit{
-    /*espaçamento*/
-    
-    /*identificativo*/
-    font-size: 12pt;
-    width: 100%;
-    
-    
-    /*estilização*/
-    
-}
-.cardapio-descrição-conteudo{
-    /*espaçamento*/
-    
-    /*identificativo*/
-    font-size: 8pt;
-    
-    /*estilização*/
-    
-}
-/*CARDAPIO FINALIZADO*/
-
-
-
-
-/*CONTRATAR INICIADO*/
-.contratar{
-    /*espaçamento*/
-    padding: 15px;
-    
-    
-    
-}
-.contratar-button{
-    /*espaçamento*/
-    width: 100%;
-    border-radius: 10px;
-    
-    
-    /*identificativo*/
-    font-size: 8pt;
-    
-    /*estilização*/
-    
-    /*responsividade*/
-    
-}
-.contratar-button:active{
-    /*estilização*/
-    
-    /*responsividade*/
-    
-}
-.link_contratar{
-    
-}
-/*CONTRATAR FINALIZADO*/
-
-
-/*FOOTER INICIADO*/
-.footer{
-    /*espaçamento*/
-    display: none;
-    
-    /*estilização*/
-    
-}
-.footer-logo{
-    /*espalamento*/
-  
-}
-/*FOOTER FINALIZADO*/
-
-
-}
-
-@media (min-width: 427px) and (max-width: 1024px){
-
-    body{
-    /*espaçamento*/
-    
-    /*estilização*/
-    
-}
-/*BODY FINALIZADO ===>>> FINALIZAMOS AGORA POIS ELE É POUCO CONFIGURADO*/
-
-
-/*CONTAINER INICIADO*/
-.container{
-    width: 60%;
-    border-radius: 0;
-    
-}
-/*CONTAINER FINALIZADO*/
-
-
-
-/*HEADER INICIADO*/
-.header{
-    /*espaçamento*/
-     
-    
-   
-    /*estilização*/
-    
-}
-.header-id-prestador{
-    /*espaçamento*/
-    
-}
-.header-logo{
-    /*espaçamento*/
-    width: 15%;
-    
-    /*estilização*/
-    
-}
-.header-tit{
-    /*identificativo*/
-    font-size: 10pt;
-    
-}
-#close{
-    /*espaçamento*/
-    padding: 1px;
-    
-    /*estilização*/
-    
-    /*responsividade*/
-    
-}
-
-/*HEADER TERMINADO*/
-
-
-/*SERVIÇOS INICIADO*/
-.serviços{
-    /*espaçamento*/
-    
-    
-    /*estilização*/
-    
-    /*responsividade*/
-    
-
-}
-.serviços-imgs{
-    /*espaçamento*/
-    width: 100%;
-    
-
-}
-/*SERVIÇOS FINALIZADO*/
-
-
-
-/*CARDAPIO INICIADO*/
-.cardapio{
-    /*espaçamento*/
-    
-    
-}
-.cardapio-tit{
-    /*espaçamento*/
-    
-    /*identificativo*/
-    font-size: 14pt ;
-    
-    /*estilização*/
-    
-
-
-}
-.cardapio-descrição-item{
-    /*espaçamento*/
-   
-    /*responsividade*/
-    
-
-}
-.cardapio-descrição-tit{
-    /*espaçamento*/
-    
-    /*identificativo*/
-    font-size: 12pt;
-    
-    /*estilização*/
-    
-}
-.cardapio-descrição-conteudo{
-    /*espaçamento*/
-    
-    /*identificativo*/
-    font-size: 10pt;
-    
-    /*estilização*/
-    
-}
-/*CARDAPIO FINALIZADO*/
-
-
-
-
-/*CONTRATAR INICIADO*/
-.contratar{
-    /*espaçamento*/
-    padding: 15px;
-    
-    
-    
-}
-.contratar-button{
-    /*espaçamento*/
-    width: 100%;
-    border-radius: 10px;
-    
-    
-    /*identificativo*/
-    font-size: 8pt;
-    
-    /*estilização*/
-    
-    /*responsividade*/
-    
-}
-.contratar-button:active{
-    /*estilização*/
-    
-    /*responsividade*/
-    
-}
-.link_contratar{
-    
-}
-/*CONTRATAR FINALIZADO*/
-
-
-/*FOOTER INICIADO*/
-.footer{
-    /*espaçamento*/
-    display: none;
-    
-    /*estilização*/
-    
-}
-.footer-logo{
-    /*espalamento*/
-  
-}
-/*FOOTER FINALIZADO*/
-
-
-}
-
-@media (min-width: 1025px) and (max-width: 1440px){
-    .header-logo{
-        /*espaçamento*/
-        width: 10%;
+        background-color: white;
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 100%;
+    }
+    .header{
         
-        /*estilização*/
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+    .compartilhado{
         
     }
+    .mainmenubtn {
+        
+    }
+    .dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+    }
+    .dropdown-child {
+        display: none;
+        background-color: white;
+        width: 40px;
+        border-radius: 10px;
+    }
+    .dropdown-child a {
+        padding: 1vh;
+        text-decoration: none;
+        display: block;
+
+    }
+    .dropdown:hover .dropdown-child {
+        display: block;
+    }
+    .whatsapp-btn{
+        color: green;
+        width: 100%;
+        height: auto;
+    }
+    .instagram-btn{
+        color: #DD2A7B;
+        width: 100%;
+        height: auto;
+    }
+    .facebook-btn{
+        color: blue;
+        width: 100%;
+        height: auto;
+    }
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 100px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 22pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 12pt;
+        display: flex;
+        column-gap: 1vh;
+        align-items: center;
+        color: black;
+        padding: 0.25vh;
+    }
+    .serviços_principais{
+        color: var(--barretosbar1);
+        border-bottom: 2px solid var(--barretosbar1);
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 100%;
+	padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+
+    }
+    .serviços_item_escritos_tit{
+
+    }
+    .serviços_item_escritos_desc{
+        display: none;
+    }
+    .serviços_item_button{
+        padding: 1vh;
+        width: max-content;
+        border-radius: 500px;
+    }
+    .serviços_item_button_tit{
+        display: none;
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 100%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 12pt;
+    }
+    .subtit_footer{
+        font-size: 20pt;
+        color: #DD2A7B;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
 
 }
+
+/*De 321px a 375px*/
+@media (min-width: 321px) and (max-width: 375px){
+    /*Body Iniciado*/
+    body{
+        background-color: white;
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 100%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+    
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 100px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 22pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 12pt;
+        display: flex;
+        column-gap: 1vh;
+        align-items: center;
+        color: black;
+        padding: 0.25vh;
+    }
+    .serviços_principais{
+        color: var(--barretosbar1);
+        border-bottom: 2px solid var(--barretosbar1);
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 100%;
+	padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        
+
+    }
+    .serviços_item_escritos_tit{
+        
+    }
+    .serviços_item_escritos_desc{
+        
+    }
+    .serviços_item_button{
+        padding: 1vh;
+        width: max-content;
+        border-radius: 500px;
+    }
+    .serviços_item_button_tit{
+        display: none;
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 100%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 14pt;
+        padding: 1vh;
+    }
+    .subtit_footer{
+        font-size: 20pt;
+        color: #DD2A7B;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+}
+
+
+/*De 376px a 425px*/
+@media (min-width: 376px) and (max-width: 425px){
+    /*Body Iniciado*/
+    body{
+        background-color: white;
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 100%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 100px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 22pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 12pt;
+        display: flex;
+        column-gap: 1vh;
+        align-items: center;
+        color: black;
+        padding: 0.25vh;
+    }
+    .serviços_principais{
+	color: red;
+	border-bottom: 2px solid red;
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 100%;
+	padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        
+
+    }
+    .serviços_item_escritos_tit{
+        
+    }
+    .serviços_item_escritos_desc{
+        
+    }
+    .serviços_item_button{
+        padding: 1vh;
+        width: max-content;
+        border-radius: 500px;
+    }
+    .serviços_item_button_tit{
+        display: none;
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 100%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 14pt;
+        color: #ff0080;
+        padding: 1vh;
+    }
+    .subtit_footer{
+        font-size: 20pt;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+}
+
+/*De 426px a 768px*/
+@media (min-width: 426px) and (max-width: 768px){
+    /*Body Iniciado*/
+    body{
+        
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 75%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+    .compartilhado{
+        
+    }
+    .mainmenubtn {
+        
+    }
+    .dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+    }
+    .dropdown-child {
+        display: none;
+        background-color: white;
+        width: 40px;
+        border-radius: 10px;
+    }
+    .dropdown-child a {
+        padding: 1vh;
+        text-decoration: none;
+        display: block;
+
+    }
+    .dropdown:hover .dropdown-child {
+        display: block;
+    }
+    .whatsapp-btn{
+        color: green;
+        width: 100%;
+        height: auto;
+    }
+    .instagram-btn{
+        color: #DD2A7B;
+        width: 100%;
+        height: auto;
+    }
+    .facebook-btn{
+        color: blue;
+        width: 100%;
+        height: auto;
+    }
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 200px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 30pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 20pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 75%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 10pt;
+        display: flex;
+        column-gap: 1.5vh;
+        align-items: center;
+        color: black;
+        padding: 0.50vh;
+    }
+    .serviços_principais{
+        color: var(--barretosbar1);
+        border-bottom: 2px solid var(--barretosbar1);
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 75%;
+	padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        
+
+    }
+    .serviços_item_escritos_tit{
+        
+    }
+    .serviços_item_escritos_desc{
+        
+    }
+    .serviços_item_button{
+        padding: 2vh;
+        width: max-content;
+    }
+    .serviços_item_button_tit{
+        
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 75%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 16pt;
+        color: #ff0080;
+        padding: 1vh;
+    }
+    .subtit_footer{
+        font-size: 250%;
+        color: #DD2A7B;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+
+
+
+
+}
+
+/*De 769px a 1024px*/
+@media (min-width: 769px) and (max-width: 1024px){
+    /*Body Iniciado*/
+    body{
+        
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 50%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+   
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 200px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 32pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 22pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 50%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 14pt;
+        display: flex;
+        column-gap: 1.75vh;
+        align-items: center;
+        color: black;
+        padding: 0.50vh;
+    }
+    .serviços_principais{
+        color: var(--barretosbar1);
+        border-bottom: 2px solid var(--barretosbar1);
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 50%;
+	    padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        
+
+    }
+    .serviços_item_escritos_tit{
+        
+    }
+    .serviços_item_escritos_desc{
+        
+    }
+    .serviços_item_button{
+        padding: 2vh;
+        width: max-content;
+    }
+    .serviços_item_button_tit{
+        
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 50%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 18pt;
+        color: #ff0080;
+        padding: 1vh;
+    }
+    .subtit_footer{
+        font-size: 20pt;
+        color: #DD2A7B;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+}
+
+/*Final do Media*/
+ 
