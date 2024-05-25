@@ -272,7 +272,7 @@ O header se repete em todas as páginas*/
 
 /*SERVIÇOS INICIADO*/
 
-/*FOOTER INICIADO*/
+/*Footer Iniciado*/
 .footer{
     /*espaçamento*/
     width: 50%;
@@ -289,7 +289,7 @@ O header se repete em todas as páginas*/
     align-items: center;
 }
 .tit_footer{
-    font-size: 14pt;
+    font-size: 16pt;
     color: #ff0080;
     padding: 1vh;
 }
@@ -297,16 +297,14 @@ O header se repete em todas as páginas*/
     font-size: 20pt;
     color: #DD2A7B;
     padding: 0.5vh;
-
 }
 .footer-logo{
     /*espalamento*/
-    width: 10%;
+    width: 12.5%;
     height: auto;   
-    padding: 0.5vh;
     
 }
-/*FOOTER FINALIZADO*/
+/*Footer Finalizado*/
 
 
 /*MEDIA : 0 ATÉ 320*/
