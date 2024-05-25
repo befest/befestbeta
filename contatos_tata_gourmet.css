@@ -63,7 +63,7 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    background-image: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
 }
 .header{
     /*espaçamento*/
