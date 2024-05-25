@@ -1,35 +1,14 @@
-/* ESTRUTURA : OBJETIVOS 
--Body
-    - Container-Header
-        - header
-            - header_images
-                - img_logo_prestador
-            - description
-                - header_titulo
-                - header_festarea_nicho
+/* FESTPADRÃO : TELAS PRINCIPAIS
 
-    - Menu Soundbar
-
-        - menu-item
-
-    - Serviços
-        - serviços-item
-            - serviços-item-topico
-                - serviços-item-imagem
-                - serviços-item-escritos
-                    - serviços-item-tit
-                    - serviços-item-desc
-            - contratar
-                - contratar-tit
-                - material-symbol        
-    - Footer
-        - footer-logo
-
-
-
+Instruções de Padronização:
+- Mesma configuração entre todas as páginas
+- Header , Soundbar e footer é a mesma coisa em todas as páginas
 */
 
-/*CONFIGURAÇÕES GERAIS INICIADAS*/
+
+
+
+/*Configurações Gerais Iniciadas*/
 *{
     /*espaçamento*/
     padding: 0;
@@ -41,9 +20,9 @@ a{
     text-decoration: none;
     color: transparent;
 }
-/*CONFIGURAÇÕES GERAIS FINALIZADAS*/
+/*Configurações Gerais Finalizadas*/
 
-/*BODY INICIADO*/
+/*Body Iniciado*/
 body{
     /*espaçamento*/
     display: flex;
@@ -53,33 +32,35 @@ body{
     /*estilização*/
     background-color: rgb(255, 212, 244); 
 }
-/*BODY FINALIZADO*/
+/*Body Finalizado*/
 
-/*CONTAINER-HEADER INICIADO*/
+
+/*Container-Header Iniciado*/
 .container-header{
     /*espaçamento*/
     width: 50%;
     height: auto;
-    padding: 1.5vh;
+    padding: 0vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-image: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
-    
+   background-image: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
 }
 .header{
     /*espaçamento*/
     padding: 0;
     margin: 0;
-}
+} 
+/*Container-Header Finalizado*/
 
-
+/*Compartilhado Iniciado*/
 .compartilhado{
-    
+    padding-top: 1.5vh;
+    padding-left: 1.5vh;
+    padding-bottom: 1.5vh;
 }
-
 .mainmenubtn {
     background-color: transparent;
     color: white;
@@ -124,13 +105,10 @@ body{
     width: 100%;
     height: auto;
 }
+/*Compartilhado Finalizado*/
 
-
-
-
-
-
-
+/*Header Iniciado
+O header se repete em todas as páginas*/
 .header_images{
     /*espaçamento*/
     width: 100%;
@@ -138,12 +116,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2.5vh;
 }
 .img_logo_prestador{
     /*espaçamento*/
     width: 25%;
-    border-radius: 100px;
+    background-color: #ff0080;
+    border-radius: 300px;
     /*estilização*/
     -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
 		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
@@ -162,8 +140,7 @@ body{
     font-size: 24pt;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 .header_festarea_nicho{
     /*espaçamento*/
@@ -171,12 +148,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     /*estilização*/
     color: rgb(255, 255, 255);
-
 }
-/*CONTAINER-HEADER FINALIZADO*/
+/*Header Finalizado*/
 
-
-/*MENU SOUND-BAR INICIADO*/
+/*Menu Soundbar Iniciado
+- O soundbar não pode ter nenhuma medida para seus itens*/
 .menu_soundbar{
     background-color: white;
     width: 50%;
@@ -184,7 +160,7 @@ body{
     padding: 2.5vh;
     justify-content: center;
     align-items: center;
-    column-gap: 6vh;
+    column-gap: 5vh;
 }
 .item_menu_soundbar{
     width: max-content;
@@ -198,8 +174,7 @@ body{
     color: #d88ca8;
     border-bottom: 2px solid #d88ca8;
 }
-/*MENU SOUND-BAR FINALIZADO*/
-
+/*Menu Soundbar Finalizado*/
 
 /*SERVIÇOS INICIADO*/
 .serviços{
