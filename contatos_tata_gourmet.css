@@ -39,7 +39,7 @@ a{
 }
 /*Configurações Gerais Finalizadas*/
 
-/*Body Iniciado*/ 
+/*Body Iniciado*/
 body{
     /*espaçamento*/
     display: flex;
@@ -63,7 +63,7 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65);
+    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
 }
 .header{
     /*espaçamento*/
@@ -228,7 +228,7 @@ O header se repete em todas as páginas*/
     justify-content: center ;
 }
 .serviços_item_escritos_tit{
-    color: red;
+    color: var(--tata_gourmet1);
 }
 .serviços_item_escritos_desc{
     color: black;
@@ -678,8 +678,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .contatos{
-	color: var(--tata_gourmet1);
-	border-bottom: 2px solid var(--tata_gourmet1);
+	color: red;
+	border-bottom: 2px solid red;
     }
     /*Menu Soundbar Finalizado*/
 
@@ -1051,4 +1051,5 @@ O header se repete em todas as páginas*/
 }
 
 /*Final do Media*/
+ 
 
