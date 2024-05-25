@@ -188,8 +188,8 @@ O header se repete em todas as páginas*/
     padding: 0.25vh;
 }
 .serviços_principais{
-    color: var(--barretosbar1);
-    border-bottom: 2px solid var(--barretosbar1);
+    color: var(--barretosbuffet1);
+    border-bottom: 2px solid var(--barretosbuffet1);
 }
 /*Menu Soundbar Finalizado*/
 
@@ -234,7 +234,7 @@ O header se repete em todas as páginas*/
 
 }
 .serviços_item_escritos_tit{
-    color: red;
+    color: var(--barretosbuffet1);
 }
 .serviços_item_escritos_desc{
     color: black;
@@ -242,8 +242,8 @@ O header se repete em todas as páginas*/
 .serviços_item_button{
     display: flex;
     width: 22.5vh;
-    background-color: var(--barretosbar1);
-    border: 3px solid var(--barretosbar2);
+    background-color: var(--barretosbuffet1);
+    border: 3px solid var(--barretosbuffet2);
     border-radius: 10px;
     align-items: center;
     justify-content: center;
@@ -400,8 +400,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: var(--barretosbar1);
-        border-bottom: 2px solid var(--barretosbar1);
+        color: var(--barretosbuffet1);
+    	border-bottom: 2px solid var(--barretosbuffet1);
     }
     /*Menu Soundbar Finalizado*/
 
@@ -534,8 +534,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: var(--barretosbar1);
-        border-bottom: 2px solid var(--barretosbar1);
+        color: var(--barretosbuffet1);
+    	border-bottom: 2px solid var(--barretosbuffet1);
     }
     /*Menu Soundbar Finalizado*/
 
@@ -667,8 +667,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-	color: red;
-	border-bottom: 2px solid red;
+	color: var(--barretosbuffet1);
+    	border-bottom: 2px solid var(--barretosbuffet1);
     }
     /*Menu Soundbar Finalizado*/
 
@@ -840,8 +840,8 @@ O header se repete em todas as páginas*/
         padding: 0.50vh;
     }
     .serviços_principais{
-        color: var(--barretosbar1);
-        border-bottom: 2px solid var(--barretosbar1);
+        color: var(--barretosbuffet1);
+    	border-bottom: 2px solid var(--barretosbuffet1);
     }
     /*Menu Soundbar Finalizado*/
 
@@ -976,8 +976,8 @@ O header se repete em todas as páginas*/
         padding: 0.50vh;
     }
     .serviços_principais{
-        color: var(--barretosbar1);
-        border-bottom: 2px solid var(--barretosbar1);
+        color: var(--barretosbuffet1);
+    	border-bottom: 2px solid var(--barretosbuffet1);
     }
     /*Menu Soundbar Finalizado*/
 
