@@ -20,6 +20,23 @@ a{
     text-decoration: none;
     color: transparent;
 }
+:root{
+    --barretosbuffet1 : red;
+    --barretosbuffet2: rgb(102, 0, 0);
+    --barretosbuffet_linear: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    --tata_gourmet1: #d88ca8;
+    --tata_gourmet2: #89586a;
+    --tata_gourmet_linear: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
+    --miele_delicias1: #f077aa;
+    --mieledelicias2: #bd5d85;
+    --mieledelicias_linear: linear-gradient( to right, #f077aa, #df6e9d , #d86796 ,#c25b86);
+    --recakes1: blue;
+    --recakes2: rgb(2, 0, 131);
+    --recakes_linear: linear-gradient( to right, rgb(2, 0, 140), rgb(51, 0, 171), rgb(0, 15, 226), rgb(76, 0, 255) ,rgb(65, 132, 255)) ;
+    --barretosbar1: rgb(120, 0, 150);
+    --barretosbar2: rgb(120, 0, 150); 
+    --barretosbar_linear: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
+}
 /*Configurações Gerais Finalizadas*/
 
 /*Body Iniciado*/
@@ -822,6 +839,10 @@ O header se repete em todas as páginas*/
         color: black;
         padding: 0.50vh;
     }
+    .serviços_principais{
+	color: #d88ca8;
+    	border-bottom: 2px solid #d88ca8;
+    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
@@ -953,6 +974,10 @@ O header se repete em todas as páginas*/
         align-items: center;
         color: black;
         padding: 0.50vh;
+    }
+    .serviços_principais{
+	color: #d88ca8;
+    	border-bottom: 2px solid #d88ca8;
     }
     /*Menu Soundbar Finalizado*/
 
