@@ -225,8 +225,8 @@ O header se repete em todas as páginas*/
 .serviços_item_button{
     display: flex;
     width: 22.5vh;
-    background-color: red;
-    border: 3px solid rgb(102, 0, 0);
+    background-color: #d88ca8;
+    border: 3px solid #89586a;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
