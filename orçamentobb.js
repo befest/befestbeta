@@ -211,6 +211,26 @@ function execucao(){
 
     // FIM DO CARDÁPIO DE COCKTAIL //
 
+    // CARDÁPIO DE MASSAS //
+
+    if(cardapioescolhido === 'Massas' && totconv<50){
+        precoconv += (85*50)/totconv
+    }
+    if(cardapioescolhido === 'Massas' && totconv>=50 && totconv<=70){
+        precoconv += 85
+    }
+    if(cardapioescolhido === 'Massas' && totconv>=71 && totconv<=100){
+        precoconv += 80
+    }
+    if(cardapioescolhido === 'Massas' && totconv>=101 && totconv<=120){
+        precoconv += 75
+    }
+    if(cardapioescolhido === 'Massas' && totconv>=121 && totconv<=150){
+        precoconv += 70
+    }
+
+    // FIM DO CARDÁPIO DE Massas //
+
     // CARDÁPIO DE FESTA JUNINA //
     
     if(cardapioescolhido === 'Festa Junina' && totconv<30){
