@@ -1,37 +1,39 @@
-/* ESTRUTURA : OBJETIVOS 
--Body
-    - Container
-        - header
-            - header-id-prestador
-                - header-logo
-                - header-tit
-            - material-symbol
-        - serviços
-            - serviços-imgs
-        - cardapio
-            - cardapio-tit
-            - cardapio-descrição-item
-                - cardapio-descrição-tit
-                - cardapio-descrição-conteúdo
-        - contratar
-            - contratar-button
-    - footer
-        - footer-logo
-
-*/
+/* Be fest | Estrutura Padrão : Cardápios/Serviços/Pacotes*/
 
 
-/*CONFIGURAÇÕES GERAIS INICIADA*/
+/*Configurações Gerais | Aqui são feitas as configurações para serem exercidas em toda página*/
 *{
     /*espaçamento*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-/*CONFIGURAÇÕES GERAIS FINALIZADA*/
+
+a{
+    text-decoration: none;
+    color: transparent;
+}
+:root{
+    --barretosbuffet1 : red;
+    --barretosbuffet2: rgb(102, 0, 0);
+    --barretosbuffet_linear: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    --tata_gourmet1: #d88ca8;
+    --tata_gourmet2: #89586a;
+    --tata_gourmet_linear: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
+    --miele_delicias1: #f077aa;
+    --mieledelicias2: #bd5d85;
+    --mieledelicias_linear: linear-gradient( to right, #f077aa, #df6e9d , #d86796 ,#c25b86);
+    --recakes1: blue;
+    --recakes2: rgb(2, 0, 131);
+    --recakes_linear: linear-gradient( to right, rgb(2, 0, 140), rgb(51, 0, 171), rgb(0, 15, 226), rgb(76, 0, 255) ,rgb(65, 132, 255)) ;
+    --barretosbar1: rgb(120, 0, 150);
+    --barretosbar2: rgb(120, 0, 150); 
+    --barretosbar_linear: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
+}
+/*Configurações Gerais Finalizada*/
 
 
-/*BODY INICIADO*/
+/*Body Iniciada | O body é a parte da página em que são feitas as alterações do plano de fundo*/
 body{
     /*espaçamento*/
     display: flex;
@@ -41,21 +43,22 @@ body{
     /*estilização*/
     background-color: rgb(255, 212, 244);
 }
-/*BODY FINALIZADO ===>>> FINALIZAMOS AGORA POIS ELE É POUCO CONFIGURADO*/
+/*Body Finalizado*/
 
 
-/*CONTAINER INICIADO*/
+/*Container Iniciado | O container é a parte mais importante , aonde são expostos o conteúdo da página*/
 .container{
     width: 50%;
     background-color: white;
     height: auto;
-    border-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-/*CONTAINER FINALIZADO*/
+/*Container Finalizado*/
 
 
 
-/*HEADER INICIADO*/
+/*Header Iniciado | Aqui ficam a logo , nome da empresa e também o botão de close para retornar a página inicial*/
 .header{
     /*espaçamento*/
     display: flex;
@@ -94,16 +97,11 @@ body{
     /*responsividade*/
     cursor: pointer;
 }
-/*HEADER TERMINADO*/
+/*Header Terminado*/
 
 
 
-
-
-
-
-
-/*SERVIÇOS INICIADO*/
+/*Serviços Iniciado | Aqui ficam as imagens dos eventos e dos respectivos cardápios*/
 .serviços{
     /*espaçamento*/
     padding: 30px;
@@ -113,30 +111,29 @@ body{
     background-color: rgb(235, 226, 255);
     /*responsividade*/
     overflow-x: auto;
-
 }
 .serviços-imgs{
     /*espaçamento*/
     width: 60%;
 
 }
-/*SERVIÇOS FINALIZADO*/
+/*Serviços Finalizado*/
 
 
 
-/*CARDAPIO INICIADO*/
+/*Cardapio Iniciado | Aqui fica a parte literal do Cardápio , entradas , buffet , sobremesa , informações e também tabela de preços.*/
 .cardapio{
     /*espaçamento*/
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 .cardapio-tit{
+    width: 100%;
     /*espaçamento*/
     padding: 15px;
     /*identificativo*/
     font-size: 16pt;
-    font-family: bahnschrift;
+    font-family: "bahnschrift";
     /*estilização*/
     font-weight: bold;
     border: 2px solid white;
@@ -145,6 +142,7 @@ body{
 }
 .cardapio-descrição-item{
     /*espaçamento*/
+    width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -154,6 +152,7 @@ body{
 }
 .cardapio-descrição-tit{
     /*espaçamento*/
+    width: 100%;
     padding: 15px;
     /*identificativo*/
     font-size: 14pt;
@@ -173,12 +172,12 @@ body{
     /*estilização*/
     color: rgb(27, 27, 27);
 }
-/*CARDAPIO FINALIZADO*/
+/*Cardapio Finalizado*/
 
 
 
 
-/*CONTRATAR INICIADO*/
+/*Contratar Iniciado | Aqui são apresentados os botões de contato , tanto para compartilhar o cardápio com outras pessoas/clientes e também para envio de mensagens diretamente as empresas.*/
 .buttons{
     display: flex;
     justify-content: space-around;
@@ -205,7 +204,7 @@ body{
     /*identificativo*/
     font-family: bahnschrift;
     /*estilização*/
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: green;
     color: white;
     border: none;
@@ -229,12 +228,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-/*CONTRATAR FINALIZADO*/
+/*Contratar Finalizado*/
 
 
-
-
-/*FOOTER INICIADO*/
+/*Footer Iniciado | O footer é padrão em todos as páginas*/
 .footer{
     /*espaçamento*/
     width: 50%;
@@ -250,15 +247,26 @@ body{
     justify-content: center;
     align-items: center;
 }
+.tit_footer{
+    font-size: 16pt;
+    font-family: 'bahnschrift';
+    color: #ff0080;
+    padding: 1vh;
+}
+.subtit_footer{
+    font-size: 20pt;
+    color: #DD2A7B;
+    padding: 0.5vh;
+}
 .footer-logo{
     /*espalamento*/
-    width: 15%;
-    height: auto;   
+    width: 12.5%;
+    height: auto;    
 }
-/*FOOTER FINALIZADO*/
+/*Footer Finalizado*/
 
-
-@media (min-width: 0px) and (max-width: 426px){
+/*Media : de 0px a 425px*/
+@media (min-width: 0px) and (max-width: 425px){
 
     body{
     /*espaçamento*/
@@ -367,10 +375,11 @@ body{
 }
 .cardapio-descrição-tit{
     /*espaçamento*/
+    width: 100%;
     
     /*identificativo*/
     font-size: 12pt;
-    width: 100%;
+    
     /*estilização*/
     
 }
@@ -439,6 +448,7 @@ body{
 
 }
 
+/*Media : de 426px a 1024px*/
 @media (min-width: 426px) and (max-width: 1024px){
 
     body{
@@ -617,7 +627,8 @@ body{
 
 }
 
-@media (min-width: 1024px) and (max-width: 1440px){
+/*Media : de 1025px a 1440px*/
+@media (min-width: 1025px) and (max-width: 1440px){
     .header-logo{
         /*espaçamento*/
         width: 10%;
@@ -627,3 +638,5 @@ body{
     }
 
 }
+
+
