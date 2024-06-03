@@ -34,7 +34,7 @@ a{
     --recakes2: rgb(2, 0, 131);
     --recakes_linear: linear-gradient( to right, rgb(2, 0, 140), rgb(51, 0, 171), rgb(0, 15, 226), rgb(76, 0, 255) ,rgb(65, 132, 255)) ;
     --barretosbar1: rgb(120, 0, 150);
-    --barretosbar2: rgb(120, 0, 150); 
+    --barretosbar2: rgb(150, 0, 150); 
     --barretosbar_linear: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
 }
 /*Configurações Gerais Finalizadas*/
@@ -63,7 +63,7 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-image: --barretosbar_linear: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
+    background-image: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
 }
 .header{
     /*espaçamento*/
