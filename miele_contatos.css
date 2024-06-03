@@ -678,8 +678,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .contatos{
-	color: red;
-	border-bottom: 2px solid red;
+	color: var(--mieledelicias1);
+	border-bottom: 2px solid var(--mieledelicias1);
     }
     /*Menu Soundbar Finalizado*/
 
