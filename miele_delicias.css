@@ -234,7 +234,7 @@ O header se repete em todas as páginas*/
 
 }
 .serviços_item_escritos_tit{
-    color: red;
+    color: var(--mieledelicias1);
 }
 .serviços_item_escritos_desc{
     color: black;
