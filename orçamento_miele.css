@@ -204,7 +204,6 @@ O header se repete em todas as páginas*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     /*estilização*/
     background-color: white;
     border-bottom-left-radius: 10px;
@@ -241,23 +240,21 @@ O header se repete em todas as páginas*/
     padding: 1em;
     text-align: center;
     font-family: bahnschrift;
-    color: rgb(172,0,0);
+    color: var(--mieledelicias1);
 }
 .label_data{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .label{
-   
-    color: rgb(172, 0, 0);
+    color: var(--mieledelicias1);
     padding: 0.75vh;
     font-family: 'bahnschrift';
 }
 #data{
-    width : 98%;	
+    width : 100%;	
 }
 .topico{
     margin: 0.25em;
@@ -292,7 +289,6 @@ O header se repete em todas as páginas*/
     justify-content: center;
     text-align: center;
     padding: 0;
-    
     border-radius: 5px;
     
 }
