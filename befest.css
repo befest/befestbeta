@@ -20,6 +20,24 @@ a{
     text-decoration: none;
     color: transparent;
 }
+:root{
+    --befest: #ff0080;
+    --barretosbuffet1 : red;
+    --barretosbuffet2: rgb(102, 0, 0);
+    --barretosbuffet_linear: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    --tata_gourmet1: #d88ca8;
+    --tata_gourmet2: #89586a;
+    --tata_gourmet_linear: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
+    --miele_delicias1: #f077aa;
+    --mieledelicias2: #bd5d85;
+    --mieledelicias_linear: linear-gradient( to right, #f077aa, #df6e9d , #d86796 ,#c25b86);
+    --recakes1: blue;
+    --recakes2: rgb(2, 0, 131);
+    --recakes_linear: linear-gradient( to right, rgb(2, 0, 140), rgb(51, 0, 171), rgb(0, 15, 226), rgb(76, 0, 255) ,rgb(65, 132, 255)) ;
+    --barretosbar1: rgb(120, 0, 150);
+    --barretosbar2: rgb(120, 0, 150); 
+    --barretosbar_linear: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
+}
 /*Configurações Gerais Finalizadas*/
 
 /*Body Iniciado*/
@@ -46,7 +64,7 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    background-image: linear-gradient( to right, #ff0080, #ff148a, #ff44a1, #ff6fb7, #ff8cc6 );
 }
 .header{
     /*espaçamento*/
@@ -119,13 +137,10 @@ O header se repete em todas as páginas*/
 }
 .img_logo_prestador{
     /*espaçamento*/
-    width: 25%;
-    background-color: #ff0080;
+    width: 35%;
     border-radius: 300px;
     /*estilização*/
-    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
-		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
-		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
+    
 }
 .description{
     /*espaçamento*/
@@ -171,8 +186,8 @@ O header se repete em todas as páginas*/
     padding: 0.25vh;
 }
 .serviços_principais{
-    color: red;
-    border-bottom: 2px solid red;
+    color: var(--barretosbar1);
+    border-bottom: 2px solid var(--barretosbar1);
 }
 /*Menu Soundbar Finalizado*/
 
@@ -180,9 +195,14 @@ O header se repete em todas as páginas*/
 /*Serviços Iniciado*/
 .serviços{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5vh;
     background-color: white;
     padding: 2.5vh;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
     border-bottom-right-radius: 10px;
 }
 .serviços_item{
@@ -196,6 +216,18 @@ O header se repete em todas as páginas*/
         -webkit-box-shadow: 9px 7px 5px rgba(214, 214, 214, 0.932);
 		-moz-box-shadow:    9px 7px 5px rgba(126, 126, 126, 0.932);
 		box-shadow:         9px 7px 5px rgba(223, 223, 223, 0.932);
+}
+.serviços_cat_tit{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16pt;
+    padding: 1vh;
+    background-image: linear-gradient( to right, #ff0080, #ff148a, #ff44a1, #ff6fb7);
+    color: white;
+    border-radius: 30px;
+    margin-top: 2.5vh;
 }
 .serviços_item_imagem{
     width: 15%;
@@ -214,7 +246,7 @@ O header se repete em todas as páginas*/
 
 }
 .serviços_item_escritos_tit{
-    color: red;
+    color: var(--befest);
 }
 .serviços_item_escritos_desc{
     color: black;
@@ -222,17 +254,21 @@ O header se repete em todas as páginas*/
 .serviços_item_button{
     display: flex;
     width: 22.5vh;
-    background-color: red;
-    border: 3px solid rgb(102, 0, 0);
+    background-color: var(--barretosbar1);
+    border: 3px solid var(--barretosbar2);
     border-radius: 10px;
     align-items: center;
     justify-content: center;
     padding-block: 2vh;
     margin-inline: 2vh;
+    column-gap: 1vh;
+    border: 2px solid #ba005d;
+    background-color: var(--befest);
 }
-.serviços_item_button_tit, .restaurant_menu{
+.serviços_item_button_tit,.celebration{
     color: white;
 }
+
 /*Serviços Finalizado*/
 
 /*Footer Iniciado*/
@@ -380,8 +416,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-	color: red;
-	border-bottom: 2px solid red;
+        color: var(--barretosbar1);
+        border-bottom: 2px solid var(--barretosbar1);
     }
     /*Menu Soundbar Finalizado*/
 
@@ -423,6 +459,10 @@ O header se repete em todas as páginas*/
     }
     .restaurant_menu{
         
+    }
+    .serviços_cat_tit{
+        font-size: 14pt;
+        width: 60%;
     }
     /*Serviços Finalizado*/
 
@@ -514,15 +554,15 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: red;
-        border-bottom: 2px solid red;
+        color: var(--barretosbar1);
+        border-bottom: 2px solid var(--barretosbar1);
     }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
     .serviços{
         width: 100%;
-	padding-top: 0;
+	    padding-top: 0;
     }
     .serviços_item{
         
@@ -541,6 +581,10 @@ O header se repete em todas as páginas*/
     }
     .serviços_item_escritos_tit{
         
+    }
+    .serviços_cat_tit{
+        font-size: 14pt;
+        width: 60%;
     }
     .serviços_item_escritos_desc{
         
@@ -686,8 +730,9 @@ O header se repete em todas as páginas*/
     .serviços_item_button_tit{
         display: none;
     }
-    .restaurant_menu{
-        
+    .serviços_cat_tit{
+        font-size: 14pt;
+        width: 60%;
     }
     /*Serviços Finalizado*/
 
@@ -818,6 +863,10 @@ O header se repete em todas as páginas*/
         align-items: center;
         color: black;
         padding: 0.50vh;
+    }
+    .serviços_principais{
+        color: var(--barretosbar1);
+        border-bottom: 2px solid var(--barretosbar1);
     }
     /*Menu Soundbar Finalizado*/
 
@@ -951,12 +1000,16 @@ O header se repete em todas as páginas*/
         color: black;
         padding: 0.50vh;
     }
+    .serviços_principais{
+        color: var(--barretosbar1);
+        border-bottom: 2px solid var(--barretosbar1);
+    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
     .serviços{
         width: 50%;
-	padding-top: 0;
+	    padding-top: 0;
     }
     .serviços_item{
         
@@ -1016,3 +1069,4 @@ O header se repete em todas as páginas*/
 }
 
 /*Final do Media*/
+ 
