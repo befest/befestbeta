@@ -1,6 +1,14 @@
-/* ESTRUTURA*/
+/* FESTPADRÃO : TELAS PRINCIPAIS
 
-/*CONFIGURAÇÕES GERAIS INICIADAS*/
+Instruções de Padronização:
+- Mesma configuração entre todas as páginas
+- Header , Soundbar e footer é a mesma coisa em todas as páginas
+*/
+
+
+
+
+/*Configurações Gerais Iniciadas*/
 *{
     /*espaçamento*/
     padding: 0;
@@ -12,25 +20,7 @@ a{
     text-decoration: none;
     color: transparent;
 }
-:root{
-    --befest: #ff0080;
-    --barretosbuffet1 : red;
-    --barretosbuffet2: rgb(102, 0, 0);
-    --barretosbuffet_linear: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
-    --tata_gourmet1: #d88ca8;
-    --tata_gourmet2: #89586a;
-    --tata_gourmet_linear: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
-    --miele_delicias1: #f077aa;
-    --mieledelicias2: #bd5d85;
-    --mieledelicias_linear: linear-gradient( to right, #f077aa, #df6e9d , #d86796 ,#c25b86);
-    --recakes1: blue;
-    --recakes2: rgb(2, 0, 131);
-    --recakes_linear: linear-gradient( to right, rgb(2, 0, 140), rgb(51, 0, 171), rgb(0, 15, 226), rgb(76, 0, 255) ,rgb(65, 132, 255)) ;
-    --barretosbar1: rgb(120, 0, 150);
-    --barretosbar2: rgb(120, 0, 150); 
-    --barretosbar_linear: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
-}
-/*CONFIGURAÇÕES GERAIS FINALIZADAS*/
+/*Configurações Gerais Finalizadas*/
 
 /*Body Iniciado*/
 body{
@@ -56,7 +46,8 @@ body{
     justify-content: center;
     align-items: center;
     /*estilização*/
-    background-color: var(--befest);
+    background-image: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+}
 .header{
     /*espaçamento*/
     padding: 0;
@@ -132,6 +123,9 @@ O header se repete em todas as páginas*/
     background-color: #ff0080;
     border-radius: 300px;
     /*estilização*/
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
+		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
 }
 .description{
     /*espaçamento*/
@@ -177,8 +171,8 @@ O header se repete em todas as páginas*/
     padding: 0.25vh;
 }
 .serviços_principais{
-    color: var(--barretosbar1);
-    border-bottom: 2px solid var(--barretosbar1);
+    color: red;
+    border-bottom: 2px solid red;
 }
 /*Menu Soundbar Finalizado*/
 
@@ -186,12 +180,9 @@ O header se repete em todas as páginas*/
 /*Serviços Iniciado*/
 .serviços{
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5vh;
     background-color: white;
     padding: 2.5vh;
-    border-bottom-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .serviços_item{
@@ -231,8 +222,8 @@ O header se repete em todas as páginas*/
 .serviços_item_button{
     display: flex;
     width: 22.5vh;
-    background-color: var(--barretosbar1);
-    border: 3px solid var(--barretosbar2);
+    background-color: red;
+    border: 3px solid rgb(102, 0, 0);
     border-radius: 10px;
     align-items: center;
     justify-content: center;
@@ -389,8 +380,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: var(--barretosbar1);
-        border-bottom: 2px solid var(--barretosbar1);
+	color: red;
+	border-bottom: 2px solid red;
     }
     /*Menu Soundbar Finalizado*/
 
@@ -523,8 +514,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-        color: var(--barretosbar1);
-        border-bottom: 2px solid var(--barretosbar1);
+        color: red;
+        border-bottom: 2px solid red;
     }
     /*Menu Soundbar Finalizado*/
 
@@ -828,10 +819,6 @@ O header se repete em todas as páginas*/
         color: black;
         padding: 0.50vh;
     }
-    .serviços_principais{
-        color: var(--barretosbar1);
-        border-bottom: 2px solid var(--barretosbar1);
-    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
@@ -964,16 +951,12 @@ O header se repete em todas as páginas*/
         color: black;
         padding: 0.50vh;
     }
-    .serviços_principais{
-        color: var(--barretosbar1);
-        border-bottom: 2px solid var(--barretosbar1);
-    }
     /*Menu Soundbar Finalizado*/
 
     /*Serviços Iniciado*/
     .serviços{
         width: 50%;
-	    padding-top: 0;
+	padding-top: 0;
     }
     .serviços_item{
         
@@ -1033,4 +1016,3 @@ O header se repete em todas as páginas*/
 }
 
 /*Final do Media*/
- 
