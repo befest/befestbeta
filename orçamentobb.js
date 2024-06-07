@@ -91,6 +91,26 @@ function execucao(){
 
     // FINAL DO CARDÁPIO CHURRAS SILVER //
 
+    // CARDÁPIO RODÍZIO DE CARNES //
+
+    if(cardapioescolhido === 'Rodízio de Carnes' && totconv<30){
+        precoconv += (75*30)/totconv
+    }
+    if(cardapioescolhido === 'Rodízio de Carnes' && totconv>=30 && totconv<=70){
+        precoconv += 75
+    }
+    if(cardapioescolhido === 'Rodízio de Carnes' && totconv>=71 && totconv<=100){
+        precoconv += 70
+    }
+    if(cardapioescolhido === 'Rodízio de Carnes' && totconv>=101 && totconv<=120){
+        precoconv += 65
+    }
+    if(cardapioescolhido === 'Rodízio de Carnes' && totconv>=121 && totconv<=150){
+        precoconv += 60
+    }
+
+    // FINAL DO CARDÁPIO RODÍZIO DE CARNES //
+
     // CARDÁPIO DE ALMOÇO/JANTAR //
 
     if(cardapioescolhido === 'Almoço/Jantar' && totconv<30){
