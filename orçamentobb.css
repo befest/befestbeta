@@ -279,16 +279,13 @@ O header se repete em todas as páginas*/
     border-radius: 5px;
     
 }
-.imagens_resultado{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#copyButton,#shareButton_orçamento{
+#copyButton{
+    width: 100%;
     padding: 1vh;
-    margin-left: 1vh;
     color: white;
     cursor: pointer;
+    display: flex;
+
 }
 
 #res{
