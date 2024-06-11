@@ -283,7 +283,6 @@ O header se repete em todas as páginas*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2vh;
 }
 #copyButton,#shareButton_orçamento{
     padding: 1vh;
