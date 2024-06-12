@@ -251,7 +251,7 @@ O header se repete em todas as páginas*/
     padding: 2.5vh;
     -webkit-box-shadow: none;
 }
-.resultado{
+#resultado{
     width: 80%;
     background-color: var(--mellado-rosa);
     display: flex;
@@ -260,6 +260,12 @@ O header se repete em todas as páginas*/
     align-items: center;
     justify-content: center;
     padding: 2.5vh;
+}
+#copyButton{
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    display: flex;
 }
 #res{
     display: flex;
