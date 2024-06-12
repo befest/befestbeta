@@ -302,6 +302,27 @@
             <ul id="lista_itens">
             </ul>
             <div id="res">Total: R$0</div>
+            <script>
+                    document.getElementById('copyButton').addEventListener('click', async () => {
+                        const captureDiv = document.getElementById('resultado');
+                        html2canvas(captureDiv).then(canvas => {
+                            canvas.toBlob(blob => {
+                                // Verifica se a API de área de transferência e o método write estão disponíveis
+                                if (navigator.clipboard && navigator.clipboard.write) {
+                                    const item = new ClipboardItem({ 'image/png': blob });
+                                    navigator.clipboard.write([item]).then(() => {
+                                        alert('Orçamento foi Copiado! Cole-o aonde desejar!');
+                                    }).catch(err => {
+                                        console.error('Error copying image to clipboard: ', err);
+                                    });
+                                } else {
+                                    alert('Clipboard API not supported');
+                                }
+                            }, 'image/png');
+                        });
+                    });
+            </script>
+            
         </div>
 
         <script>
