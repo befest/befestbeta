@@ -295,6 +295,13 @@ O header se repete em todas as páginas*/
     border-radius: 5px;
     
 }
+#copyButton{
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+}
 #res{
     width: 100%;
     height: auto;
