@@ -234,7 +234,7 @@ O header se repete em todas as páginas*/
     -webkit-box-shadow: none;
 }
 
-.resultado{
+#resultado{
     width: 80%;
     background-color: #d88ca8;
     display: flex;
@@ -243,6 +243,13 @@ O header se repete em todas as páginas*/
     align-items: center;
     justify-content: center;
     padding: 2.5vh;
+}
+#copyButton{
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
 }
 #res{
     display: flex;
