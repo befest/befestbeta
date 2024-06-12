@@ -281,10 +281,10 @@ O header se repete em todas as páginas*/
 }
 #copyButton{
     width: 100%;
-    padding: 1vh;
     color: white;
     cursor: pointer;
     display: flex;
+    border: 2px solid black;
 
 }
 
@@ -302,9 +302,8 @@ O header se repete em todas as páginas*/
     border-radius: 5px;
 }
 .img_res_orçamento{
-    width: 25%;
+    width: 35%;
     padding: 0vh;
-    
 }
 
 /*SERVIÇOS FINALIZADO*/
@@ -465,7 +464,7 @@ O header se repete em todas as páginas*/
     /*Serviços Iniciado*/
     .serviços{
         width: 100%;
-	padding-top: 0;
+	    padding-top: 0;
     }
     .serviços_item{
         
