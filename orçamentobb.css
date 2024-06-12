@@ -284,8 +284,6 @@ O header se repete em todas as páginas*/
     color: white;
     cursor: pointer;
     display: flex;
-    border: 2px solid black;
-
 }
 
 #res{
@@ -302,7 +300,7 @@ O header se repete em todas as páginas*/
     border-radius: 5px;
 }
 .img_res_orçamento{
-    width: 35%;
+    width: 30%;
     padding: 0vh;
 }
 
