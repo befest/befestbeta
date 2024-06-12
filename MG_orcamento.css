@@ -266,6 +266,7 @@ O header se repete em todas as páginas*/
     color: white;
     cursor: pointer;
     display: flex;
+    justify-content: start;
 }
 #res{
     display: flex;
