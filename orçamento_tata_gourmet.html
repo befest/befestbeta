@@ -298,11 +298,30 @@
             <span id="copyButton" class="material-symbols-outlined">
                 content_copy
             </span>
+            <div id="data_res"></div>
             <img src="logo_tata_gourmet.png" alt="logo_tata_gourmet" class="logo_resultado">
             <ul id="lista_itens">
             </ul>
             <div id="res">Total: R$0</div>
+
+            
             <script>
+             function execucao(){
+                let data = document.querySelector('input#data').value
+                let data_nova = data.split('-').reverse().join('/')
+    
+                let horario = document.querySelector('input#hora').value 
+    
+                let local = document.querySelector('input#local').value
+    
+                let n_de_convidados = document.querySelector('input#n_de_convidados').value
+    
+                data_res.innerHTML=`Data do Evento :${data_nova}<br>
+                Horário de Início : ${horario}<br>
+                Local : ${local}<br>
+                Nº de Convidados : ${n_de_convidados}<br><br>
+                `
+            }
                     document.getElementById('copyButton').addEventListener('click', async () => {
                         const captureDiv = document.getElementById('resultado');
                         html2canvas(captureDiv).then(canvas => {
