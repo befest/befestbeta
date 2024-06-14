@@ -221,6 +221,11 @@ O header se repete em todas as páginas*/
     border-radius: 100px;
     text-align: center;
 }
+.data_hora_local{
+    display: flex;
+    width: 95%;
+    column-gap: 2.5vh;
+}
 .topico{
     width: 60%;
     border: 0px solid;
