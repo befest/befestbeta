@@ -103,14 +103,14 @@
         <p class="titulo_servicos">Realize seu Orçamento aqui!</p>
 
     
-        <!--Data , Hora e Local
+        <!--Data , Hora e Local-->
 
         <label for="data_hora_local" class="label_topico">Data , Horário de Início e Local</label>
         <div class="data_hora_local">
             <input type="date" name="data" id="data" class="topico">
             <input type="time" name="hora" id="hora" class="topico">
             <input type="text" name="local" id="local" class="topico" placeholder="Local da Festa">
-        </div>-->
+        </div>
 
         <!--Nº de convidados-->
 
@@ -246,10 +246,27 @@
             </span>
             
             <img src="LOGO - MELLADO ESTAÇÕES GOURMET.png" alt="logo_tata_gourmet" class="logo_resultado">
+            <div id="data_res"></div>
             <ul id="lista_itens">
             </ul>
             <div id="res">Total: R$0</div>
             <script>
+                    function execucao(){
+                    let data = document.querySelector('input#data').value
+                    let data_nova = data.split('-').reverse().join('/')
+        
+                    let horario = document.querySelector('input#hora').value 
+        
+                    let local = document.querySelector('input#local').value
+        
+                    let n_de_convidados = document.querySelector('input#n_de_convidados').value
+        
+                    data_res.innerHTML=`Data do Evento :${data_nova}<br>
+                    Horário de Início : ${horario}<br>
+                    Local : ${local}<br>
+                    Nº de Convidados : ${n_de_convidados}<br><br>
+                    `
+                    }
                     document.getElementById('copyButton').addEventListener('click', async () => {
                         const captureDiv = document.getElementById('resultado');
                         html2canvas(captureDiv).then(canvas => {
