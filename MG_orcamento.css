@@ -294,7 +294,10 @@ O header se repete em todas as páginas*/
    justify-content: center;
    align-items: center;
 }
-
+#data_res{
+    text-align: center;
+    padding-top: 2.5vh;
+}
 /*Serviços Finalizado*/
 
 /*Footer Iniciado*/
