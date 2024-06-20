@@ -339,7 +339,7 @@ function execucao(){
         precotoalha += 0
     }
     if(toalhaEscolhida=== 'Toalha Branca Lisa'){
-        precotoalha += 15
+        precotoalha += 10
     }
     if(toalhaEscolhida=== 'Toalha Vermelha Lisa'){
         precotoalha += 10
