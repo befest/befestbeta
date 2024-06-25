@@ -240,7 +240,8 @@ O header se repete em todas as páginas*/
     font-family: 'bahnschrift';
 }
 #data{
-    width : 98%;	
+    width : 98%;
+    text-align: center;	
 }
 .topico{
     margin: 0.25em;
