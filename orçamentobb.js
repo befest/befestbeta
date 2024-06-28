@@ -128,6 +128,9 @@ function execucao(){
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=120 && totconv<=150){
         precoconv += 75
     }
+    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=151){
+        precoconv += 72.5
+    }
 
     // FIM DO CARDÁPIO ALMOÇO/JANTAR //
 
