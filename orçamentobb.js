@@ -33,19 +33,19 @@ function execucao(){
     // CARDÁPIO CHURRAS MASTER //
 
     if(cardapioescolhido === 'Churras Master' && totconv<30){
-        precoconv += (135*30)/totconv
+        precoconv += (110*30)/totconv
     }
     if(cardapioescolhido === 'Churras Master' && totconv>=30 && totconv<=70){
-        precoconv += 125
+        precoconv += 110
     }
     if(cardapioescolhido === 'Churras Master' && totconv>=71 && totconv<=100){
-       precoconv += 120
+       precoconv += 105
     }
     if(cardapioescolhido === 'Churras Master' && totconv>=101 && totconv<=120){
-       precoconv += 115
+       precoconv += 100
     }
     if(cardapioescolhido === 'Churras Master' && totconv>=121 && totconv<=150){
-        precoconv += 110
+        precoconv += 95
     }
 
     // FINAL DO CARDÁPIO CHURRAS MASTER //
