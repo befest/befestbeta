@@ -667,8 +667,8 @@ O header se repete em todas as páginas*/
         padding: 0.25vh;
     }
     .serviços_principais{
-	color: red;
-	border-bottom: 2px solid red;
+	color: var(--barretosbar1);
+	border-bottom: 2px solid var(--barretosbar1);
     }
     /*Menu Soundbar Finalizado*/
 
