@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="BEFESTICO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <title>Leticia Derner Gastronomia | Be fest</title>
+</head>
+<body>
+    <div class="container-header">
+
+        <div class="header">
+
+           <div class="compartilhado">
+
+                <div class="dropdown">
+                    <button class="mainmenubtn"><span class="material-symbols-outlined share">
+                      share
+                  </span></button>
+                    <div class="dropdown-child">
+                      <a href="" id="whatsapp-share-btt" class="share-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="whatsapp-btn" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg></a>
+              
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    //Constrói a URL depois que o DOM estiver pronto
+                    document.addEventListener("DOMContentLoaded", function() {
+                        //conteúdo que será compartilhado: Título da página + URL
+                        var conteudo = encodeURIComponent(`https://befest.netlify.app/LD_pag_principal.html\n\nFestPerfil | Leticia Derner Gastronomia☝🏼🥂`);
+                        //altera a URL do botão
+                        document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
+                    }, false);
+                </script>
+
+
+            </div>
+
+            <div class="header_images">
+
+                <img src="/Imagens/LETICIA DERNE GASTRONOMIA/LOGO - LETICIA DERNE GASTRONOMIA.png" alt="" class="img_logo_prestador">
+        
+            </div>
+
+            <div class="description">
+
+                <p class="header_titulo">Leticia Derner Gastronomia</p>
+    
+                <p class="header_festarea_nicho">Comida e Bebida | Serviço de Buffet</p>
+        
+            </div>
+
+
+
+    
+        </div>
+
+    </div>
+
+    <div class="menu_soundbar">
+
+
+        <a href="/Leticia Derner/Página Principal/LD_pag_principal.html"><div class="item_menu_soundbar serviços_principais">
+            <p class="tit_item_menu_soundbar">Serviços Principais</p>
+            <span class="material-symbols-outlined restaurant restaurant">restaurant</span>
+        </div></a>
+
+        <a href="/Leticia Derner/Orçamento/LD_orçamento.html"><div class="item_menu_soundbar orçamento">
+            <p class="tit_item_menu_soundbar">Orçamento</p>
+            <span class="material-symbols-outlined payments">payments</span>
+        </div></a>
+
+        <a href="/Leticia Derner/Contatos/LD_contatos.html"><div class="item_menu_soundbar contatos">
+            <p class="tit_item_menu_soundbar">Contatos</p>
+            <span class="material-symbols-outlined phone">phone</span>
+        </div></a>
+
+
+
+
+
+    </div>
+
+    <div class="serviços">
+
+         <p class="titulo_servicos">Realize seu Orçamento aqui!</p>
+
+        <div class="dadosparaorçamento">
+            <div class="dadosserviço">
+                
+                <p class="tit">Dados do Serviço</p>
+                
+                <label for="data" class="label">Data da Festa : </label>
+                <input type="date" name="data" id="data" class="topico" placeholder="dd/mm/aaaa">
+
+                <select id="cardapios" class="topico">
+                    <option disabled selected style="display: none">Cardápios</option>
+                    <option value="Coffee Break">Coffee Break</option>
+                    <option value="Eventos Corporativos">Eventos Corporativos</option>
+                    <option value="Festa de Aniversário">Festa de Aniversário</option>
+                    <option value="Coquetel">Coquetel</option>
+                    <option value="Recepções">Recepções</option>
+                    <option value="Jantar">Jantar</option>
+                    
+                </select> 
+    
+            </div>
+    
+            <div class="dadosconvidados">
+    
+                <p class="tit">Dados dos Convidados</p>
+    
+                <input type="number" class="topico" id="convint" placeholder="Nº de Convidados (Integral)">
+                <input type="number" class="topico" id="convmeia" placeholder="Nº de Convidados (Meia)"> <br>
+                
+                <input type="button" class="topico1" value="Realizar Orçamento!" onclick="execucao()">
+
+            
+    
+            </div>
+            
+        </div>
+
+        <div id="resultado" class="">
+
+            <div class="resultado_buttons">
+                <span id="copyButton" class="material-symbols-outlined">
+                    content_copy
+                </span>
+            </div>
+                
+            <img src="/Imagens/LETICIA DERNE GASTRONOMIA/LOGO - LETICIA DERNE GASTRONOMIA - ATUALIZADO.png" alt="img_res_orçamento" class="img_res_orçamento">
+                
+            <script>
+                    document.getElementById('copyButton').addEventListener('click', async () => {
+                        const captureDiv = document.getElementById('resultado');
+                        html2canvas(captureDiv).then(canvas => {
+                            canvas.toBlob(blob => {
+                                // Verifica se a API de área de transferência e o método write estão disponíveis
+                                if (navigator.clipboard && navigator.clipboard.write) {
+                                    const item = new ClipboardItem({ 'image/png': blob });
+                                    navigator.clipboard.write([item]).then(() => {
+                                        alert('Orçamento foi Copiado! Cole-o aonde desejar!');
+                                    }).catch(err => {
+                                        console.error('Error copying image to clipboard: ', err);
+                                    });
+                                } else {
+                                    alert('Clipboard API not supported');
+                                }
+                            }, 'image/png');
+                        });
+                    });
+            </script>
+            
+
+            <div id="res"></div>
+        </div>     
+
+    </div>
+
+    <footer class="footer">
+
+        <a  id="footer-logo-link" href="befest.html">
+            <p class="tit_footer">Visite a Be fest</p>
+            <p class="subtit_footer"> • </p>
+            <img src="Logo Secundária - Be fest (Rosa).png" alt="footer-logo" class="footer-logo">
+        </a>
+
+    </footer>
+
+</body>
+
+<style>
+    /* FESTPADRÃO : TELAS PRINCIPAIS
+
+Instruções de Padronização:
+- Mesma configuração entre todas as páginas
+- Header , Soundbar e footer é a mesma coisa em todas as páginas
+*/
+
+
+
+
+/*Configurações Gerais Iniciadas*/
+*{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'bahnschrift';
+}
+a{
+    text-decoration: none;
+    color: transparent;
+}
+
+:root{
+    --barretosbuffet1 : red;
+    --barretosbuffet2: rgb(102, 0, 0);
+    --barretosbuffet_linear: linear-gradient( to right, rgb(140, 0, 0), rgb(171, 0, 0), rgb(226, 0, 0), rgb(255, 0, 0) , rgb(255, 65, 65) );
+    --tata_gourmet1: #d88ca8;
+    --tata_gourmet2: #89586a;
+    --tata_gourmet_linear: linear-gradient( to right, #d88ca8,#ea93b3,#c87b97,#f06196);
+    --miele_delicias1: #f077aa;
+    --mieledelicias2: #bd5d85;
+    --mieledelicias_linear: linear-gradient( to right, #f077aa, #df6e9d , #d86796 ,#c25b86);
+    --recakes1: blue;
+    --recakes2: rgb(2, 0, 131);
+    --recakes_linear: linear-gradient( to right, rgb(2, 0, 140), rgb(51, 0, 171), rgb(0, 15, 226), rgb(76, 0, 255) ,rgb(65, 132, 255)) ;
+    --barretosbar1: rgb(120, 0, 150);
+    --barretosbar2: rgb(120, 0, 150); 
+    --barretosbar_linear: linear-gradient( to right, rgb(50, 0, 63), rgb(108, 0, 135), rgb(120, 0, 150), rgb(171, 0, 213) , rgb(208, 21, 255));
+    --leticiaderne1 : #1c5444;
+    --leticiaderne2 : #2d7e67;
+}
+/*Configurações Gerais Finalizadas*/
+
+/*Body Iniciado*/
+body{
+    /*espaçamento*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-color: rgb(255, 212, 244); 
+}
+/*Body Finalizado*/
+
+
+/*Container-Header Iniciado*/
+.container-header{
+    /*espaçamento*/
+    width: 50%;
+    height: auto;
+    padding: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-image: linear-gradient( to right, #091b15, #164135, #1c5444, #2d7e67 , #41b493 );
+}
+.header{
+    /*espaçamento*/
+    padding: 0;
+    margin: 0;
+} 
+/*Container-Header Finalizado*/
+
+/*Compartilhado Iniciado*/
+.compartilhado{
+    padding-top: 1.5vh;
+    padding-left: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+.mainmenubtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    
+}
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+.dropdown-child {
+    display: none;
+    background-color: white;
+    width: 40px;
+    border-radius: 10px;
+}
+.dropdown-child a {
+    padding: 1vh;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.whatsapp-btn{
+    color: green;
+    width: 100%;
+    height: auto;
+}
+.instagram-btn{
+    color: #DD2A7B;
+    width: 100%;
+    height: auto;
+}
+.facebook-btn{
+    color: blue;
+    width: 100%;
+    height: auto;
+}
+/*Compartilhado Finalizado*/
+
+/*Header Iniciado
+O header se repete em todas as páginas*/
+.header_images{
+    /*espaçamento*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_logo_prestador{
+    /*espaçamento*/
+    width: 25%;
+    background-color: #ff0080;
+    border-radius: 300px;
+    /*estilização*/
+    -webkit-box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(44, 44, 44, 0.932);
+		box-shadow:         9px 7px 5px rgba(37, 37, 37, 0.932);
+}
+.description{
+    /*espaçamento*/
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+.header_titulo{
+    /*espaçamento*/
+    padding: 0.1em;
+    /*estilização*/
+    font-size: 24pt;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; 
+}
+.header_festarea_nicho{
+    /*espaçamento*/
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    /*estilização*/
+    color: rgb(255, 255, 255);
+}
+/*Header Finalizado*/
+
+/*Menu Soundbar Iniciado
+- O soundbar não pode ter nenhuma medida para seus itens*/
+.menu_soundbar{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    padding: 2.5vh;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vh;
+}
+.item_menu_soundbar{
+    width: max-content;
+    display: flex;
+    column-gap: 1vh;
+    align-items: center;
+    color: black;
+    padding: 0.25vh;
+}
+.orçamento{
+    color: var(--leticiaderne1);
+    border-bottom: 2px solid var(--leticiaderne1);
+}
+/*Menu Soundbar Finalizado*/
+
+
+
+
+/*SERVIÇOS INICIADO */
+.serviços{
+    /*espaçamento*/
+    width: 50%;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /*estilização*/
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.titulo_servicos{
+    background-color: var(--leticiaderne1);
+    padding: 1em;
+    font-size: 16pt;
+    font-family: bahnschrift;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+}
+.dadosparaorçamento{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5vh;
+    text-align: center;
+   
+}
+.dadosserviço{
+    display: flex;
+    flex-direction: column;
+}
+.dadosconvidados{
+    display: flex;
+    flex-direction: column;
+    
+}
+.tit{
+    padding: 1em;
+    text-align: center;
+    font-family: bahnschrift;
+    color: var(--leticiaderne1);
+}
+.label_data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.label{
+    color: var(--leticiaderne1);
+    padding: 0.75vh;
+    font-family: 'bahnschrift';
+}
+#data{
+    width : 98%;
+    text-align: center;	
+}
+.topico{
+    margin: 0.25em;
+    border: 0px solid;
+    padding: 0.75em;
+    border-radius: 5px;
+    text-align: center;
+    /*estilização*/
+    -webkit-box-shadow: 9px 7px 5px rgba(214, 214, 214, 0.932);
+		-moz-box-shadow:    9px 7px 5px rgba(255, 255, 255, 0.932);
+		box-shadow:         9px 7px 5px rgba(200, 200, 200, 0.932);
+    
+
+}
+.topico1{
+    background-color: var(--leticiaderne1);
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.topico1:active{
+    background-color: var(--leticiaderne1);
+}
+
+#resultado{
+    width: 100%;
+    height: auto;
+    background-color: var(--leticiaderne1);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    
+    border-radius: 5px;
+    
+}
+#copyButton{
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+}
+
+#res{
+    width: 100%;
+    height: auto;
+    background-color: var(--leticiaderne1);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    font-family: bahnschrift;
+    color: white;
+    font-size: 10pt;
+    border-radius: 5px;
+}
+.img_res_orçamento{
+    width: 20%;
+    padding: 0vh;
+    border-radius: 100px;
+}
+
+/*SERVIÇOS FINALIZADO*/
+
+
+
+
+/*Footer Iniciado*/
+.footer{
+    /*espaçamento*/
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*estilização*/
+    background-color: transparent;
+}
+#footer-logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tit_footer{
+    font-size: 16pt;
+    color: #ff0080;
+    padding: 1vh;
+}
+.subtit_footer{
+    font-size: 20pt;
+    color: #DD2A7B;
+    padding: 0.5vh;
+}
+.footer-logo{
+    /*espalamento*/
+    width: 12.5%;
+    height: auto;   
+    
+}
+/*Footer Finalizado*/
+
+
+
+/*Início do Media*/
+
+
+/*De 0 a 320px*/
+@media (min-width: 0px) and (max-width: 320px){
+    /*Body Iniciado*/
+    body{
+        background-color: white;
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 100%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+    .compartilhado{
+        
+    }
+    .mainmenubtn {
+        
+    }
+    .dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+    }
+    .dropdown-child {
+        display: none;
+        background-color: white;
+        width: 40px;
+        border-radius: 10px;
+    }
+    .dropdown-child a {
+        padding: 1vh;
+        text-decoration: none;
+        display: block;
+
+    }
+    .dropdown:hover .dropdown-child {
+        display: block;
+    }
+    .whatsapp-btn{
+        color: green;
+        width: 100%;
+        height: auto;
+    }
+    .instagram-btn{
+        color: #DD2A7B;
+        width: 100%;
+        height: auto;
+    }
+    .facebook-btn{
+        color: blue;
+        width: 100%;
+        height: auto;
+    }
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 100px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 22pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 12pt;
+        display: flex;
+        column-gap: 1vh;
+        align-items: center;
+        color: black;
+        padding: 0.25vh;
+    }
+    .orçamento{
+        color: var(--leticiaderne1);
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 100%;
+	    padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+
+    }
+    .serviços_item_escritos_tit{
+
+    }
+    .serviços_item_escritos_desc{
+        display: none;
+    }
+    .serviços_item_button{
+        padding: 1vh;
+        width: max-content;
+        border-radius: 500px;
+    }
+    .serviços_item_button_tit{
+        display: none;
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 100%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 12pt;
+    }
+    .subtit_footer{
+        font-size: 20pt;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+
+}
+
+/*De 321px a 375px*/
+@media (min-width: 321px) and (max-width: 375px){
+    /*Body Iniciado*/
+    body{
+        background-color: white;
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 100%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+    
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 100px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 22pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 12pt;
+        display: flex;
+        column-gap: 1vh;
+        align-items: center;
+        color: black;
+        padding: 0.25vh;
+    }
+    .orçamento{
+        color: var(--leticiaderne1); 
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 100%;
+	    padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        
+
+    }
+    .serviços_item_escritos_tit{
+        
+    }
+    .serviços_item_escritos_desc{
+        
+    }
+    .serviços_item_button{
+        padding: 1vh;
+        width: max-content;
+        border-radius: 500px;
+    }
+    .serviços_item_button_tit{
+        display: none;
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 100%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 14pt;
+        padding: 1vh;
+    }
+    .subtit_footer{
+        font-size: 20pt;
+        color: #DD2A7B;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+}
+
+/*De 376px a 425px*/
+@media (min-width: 376px) and (max-width: 425px){
+    /*Body Iniciado*/
+    body{
+        background-color: white;
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 100%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 100px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 22pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 12pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 12pt;
+        display: flex;
+        column-gap: 1vh;
+        align-items: center;
+        color: black;
+        padding: 0.25vh;
+    }
+    .orçamento{
+        color: var(--leticiaderne1);
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 100%;
+	    padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        
+
+    }
+    .serviços_item_escritos_tit{
+        
+    }
+    .serviços_item_escritos_desc{
+        
+    }
+    .serviços_item_button{
+        padding: 1vh;
+        width: max-content;
+        border-radius: 500px;
+    }
+    .serviços_item_button_tit{
+        display: none;
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 100%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 14pt;
+        padding: 1vh;
+    }
+    .subtit_footer{
+        font-size: 20pt;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+}
+
+/*De 426px a 768px*/
+@media (min-width: 426px) and (max-width: 768px){
+    /*Body Iniciado*/
+    body{
+        
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 75%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+    .compartilhado{
+        
+    }
+    .mainmenubtn {
+        
+    }
+    .dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+    }
+    .dropdown-child {
+        display: none;
+        background-color: white;
+        width: 40px;
+        border-radius: 10px;
+    }
+    .dropdown-child a {
+        padding: 1vh;
+        text-decoration: none;
+        display: block;
+
+    }
+    .dropdown:hover .dropdown-child {
+        display: block;
+    }
+    .whatsapp-btn{
+        color: green;
+        width: 100%;
+        height: auto;
+    }
+    .instagram-btn{
+        color: #DD2A7B;
+        width: 100%;
+        height: auto;
+    }
+    .facebook-btn{
+        color: blue;
+        width: 100%;
+        height: auto;
+    }
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 200px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 30pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 20pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 75%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 10pt;
+        display: flex;
+        column-gap: 1.5vh;
+        align-items: center;
+        color: black;
+        padding: 0.50vh;
+    }
+    .orçamento{
+        color: var(--leticiaderne1);
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 75%;
+	    padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        
+
+    }
+    .serviços_item_escritos_tit{
+        
+    }
+    .serviços_item_escritos_desc{
+        
+    }
+    .serviços_item_button{
+        padding: 2vh;
+        width: max-content;
+    }
+    .serviços_item_button_tit{
+        
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 75%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 16pt;
+        padding: 1vh;
+    }
+    .subtit_footer{
+        font-size: 250%;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+
+
+
+
+}
+
+/*De 769px a 1024px*/
+@media (min-width: 769px) and (max-width: 1024px){
+    /*Body Iniciado*/
+    body{
+        
+    }
+    /*Body Finalizado*/
+    /*Container-Header Iniciado*/
+    .container-header{
+        width: 50%;
+    }
+    .header{
+        
+    } 
+    /*Container-Header Finalizado*/
+    /*Compartilhado Iniciado*/
+   
+    /*Compartilhado Finalizado*/
+    /*Header Iniciado*/
+    .header_images{
+        /*espaçamento*/
+    }
+    .img_logo_prestador{
+        /*espaçamento*/
+        width: 40%;
+        border-radius: 200px;
+        /*estilização*/
+    }
+    .description{
+        /*espaçamento*/
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+    .header_titulo{
+        /*espaçamento*/
+        padding: 0.1em;
+        /*estilização*/
+        font-size: 32pt;
+    }
+    .header_festarea_nicho{
+        /*espaçamento*/
+        font-size: 22pt;
+        font-family: Arial, Helvetica, sans-serif;
+        /*estilização*/
+        color: rgb(255, 255, 255);
+
+    }
+    /*Header Finalizado*/
+    /*Menu Soundbar Iniciado*/
+    .menu_soundbar{
+        width: 50%;
+        display: flex;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    .item_menu_soundbar{
+        font-size: 14pt;
+        display: flex;
+        column-gap: 1.75vh;
+        align-items: center;
+        color: black;
+        padding: 0.50vh;
+    }
+    .orçamento{
+        color: var(--leticiaderne1);
+    }
+    /*Menu Soundbar Finalizado*/
+
+    /*Serviços Iniciado*/
+    .serviços{
+        width: 50%;
+	    padding-top: 0;
+    }
+    .serviços_item{
+        
+    }
+    .serviços_item_imagem{
+        width: 30%;
+    }
+    .serviços_item_escritos_imagem{
+        column-gap: 1vh;
+        display: flex;
+        padding: 1vh;
+    }
+    .serviços_item_escritos{
+        
+
+    }
+    .serviços_item_escritos_tit{
+        
+    }
+    .serviços_item_escritos_desc{
+        
+    }
+    .serviços_item_button{
+        padding: 2vh;
+        width: max-content;
+    }
+    .serviços_item_button_tit{
+        
+    }
+    .restaurant_menu{
+        
+    }
+    /*Serviços Finalizado*/
+
+    /*Footer Iniciado*/
+    .footer{
+        /*espaçamento*/
+        width: 50%;
+    }
+    #footer-logo-link{
+    }
+    .tit_footer{
+        font-size: 18pt;
+        padding: 1vh;
+    }
+    .subtit_footer{
+        font-size: 20pt;
+    }
+    .footer-logo{
+        /*espalamento*/
+        width: 20%;
+        height: auto;
+    }
+    /*Footer Finalizado*/
+}
+
+/*Final do Media*/
+ 
+
+</style>
+
+
+</html>
