@@ -1290,4 +1290,56 @@ O header se repete em todas as páginas*/
 </style>
 
 
+<script>
+    document.getElementById('realizar_orcamento').addEventListener('click',function(ev){
+      ev.preventDefault()
+
+      //Data
+      let data = document.getElementById('data').value
+      let data_nova = data.split('-').reverse().join('/')
+
+      //Cardapios
+      let cardapios = document.querySelector('#cardapios').value
+
+      //Preços por Convidado
+      let preco_convidado = 0
+      switch(cardapios){
+        case 'Coffee Break':
+            preco_convidado+=55
+            break
+        case 'Eventos Corporativos':
+            preco_convidado+=75
+            break
+        case 'Festa de Aniversário':
+            preco_convidado+=75
+            break
+        case 'Coquetel':
+            preco_convidado+=75
+            break
+        case 'Recepções':
+            preco_convidado+=75
+            break
+        case 'Jantar':
+            preco_convidado+=75
+            break
+        default:
+            break
+      }
+
+      //Nº de convidados
+      let inteiras = document.getElementById('convint').value
+      let meias = document.getElementById('convmeia').value
+
+      //Preço Total
+      let preco_meia = preco_convidado/2
+      let preco_total = (preco_convidado*inteiras) + (preco_convidado*(meias/2))
+
+
+      res.innerHTML = `Data : ${data_nova} <br> Cardápio : ${cardapios}<br><br> Convidados (Inteiras) : ${inteiras}<br>Convidados (Meias) : ${meias} <br><br> Preço Inteira : R$ ${preco_convidado} <br> Preço Meia : R$ ${preco_meia} <br><br> Preço Total : R$ ${preco_total}`
+
+    })
+</script>
+
+
+	
 </html>
