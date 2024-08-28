@@ -99,9 +99,6 @@
                 <label for="data" class="label">Data da Festa</label>
                 <input type="date" name="data" id="data" class="topico" placeholder="dd/mm/aaaa">
 
-                <!--Horário de Início-->
-                <label for="hora" class="label">Horário de Início</label>
-                <input type="time" name="time" id="time" class="topico">
 
                 <!--Endereço-->
                 <label for="endereço" class="label">Endereço</label>
@@ -117,7 +114,7 @@
 
                 <select id="cardapios" class="topico">
                     <option disabled selected style="display: none">Cardápio</option>
-                    <option value="4 opções">Almoço</option>
+                    <option value="Almoço">Almoço</option>
                     
                 </select> 
 
@@ -1316,8 +1313,6 @@ O header se repete em todas as páginas*/
       let data = document.getElementById('data').value
       let data_nova = data.split('-').reverse().join('/')
 
-      //Horário
-      let horario = document.getElementById('time').value
 
       //Endereço
       let endereco = document.getElementById('address-input').value
