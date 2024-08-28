@@ -95,54 +95,33 @@
         <div class="dadosparaorçamento">
             <div class="dadosserviço">
                 
-                
-                <label for="data" class="label">Data da Festa : </label>
+                <!--Data-->
+                <label for="data" class="label">Data da Festa</label>
                 <input type="date" name="data" id="data" class="topico" placeholder="dd/mm/aaaa">
 
-                <p class="tit">Opções de Acompanhamentos/Guarnições</p>
+                <!--Horário de Início-->
+                <label for="hora" class="label">Horário de Início</label>
+                <input type="time" name="time" id="time" class="topico">
+
+                <!--Endereço-->
+                <label for="endereço" class="label">Endereço</label>
+                <input id="address-input" type="text" name="endereço" class="topico" placeholder="Digite o endereço">
+
+                
+               
+
+                
+
+
+                <p class="tit">Opções de Serviço</p>
 
                 <select id="cardapios" class="topico">
-                    <option disabled selected style="display: none">Quantidade de Opções de Guarnições</option>
-                    <option value="4 opções">4 opções</option>
-                    <option value="5 opções">5 opções</option>
-                    <option value="6 opções">6 opções</option>
+                    <option disabled selected style="display: none">Cardápio</option>
+                    <option value="4 opções">Almoço</option>
                     
                 </select> 
 
-                <p class="tit">Opções de Proteínas</p>
-
-                <select id="cardapios" class="topico">
-                    <option disabled selected style="display: none">Quantidade de Opções de Proteínas</option>
-                    <option value="3 opções">3 opções</option>
-                    <option value="4 opções">4 opções</option>
-                    <option value="5 opções">5 opções</option>
-                    
-                </select> 
-
-                <p class="tit">Opções de Sobremesa</p>
-
-                <select id="cardapios" class="topico">
-                    <option disabled selected style="display: none">Quantidade de Opções de Sobremesas</option>
-                    <option value="1 opção">1 opções</option>
-                    <option value="2 opções">2 opções</option>
-                    <option value="3 opções">3 opções</option>
-                    
-                </select> 
-
-                <p class="tit">Opções de Assamento</p>
-
-                <select id="cardapios" class="topico">
-                    <option disabled selected style="display: none"> Opções de Assamento</option>
-                    <option value="Parrilla">Parrilla</option>
-                    <option value="Convencional">Convencional</option>
-                    <option value="Fogo de Chão">Fogo de Chão</option>
-                    <option value="Estação">Estação</option>
-                    <option value="Varal">Varal</option>
-                    <option value="Espeto Corrido">Espeto Corrido</option>
-                    <option value="Montagem Campera">Montagem Campera</option>
-                    <option value="Hamburguer">Hamburguer</option>
-                    
-                </select> 
+                
     
             </div>
     
@@ -151,7 +130,6 @@
                 <p class="tit">Dados dos Convidados</p>
     
                 <input type="number" class="topico" id="convint" placeholder="Nº de Convidados (Integral)">
-                <input type="number" class="topico" id="convmeia" placeholder="Nº de Convidados (Meia)"> 
                 
 
                 <br>
@@ -1338,22 +1316,27 @@ O header se repete em todas as páginas*/
       let data = document.getElementById('data').value
       let data_nova = data.split('-').reverse().join('/')
 
-      //Cardapios
-      let cardapios = document.querySelector('#cardapios').value
+      //Horário
+      let horario = document.getElementById('time').value
 
-      //Preço por Convidado
-      let preco_convidado = document.getElementById('preco_por_convidado').value
-      
+      //Endereço
+      let endereco = document.getElementById('address-input').value
+
+      //Opções de serviço
+      let lista = document.getElementById('cardapios')
+      let lista_selecionado = lista.options[lista.selectedIndex].text
+
       //Nº de convidados
-      let inteiras = document.getElementById('convint').value
-      let meias = document.getElementById('convmeia').value
+      let n_convidados = document.getElementById('convint').value
+
+      //Preço por convidado 
+      let preco = 85.9
 
       //Preço Total
-      let preco_meia = preco_convidado/2
-      let preco_total = (preco_convidado*inteiras) + (preco_convidado*(meias/2))
+      let preco_total =  preco*n_convidados
 
 
-      res.innerHTML = `Data : ${data_nova} <br> Cardápio : ${cardapios}<br><br> Convidados (Inteiras) : ${inteiras}<br>Convidados (Meias) : ${meias} <br><br> Preço Inteira : R$ ${preco_convidado} <br> Preço Meia : R$ ${preco_meia} <br><br> Preço Total : R$ ${preco_total}`
+      res.innerHTML = `Data : ${data_nova}<br><br>Horário de Início (Duração de 5 horas) : ${horario}<br><br> Endereço da Festa : ${endereco}<br><br>Cardápio : ${lista_selecionado}<br><br> Nº de Convidados : ${n_convidados} convidados<br><br>Preço por Convidado : R$ ${preco}<br><br><br>Preço Total : R$ ${preco_total}`
 
     })
 </script>
