@@ -325,8 +325,11 @@ function execucao(){
     if(openbarescolhido=== 'Sem Open-Bar'){
         precoopenbar += 0
     }
-    if(openbarescolhido=== 'Com Open-Bar'){
-        precoopenbar += 30
+    if(openbarescolhido=== 'Com Open-Bar'&& totconv>=30 && totconv<=99){
+        precoopenbar += 45
+    }
+    if(openbarescolhido=== 'Com Open-Bar'&& totconv>=100 && totconv<=200){
+        precoopenbar += 40
     }
     //OPEN-BAR FINAL
 
