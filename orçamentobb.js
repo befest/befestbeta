@@ -53,7 +53,7 @@ function execucao(){
     // CARDÁPIO CHURRAS GOLD //
 
     if(cardapioescolhido === 'Churras Gold' && totconv<30){
-        precoconv += (100*30)/totconv
+        precoconv += (95*30)/totconv
     }
     if(cardapioescolhido === 'Churras Gold' && totconv>=30 && totconv<=70){
         precoconv += 95
