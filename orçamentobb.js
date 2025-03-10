@@ -18,7 +18,7 @@ function execucao(){
     var int = document.querySelector('#convint')
     var integrais = Number(int.value)
     var meias = Number(mei.value)
-    var totconv = int + mei
+    var totconv = integrais + meias
 
     if(totconv>200){
         alert('O número de convidados é 200 convidados ou mais , entre em contato conosco para negociarmos melhor o preço!')
