@@ -73,20 +73,20 @@ function execucao(){
 
     // CARDÁPIO CHURRAS SILVER //
 
-    if(cardapioescolhido === 'Churras Silver' && totconv<30){
-        precoconv += (95*30)/totconv
+    if(cardapioescolhido === 'Churras Silver' && totconv<50){
+        precoconv += (90*50)/totconv
     }
-    if(cardapioescolhido === 'Churras Silver' && totconv>=30 && totconv<=70){
-        precoconv += 85
+    if(cardapioescolhido === 'Churras Silver' && totconv>=50 && totconv<=70){
+        precoconv += 90
     }
     if(cardapioescolhido === 'Churras Silver' && totconv>=71 && totconv<=100){
-        precoconv += 80
+        precoconv += 85
     }
     if(cardapioescolhido === 'Churras Silver' && totconv>=101 && totconv<=120){
-        precoconv += 75
+        precoconv += 80
     }
     if(cardapioescolhido === 'Churras Silver' && totconv>=121 && totconv<=150){
-        precoconv += 70
+        precoconv += 75
     }
 
     // FINAL DO CARDÁPIO CHURRAS SILVER //
