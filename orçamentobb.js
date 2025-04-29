@@ -94,52 +94,52 @@ function execucao(){
     // CARDÁPIO RODÍZIO DE CARNES //
 
     if(cardapioescolhido === 'Rodízio de Carnes' && totconv<30){
-        precoconv += (75*30)/totconv
+        precoconv += (80*30)/totconv
     }
     if(cardapioescolhido === 'Rodízio de Carnes' && totconv>=30 && totconv<=70){
-        precoconv += 75
+        precoconv += 80
     }
     if(cardapioescolhido === 'Rodízio de Carnes' && totconv>=71 && totconv<=100){
-        precoconv += 70
+        precoconv += 75
     }
     if(cardapioescolhido === 'Rodízio de Carnes' && totconv>=101 && totconv<=120){
-        precoconv += 65
+        precoconv += 70
     }
     if(cardapioescolhido === 'Rodízio de Carnes' && totconv>=121 && totconv<=150){
-        precoconv += 60
+        precoconv += 65
     }
 
     // FINAL DO CARDÁPIO RODÍZIO DE CARNES //
 
     // CARDÁPIO DE ALMOÇO/JANTAR //
 
-    if(cardapioescolhido === 'Almoço/Jantar' && totconv<30){
-        precoconv += (95*30)/totconv
+    if(cardapioescolhido === 'Almoço/Jantar' && totconv<50){
+        precoconv += (95*50)/totconv
     }
-    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=30 && totconv<=70){
-        precoconv += 90
+    if(cardapioescolhido === 'Almoço/Jantar' && totconv>=50 && totconv<=70){
+        precoconv += 95
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=71 && totconv<=100){
-        precoconv += 85
+        precoconv += 90
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=101 && totconv<=120){
-        precoconv += 80
+        precoconv += 85
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=120 && totconv<=150){
-        precoconv += 75
+        precoconv += 80
     }
     if(cardapioescolhido === 'Almoço/Jantar' && totconv>=151){
-        precoconv += 72.5
+        precoconv += 75
     }
 
     // FIM DO CARDÁPIO ALMOÇO/JANTAR //
 
     // CARDÁPIO DE BUFFET INFANTIL //
 
-    if(cardapioescolhido === 'Buffet Infantil' && totconv<30){
-        precoconv+= (95*30)/totconv
+    if(cardapioescolhido === 'Buffet Infantil' && totconv<50){
+        precoconv+= (85*50)/totconv
     }
-    if(cardapioescolhido === 'Buffet Infantil' && totconv>=30 && totconv<=70){
+    if(cardapioescolhido === 'Buffet Infantil' && totconv>=50 && totconv<=70){
         precoconv += 85
     }
     if(cardapioescolhido === 'Buffet Infantil' && totconv>=71 && totconv<=100){
@@ -156,40 +156,40 @@ function execucao(){
 
     // CARDÁPIO DE FEIJOADA //
 
-    if(cardapioescolhido === 'Feijoada' && totconv<30){
-        precoconv+= (95*30)/totconv
+    if(cardapioescolhido === 'Feijoada' && totconv<50){
+        precoconv+= (90*50)/totconv
     }
-    if(cardapioescolhido === 'Feijoada' && totconv>=30 && totconv<=70){
-        precoconv += 85
+    if(cardapioescolhido === 'Feijoada' && totconv>=50 && totconv<=70){
+        precoconv += 90
     }
     if(cardapioescolhido === 'Feijoada' && totconv>=71 && totconv<=100){
-        precoconv += 80
+        precoconv += 85
     }
     if(cardapioescolhido === 'Feijoada' && totconv>=101 && totconv<=120){
-        precoconv = 75
+        precoconv = 80
     }
     if(cardapioescolhido === 'Feijoada' && totconv>=121 && totconv<=150){
-        precoconv += 70
+        precoconv += 75
     }
 
     // FIM DO CARDÁPIO DE FEIJOADA //
 
     // CARDÁPIO DE FESTA BOTEQUIM //
 
-    if(cardapioescolhido === 'Festa Botequim' && totconv<30){
-        precoconv += (90*30)/totconv
+    if(cardapioescolhido === 'Festa Botequim' && totconv<50){
+        precoconv += (85*30)/totconv
     }
-    if(cardapioescolhido === 'Festa Botequim' && totconv>=30 && totconv<=70){
+    if(cardapioescolhido === 'Festa Botequim' && totconv>=50 && totconv<=70){
         precoconv += 85
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=71 && totconv<=100){
-        precoconv += 75
+        precoconv += 80
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=101 && totconv<=120){
-        precoconv += 70
+        precoconv += 75
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=121 && totconv<=150){
-        precoconv += 65
+        precoconv += 70
     }
 
     // FIM DO CARDÁPIO DE FESTA BOTEQUIM //
@@ -197,19 +197,19 @@ function execucao(){
     // CARDÁPIO DE COFFEE BREAK //
 
     if(cardapioescolhido === 'Coffee Break' && totconv<30){
-        precoconv += (60*30)/totconv
+        precoconv += (65*30)/totconv
     }
     if(cardapioescolhido === 'Coffee Break' && totconv>=30 && totconv<=70){
-        precoconv += 60
+        precoconv += 65
     }
     if(cardapioescolhido === 'Coffee Break' && totconv>=71 && totconv<=100){
-        precoconv += 55
+        precoconv += 60
     }
     if(cardapioescolhido === 'Coffee Break' && totconv>=101 && totconv<=120){
-        precoconv += 50
+        precoconv += 55
     }
     if(cardapioescolhido === 'Coffee Break' && totconv>=121 && totconv<=150){
-        precoconv += 45
+        precoconv += 50
     }
 
     // FIM DO CARDÁPIO DE COFFEE BREAK //
@@ -217,19 +217,19 @@ function execucao(){
     // CARDÁPIO DE COCKTAIL //
 
     if(cardapioescolhido === 'Cocktail' && totconv<30){
-        precoconv += (65*30)/totconv
+        precoconv += (75*30)/totconv
     }
     if(cardapioescolhido === 'Cocktail' && totconv>=30 && totconv<=70){
-        precoconv += 65
+        precoconv += 75
     }
     if(cardapioescolhido === 'Cocktail' && totconv>=71 && totconv<=100){
-        precoconv += 60
+        precoconv += 70
     }
     if(cardapioescolhido === 'Cocktail' && totconv>=101 && totconv<=120){
-        precoconv += 55
+        precoconv += 65
     }
     if(cardapioescolhido === 'Cocktail' && totconv>=121 && totconv<=150){
-        precoconv += 50
+        precoconv += 60
     }
 
     // FIM DO CARDÁPIO DE COCKTAIL //
@@ -237,39 +237,39 @@ function execucao(){
     // CARDÁPIO DE MASSAS //
 
     if(cardapioescolhido === 'Massas' && totconv<50){
-        precoconv += (85*50)/totconv
+        precoconv += (90*50)/totconv
     }
     if(cardapioescolhido === 'Massas' && totconv>=50 && totconv<=70){
-        precoconv += 85
+        precoconv += 90
     }
     if(cardapioescolhido === 'Massas' && totconv>=71 && totconv<=100){
-        precoconv += 80
+        precoconv += 85
     }
     if(cardapioescolhido === 'Massas' && totconv>=101 && totconv<=120){
-        precoconv += 75
+        precoconv += 80
     }
     if(cardapioescolhido === 'Massas' && totconv>=121 && totconv<=150){
-        precoconv += 70
+        precoconv += 75
     }
 
     // FIM DO CARDÁPIO DE Massas //
 
     // CARDÁPIO DE FESTA JUNINA //
     
-    if(cardapioescolhido === 'Festa Junina' && totconv<30){
-        precoconv += (90*30)/totconv
+    if(cardapioescolhido === 'Festa Junina' && totconv<50){
+        precoconv += (90*50)/totconv
     }
-    if(cardapioescolhido === 'Festa Junina' && totconv>=30 && totconv<=70){
-        precoconv += 90
-    }
-    if(cardapioescolhido === 'Festa Junina' && totconv>=71 && totconv<=100){
+    if(cardapioescolhido === 'Festa Junina' && totconv>=50 && totconv<=70){
         precoconv += 85
     }
-    if(cardapioescolhido === 'Festa Junina' && totconv>=101 && totconv<=120){
+    if(cardapioescolhido === 'Festa Junina' && totconv>=71 && totconv<=100){
         precoconv += 80
     }
-    if(cardapioescolhido === 'Festa Junina' && totconv>=121 && totconv<=150){
+    if(cardapioescolhido === 'Festa Junina' && totconv>=101 && totconv<=120){
         precoconv += 75
+    }
+    if(cardapioescolhido === 'Festa Junina' && totconv>=121 && totconv<=150){
+        precoconv += 70
     }
 
 // FIM DO CARDÁPIO DE FESTA JUNINA //
@@ -326,10 +326,10 @@ function execucao(){
         precoopenbar += 0
     }
     if(openbarescolhido=== 'Com Open-Bar'&& totconv>=30 && totconv<=99){
-        precoopenbar += 45
+        precoopenbar += 55
     }
     if(openbarescolhido=== 'Com Open-Bar'&& totconv>=100 && totconv<=200){
-        precoopenbar += 40
+        precoopenbar += 50
     }
     //OPEN-BAR FINAL
 
