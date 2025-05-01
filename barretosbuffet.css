@@ -253,6 +253,23 @@ O header se repete em todas as páginas*/
 .serviços_item_button_tit, .restaurant_menu{
     color: white;
 }
+.fundo_sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo{
+    /*Espaçamento*/
+    width: 50%;
+    padding-block: 2.5vh;
+    text-align: center;
+    font-size: 14pt;
+    /*Estilização*/
+    color: white;
+    background-image: var(--barretosbuffet_linear);
+    border-radius: 30px;
+    
+}
 /*Serviços Finalizado*/
 
 /*Footer Iniciado*/
