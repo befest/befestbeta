@@ -177,19 +177,19 @@ function execucao(){
     // CARDÁPIO DE FESTA BOTEQUIM //
 
     if(cardapioescolhido === 'Festa Botequim' && totconv<50){
-        precoconv += (85*30)/totconv
+        precoconv += (90*30)/totconv
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=50 && totconv<=70){
-        precoconv += 85
+        precoconv += 90
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=71 && totconv<=100){
-        precoconv += 80
+        precoconv += 85
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=101 && totconv<=120){
-        precoconv += 75
+        precoconv += 80
     }
     if(cardapioescolhido === 'Festa Botequim' && totconv>=121 && totconv<=150){
-        precoconv += 70
+        precoconv += 75
     }
 
     // FIM DO CARDÁPIO DE FESTA BOTEQUIM //
